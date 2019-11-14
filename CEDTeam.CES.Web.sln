@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CEDTeam.CES.Infrastructure"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CEDTeam.CES.Web", "CEDTeam.CES.Web\CEDTeam.CES.Web.csproj", "{C78C7D11-491B-4710-919D-305DA4B269DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CEDTeam.CES.Tool", "CEDTeam.CES.Tool\CEDTeam.CES.Tool.csproj", "{550B6295-A0A8-40F3-9E5B-BACBAB11BEBB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tool", "Tool", "{67A3C7E6-4038-4FC1-9784-0EB30EE78D89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +31,16 @@ Global
 		{C78C7D11-491B-4710-919D-305DA4B269DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C78C7D11-491B-4710-919D-305DA4B269DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C78C7D11-491B-4710-919D-305DA4B269DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{550B6295-A0A8-40F3-9E5B-BACBAB11BEBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{550B6295-A0A8-40F3-9E5B-BACBAB11BEBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{550B6295-A0A8-40F3-9E5B-BACBAB11BEBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{550B6295-A0A8-40F3-9E5B-BACBAB11BEBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{550B6295-A0A8-40F3-9E5B-BACBAB11BEBB} = {67A3C7E6-4038-4FC1-9784-0EB30EE78D89}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ABB17000-2D01-4C87-A224-C88AE67C140F}

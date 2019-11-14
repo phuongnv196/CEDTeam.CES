@@ -23,7 +23,7 @@ namespace CEDTeam.CES.Infrastructure.Repositories
         {
             using(var connection = _baseRepository.GetConnection())
             {
-                return (await connection.QueryAsync<UserDto>("SELECT * FROM User")).AsList();
+                return (await connection.QueryAsync<UserDto>("spGetAllUser", commandType: System.Data.CommandType.StoredProcedure)).AsList();
             }
         }
     }
