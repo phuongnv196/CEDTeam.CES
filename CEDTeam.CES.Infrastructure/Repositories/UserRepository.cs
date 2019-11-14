@@ -3,6 +3,7 @@ using CEDTeam.CES.Core.Dtos;
 using CEDTeam.CES.Core.Interfaces;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using CEDTeam.CES.Infrastructure.Constants;
 
 namespace CEDTeam.CES.Infrastructure.Repositories
 {
@@ -23,7 +24,7 @@ namespace CEDTeam.CES.Infrastructure.Repositories
         {
             using(var connection = _baseRepository.GetConnection())
             {
-                return (await connection.QueryAsync<UserDto>("spGetAllUser", commandType: System.Data.CommandType.StoredProcedure)).AsList();
+                return (await connection.QueryAsync<UserDto>(ProcName.User.GET_ALL_USER, commandType: System.Data.CommandType.StoredProcedure)).AsList();
             }
         }
     }
