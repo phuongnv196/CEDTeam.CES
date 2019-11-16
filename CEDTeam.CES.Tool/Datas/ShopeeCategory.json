@@ -1,0 +1,1181 @@
+﻿{
+  "category": [
+    {
+      "name": "Bách Hoá Online",
+      "url": "https://shopee.vn/Bách-Hoá-Online-cat.9824",
+      "id": "shopee_cate_1"
+    },
+    {
+      "name": "Chăm sóc thú cưng",
+      "url": "https://shopee.vn/Chăm-sóc-thú-cưng-cat.18977",
+      "id": "shopee_cate_2"
+    },
+    {
+      "name": "Điện Thoại & Phụ Kiện",
+      "url": "https://shopee.vn/Điện-Thoại-Phụ-Kiện-cat.84",
+      "id": "shopee_cate_3"
+    },
+    {
+      "name": "Đồ Chơi",
+      "url": "https://shopee.vn/Đồ-Chơi-cat.13242",
+      "id": "shopee_cate_4"
+    },
+    {
+      "name": "Đồng Hồ",
+      "url": "https://shopee.vn/Đồng-Hồ-cat.9607",
+      "id": "shopee_cate_5"
+    },
+    {
+      "name": "Giày Dép Nam",
+      "url": "https://shopee.vn/Giày-Dép-Nam-cat.2429",
+      "id": "shopee_cate_6"
+    },
+    {
+      "name": "Giày Dép Nữ",
+      "url": "https://shopee.vn/Giày-Dép-Nữ-cat.161",
+      "id": "shopee_cate_7"
+    },
+    {
+      "name": "Giặt giũ & Chăm sóc nhà cửa",
+      "url": "https://shopee.vn/Giặt-giũ-Chăm-sóc-nhà-cửa-cat.17101",
+      "id": "shopee_cate_8"
+    },
+    {
+      "name": "Máy tính & Laptop",
+      "url": "https://shopee.vn/Máy-tính-Laptop-cat.13030",
+      "id": "shopee_cate_9"
+    },
+    {
+      "name": "Máy ảnh - Máy quay phim",
+      "url": "https://shopee.vn/Máy-ảnh-Máy-quay-phim-cat.13033",
+      "id": "shopee_cate_10"
+    },
+    {
+      "name": "Mẹ & Bé",
+      "url": "https://shopee.vn/Mẹ-Bé-cat.163",
+      "id": "shopee_cate_11"
+    },
+    {
+      "name": "Nhà Cửa & Đời Sống",
+      "url": "https://shopee.vn/Nhà-Cửa-Đời-Sống-cat.87",
+      "id": "shopee_cate_12"
+    },
+    {
+      "name": "Nhà Sách Online",
+      "url": "https://shopee.vn/Nhà-Sách-Online-cat.10256",
+      "id": "shopee_cate_13"
+    },
+    {
+      "name": "Ô tô - xe máy - xe đạp",
+      "url": "https://shopee.vn/Ô-tô-xe-máy-xe-đạp-cat.12494",
+      "id": "shopee_cate_14"
+    },
+    {
+      "name": "Phụ Kiện Thời Trang",
+      "url": "https://shopee.vn/Phụ-Kiện-Thời-Trang-cat.80",
+      "id": "shopee_cate_15"
+    },
+    {
+      "name": "Sản Phẩm Khác",
+      "url": "https://shopee.vn/Sản-Phẩm-Khác-cat.91",
+      "id": "shopee_cate_16"
+    },
+    {
+      "name": "Sức Khỏe & Sắc Đẹp",
+      "url": "https://shopee.vn/Sức-Khỏe-Sắc-Đẹp-cat.160",
+      "id": "shopee_cate_17"
+    },
+    {
+      "name": "Thiết Bị Điện Gia Dụng",
+      "url": "https://shopee.vn/Thiết-Bị-Điện-Gia-Dụng-cat.2353",
+      "id": "shopee_cate_18"
+    },
+    {
+      "name": "Thiết Bị Điện Tử",
+      "url": "https://shopee.vn/Thiết-Bị-Điện-Tử-cat.2365",
+      "id": "shopee_cate_19"
+    },
+    {
+      "name": "Thể Thao & Du Lịch",
+      "url": "https://shopee.vn/Thể-Thao-Du-Lịch-cat.9675",
+      "id": "shopee_cate_20"
+    },
+    {
+      "name": "Thời Trang Nam",
+      "url": "https://shopee.vn/Thời-Trang-Nam-cat.78",
+      "id": "shopee_cate_21"
+    },
+    {
+      "name": "Thời Trang Nữ",
+      "url": "https://shopee.vn/Thời-Trang-Nữ-cat.77",
+      "id": "shopee_cate_22"
+    },
+    {
+      "name": "Thời Trang Trẻ Em",
+      "url": "https://shopee.vn/Thời-Trang-Trẻ-Em-cat.16770",
+      "id": "shopee_cate_23"
+    },
+    {
+      "name": "Túi Ví",
+      "url": "https://shopee.vn/Túi-Ví-cat.162",
+      "id": "shopee_cate_24"
+    },
+    {
+      "name": "Voucher & Dịch vụ",
+      "url": "https://shopee.vn/Voucher-Dịch-vụ-cat.12938",
+      "id": "shopee_cate_25"
+    }
+  ],
+  "subcategory": [
+    {
+      "name": "Ăn vặt & Bánh kẹo",
+      "url": "https://shopee.vn/Ăn-vặt-Bánh-kẹo-cat.9824.9827",
+      "parent": "shopee_cate_1"
+    },
+    {
+      "name": "Đồ uống",
+      "url": "https://shopee.vn/Đồ-uống-cat.9824.9835",
+      "parent": "shopee_cate_1"
+    },
+    {
+      "name": "Đồ hộp & Đóng gói",
+      "url": "https://shopee.vn/Đồ-hộp-Đóng-gói-cat.9824.9831",
+      "parent": "shopee_cate_1"
+    },
+    {
+      "name": "Nấu ăn & Làm bánh",
+      "url": "https://shopee.vn/Nấu-ăn-Làm-bánh-cat.9824.9833",
+      "parent": "shopee_cate_1"
+    },
+    {
+      "name": "Đậu & Hạt",
+      "url": "https://shopee.vn/Đậu-Hạt-cat.9824.9829",
+      "parent": "shopee_cate_1"
+    },
+    {
+      "name": "Đặc sản Việt",
+      "url": "https://shopee.vn/Đặc-sản-Việt-cat.9824.9837",
+      "parent": "shopee_cate_1"
+    },
+    {
+      "name": "Quà biếu",
+      "url": "https://shopee.vn/Quà-biếu-cat.9824.9839",
+      "parent": "shopee_cate_1"
+    },
+    {
+      "name": "Sữa",
+      "url": "https://shopee.vn/Sữa-cat.9824.11975",
+      "parent": "shopee_cate_1"
+    },
+    {
+      "name": "Chó",
+      "url": "https://shopee.vn/Chó-cat.18977.18980",
+      "parent": "shopee_cate_2"
+    },
+    {
+      "name": "Mèo",
+      "url": "https://shopee.vn/Mèo-cat.18977.18988",
+      "parent": "shopee_cate_2"
+    },
+    {
+      "name": "Fish",
+      "url": "https://shopee.vn/Fish-cat.18977.18996",
+      "parent": "shopee_cate_2"
+    },
+    {
+      "name": "Chim",
+      "url": "https://shopee.vn/Chim-cat.18977.19003",
+      "parent": "shopee_cate_2"
+    },
+    {
+      "name": "Hamsters",
+      "url": "https://shopee.vn/Hamsters-cat.18977.19008",
+      "parent": "shopee_cate_2"
+    },
+    {
+      "name": "Khác",
+      "url": "https://shopee.vn/Khác-cat.18977.18978",
+      "parent": "shopee_cate_2"
+    },
+    {
+      "name": "Điện thoại",
+      "url": "https://shopee.vn/Điện-thoại-cat.84.1979",
+      "parent": "shopee_cate_3"
+    },
+    {
+      "name": "Máy tính bảng ",
+      "url": "https://shopee.vn/Máy-tính-bảng-cat.84.14026",
+      "parent": "shopee_cate_3"
+    },
+    {
+      "name": "Vỏ, Bao & Ốp lưng ",
+      "url": "https://shopee.vn/Vỏ-Bao-Ốp-lưng-cat.84.1985",
+      "parent": "shopee_cate_3"
+    },
+    {
+      "name": "Miếng dán màn hình",
+      "url": "https://shopee.vn/Miếng-dán-màn-hình-cat.84.2802",
+      "parent": "shopee_cate_3"
+    },
+    {
+      "name": "Pin sạc dự phòng",
+      "url": "https://shopee.vn/Pin-sạc-dự-phòng-cat.84.2817",
+      "parent": "shopee_cate_3"
+    },
+    {
+      "name": "Pin, Cáp & Bộ sạc",
+      "url": "https://shopee.vn/Pin-Cáp-Bộ-sạc-cat.84.1981",
+      "parent": "shopee_cate_3"
+    },
+    {
+      "name": "Giá đỡ & Kẹp",
+      "url": "https://shopee.vn/Giá-đỡ-Kẹp-cat.84.8728",
+      "parent": "shopee_cate_3"
+    },
+    {
+      "name": "Gậy chụp hình",
+      "url": "https://shopee.vn/Gậy-chụp-hình-cat.84.2403",
+      "parent": "shopee_cate_3"
+    },
+    {
+      "name": "Sim",
+      "url": "https://shopee.vn/Sim-cat.84.2803",
+      "parent": "shopee_cate_3"
+    },
+    {
+      "name": "Đồ chơi cho trẻ sơ sinh & trẻ nhỏ",
+      "url": "https://shopee.vn/Đồ-chơi-cho-trẻ-sơ-sinh-trẻ-nhỏ-cat.13242.13246",
+      "parent": "shopee_cate_4"
+    },
+    {
+      "name": "Đồ chơi giáo dục",
+      "url": "https://shopee.vn/Đồ-chơi-giáo-dục-cat.13242.13255",
+      "parent": "shopee_cate_4"
+    },
+    {
+      "name": "Đồ chơi vận động & Ngoài trời",
+      "url": "https://shopee.vn/Đồ-chơi-vận-động-Ngoài-trời-cat.13242.13259",
+      "parent": "shopee_cate_4"
+    },
+    {
+      "name": "Búp bê & Đồ chơi nhồi bông",
+      "url": "https://shopee.vn/Búp-bê-Đồ-chơi-nhồi-bông-cat.13242.13261",
+      "parent": "shopee_cate_4"
+    },
+    {
+      "name": "Đồ Chơi Mô Hình",
+      "url": "https://shopee.vn/Đồ-Chơi-Mô-Hình-cat.13242.13263",
+      "parent": "shopee_cate_4"
+    },
+    {
+      "name": "Đồ Chơi Giải Trí",
+      "url": "https://shopee.vn/Đồ-Chơi-Giải-Trí-cat.13242.13265",
+      "parent": "shopee_cate_4"
+    },
+    {
+      "name": "Đồng hồ nam",
+      "url": "https://shopee.vn/Đồng-hồ-nam-cat.9607.9610",
+      "parent": "shopee_cate_5"
+    },
+    {
+      "name": "Đồng hồ nữ",
+      "url": "https://shopee.vn/Đồng-hồ-nữ-cat.9607.9612",
+      "parent": "shopee_cate_5"
+    },
+    {
+      "name": "Đồng hồ trẻ em",
+      "url": "https://shopee.vn/Đồng-hồ-trẻ-em-cat.9607.9615",
+      "parent": "shopee_cate_5"
+    },
+    {
+      "name": "Phụ Kiện Đồng Hồ",
+      "url": "https://shopee.vn/Phụ-Kiện-Đồng-Hồ-cat.9607.9608",
+      "parent": "shopee_cate_5"
+    },
+    {
+      "name": "Giày thể thao/ Sneakers",
+      "url": "https://shopee.vn/Giày-thể-thao-Sneakers-cat.2429.2431",
+      "parent": "shopee_cate_6"
+    },
+    {
+      "name": "Giày lười",
+      "url": "https://shopee.vn/Giày-lười-cat.2429.2432",
+      "parent": "shopee_cate_6"
+    },
+    {
+      "name": "Giày tây",
+      "url": "https://shopee.vn/Giày-tây-cat.2429.2434",
+      "parent": "shopee_cate_6"
+    },
+    {
+      "name": "Xăng-đan",
+      "url": "https://shopee.vn/Xăng-đan-cat.2429.2436",
+      "parent": "shopee_cate_6"
+    },
+    {
+      "name": "Dép",
+      "url": "https://shopee.vn/Dép-cat.2429.2435",
+      "parent": "shopee_cate_6"
+    },
+    {
+      "name": "Giày dép Unisex",
+      "url": "https://shopee.vn/Giày-dép-Unisex-cat.2429.13716",
+      "parent": "shopee_cate_6"
+    },
+    {
+      "name": "Phụ kiện giày dép",
+      "url": "https://shopee.vn/Phụ-kiện-giày-dép-cat.2429.13724",
+      "parent": "shopee_cate_6"
+    },
+    {
+      "name": "Giày cao gót",
+      "url": "https://shopee.vn/Giày-cao-gót-cat.161.1927",
+      "parent": "shopee_cate_7"
+    },
+    {
+      "name": "Giày đế bằng ",
+      "url": "https://shopee.vn/Giày-đế-bằng-cat.161.1933",
+      "parent": "shopee_cate_7"
+    },
+    {
+      "name": "Sandal",
+      "url": "https://shopee.vn/Sandal-cat.161.1935",
+      "parent": "shopee_cate_7"
+    },
+    {
+      "name": "Giày cao gót/ Giày đế xuồng",
+      "url": "https://shopee.vn/Giày-cao-gót-Giày-đế-xuồng-cat.161.10205",
+      "parent": "shopee_cate_7"
+    },
+    {
+      "name": "Bốt",
+      "url": "https://shopee.vn/Bốt-cat.161.1931",
+      "parent": "shopee_cate_7"
+    },
+    {
+      "name": "Guốc/Dép nữ",
+      "url": "https://shopee.vn/Guốc-Dép-nữ-cat.161.13381",
+      "parent": "shopee_cate_7"
+    },
+    {
+      "name": "Giày sneaker và Giày thể thao",
+      "url": "https://shopee.vn/Giày-sneaker-và-Giày-thể-thao-cat.161.1929",
+      "parent": "shopee_cate_7"
+    },
+    {
+      "name": "Phụ kiện giày ",
+      "url": "https://shopee.vn/Phụ-kiện-giày-cat.161.10238",
+      "parent": "shopee_cate_7"
+    },
+    {
+      "name": "Giặt giũ",
+      "url": "https://shopee.vn/Giặt-giũ-cat.17101.17107",
+      "parent": "shopee_cate_8"
+    },
+    {
+      "name": "Giấy vệ sinh, khăn giấy",
+      "url": "https://shopee.vn/Giấy-vệ-sinh-khăn-giấy-cat.17101.17179",
+      "parent": "shopee_cate_8"
+    },
+    {
+      "name": "Vệ sinh nhà cửa",
+      "url": "https://shopee.vn/Vệ-sinh-nhà-cửa-cat.17101.17181",
+      "parent": "shopee_cate_8"
+    },
+    {
+      "name": "Vệ sinh bát đĩa",
+      "url": "https://shopee.vn/Vệ-sinh-bát-đĩa-cat.17101.17183",
+      "parent": "shopee_cate_8"
+    },
+    {
+      "name": "Dụng cụ vệ sinh",
+      "url": "https://shopee.vn/Dụng-cụ-vệ-sinh-cat.17101.17230",
+      "parent": "shopee_cate_8"
+    },
+    {
+      "name": "Chất khử mùi, làm thơm",
+      "url": "https://shopee.vn/Chất-khử-mùi-làm-thơm-cat.17101.17232",
+      "parent": "shopee_cate_8"
+    },
+    {
+      "name": "Thuốc diệt côn trùng",
+      "url": "https://shopee.vn/Thuốc-diệt-côn-trùng-cat.17101.17234",
+      "parent": "shopee_cate_8"
+    },
+    {
+      "name": "Túi, màng bọc thực phẩm",
+      "url": "https://shopee.vn/Túi-màng-bọc-thực-phẩm-cat.17101.17237",
+      "parent": "shopee_cate_8"
+    },
+    {
+      "name": "Bao bì, túi đựng rác",
+      "url": "https://shopee.vn/Bao-bì-túi-đựng-rác-cat.17101.17240",
+      "parent": "shopee_cate_8"
+    },
+    {
+      "name": "Khác",
+      "url": "https://shopee.vn/Khác-cat.17101.17102",
+      "parent": "shopee_cate_8"
+    },
+    {
+      "name": "Laptop",
+      "url": "https://shopee.vn/Laptop-cat.13030.13065",
+      "parent": "shopee_cate_9"
+    },
+    {
+      "name": "Máy Tính Bàn",
+      "url": "https://shopee.vn/Máy-Tính-Bàn-cat.13030.13067",
+      "parent": "shopee_cate_9"
+    },
+    {
+      "name": "Linh Kiện Máy Tính",
+      "url": "https://shopee.vn/Linh-Kiện-Máy-Tính-cat.13030.13069",
+      "parent": "shopee_cate_9"
+    },
+    {
+      "name": "Chuột, Bàn Phím",
+      "url": "https://shopee.vn/Chuột-Bàn-Phím-cat.13030.13077",
+      "parent": "shopee_cate_9"
+    },
+    {
+      "name": "Thiết Bị Mạng",
+      "url": "https://shopee.vn/Thiết-Bị-Mạng-cat.13030.13079",
+      "parent": "shopee_cate_9"
+    },
+    {
+      "name": "USB & Ổ Cứng",
+      "url": "https://shopee.vn/USB-Ổ-Cứng-cat.13030.13083",
+      "parent": "shopee_cate_9"
+    },
+    {
+      "name": "Máy In, Máy Scan & Máy Chiếu",
+      "url": "https://shopee.vn/Máy-In-Máy-Scan-Máy-Chiếu-cat.13030.13081",
+      "parent": "shopee_cate_9"
+    },
+    {
+      "name": "Phần Mềm",
+      "url": "https://shopee.vn/Phần-Mềm-cat.13030.13186",
+      "parent": "shopee_cate_9"
+    },
+    {
+      "name": "Phụ Kiện Máy Tính Khác",
+      "url": "https://shopee.vn/Phụ-Kiện-Máy-Tính-Khác-cat.13030.14318",
+      "parent": "shopee_cate_9"
+    },
+    {
+      "name": "Audio & Video Accessories",
+      "url": "https://shopee.vn/Audio-Video-Accessories-cat.13030.16671",
+      "parent": "shopee_cate_9"
+    },
+    {
+      "name": "Máy ảnh du lịch & chụp lấy liền",
+      "url": "https://shopee.vn/Máy-ảnh-du-lịch-chụp-lấy-liền-cat.13033.13036",
+      "parent": "shopee_cate_10"
+    },
+    {
+      "name": "Thẻ nhớ",
+      "url": "https://shopee.vn/Thẻ-nhớ-cat.13033.13038",
+      "parent": "shopee_cate_10"
+    },
+    {
+      "name": "Camera giám sát & Webcam",
+      "url": "https://shopee.vn/Camera-giám-sát-Webcam-cat.13033.13040",
+      "parent": "shopee_cate_10"
+    },
+    {
+      "name": "Máy ảnh DSLR",
+      "url": "https://shopee.vn/Máy-ảnh-DSLR-cat.13033.13042",
+      "parent": "shopee_cate_10"
+    },
+    {
+      "name": "Máy ảnh không gương lật",
+      "url": "https://shopee.vn/Máy-ảnh-không-gương-lật-cat.13033.13044",
+      "parent": "shopee_cate_10"
+    },
+    {
+      "name": "Máy quay phim",
+      "url": "https://shopee.vn/Máy-quay-phim-cat.13033.13052",
+      "parent": "shopee_cate_10"
+    },
+    {
+      "name": "Phụ kiện máy ảnh",
+      "url": "https://shopee.vn/Phụ-kiện-máy-ảnh-cat.13033.13046",
+      "parent": "shopee_cate_10"
+    },
+    {
+      "name": "Đồ dùng cho bé",
+      "url": "https://shopee.vn/Đồ-dùng-cho-bé-cat.163.2352",
+      "parent": "shopee_cate_11"
+    },
+    {
+      "name": "Tã & Bỉm ",
+      "url": "https://shopee.vn/Tã-Bỉm-cat.163.2349",
+      "parent": "shopee_cate_11"
+    },
+    {
+      "name": "Ghế, Nôi, Cũi, Xe đẩy & Địu",
+      "url": "https://shopee.vn/Ghế-Nôi-Cũi-Xe-đẩy-Địu-cat.163.2350",
+      "parent": "shopee_cate_11"
+    },
+    {
+      "name": "Sữa công thức 0-24 tháng tuổi",
+      "url": "https://shopee.vn/Sữa-công-thức-0-24-tháng-tuổi-cat.163.19018",
+      "parent": "shopee_cate_11"
+    },
+    {
+      "name": "Thực phẩm bổ sung cho trẻ dưới 6 tháng tuổi",
+      "url": "https://shopee.vn/Thực-phẩm-bổ-sung-cho-trẻ-dưới-6-tháng-tuổi-cat.163.19022",
+      "parent": "shopee_cate_11"
+    },
+    {
+      "name": "Sữa trên 24 tháng tuổi",
+      "url": "https://shopee.vn/Sữa-trên-24-tháng-tuổi-cat.163.19025",
+      "parent": "shopee_cate_11"
+    },
+    {
+      "name": "Thực phẩm cho bé từ 6 tháng tuổi",
+      "url": "https://shopee.vn/Thực-phẩm-cho-bé-từ-6-tháng-tuổi-cat.163.19029",
+      "parent": "shopee_cate_11"
+    },
+    {
+      "name": "Vitamin, thực phẩm bổ sung và đồ dùng cho mẹ",
+      "url": "https://shopee.vn/Vitamin-thực-phẩm-bổ-sung-và-đồ-dùng-cho-mẹ-cat.163.19033",
+      "parent": "shopee_cate_11"
+    },
+    {
+      "name": "Dụng cụ & Thiết bị tiện ích",
+      "url": "https://shopee.vn/Dụng-cụ-Thiết-bị-tiện-ích-cat.87.2359",
+      "parent": "shopee_cate_12"
+    },
+    {
+      "name": "Đồ dùng nhà bếp & Phòng ăn",
+      "url": "https://shopee.vn/Đồ-dùng-nhà-bếp-Phòng-ăn-cat.87.1997",
+      "parent": "shopee_cate_12"
+    },
+    {
+      "name": "Chăn, Ga, Gối & Nệm",
+      "url": "https://shopee.vn/Chăn-Ga-Gối-Nệm-cat.87.1999",
+      "parent": "shopee_cate_12"
+    },
+    {
+      "name": "Tủ đựng & Hộp lưu trữ",
+      "url": "https://shopee.vn/Tủ-đựng-Hộp-lưu-trữ-cat.87.2806",
+      "parent": "shopee_cate_12"
+    },
+    {
+      "name": "Trang trí nhà cửa",
+      "url": "https://shopee.vn/Trang-trí-nhà-cửa-cat.87.2003",
+      "parent": "shopee_cate_12"
+    },
+    {
+      "name": "Đồ dùng phòng tắm",
+      "url": "https://shopee.vn/Đồ-dùng-phòng-tắm-cat.87.2007",
+      "parent": "shopee_cate_12"
+    },
+    {
+      "name": "Đồ nội thất",
+      "url": "https://shopee.vn/Đồ-nội-thất-cat.87.2001",
+      "parent": "shopee_cate_12"
+    },
+    {
+      "name": "Đèn",
+      "url": "https://shopee.vn/Đèn-cat.87.2811",
+      "parent": "shopee_cate_12"
+    },
+    {
+      "name": "Ngoài trời & Sân vườn",
+      "url": "https://shopee.vn/Ngoài-trời-Sân-vườn-cat.87.2809",
+      "parent": "shopee_cate_12"
+    },
+    {
+      "name": "Dụng cụ cầm tay",
+      "url": "https://shopee.vn/Dụng-cụ-cầm-tay-cat.87.9943",
+      "parent": "shopee_cate_12"
+    },
+    {
+      "name": "Sách Tiếng Việt",
+      "url": "https://shopee.vn/Sách-Tiếng-Việt-cat.10256.19232",
+      "parent": "shopee_cate_13"
+    },
+    {
+      "name": "Sách Ngoại Văn",
+      "url": "https://shopee.vn/Sách-Ngoại-Văn-cat.10256.17665",
+      "parent": "shopee_cate_13"
+    },
+    {
+      "name": "Văn Phòng Phẩm",
+      "url": "https://shopee.vn/Văn-Phòng-Phẩm-cat.10256.10260",
+      "parent": "shopee_cate_13"
+    },
+    {
+      "name": "Flashcards",
+      "url": "https://shopee.vn/Flashcards-cat.10256.16658",
+      "parent": "shopee_cate_13"
+    },
+    {
+      "name": "Nhạc Cụ",
+      "url": "https://shopee.vn/Nhạc-Cụ-cat.10256.11816",
+      "parent": "shopee_cate_13"
+    },
+    {
+      "name": "Quà Lưu Niệm",
+      "url": "https://shopee.vn/Quà-Lưu-Niệm-cat.10256.12680",
+      "parent": "shopee_cate_13"
+    },
+    {
+      "name": "Mô tô, xe máy",
+      "url": "https://shopee.vn/Mô-tô-xe-máy-cat.12494.23406",
+      "parent": "shopee_cate_14"
+    },
+    {
+      "name": "Xe đạp, xe điện",
+      "url": "https://shopee.vn/Xe-đạp-xe-điện-cat.12494.23411",
+      "parent": "shopee_cate_14"
+    },
+    {
+      "name": "Chăm sóc, sửa chữa xe",
+      "url": "https://shopee.vn/Chăm-sóc-sửa-chữa-xe-cat.12494.12495",
+      "parent": "shopee_cate_14"
+    },
+    {
+      "name": "Chăm sóc ô tô",
+      "url": "https://shopee.vn/Chăm-sóc-ô-tô-cat.12494.12792",
+      "parent": "shopee_cate_14"
+    },
+    {
+      "name": "Mũ bảo hiểm",
+      "url": "https://shopee.vn/Mũ-bảo-hiểm-cat.12494.14364",
+      "parent": "shopee_cate_14"
+    },
+    {
+      "name": "Phụ kiện xe máy",
+      "url": "https://shopee.vn/Phụ-kiện-xe-máy-cat.12494.14357",
+      "parent": "shopee_cate_14"
+    },
+    {
+      "name": "Phụ tùng xe máy",
+      "url": "https://shopee.vn/Phụ-tùng-xe-máy-cat.12494.14369",
+      "parent": "shopee_cate_14"
+    },
+    {
+      "name": "Chăm sóc xe máy",
+      "url": "https://shopee.vn/Chăm-sóc-xe-máy-cat.12494.14371",
+      "parent": "shopee_cate_14"
+    },
+    {
+      "name": "Phụ tùng, phụ kiện xe đạp, xe đạp điện",
+      "url": "https://shopee.vn/Phụ-tùng-phụ-kiện-xe-đạp-xe-đạp-điện-cat.12494.14398",
+      "parent": "shopee_cate_14"
+    },
+    {
+      "name": "Trang sức",
+      "url": "https://shopee.vn/Trang-sức-cat.80.1885",
+      "parent": "shopee_cate_15"
+    },
+    {
+      "name": "Kính mắt",
+      "url": "https://shopee.vn/Kính-mắt-cat.80.1889",
+      "parent": "shopee_cate_15"
+    },
+    {
+      "name": "Nón & Dù",
+      "url": "https://shopee.vn/Nón-Dù-cat.80.1891",
+      "parent": "shopee_cate_15"
+    },
+    {
+      "name": "Khăn, Tất & Găng tay",
+      "url": "https://shopee.vn/Khăn-Tất-Găng-tay-cat.80.1893",
+      "parent": "shopee_cate_15"
+    },
+    {
+      "name": "Phụ kiện tóc",
+      "url": "https://shopee.vn/Phụ-kiện-tóc-cat.80.2336",
+      "parent": "shopee_cate_15"
+    },
+    {
+      "name": "Dây lưng",
+      "url": "https://shopee.vn/Dây-lưng-cat.80.10569",
+      "parent": "shopee_cate_15"
+    },
+    {
+      "name": "Hình xăm",
+      "url": "https://shopee.vn/Hình-xăm-cat.80.2337",
+      "parent": "shopee_cate_15"
+    },
+    {
+      "name": "Phụ kiện cưới",
+      "url": "https://shopee.vn/Phụ-kiện-cưới-cat.80.10571",
+      "parent": "shopee_cate_15"
+    },
+    {
+      "name": "Khẩu trang",
+      "url": "https://shopee.vn/Khẩu-trang-cat.80.11087",
+      "parent": "shopee_cate_15"
+    },
+    {
+      "name": "Khác",
+      "url": "https://shopee.vn/Khác-cat.91.312",
+      "parent": "shopee_cate_16"
+    },
+    {
+      "name": "Chăm sóc da",
+      "url": "https://shopee.vn/Chăm-sóc-da-cat.160.2341",
+      "parent": "shopee_cate_17"
+    },
+    {
+      "name": "Son & Chăm sóc môi",
+      "url": "https://shopee.vn/Son-Chăm-sóc-môi-cat.160.2339",
+      "parent": "shopee_cate_17"
+    },
+    {
+      "name": "Trang điểm da\t",
+      "url": "https://shopee.vn/Trang-điểm-da-cat.160.1913",
+      "parent": "shopee_cate_17"
+    },
+    {
+      "name": "Trang điểm mắt",
+      "url": "https://shopee.vn/Trang-điểm-mắt-cat.160.2340",
+      "parent": "shopee_cate_17"
+    },
+    {
+      "name": "Mỹ phẩm nam",
+      "url": "https://shopee.vn/Mỹ-phẩm-nam-cat.160.1923",
+      "parent": "shopee_cate_17"
+    },
+    {
+      "name": "Tắm & Chăm sóc cơ thể",
+      "url": "https://shopee.vn/Tắm-Chăm-sóc-cơ-thể-cat.160.2818",
+      "parent": "shopee_cate_17"
+    },
+    {
+      "name": "Chăm sóc tóc",
+      "url": "https://shopee.vn/Chăm-sóc-tóc-cat.160.1915",
+      "parent": "shopee_cate_17"
+    },
+    {
+      "name": "Chăm sóc răng miệng",
+      "url": "https://shopee.vn/Chăm-sóc-răng-miệng-cat.160.9671",
+      "parent": "shopee_cate_17"
+    },
+    {
+      "name": "Máy massage & Thiết bị y tế",
+      "url": "https://shopee.vn/Máy-massage-Thiết-bị-y-tế-cat.160.9673",
+      "parent": "shopee_cate_17"
+    },
+    {
+      "name": "Dụng cụ làm đẹp",
+      "url": "https://shopee.vn/Dụng-cụ-làm-đẹp-cat.160.1919",
+      "parent": "shopee_cate_17"
+    },
+    {
+      "name": "Vệ sinh phụ nữ & Hỗ trợ tình dục",
+      "url": "https://shopee.vn/Vệ-sinh-phụ-nữ-Hỗ-trợ-tình-dục-cat.160.9669",
+      "parent": "shopee_cate_17"
+    },
+    {
+      "name": "Nước hoa",
+      "url": "https://shopee.vn/Nước-hoa-cat.160.1917",
+      "parent": "shopee_cate_17"
+    },
+    {
+      "name": "Vitamin & Thực phẩm chức năng",
+      "url": "https://shopee.vn/Vitamin-Thực-phẩm-chức-năng-cat.160.1921",
+      "parent": "shopee_cate_17"
+    },
+    {
+      "name": "Hoá Mỹ Phẩm & Khác",
+      "url": "https://shopee.vn/Hoá-Mỹ-Phẩm-Khác-cat.160.320",
+      "parent": "shopee_cate_17"
+    },
+    {
+      "name": "Đồ gia dụng nhà bếp",
+      "url": "https://shopee.vn/Đồ-gia-dụng-nhà-bếp-cat.2353.2355",
+      "parent": "shopee_cate_18"
+    },
+    {
+      "name": "Quạt & Máy nóng lạnh",
+      "url": "https://shopee.vn/Quạt-Máy-nóng-lạnh-cat.2353.2356",
+      "parent": "shopee_cate_18"
+    },
+    {
+      "name": "Thiết bị chăm sóc quần áo",
+      "url": "https://shopee.vn/Thiết-bị-chăm-sóc-quần-áo-cat.2353.9906",
+      "parent": "shopee_cate_18"
+    },
+    {
+      "name": "Máy hút bụi & Thiết bị làm sạch",
+      "url": "https://shopee.vn/Máy-hút-bụi-Thiết-bị-làm-sạch-cat.2353.2358",
+      "parent": "shopee_cate_18"
+    },
+    {
+      "name": "Đồ gia dụng lớn",
+      "url": "https://shopee.vn/Đồ-gia-dụng-lớn-cat.2353.2805",
+      "parent": "shopee_cate_18"
+    },
+    {
+      "name": "Khác",
+      "url": "https://shopee.vn/Khác-cat.2353.2354",
+      "parent": "shopee_cate_18"
+    },
+    {
+      "name": "Thiết bị âm thanh",
+      "url": "https://shopee.vn/Thiết-bị-âm-thanh-cat.2365.2371",
+      "parent": "shopee_cate_19"
+    },
+    {
+      "name": "Tai nghe",
+      "url": "https://shopee.vn/Tai-nghe-cat.2365.2370",
+      "parent": "shopee_cate_19"
+    },
+    {
+      "name": "Thiết bị đeo thông minh",
+      "url": "https://shopee.vn/Thiết-bị-đeo-thông-minh-cat.2365.13147",
+      "parent": "shopee_cate_19"
+    },
+    {
+      "name": "Android Tivi Box",
+      "url": "https://shopee.vn/Android-Tivi-Box-cat.2365.13145",
+      "parent": "shopee_cate_19"
+    },
+    {
+      "name": "Tivi",
+      "url": "https://shopee.vn/Tivi-cat.2365.13143",
+      "parent": "shopee_cate_19"
+    },
+    {
+      "name": "Phụ kiện tivi",
+      "url": "https://shopee.vn/Phụ-kiện-tivi-cat.2365.13224",
+      "parent": "shopee_cate_19"
+    },
+    {
+      "name": "Tai Nghe",
+      "url": "https://shopee.vn/Tai-Nghe-cat.2365.13216",
+      "parent": "shopee_cate_19"
+    },
+    {
+      "name": "Phụ kiện & Thiết bị game",
+      "url": "https://shopee.vn/Phụ-kiện-Thiết-bị-game-cat.2365.13898",
+      "parent": "shopee_cate_19"
+    },
+    {
+      "name": "Trang Phục thể thao",
+      "url": "https://shopee.vn/Trang-Phục-thể-thao-cat.9675.9684",
+      "parent": "shopee_cate_20"
+    },
+    {
+      "name": "Giày Thể Thao",
+      "url": "https://shopee.vn/Giày-Thể-Thao-cat.9675.16933",
+      "parent": "shopee_cate_20"
+    },
+    {
+      "name": "Phụ Kiện Thể Thao",
+      "url": "https://shopee.vn/Phụ-Kiện-Thể-Thao-cat.9675.9690",
+      "parent": "shopee_cate_20"
+    },
+    {
+      "name": "Thể Thao & Thể Hình",
+      "url": "https://shopee.vn/Thể-Thao-Thể-Hình-cat.9675.9678",
+      "parent": "shopee_cate_20"
+    },
+    {
+      "name": "Thể thao ngoài trời",
+      "url": "https://shopee.vn/Thể-thao-ngoài-trời-cat.9675.9680",
+      "parent": "shopee_cate_20"
+    },
+    {
+      "name": "Indoor Sports",
+      "url": "https://shopee.vn/Indoor-Sports-cat.9675.17051",
+      "parent": "shopee_cate_20"
+    },
+    {
+      "name": "Thể thao dưới nước",
+      "url": "https://shopee.vn/Thể-thao-dưới-nước-cat.9675.9682",
+      "parent": "shopee_cate_20"
+    },
+    {
+      "name": "Các Môn Thể Thao Khác",
+      "url": "https://shopee.vn/Các-Môn-Thể-Thao-Khác-cat.9675.16961",
+      "parent": "shopee_cate_20"
+    },
+    {
+      "name": "Vali/ Hành lý",
+      "url": "https://shopee.vn/Vali-Hành-lý-cat.9675.9686",
+      "parent": "shopee_cate_20"
+    },
+    {
+      "name": "Hoạt Động Dã Ngoại",
+      "url": "https://shopee.vn/Hoạt-Động-Dã-Ngoại-cat.9675.14154",
+      "parent": "shopee_cate_20"
+    },
+    {
+      "name": "Khác",
+      "url": "https://shopee.vn/Khác-cat.9675.9676",
+      "parent": "shopee_cate_20"
+    },
+    {
+      "name": "Balo/ Túi",
+      "url": "https://shopee.vn/Balo-Túi-cat.9675.14132",
+      "parent": "shopee_cate_20"
+    },
+    {
+      "name": "Áo thun",
+      "url": "https://shopee.vn/Áo-thun-cat.78.2827",
+      "parent": "shopee_cate_21"
+    },
+    {
+      "name": "Áo sơ mi",
+      "url": "https://shopee.vn/Áo-sơ-mi-cat.78.2828",
+      "parent": "shopee_cate_21"
+    },
+    {
+      "name": "Áo khoác & Áo vest",
+      "url": "https://shopee.vn/Áo-khoác-Áo-vest-cat.78.2829",
+      "parent": "shopee_cate_21"
+    },
+    {
+      "name": "Áo nỉ/ Áo len",
+      "url": "https://shopee.vn/Áo-nỉ-Áo-len-cat.78.9566",
+      "parent": "shopee_cate_21"
+    },
+    {
+      "name": "Đồ bộ/ Đồ mặc nhà",
+      "url": "https://shopee.vn/Đồ-bộ-Đồ-mặc-nhà-cat.78.9568",
+      "parent": "shopee_cate_21"
+    },
+    {
+      "name": "Đồ đôi",
+      "url": "https://shopee.vn/Đồ-đôi-cat.78.9570",
+      "parent": "shopee_cate_21"
+    },
+    {
+      "name": "Quần",
+      "url": "https://shopee.vn/Quần-cat.78.1899",
+      "parent": "shopee_cate_21"
+    },
+    {
+      "name": "Balo/ Túi/ Ví",
+      "url": "https://shopee.vn/Balo-Túi-Ví-cat.78.9572",
+      "parent": "shopee_cate_21"
+    },
+    {
+      "name": "Mắt kính",
+      "url": "https://shopee.vn/Mắt-kính-cat.78.9594",
+      "parent": "shopee_cate_21"
+    },
+    {
+      "name": "Phụ kiện nam",
+      "url": "https://shopee.vn/Phụ-kiện-nam-cat.78.2831",
+      "parent": "shopee_cate_21"
+    },
+    {
+      "name": "Đồ Trung Niên",
+      "url": "https://shopee.vn/Đồ-Trung-Niên-cat.78.15141",
+      "parent": "shopee_cate_21"
+    },
+    {
+      "name": "Trang Sức Nam",
+      "url": "https://shopee.vn/Trang-Sức-Nam-cat.78.15139",
+      "parent": "shopee_cate_21"
+    },
+    {
+      "name": "Thắt Lưng",
+      "url": "https://shopee.vn/Thắt-Lưng-cat.78.15135",
+      "parent": "shopee_cate_21"
+    },
+    {
+      "name": "Đồ lót",
+      "url": "https://shopee.vn/Đồ-lót-cat.78.15023",
+      "parent": "shopee_cate_21"
+    },
+    {
+      "name": "Áo",
+      "url": "https://shopee.vn/Áo-cat.77.1871",
+      "parent": "shopee_cate_22"
+    },
+    {
+      "name": "Đầm",
+      "url": "https://shopee.vn/Đầm-cat.77.2821",
+      "parent": "shopee_cate_22"
+    },
+    {
+      "name": "Chân váy",
+      "url": "https://shopee.vn/Chân-váy-cat.77.2822",
+      "parent": "shopee_cate_22"
+    },
+    {
+      "name": "Quần",
+      "url": "https://shopee.vn/Quần-cat.77.1877",
+      "parent": "shopee_cate_22"
+    },
+    {
+      "name": "Set trang phục & Jumpsuit",
+      "url": "https://shopee.vn/Set-trang-phục-Jumpsuit-cat.77.2334",
+      "parent": "shopee_cate_22"
+    },
+    {
+      "name": "Đồ đôi",
+      "url": "https://shopee.vn/Đồ-đôi-cat.77.2335",
+      "parent": "shopee_cate_22"
+    },
+    {
+      "name": "Đồ lót, Đồ ngủ & Đồ mặc nhà",
+      "url": "https://shopee.vn/Đồ-lót-Đồ-ngủ-Đồ-mặc-nhà-cat.77.1879",
+      "parent": "shopee_cate_22"
+    },
+    {
+      "name": "Đồ bơi",
+      "url": "https://shopee.vn/Đồ-bơi-cat.77.1881",
+      "parent": "shopee_cate_22"
+    },
+    {
+      "name": "Trang phục thể thao",
+      "url": "https://shopee.vn/Trang-phục-thể-thao-cat.77.2823",
+      "parent": "shopee_cate_22"
+    },
+    {
+      "name": "Phụ kiện may mặc",
+      "url": "https://shopee.vn/Phụ-kiện-may-mặc-cat.77.10576",
+      "parent": "shopee_cate_22"
+    },
+    {
+      "name": "Thời trang trung niên",
+      "url": "https://shopee.vn/Thời-trang-trung-niên-cat.77.13506",
+      "parent": "shopee_cate_22"
+    },
+    {
+      "name": "Áo khoác & Áo vest",
+      "url": "https://shopee.vn/Áo-khoác-Áo-vest-cat.77.1875",
+      "parent": "shopee_cate_22"
+    },
+    {
+      "name": "Trang Phục Đông",
+      "url": "https://shopee.vn/Trang-Phục-Đông-cat.77.9865",
+      "parent": "shopee_cate_22"
+    },
+    {
+      "name": "Thời trang bầu và sau sinh ",
+      "url": "https://shopee.vn/Thời-trang-bầu-và-sau-sinh-cat.77.16848",
+      "parent": "shopee_cate_22"
+    },
+    {
+      "name": "Bé gái | 5-14 tuổi",
+      "url": "https://shopee.vn/Bé-gái-5-14-tuổi-cat.16770.16772",
+      "parent": "shopee_cate_23"
+    },
+    {
+      "name": "Bé trai | 5-14 tuổi",
+      "url": "https://shopee.vn/Bé-trai-5-14-tuổi-cat.16770.16792",
+      "parent": "shopee_cate_23"
+    },
+    {
+      "name": "Bé gái | 3 tháng-4 tuổi",
+      "url": "https://shopee.vn/Bé-gái-3-tháng-4-tuổi-cat.16770.16775",
+      "parent": "shopee_cate_23"
+    },
+    {
+      "name": "Bé trai | 3 tháng-4 tuổi",
+      "url": "https://shopee.vn/Bé-trai-3-tháng-4-tuổi-cat.16770.16821",
+      "parent": "shopee_cate_23"
+    },
+    {
+      "name": "Sơ sinh | 0-12 tháng",
+      "url": "https://shopee.vn/Sơ-sinh-0-12-tháng-cat.16770.16829",
+      "parent": "shopee_cate_23"
+    },
+    {
+      "name": "Phụ kiện",
+      "url": "https://shopee.vn/Phụ-kiện-cat.16770.16779",
+      "parent": "shopee_cate_23"
+    },
+    {
+      "name": "Giày dép",
+      "url": "https://shopee.vn/Giày-dép-cat.16770.16781",
+      "parent": "shopee_cate_23"
+    },
+    {
+      "name": "Khác",
+      "url": "https://shopee.vn/Khác-cat.16770.16771",
+      "parent": "shopee_cate_23"
+    },
+    {
+      "name": "Túi đeo chéo nữ ",
+      "url": "https://shopee.vn/Túi-đeo-chéo-nữ-cat.162.13188",
+      "parent": "shopee_cate_24"
+    },
+    {
+      "name": "Túi xách nữ",
+      "url": "https://shopee.vn/Túi-xách-nữ-cat.162.13190",
+      "parent": "shopee_cate_24"
+    },
+    {
+      "name": "Balo thời trang",
+      "url": "https://shopee.vn/Balo-thời-trang-cat.162.13206",
+      "parent": "shopee_cate_24"
+    },
+    {
+      "name": "Ví/Bóp nữ",
+      "url": "https://shopee.vn/Ví-Bóp-nữ-cat.162.13192",
+      "parent": "shopee_cate_24"
+    },
+    {
+      "name": "Cặp văn phòng",
+      "url": "https://shopee.vn/Cặp-văn-phòng-cat.162.13194",
+      "parent": "shopee_cate_24"
+    },
+    {
+      "name": "Túi đựng tiện ích",
+      "url": "https://shopee.vn/Túi-đựng-tiện-ích-cat.162.13196",
+      "parent": "shopee_cate_24"
+    },
+    {
+      "name": "Túi vải/Túi tote",
+      "url": "https://shopee.vn/Túi-vải-Túi-tote-cat.162.13198",
+      "parent": "shopee_cate_24"
+    },
+    {
+      "name": "Phụ kiện túi ví khác",
+      "url": "https://shopee.vn/Phụ-kiện-túi-ví-khác-cat.162.13200",
+      "parent": "shopee_cate_24"
+    },
+    {
+      "name": "Nhà hàng - Ăn uống",
+      "url": "https://shopee.vn/Nhà-hàng-Ăn-uống-cat.12938.12939",
+      "parent": "shopee_cate_25"
+    },
+    {
+      "name": "Du lịch - Khách sạn",
+      "url": "https://shopee.vn/Du-lịch-Khách-sạn-cat.12938.12941",
+      "parent": "shopee_cate_25"
+    },
+    {
+      "name": "Sức khỏe - Làm đẹp",
+      "url": "https://shopee.vn/Sức-khỏe-Làm-đẹp-cat.12938.12943",
+      "parent": "shopee_cate_25"
+    },
+    {
+      "name": "Sự kiện - Giải trí",
+      "url": "https://shopee.vn/Sự-kiện-Giải-trí-cat.12938.12945",
+      "parent": "shopee_cate_25"
+    },
+    {
+      "name": "Khóa học",
+      "url": "https://shopee.vn/Khóa-học-cat.12938.12947",
+      "parent": "shopee_cate_25"
+    },
+    {
+      "name": "Nạp tiền tài khoản",
+      "url": "https://shopee.vn/Nạp-tiền-tài-khoản-cat.12938.13885",
+      "parent": "shopee_cate_25"
+    },
+    {
+      "name": "Mã Quà Tặng",
+      "url": "https://shopee.vn/Mã-Quà-Tặng-cat.12938.21930",
+      "parent": "shopee_cate_25"
+    },
+    {
+      "name": "Shopee Official",
+      "url": "https://shopee.vn/Shopee-Official-cat.12938.22091",
+      "parent": "shopee_cate_25"
+    }
+  ]
+}

@@ -1,0 +1,4261 @@
+﻿{
+  "category": [
+    {
+      "name": "Du lịch",
+      "url": "https://sendo.vn/du-lich-dich-vu/",
+      "id": "sendo_cate_1"
+    },
+    {
+      "name": "Tiện ích",
+      "url": "https://www.sendo.vn/tien-ich/",
+      "id": "sendo_cate_2"
+    },
+    {
+      "name": "Thời trang nữ",
+      "url": "https://sendo.vn/thoi-trang-nu/",
+      "id": "sendo_cate_3"
+    },
+    {
+      "name": "Thời trang nam",
+      "url": "https://sendo.vn/thoi-trang-nam/",
+      "id": "sendo_cate_4"
+    },
+    {
+      "name": "Sức khỏe",
+      "url": "https://sendo.vn/thiet-bi-y-te/",
+      "id": "sendo_cate_5"
+    },
+    {
+      "name": "Giày dép",
+      "url": "https://sendo.vn/giay-dep/",
+      "id": "sendo_cate_6"
+    },
+    {
+      "name": "Đồng hồ ",
+      "url": "https://sendo.vn/dong-ho-phu-kien/",
+      "id": "sendo_cate_7"
+    },
+    {
+      "name": "Điện thoại",
+      "url": "https://sendo.vn/cong-nghe/",
+      "id": "sendo_cate_8"
+    },
+    {
+      "name": "Phụ kiện công nghệ",
+      "url": "https://sendo.vn/phu-kien-cong-nghe/",
+      "id": "sendo_cate_9"
+    },
+    {
+      "name": "Điện gia dụng",
+      "url": "https://sendo.vn/do-dien-gia-dung/",
+      "id": "sendo_cate_10"
+    },
+    {
+      "name": "Nhà cửa",
+      "url": "https://sendo.vn/do-dung-trong-nha/",
+      "id": "sendo_cate_11"
+    },
+    {
+      "name": "Tivi",
+      "url": "https://sendo.vn/tivi-thiet-bi-giai-tri/",
+      "id": "sendo_cate_12"
+    },
+    {
+      "name": "Đời sống",
+      "url": "https://sendo.vn/khong-gian-song/",
+      "id": "sendo_cate_13"
+    },
+    {
+      "name": "Bách hóa",
+      "url": "https://sendo.vn/thuc-pham/",
+      "id": "sendo_cate_14"
+    },
+    {
+      "name": "Mẹ & bé",
+      "url": "https://sendo.vn/me-va-be/",
+      "id": "sendo_cate_15"
+    },
+    {
+      "name": "Ô tô - Xe máy",
+      "url": "https://sendo.vn/o-to-xe-may/",
+      "id": "sendo_cate_16"
+    },
+    {
+      "name": "Thể thao - Dã ngoại",
+      "url": "https://sendo.vn/the-thao-giai-tri/",
+      "id": "sendo_cate_17"
+    }
+  ],
+  "subcategory": [
+    {
+      "name": "Dịch vụ",
+      "url": "https://sendo.vn/voucher-dich-vu/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Làm đẹp",
+      "url": "https://sendo.vn/my-pham/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Túi xách",
+      "url": "https://sendo.vn/tui-xach/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Trang sức",
+      "url": "https://sendo.vn/trang-suc-thoi-trang/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Laptop",
+      "url": "https://sendo.vn/may-tinh/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Điện máy",
+      "url": "https://sendo.vn/dien-may/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Tân trang nhà",
+      "url": "https://sendo.vn/tan-trang-nha-cua/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Âm thanh",
+      "url": "https://sendo.vn/thiet-bi-am-thanh/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Camera",
+      "url": "https://sendo.vn/may-anh-may-quay-phim/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Sách - VPP",
+      "url": "https://sendo.vn/sach-van-phong-pham/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Thú cưng",
+      "url": "https://sendo.vn/cham-soc-thu-cung/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Đồ chơi",
+      "url": "https://sendo.vn/do-choi/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Xe đạp",
+      "url": "https://sendo.vn/xe-dap-phu-kien/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Mở bán chính thức vé xem đua xe F1 - giá chỉ từ 700.000vnd",
+      "url": "https://www.sendo.vn/su-kien/mo-ban-chinh-thuc-ve-f1",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Book vé máy bay tặng 200K",
+      "url": "https://www.sendo.vn/tien-ich/ve-may-bay/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Nha Trang",
+      "url": "https://www.sendo.vn/tien-ich/ve-may-bay/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Hà Nội",
+      "url": "https://www.sendo.vn/tien-ich/ve-may-bay/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Phú Quốc",
+      "url": "https://www.sendo.vn/tien-ich/ve-may-bay/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Đà Nẵng",
+      "url": "https://www.sendo.vn/tien-ich/ve-may-bay/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Đà Lạt",
+      "url": "https://www.sendo.vn/tien-ich/ve-may-bay/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Tour trọn gói",
+      "url": "https://sendo.vn/tour-tron-goi/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Tour trong nước",
+      "url": "https://sendo.vn/tour-trong-nuoc/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Tour quốc tế",
+      "url": "https://sendo.vn/tour-quoc-te/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Ẩm thực",
+      "url": "https://sendo.vn/am-thuc/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Buffet",
+      "url": "https://sendo.vn/buffet/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Lẩu, nướng",
+      "url": "https://sendo.vn/lau-nuong/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Nhà hàng",
+      "url": "https://sendo.vn/nha-hang/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Cafe-Kem-Bánh",
+      "url": "https://sendo.vn/cafe-kem-banh/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Voucher thực phẩm",
+      "url": "https://sendo.vn/voucher-thuc-pham/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Combo Vé máy bay & Khách sạn",
+      "url": "https://sendo.vn/combo-ve-may-bay-va-khach-san/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Combo trong nước",
+      "url": "https://sendo.vn/combo-trong-nuoc/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Combo quốc tế",
+      "url": "https://sendo.vn/combo-quoc-te/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Dịch vụ du lịch trong nước",
+      "url": "https://sendo.vn/dich-vu-du-lich-trong-nuoc",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Vé vui chơi & Show ",
+      "url": "https://sendo.vn/ve-vui-choi-va-show-trong-nuoc/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Vé hoạt động & trải nghiệm",
+      "url": "https://sendo.vn/ve-hoat-dong-va-trai-nghiem-trong-nuoc/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Tour tham quan ngắm cảnh",
+      "url": "https://sendo.vn/tour-tham-quan-ngam-canh-trong-nuoc/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Đưa đón sân bay",
+      "url": "https://sendo.vn/dua-don-san-bay-trong-nuoc/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Vé tàu, xe",
+      "url": "https://sendo.vn/ve-tau-xe-trong-nuoc/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Giải trí",
+      "url": "https://sendo.vn/giai-tri/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Khu Vui Chơi",
+      "url": "https://sendo.vn/khu-vui-choi/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Ca nhạc - Phim Kịch",
+      "url": "https://sendo.vn/ca-nhac-phim-kich/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Dịch vụ du lịch quốc tế",
+      "url": "https://sendo.vn/dich-vu-du-lich-quoc-te/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "SIM quốc tế",
+      "url": "https://sendo.vn/sim-du-lich-quoc-te/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Cục phát WIFI quốc tế",
+      "url": "https://sendo.vn/cuc-phat-wifi-quoc-te/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Dịch vụ làm Visa",
+      "url": "https://sendo.vn/dich-vu-visa/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Vé vui chơi & Show",
+      "url": "https://sendo.vn/ve-vui-choi-va-show-quoc-te/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Vé hoạt động & trải nghiệm",
+      "url": "https://sendo.vn/ve-hoat-dong-va-trai-nghiem-quoc-te/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Tour tham quan ngắm cảnh",
+      "url": "https://sendo.vn/tour-tham-quan-ngam-canh-quoc-te/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Đưa đón sân bay",
+      "url": "https://sendo.vn/dua-don-san-bay-quoc-te/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Vé tàu, xe",
+      "url": "https://sendo.vn/ve-tau-xe-quoc-te/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Spa-Làm đẹp",
+      "url": "https://sendo.vn/suc-khoe-lam-dep/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Spa",
+      "url": "https://sendo.vn/spa/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Nha Khoa",
+      "url": "https://sendo.vn/nha-khoa/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Salon tóc",
+      "url": "https://sendo.vn/salon-toc/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Dịch vụ chăm sóc sức khỏe",
+      "url": "https://sendo.vn/dich-vu-cham-soc-suc-khoe/",
+      "parent": "sendo_cate_1"
+    },
+    {
+      "name": "Book vé máy bay tặng 200K",
+      "url": "https://www.sendo.vn/tien-ich/ve-may-bay/",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Nha Trang",
+      "url": "https://www.sendo.vn/tien-ich/ve-may-bay/",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Hà Nội",
+      "url": "https://www.sendo.vn/tien-ich/ve-may-bay/",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Phú Quốc",
+      "url": "https://www.sendo.vn/tien-ich/ve-may-bay/",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Đà Nẵng",
+      "url": "https://www.sendo.vn/tien-ich/ve-may-bay/",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Đà Lạt",
+      "url": "https://www.sendo.vn/tien-ich/ve-may-bay/",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Nạp tiền điện thoại giảm 15%",
+      "url": "https://www.sendo.vn/tien-ich/nap-tien/",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Viettel",
+      "url": "https://www.sendo.vn/tien-ich/nap-tien/",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Mobifone",
+      "url": "https://www.sendo.vn/tien-ich/nap-tien/",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Vinaphone",
+      "url": "https://www.sendo.vn/tien-ich/nap-tien/",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Vietnamobile",
+      "url": "https://www.sendo.vn/tien-ich/nap-tien/",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Gmobile",
+      "url": "https://www.sendo.vn/tien-ich/nap-tien/",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Mua thẻ cào",
+      "url": "https://www.sendo.vn/tien-ich/the-cao",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Viettel",
+      "url": "https://www.sendo.vn/tien-ich/the-cao/#ncc=viettel",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Mobifone",
+      "url": "https://www.sendo.vn/tien-ich/the-cao/#ncc=mobifone",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Vinaphone",
+      "url": "https://www.sendo.vn/tien-ich/the-cao/#ncc=vinaphone",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Vietnamobile",
+      "url": "https://www.sendo.vn/tien-ich/the-cao/#ncc=vietnamobile",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Gmobile",
+      "url": "https://www.sendo.vn/tien-ich/the-cao/#ncc=gmobile",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Thanh toán hóa đơn",
+      "url": "https://www.sendo.vn/tien-ich/",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Đóng tiền Điện tặng 50K",
+      "url": "https://www.sendo.vn/tien-ich/hoa-don-dien/",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Điện lực TPHCM",
+      "url": "https://www.sendo.vn/tien-ich/hoa-don-dien/",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Điện lực Hà Nội",
+      "url": "https://www.sendo.vn/tien-ich/hoa-don-dien/",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Điện lực Miền Nam",
+      "url": "https://www.sendo.vn/tien-ich/hoa-don-dien/",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Điện lực Miền Bắc",
+      "url": "https://www.sendo.vn/tien-ich/hoa-don-dien/",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Điện lực Miền Trung",
+      "url": "https://www.sendo.vn/tien-ich/hoa-don-dien/",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Đóng tiền Internet tặng 50K",
+      "url": "https://www.sendo.vn/tien-ich/hoa-don-internet/",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Internet Viettel",
+      "url": "https://www.sendo.vn/tien-ich/hoa-don-internet/#ncc=viettel",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Internet FPT",
+      "url": "https://www.sendo.vn/tien-ich/hoa-don-internet/#ncc=fptsg",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Internet VNPT",
+      "url": "https://www.sendo.vn/tien-ich/hoa-don-internet/#ncc=vnpthp",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Internet SST",
+      "url": "https://www.sendo.vn/tien-ich/hoa-don-internet/#ncc=sst",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Internet SPT",
+      "url": "https://www.sendo.vn/tien-ich/hoa-don-internet/#ncc=spt",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Internet SGT",
+      "url": "https://www.sendo.vn/tien-ich/hoa-don-internet/#ncc=sgt",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Đóng tiền Nước tặng 50K",
+      "url": "https://www.sendo.vn/tien-ich/hoa-don-nuoc/",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Thẻ game",
+      "url": "https://www.sendo.vn/tien-ich/the-game/",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Zing",
+      "url": "https://www.sendo.vn/tien-ich/the-game/#ncc=zing",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Garena",
+      "url": "https://www.sendo.vn/tien-ich/the-game/#ncc=garena",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Vcoin",
+      "url": "https://www.sendo.vn/tien-ich/the-game/#ncc=vcoin",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Ongame",
+      "url": "https://www.sendo.vn/tien-ich/the-game/#ncc=ongame",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Gate",
+      "url": "https://www.sendo.vn/tien-ich/the-game/#ncc=gate",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Thẻ Data 3G/4G",
+      "url": "https://www.sendo.vn/tien-ich/the-du-lieu/",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Thẻ Data Viettel",
+      "url": "https://www.sendo.vn/tien-ich/the-du-lieu/#ncc=viettel",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Thẻ Data Mobifone",
+      "url": "https://www.sendo.vn/tien-ich/the-du-lieu/#ncc=mobifone",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Quyên góp từ thiện",
+      "url": "https://www.sendo.vn/tien-ich/tu-thien/",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_2"
+    },
+    {
+      "name": "Đầm, váy",
+      "url": "https://sendo.vn/dam/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Đầm suông",
+      "url": "https://sendo.vn/dam-suong/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Đầm xòe",
+      "url": "https://sendo.vn/dam-xoe/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Đầm maxi",
+      "url": "https://sendo.vn/dam-maxi/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Đầm ôm",
+      "url": "https://sendo.vn/dam-om/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Áo nữ",
+      "url": "https://sendo.vn/ao-nu/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Áo sơ mi",
+      "url": "https://sendo.vn/ao-so-mi-cong-so/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Áo thun, áo polo",
+      "url": "https://sendo.vn/ao-thun-co-tay/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Áo kiểu nữ",
+      "url": "https://sendo.vn/ao-kieu/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Áo trễ vai",
+      "url": "https://sendo.vn/ao-tre-vai/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Áo khoác nữ",
+      "url": "https://sendo.vn/ao-khoac/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Áo khoác chống nắng",
+      "url": "https://sendo.vn/ao-khoac-chong-nang/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Áo khoác kiểu nữ",
+      "url": "https://sendo.vn/ao-khoac-cach-dieu/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Áo khoác vest, blazer",
+      "url": "https://sendo.vn/ao-khoac-vest-blazer/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Áo khoác jean",
+      "url": "https://sendo.vn/ao-khoac-jean/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Quần nữ",
+      "url": "https://sendo.vn/quan-nu/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Quần jean nữ",
+      "url": "https://sendo.vn/quan-jean/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Quần baggy",
+      "url": "https://sendo.vn/quan-baggy/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Quần legging nữ",
+      "url": "https://sendo.vn/quan-legging/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Quần short nữ",
+      "url": "https://sendo.vn/quan-short-nu/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Set bộ, jumpsuit",
+      "url": "https://sendo.vn/set-trang-phuc/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Chân váy",
+      "url": "https://sendo.vn/vay/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Đồ bơi, đồ đi biển",
+      "url": "https://sendo.vn/do-boi/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Bộ đồ bơi",
+      "url": "https://sendo.vn/bikini/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Quần áo cover-up",
+      "url": "https://sendo.vn/quan-ao-vay-di-bien/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Đồ mặc nhà, đồ ngủ",
+      "url": "https://sendo.vn/do-mac-nha-do-ngu/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Đồ lót nữ",
+      "url": "https://sendo.vn/do-lot-va-ngu/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Quần áo thể thao nữ",
+      "url": "https://sendo.vn/quan-ao-the-thao-nu/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Đồ đôi nam nữ",
+      "url": "https://sendo.vn/do-doi-nam-nu/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Vải may mặc",
+      "url": "https://sendo.vn/vai-nguyen-phu-lieu-may-mac/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Phụ kiện thời trang",
+      "url": "https://sendo.vn/phu-kien-thoi-trang/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Phụ kiện tóc nữ",
+      "url": "https://sendo.vn/phu-kien-toc/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Nón",
+      "url": "https://sendo.vn/non/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Găng tay nữ",
+      "url": "https://sendo.vn/gang-tay-nu/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Tất, vớ nữ",
+      "url": "https://sendo.vn/vo-tat-nu/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Kính râm, kính mát nữ",
+      "url": "https://sendo.vn/kinh-ram-kinh-mat/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Gọng kính",
+      "url": "https://sendo.vn/gong-kinh/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Kính áp tròng",
+      "url": "https://sendo.vn/kinh-ap-trong-lens/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Khăn choàng cổ nữ",
+      "url": "https://sendo.vn/khan-choang-co-nu/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Nơ cổ, cài áo nữ",
+      "url": "https://sendo.vn/cai-ao/",
+      "parent": "sendo_cate_3"
+    },
+    {
+      "name": "Áo sơ mi nam",
+      "url": "https://sendo.vn/ao-so-mi-nam/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Áo sơ mi nam trơn",
+      "url": "https://sendo.vn/ao-so-mi-nam-tron/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Áo sơ mi nam caro",
+      "url": "https://sendo.vn/ao-so-mi-nam-ca-ro/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Áo sơ mi nam họa tiết",
+      "url": "https://sendo.vn/ao-so-mi-nam-hoa-tiet/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Áo sơ mi nam kẻ sọc",
+      "url": "https://sendo.vn/ao-so-mi-nam-ke-soc/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Áo khoác nam",
+      "url": "https://sendo.vn/ao-khoac-nam/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Áo khoác dù nam",
+      "url": "https://sendo.vn/ao-khoac-du-nam/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Áo khoác kaki nam",
+      "url": "https://sendo.vn/ao-khoac-kaki-nam/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Áo khoác nam chống nắng",
+      "url": "https://sendo.vn/ao-khoac-chong-nang-cho-nam/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Áo khoác jeans nam",
+      "url": "https://sendo.vn/ao-khoac-jean-nam/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Quần Jeans nam",
+      "url": "https://sendo.vn/quan-jeans-nam/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Quần short nam",
+      "url": "https://sendo.vn/quan-shorts-nam/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Quần áo big size nam",
+      "url": "https://sendo.vn/thoi-trang-nam-big-size/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Đồ lót và đồ ngủ nam",
+      "url": "https://sendo.vn/do-lot-va-do-ngu-nam/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Áo thun, áo polo nam",
+      "url": "https://sendo.vn/ao-nam/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Áo thun dài tay",
+      "url": "https://sendo.vn/ao-thun-dai-tay/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Áo polo nam",
+      "url": "https://sendo.vn/ao-polo-nam/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Áo thun nam ngắn tay",
+      "url": "https://sendo.vn/ao-thun-nam-ngan-tay/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Áo hoodie nam",
+      "url": "https://sendo.vn/ao-hoodie-nam/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Quần dài nam",
+      "url": "https://sendo.vn/quan-dai-nam/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Quần kaki nam",
+      "url": "https://sendo.vn/quan-kaki-cho-nam/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Quần tây",
+      "url": "https://sendo.vn/quan-tay-cho-nam/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Áo vest nam",
+      "url": "https://sendo.vn/ao-vest/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Bộ đồ vest",
+      "url": "https://sendo.vn/bo-do-vest/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Quần áo thể thao nam",
+      "url": "https://sendo.vn/do-the-thao/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Bộ quần áo thể thao nam",
+      "url": "https://sendo.vn/bo-quan-ao-the-thao-nam/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Áo thể thao, tập gym",
+      "url": "https://sendo.vn/ao-the-thao/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Quần thể thao, tập gym",
+      "url": "https://sendo.vn/quan-the-thao/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Phụ kiện thời trang",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Kính râm, kính mát nam",
+      "url": "https://sendo.vn/kinh-mat-nam/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Mũ lưỡi trai",
+      "url": "https://sendo.vn/non-ket-non-luoi-trai/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Thắt lưng nam",
+      "url": "https://sendo.vn/that-lung-nam-ban-to/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Găng tay nam",
+      "url": "https://sendo.vn/gang-tay-nam/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Vớ, tất nam",
+      "url": "https://sendo.vn/vo-tat-nam/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Cà vạt",
+      "url": "https://sendo.vn/ca-vat-no-cai-ao/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Khăn choàng cổ nam",
+      "url": "https://sendo.vn/khan-choang-co-nam/",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_4"
+    },
+    {
+      "name": "Dưỡng da mặt",
+      "url": "https://sendo.vn/duong-da-mat/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Kem dưỡng da",
+      "url": "https://sendo.vn/kem-duong-da/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Điều trị, chăm sóc da mụn",
+      "url": "https://sendo.vn/kem-lot-tri-mun/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Kem làm trắng",
+      "url": "https://sendo.vn/kem-lam-trang/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Dưỡng vùng mắt",
+      "url": "https://sendo.vn/duong-vung-mat/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Kem chống nắng",
+      "url": "https://sendo.vn/kem-chong-nang/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Làm sạch da mặt",
+      "url": "https://sendo.vn/lam-sach-da-mat/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Sửa rửa mặt",
+      "url": "https://sendo.vn/sua-rua-mat/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Nước hoa hồng, toner",
+      "url": "https://sendo.vn/nuoc-hoa-hong-toner/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Mặt nạ dưỡng da",
+      "url": "https://sendo.vn/mat-na-duong-da/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Chăm sóc sức khỏe",
+      "url": "https://sendo.vn/cham-soc-suc-khoe/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Cân sức khỏe",
+      "url": "https://sendo.vn/can-suc-khoe/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Máy đo huyết áp",
+      "url": "https://sendo.vn/may-do-huyet-ap/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Vớ, đai, nịt y khoa",
+      "url": "https://sendo.vn/vo-dai-nit-y-khoa/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Nước hoa",
+      "url": "https://sendo.vn/nuoc-hoa/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Trang điểm mặt",
+      "url": "https://sendo.vn/trang-diem-mat/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Trang điểm môi",
+      "url": "https://sendo.vn/trang-diem-moi/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Trang điểm đôi mắt",
+      "url": "https://sendo.vn/trang-diem-doi-mat/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Dụng cụ trang điểm",
+      "url": "https://sendo.vn/phu-kien-trang-diem/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Chăm sóc cơ thể",
+      "url": "https://sendo.vn/tam-va-cham-soc-co-the/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Chăm sóc tóc",
+      "url": "https://sendo.vn/toc/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Tóc giả nữ",
+      "url": "https://sendo.vn/toc-gia/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Kem ủ, hấp tóc",
+      "url": "https://sendo.vn/dau-duong-toc/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Gel tạo kiểu tóc",
+      "url": "https://sendo.vn/gel-tao-kieu-toc/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Thiết bị massage",
+      "url": "https://sendo.vn/thiet-bi-massage/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Gối massage",
+      "url": "https://sendo.vn/goi-massage/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Máy massage cầm tay",
+      "url": "https://sendo.vn/may-massage-cam-tay/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Đai massage",
+      "url": "https://sendo.vn/dai-massage/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Thiết bị chăm sóc cá nhân",
+      "url": "https://sendo.vn/dung-cu-cham-soc/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Lược điện",
+      "url": "https://sendo.vn/luoc-dien/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Máy, dụng cụ cạo râu, lông",
+      "url": "https://sendo.vn/may-cao-rau/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Máy tạo kiểu tóc",
+      "url": "https://sendo.vn/may-tao-kieu-toc/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Máy xông mặt",
+      "url": "https://sendo.vn/may-xong-mat/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Thực phẩm chức năng",
+      "url": "https://sendo.vn/duoc-pham-sac-dep/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Mỹ phẩm nam",
+      "url": "https://sendo.vn/my-pham-nam/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Lăn, xịt khử mùi cho nam",
+      "url": "https://sendo.vn/san-pham-khu-mui/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Bao cao su",
+      "url": "https://sendo.vn/bao-cao-su/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Mỹ phẩm organic",
+      "url": "https://sendo.vn/my-pham-handmade/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Vật tư y tế",
+      "url": "https://sendo.vn/vat-tu-y-te/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Xe lăn, xe điện",
+      "url": "https://sendo.vn/xe-lan-xe-dien/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Dụng cụ chuyên khoa",
+      "url": "https://sendo.vn/dung-cu-y-te/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Dụng cụ tai mũi họng",
+      "url": "https://sendo.vn/dung-cu-tai-mui-hong/",
+      "parent": "sendo_cate_5"
+    },
+    {
+      "name": "Giày sneaker nữ",
+      "url": "https://sendo.vn/giay-sneaker-the-thao-nu/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Giày cao gót nữ",
+      "url": "https://sendo.vn/giay-dep-cao-got-nu/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Giày lười, giày mọi nữ",
+      "url": "https://sendo.vn/giay-luoi-giay-moi-slip-on-nu/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Sandal nữ",
+      "url": "https://sendo.vn/giay-sandals-nu/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Giày búp bê",
+      "url": "https://sendo.vn/giay-bup-be/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Dép nữ",
+      "url": "https://sendo.vn/dep-nu/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Giày boot nữ",
+      "url": "https://sendo.vn/giay-bot-nu/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Ví, bóp nữ",
+      "url": "https://sendo.vn/vi-bop-nu/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Túi xách nữ",
+      "url": "https://sendo.vn/tui-xach-nu/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Túi xách tay nữ",
+      "url": "https://sendo.vn/tui-xach-tay-nu/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Túi đeo chéo nữ",
+      "url": "https://sendo.vn/tui-deo-cheo-nu/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Túi bản to, đeo vai",
+      "url": "https://sendo.vn/tui-ban-to-deo-vai/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Giày sneaker nam",
+      "url": "https://sendo.vn/giay-sneaker-the-thao-nam/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Giày tây",
+      "url": "https://sendo.vn/giay-tay-nam/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Giày lười, giày mọi nam",
+      "url": "https://sendo.vn/giay-moi-giay-luoi-nam/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Sandal nam",
+      "url": "https://sendo.vn/giay-sandal-nam/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Giày tăng chiều cao nam",
+      "url": "https://sendo.vn/giay-tang-chieu-cao-nam/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Dép nam",
+      "url": "https://sendo.vn/dep-nam/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Giày boot nam",
+      "url": "https://sendo.vn/giay-bot-nam/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Ví, bóp nam",
+      "url": "https://sendo.vn/vi-bop-nam/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Túi xách nam",
+      "url": "https://sendo.vn/tui-xach-nam/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Túi xách tay, cặp nam",
+      "url": "https://sendo.vn/tui-xach-tay-cap-nam/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Túi đeo chéo nam",
+      "url": "https://sendo.vn/tui-deo-cheo-nam/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Túi bao tử, đeo bụng",
+      "url": "https://sendo.vn/tui-bao-tu-tui-deo-bung/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Giày thể thao chuyên dụng",
+      "url": "https://sendo.vn/giay-the-thao-chuyen-dung/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Giày chạy bộ, tập gym",
+      "url": "https://sendo.vn/giay-chay-bo-tap-gym/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Giày đá bóng",
+      "url": "https://sendo.vn/giay-dinh/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Giày cầu lông",
+      "url": "https://sendo.vn/giay-cau-long/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Phụ kiện giày dép",
+      "url": "https://sendo.vn/phu-kien-giay-dep/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Giày, dép Unisex",
+      "url": "https://sendo.vn/giay-dep-unisex/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Giày, dép nhựa đi mưa",
+      "url": "https://sendo.vn/giay-dep-nhua-di-mua/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Balo",
+      "url": "https://sendo.vn/balo/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Balo nam",
+      "url": "https://sendo.vn/balo-nam/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Balo nữ",
+      "url": "https://sendo.vn/balo-nu/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Vali - Túi xách du lịch",
+      "url": "https://sendo.vn/vali-tui-xach-du-lich/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Túi laptop, ipad, điện thoại",
+      "url": "https://sendo.vn/tui-laptop-ipad-dien-thoai/",
+      "parent": "sendo_cate_6"
+    },
+    {
+      "name": "Đồng hồ nam",
+      "url": "https://sendo.vn/dong-ho-nam/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Đồng hồ kim",
+      "url": "https://sendo.vn/dong-ho-kim/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Đồng hồ lộ máy",
+      "url": "https://sendo.vn/dong-ho-lo-may/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Đồng hồ thể thao nam",
+      "url": "https://sendo.vn/dong-ho-the-thao/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Đồng hồ điện tử",
+      "url": "https://sendo.vn/dong-ho-dien-tu/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Đồng hồ nữ",
+      "url": "https://sendo.vn/dong-ho-nu/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Đồng hồ thời trang",
+      "url": "https://sendo.vn/dong-ho-thoi-trang/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Đồng hồ vòng tay, lắc dây",
+      "url": "https://sendo.vn/dong-ho-vong-tay-lac-day/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Đồng hồ thể thao nữ",
+      "url": "https://sendo.vn/dong-ho-the-thao-1/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Đồng hồ đôi",
+      "url": "https://sendo.vn/dong-ho-doi/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Đồng hồ trẻ em",
+      "url": "https://sendo.vn/dong-ho-cho-be/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Đồng hồ bé gái",
+      "url": "https://sendo.vn/dong-ho-be-gai/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Đồng hồ bé trai",
+      "url": "https://sendo.vn/dong-ho-be-trai/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Phụ kiện đồng hồ",
+      "url": "https://sendo.vn/phu-kien-dong-ho/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Trang sức phong thủy",
+      "url": "https://sendo.vn/trang-suc-theo-phong-thuy/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Vòng tay phong thủy",
+      "url": "https://sendo.vn/vong-tay-phong-thuy/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Mặt dây chuyền phong thủy",
+      "url": "https://sendo.vn/mat-day-chuyen-phong-thuy/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Nhẫn đá phong thủy",
+      "url": "https://sendo.vn/nhan-da-phong-thuy/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Đá phong thủy",
+      "url": "https://sendo.vn/da-phong-thuy/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Vòng, lắc tay",
+      "url": "https://sendo.vn/vong-lac-tay/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Vòng tay chuỗi hạt",
+      "url": "https://sendo.vn/vong-tay-chuoi-hat/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Vòng tay kim loại",
+      "url": "https://sendo.vn/vong-tay-kim-loai/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Lắc tay",
+      "url": "https://sendo.vn/lac-tay/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Dây chuyền, vòng cổ",
+      "url": "https://sendo.vn/day-chuyen-vong-co/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Dây chuyền mặt",
+      "url": "https://sendo.vn/day-chuyen-mat/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Dây chuyền xích, không mặt",
+      "url": "https://sendo.vn/day-chuyen-xich-khong-mat/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Mặt dây chuyền",
+      "url": "https://sendo.vn/trang-suc-mat-day-chuyen/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Vòng cổ choker",
+      "url": "https://sendo.vn/vong-co-choker/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Nhẫn",
+      "url": "https://sendo.vn/trang-suc-nhan/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Nhẫn có mặt",
+      "url": "https://sendo.vn/nhan-co-mat/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Nhẫn trơn",
+      "url": "https://sendo.vn/nhan-tron/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Nhẫn midi",
+      "url": "https://sendo.vn/nhan-midi/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Charm",
+      "url": "https://sendo.vn/charm/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Bông tai, khuyên tai",
+      "url": "https://sendo.vn/khuyen-tai/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Khuyên tai nụ",
+      "url": "https://sendo.vn/khuyen-tai-nu/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Khuyên tai thả",
+      "url": "https://sendo.vn/khuyen-tai-dai/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Khuyên tai tròn",
+      "url": "https://sendo.vn/khuyen-tai-tron/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Bộ trang sức",
+      "url": "https://sendo.vn/set-bo-trang-suc/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Trang sức cặp đôi",
+      "url": "https://sendo.vn/trang-suc-cap-doi/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Nhẫn cặp",
+      "url": "https://sendo.vn/nhan-cap/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Dây chuyền cặp",
+      "url": "https://sendo.vn/day-chuyen-mat-day-chuyen-cap/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Trang sức cho bé",
+      "url": "https://sendo.vn/trang-suc-cho-be/",
+      "parent": "sendo_cate_7"
+    },
+    {
+      "name": "Điện thoại mới",
+      "url": "https://sendo.vn/thiet-bi-di-dong/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Smartphone mới",
+      "url": "https://sendo.vn/smartphone/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Điện thoại phổ thông mới",
+      "url": "https://sendo.vn/dien-thoai-di-dong/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "iPhone mới",
+      "url": "https://sendo.vn/iphone/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Máy tính bảng mới",
+      "url": "https://sendo.vn/may-tinh-bang/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Máy tính bảng Android mới",
+      "url": "https://sendo.vn/may-tinh-bang-android/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "iPad mới",
+      "url": "https://sendo.vn/ipad/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Thương hiệu nổi bật",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Samsung",
+      "url": "https://sendo.vn/tim-kiem/?q=samsung&search_algo=new&category_id=1663",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Apple",
+      "url": "https://sendo.vn/thiet-bi-di-dong/?hang_san_xuat_2=18498",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Nokia",
+      "url": "https://sendo.vn/tim-kiem/?q=nokia&search_algo=new&category_id=1663",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Oppo",
+      "url": "https://sendo.vn/tim-kiem/?q=oppo&search_algo=new&category_id=1663",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Xiaomi",
+      "url": "https://sendo.vn/tim-kiem/?q=xiaomi&search_algo=new&category_id=1663",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Blackberry",
+      "url": "https://sendo.vn/tim-kiem/?q=blackberry&search_algo=new&category_id=1663",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Sony",
+      "url": "https://sendo.vn/thiet-bi-di-dong/?hang_san_xuat_2=18501",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "HTC",
+      "url": "https://sendo.vn/thiet-bi-di-dong/?hang_san_xuat_2=18503",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Điện thoại cũ",
+      "url": "https://sendo.vn/may-da-qua-su-dung/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Smartphone cũ",
+      "url": "https://sendo.vn/smartphone-cu/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "iPhone cũ",
+      "url": "https://sendo.vn/iphone-cu/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Điện thoại phổ thông cũ",
+      "url": "https://sendo.vn/dien-thoai-pho-thong-cu/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Nokia cổ - cũ",
+      "url": "https://sendo.vn/dien-thoai-cu/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Máy tính bảng cũ",
+      "url": "https://sendo.vn/may-tinh-bang-cu/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Ipad cũ",
+      "url": "https://sendo.vn/ipad-cu/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Xu hướng",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Điện thoại mới dưới 499K",
+      "url": "https://sendo.vn/thiet-bi-di-dong/?ltprice=499000",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Smartphone mới dưới 3 triệu",
+      "url": "https://sendo.vn/smartphone/?ltprice=3000000",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Điện thoại cũ dưới 299K",
+      "url": "https://sendo.vn/may-da-qua-su-dung/?ltprice=299000",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Nokia 1280 cổ",
+      "url": "https://sendo.vn/dien-thoai-cu/?q=1280&search_algo=new",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Nokia 1100i cổ",
+      "url": "https://sendo.vn/dien-thoai-cu/?q=1100i&search_algo=new",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "iPhone 5/5S cũ",
+      "url": "https://sendo.vn/iphone-cu/?q=5+5s&search_algo=new",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Samsung Galaxy cũ",
+      "url": "https://sendo.vn/smartphone-cu/?q=galaxy&search_algo=new",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Sony Xperia cũ",
+      "url": "https://sendo.vn/smartphone-cu/?q=xperia&search_algo=new",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Laptop mới",
+      "url": "https://sendo.vn/laptop/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Laptop cũ",
+      "url": "https://sendo.vn/laptop-cu/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Máy tính để bàn",
+      "url": "https://sendo.vn/pc/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Linh kiện máy tính, laptop",
+      "url": "https://sendo.vn/linh-kien-may-tinh-laptop/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Card màn hình",
+      "url": "https://sendo.vn/card-man-hinh/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Ổ cứng",
+      "url": "https://sendo.vn/o-cung-gan-trong/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "RAM máy tính",
+      "url": "https://sendo.vn/ram-may-tinh/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Chuột, bàn phím",
+      "url": "https://sendo.vn/chuot-ban-phim/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Bàn phím có dây",
+      "url": "https://sendo.vn/ban-phim-co-day/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Bàn phím không dây",
+      "url": "https://sendo.vn/ban-phim-khong-day/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Chuột không dây",
+      "url": "https://sendo.vn/chuot-khong-day/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Chuột có dây",
+      "url": "https://sendo.vn/chuot-co-day/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Phụ kiện máy tính, laptop",
+      "url": "https://sendo.vn/phu-kien-may-tinh-laptop/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Máy in & Phụ kiện",
+      "url": "https://sendo.vn/may-in/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Máy chiếu & Phụ kiện",
+      "url": "https://sendo.vn/may-chieu-va-phu-kien/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Phần mềm máy tính",
+      "url": "https://sendo.vn/phan-mem/",
+      "parent": "sendo_cate_8"
+    },
+    {
+      "name": "Ốp lưng điện thoại, tablet",
+      "url": "https://sendo.vn/op-lung-dien-thoai-tablet/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Ốp mặt lưng cho điện thoại",
+      "url": "https://sendo.vn/op-mat-lung-cho-dien-thoai/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Bao da, ốp lưng nắp gập",
+      "url": "https://sendo.vn/op-lung-nap-gap-gia-da/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Ốp lưng, bao da tablet",
+      "url": "https://sendo.vn/op-lung-bao-da-may-tinh-bang/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Ốp lưng kiêm sạc dự phòng",
+      "url": "https://sendo.vn/op-lung-kiem-sac-du-phong/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Ốp lưng đính đá",
+      "url": "https://sendo.vn/op-lung-dinh-da/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Thiết bị đeo công nghệ",
+      "url": "https://sendo.vn/thiet-bi-deo-cong-nghe/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Đồng hồ thông minh",
+      "url": "https://sendo.vn/dong-ho-thong-minh/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Kính thực tế ảo VR",
+      "url": "https://sendo.vn/kinh-thuc-te-ao/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Vòng theo dõi sức khỏe",
+      "url": "https://sendo.vn/vong-theo-doi-suc-khoe/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Đồng hồ định vị trẻ em",
+      "url": "https://sendo.vn/dong-ho-dinh-vi-tre-em/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Thiết bị mạng",
+      "url": "https://sendo.vn/thiet-bi-mang/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Thiết bị phát Wifi di động",
+      "url": "https://sendo.vn/thiet-bi-phat-song-wifi-3g/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Bộ kích sóng Wifi",
+      "url": "https://sendo.vn/bo-kich-song-wifi/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Router Wifi/LAN",
+      "url": "https://sendo.vn/router/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Phụ kiện điện thoại, tablet",
+      "url": "https://sendo.vn/phu-kien-dien-thoai-may-tinh-bang/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Giá đỡ, móc dán",
+      "url": "https://sendo.vn/gia-do-de-kep/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Miếng dán màn hình",
+      "url": "https://sendo.vn/mieng-dan-bao-ve-trang-tri/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Gậy tự sướng",
+      "url": "https://sendo.vn/gay-selfie/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Lens chụp hình",
+      "url": "https://sendo.vn/lens-chup-hinh/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Bàn phím rời tablet",
+      "url": "https://sendo.vn/ban-phim-may-tinh-bang/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Sạc điện thoại, tablet",
+      "url": "https://sendo.vn/pin-cap-sac-sac-du-phong/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Pin sạc dự phòng",
+      "url": "https://sendo.vn/pin-sac-du-phong/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Cốc sạc, bộ sạc đa năng",
+      "url": "https://sendo.vn/coc-sac-bo-sac-da-nang/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Bộ sạc không dây",
+      "url": "https://sendo.vn/bo-sac-khong-day/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Sạc điện thoại trên ô tô",
+      "url": "https://sendo.vn/sac-dien-thoai-tren-o-to/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Thiết bị lưu trữ",
+      "url": "https://sendo.vn/thiet-bi-luu-tru/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Thẻ nhớ",
+      "url": "https://sendo.vn/the-nho/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "USB",
+      "url": "https://sendo.vn/usb/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Ổ cứng di động",
+      "url": "https://sendo.vn/o-cung-di-dong/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Cáp sạc, cáp kết nối",
+      "url": "https://sendo.vn/cap-sac-cap-ket-noi/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Các loại cáp chuyển đổi",
+      "url": "https://sendo.vn/cac-loai-cap-chuyen-doi/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Dây Cáp HDMI, DP, VGA",
+      "url": "https://sendo.vn/day-cap-hdmi-dp-dvi-vga/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Cáp sạc iPhone/iPad",
+      "url": "https://sendo.vn/cap-sac-iphone-ipad/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Cáp sạc Micro USB",
+      "url": "https://sendo.vn/cap-sac-micro-usb/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Cáp sạc đa năng",
+      "url": "https://sendo.vn/cap-sac-da-nang/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "SIM card, dụng cụ chuyển đổi",
+      "url": "https://sendo.vn/sim-card-dung-cu-chuyen-doi-sim/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "SIM điện thoại",
+      "url": "https://sendo.vn/sim-so-dien-thoai/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Thẻ điện thoại, thẻ game",
+      "url": "https://sendo.vn/the-dien-thoai-the-game/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Khay SIM đa năng",
+      "url": "https://sendo.vn/khay-sim-da-nang/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Linh kiện điện thoại, tablet",
+      "url": "https://sendo.vn/linh-kien-dien-thoai-may-tinh-bang/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Pin điện thoại di động",
+      "url": "https://sendo.vn/pin-dien-thoai/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Vỏ điện thoại, tablet",
+      "url": "https://sendo.vn/vo-dien-thoai-may-tinh-bang/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Dụng cụ sửa chữa",
+      "url": "https://sendo.vn/dung-cu-sua-chua-dien-thoai-may-tinh-bang/",
+      "parent": "sendo_cate_9"
+    },
+    {
+      "name": "Máy xay, máy ép",
+      "url": "https://sendo.vn/may-xay-may-ep/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Máy xay sinh tố",
+      "url": "https://sendo.vn/may-xay-sinh-to/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Máy ép trái cây",
+      "url": "https://sendo.vn/may-ep-trai-cay/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Máy xay thịt",
+      "url": "https://sendo.vn/may-xay-thit/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Máy xay ép đa năng",
+      "url": "https://sendo.vn/may-xay-ep-da-nang/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Máy xay cầm tay",
+      "url": "https://sendo.vn/may-xay-cam-tay/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Máy vắt cam",
+      "url": "https://sendo.vn/may-vat-cam/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Máy bào đá",
+      "url": "https://sendo.vn/may-bao-da/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Quạt",
+      "url": "https://sendo.vn/quat/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Quạt hơi nước, điều hòa",
+      "url": "https://sendo.vn/quat-hoi-nuoc-dieu-hoa/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Quạt mini để bàn",
+      "url": "https://sendo.vn/quat-mini-de-ban/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Quạt sạc",
+      "url": "https://sendo.vn/quat-sac/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Quạt đứng, quạt hộp",
+      "url": "https://sendo.vn/quat-dung-quat-hop/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Quạt treo tường",
+      "url": "https://sendo.vn/quat-treo-tuong/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Quạt xoay treo trần",
+      "url": "https://sendo.vn/quat-xoay-treo-tran",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Thiết bị điện nhà bếp",
+      "url": "https://sendo.vn/thiet-bi-nha-bep-che-bien/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Máy làm tỏi đen",
+      "url": "https://sendo.vn/may-lam-toi-den/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Máy làm sữa đậu nành",
+      "url": "https://sendo.vn/may-lam-sua-dau-nanh/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Máy đánh trứng",
+      "url": "https://sendo.vn/may-danh-trung/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Máy pha, xay cà phê",
+      "url": "https://sendo.vn/may-pha-ca-phe/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Lò nướng, bếp nướng",
+      "url": "https://sendo.vn/lo-nuong-bep-nuong/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Lò nướng",
+      "url": "https://sendo.vn/lo-nuong/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Bếp nướng điện",
+      "url": "https://sendo.vn/bep-nuong-dien/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Máy lọc, điều hòa không khí",
+      "url": "https://sendo.vn/thiet-bi-dieu-hoa-khong-khi/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Máy phun sương tạo ẩm",
+      "url": "https://sendo.vn/may-hut-am-mini/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Máy lọc không khí",
+      "url": "https://sendo.vn/may-loc-khong-khi",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Máy hút ẩm",
+      "url": "https://sendo.vn/may-hut-am/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Đèn sưởi, máy sưởi điện",
+      "url": "https://sendo.vn/den-suoi-may-suoi-dien/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Máy hút bụi",
+      "url": "https://sendo.vn/may-hut-bui/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Máy nước nóng",
+      "url": "https://sendo.vn/binh-may-nuoc-nong/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Nồi điện, nồi cơm điện",
+      "url": "https://sendo.vn/noi-dien-noi-com-dien/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Nồi cơm điện",
+      "url": "https://sendo.vn/noi-com-dien/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Nồi điện đa năng",
+      "url": "https://sendo.vn/noi-dien-da-nang",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Nồi chiên không dầu",
+      "url": "https://sendo.vn/noi-chien/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Bếp điện, ấm đun",
+      "url": "https://sendo.vn/bep-dien-am-dun/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Bếp hồng ngoại",
+      "url": "https://sendo.vn/bep-hong-ngoai/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Bếp điện từ",
+      "url": "https://sendo.vn/bep-dien-tu/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Ấm đun nước, bình thủy điện",
+      "url": "https://sendo.vn/am-dun-nuoc-binh-thuy-dien/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Thiết bị chăm sóc quần áo",
+      "url": "https://sendo.vn/thiet-bi-cham-soc-quan-ao",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Máy may, thêu, vắt sổ",
+      "url": "https://sendo.vn/may-may-theu-vat-so/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Bàn ủi, bàn là",
+      "url": "https://sendo.vn/ban-ui-ban-la/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Tủ sấy quần áo",
+      "url": "https://sendo.vn/tu-say-kho-quan-ao/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Tủ lạnh, tủ đông, tủ mát",
+      "url": "https://sendo.vn/dien-nong-lanh/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Máy lạnh, máy điều hòa",
+      "url": "https://sendo.vn/may-lanh-may-dieu-hoa/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Máy giặt, máy sấy",
+      "url": "https://sendo.vn/may-giat-may-say/",
+      "parent": "sendo_cate_10"
+    },
+    {
+      "name": "Đồ dùng sinh hoạt",
+      "url": "https://sendo.vn/do-dung-sinh-hoat/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Tủ nhựa",
+      "url": "https://sendo.vn/tu-nhua/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Tủ vải",
+      "url": "https://sendo.vn/tu-vai",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Hộp, thùng đựng đồ",
+      "url": "https://sendo.vn/hop-thung-dung-do/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Hộp cơm & túi giữ nhiệt",
+      "url": "https://sendo.vn/hop-dung-com-va-tui-giu-nhiet/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Đồ đi mưa",
+      "url": "https://sendo.vn/do-di-mua",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Vệ sinh, chăm sóc nhà cửa",
+      "url": "https://sendo.vn/ve-sinh-cham-soc-nha-cua/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Vòi xịt rửa",
+      "url": "https://sendo.vn/voi-xit-rua/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Đuổi, bắt, diệt côn trùng",
+      "url": "https://sendo.vn/dung-dich-diet-con-trung/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Máy cơ khí và chế tạo",
+      "url": "https://sendo.vn/may-co-khi-va-che-tao/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Máy khoan",
+      "url": "https://sendo.vn/may-khoan/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Máy hàn",
+      "url": "https://sendo.vn/may-han/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Máy cắt",
+      "url": "https://sendo.vn/may-cat/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Máy mài",
+      "url": "https://sendo.vn/may-mai/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Máy vặn vít",
+      "url": "https://sendo.vn/may-van-vit/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Phụ kiện máy cơ khí chế tạo",
+      "url": "https://sendo.vn/phu-kien-may-co-khi-va-che-tao/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Đồ dùng nấu bếp",
+      "url": "https://sendo.vn/do-dung-nau-bep/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Giá, kệ để gọn đồ",
+      "url": "https://sendo.vn/gia-ke-de-gon-do/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Nồi",
+      "url": "https://sendo.vn/noi/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Bếp ga",
+      "url": "https://sendo.vn/bep-ga/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Hộp, lọ thực phẩm gia vị",
+      "url": "https://sendo.vn/hop-lo-khay-dung-thuc-pham-gia-vi/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Đồ dùng phòng ăn, uống",
+      "url": "https://sendo.vn/do-dung-an/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Dụng cụ làm bánh, kem",
+      "url": "https://sendo.vn/dung-cu-lam-banh-kem",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Nội thất phòng khách",
+      "url": "https://sendo.vn/noi-that-phong-khach/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Nội thất phòng làm việc",
+      "url": "https://sendo.vn/noi-that-phong-lam-viec/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Dụng cụ cầm tay",
+      "url": "https://sendo.vn/dung-cu-cam-tay/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Bộ dụng cụ cầm tay",
+      "url": "https://sendo.vn/bo-dung-cu-da-nang/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Kìm cắt, kim bấm",
+      "url": "https://sendo.vn/kim-cat-kim-bam/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Băng keo chuyên dụng",
+      "url": "https://sendo.vn/bang-dinh-bang-keo-chuyen-dung/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Các loại đèn",
+      "url": "https://sendo.vn/cac-loai-den/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Bóng đèn và phụ kiện đèn",
+      "url": "https://sendo.vn/bong-den-va-phu-kien-den/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Thiết bị điện và phụ kiện",
+      "url": "https://sendo.vn/thiet-bi-dien-va-phu-kien",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Đồ dùng phòng ngủ",
+      "url": "https://sendo.vn/do-dung-phong-ngu/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Bộ chăn ga gối",
+      "url": "https://sendo.vn/bo-chan-ga-goi/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Nệm",
+      "url": "https://sendo.vn/nem/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Mùng, màn ngủ",
+      "url": "https://sendo.vn/man/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Đồ dùng phòng tắm",
+      "url": "https://sendo.vn/do-dung-phong-tam-ve-sinh/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Vòi sen",
+      "url": "https://sendo.vn/voi-sen/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Giá, móc, kệ phòng tắm",
+      "url": "https://sendo.vn/gia-moc-ke-phong-tam/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Nội thất phòng trẻ em",
+      "url": "https://sendo.vn/noi-that-phong-tre-em/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Nội thất phòng ngủ",
+      "url": "https://sendo.vn/noi-that-phong-ngu/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Dụng cụ làm vườn",
+      "url": "https://sendo.vn/dung-cu-lam-vuon",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Hạt giống",
+      "url": "https://sendo.vn/hat-giong",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Béc tưới cây",
+      "url": "https://sendo.vn/bec-tuoi-cay",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Thiết bị đo lường",
+      "url": "https://sendo.vn/thiet-bi-do-luong/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Dụng cụ xây dựng",
+      "url": "https://sendo.vn/dung-cu-xay-dung-cho-gia-dinh",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Thiết bị nước",
+      "url": "https://sendo.vn/thiet-bi-nuoc/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Thiết bị an ninh",
+      "url": "https://sendo.vn/bao-ve-an-toan/",
+      "parent": "sendo_cate_11"
+    },
+    {
+      "name": "Tivi",
+      "url": "https://sendo.vn/tivi/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Smart Tivi",
+      "url": "https://sendo.vn/smart-tv/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Tivi màn hình cong",
+      "url": "https://sendo.vn/tv-man-hinh-cong/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Tivi OLED",
+      "url": "https://sendo.vn/tivi-oled/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Tivi QLED",
+      "url": "https://sendo.vn/tivi-qled/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Thương hiệu nổi bật",
+      "url": "https://sendo.vn/tivi/?category_id=2102&sortType=norder_30_desc",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Samsung",
+      "url": "https://sendo.vn/tivi/?thuong_hieu_6=19500",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Sony",
+      "url": "https://sendo.vn/tivi/?thuong_hieu_6=19502",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "LG",
+      "url": "https://sendo.vn/tivi/?thuong_hieu_6=19501",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Asanzo",
+      "url": "https://sendo.vn/tivi/?thuong_hieu_6=19507",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "TCL",
+      "url": "https://sendo.vn/tivi/?thuong_hieu_6=19503",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Panasonic",
+      "url": "https://sendo.vn/tivi/?thuong_hieu_6=19504",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Thiết bị chơi game",
+      "url": "https://sendo.vn/thiet-bi-choi-game/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Tay cầm game",
+      "url": "https://sendo.vn/tay-cam-game/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Máy chơi game",
+      "url": "https://sendo.vn/may-choi-game/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Phụ kiện máy chơi game",
+      "url": "https://sendo.vn/phu-kien-may-choi-game/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Phụ kiện tivi",
+      "url": "https://sendo.vn/phu-kien-tivi/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Tivi box",
+      "url": "https://sendo.vn/tv-box/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Thiết bị kết nối không dây TV",
+      "url": "https://sendo.vn/thiet-bi-ket-noi-khong-day-voi-tv/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Dây cáp TV",
+      "url": "https://sendo.vn/day-cap-tv/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Remote, bàn phím TV",
+      "url": "https://sendo.vn/remote-ban-phim-tv/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Loa",
+      "url": "https://sendo.vn/loa/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Loa bluetooth",
+      "url": "https://sendo.vn/loa-bluetooth/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Loa kéo di động",
+      "url": "https://sendo.vn/loa-keo-di-dong/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Loa vi tính",
+      "url": "https://sendo.vn/loa-vi-tinh/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Loa công suất lớn",
+      "url": "https://sendo.vn/loa-cong-suat-lon/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Loa soundbar, soundbass",
+      "url": "https://sendo.vn/loa-soundbar-soundbass/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Linh phụ kiện âm thanh",
+      "url": "https://sendo.vn/phu-kien-am-thanh/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Tai nghe",
+      "url": "https://sendo.vn/tai-nghe/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Tai nghe có dây",
+      "url": "https://sendo.vn/tai-nghe-co-day/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Tai nghe bluetooth",
+      "url": "https://sendo.vn/tai-nghe-bluetooth/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Tai nghe game thủ",
+      "url": "https://sendo.vn/tai-nghe-game-thu/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Hệ thống giải trí, karaoke",
+      "url": "https://sendo.vn/he-thong-giai-tri-karaoke/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Micro có dây",
+      "url": "https://sendo.vn/micro-co-day/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Micro không dây",
+      "url": "https://sendo.vn/micro-khong-day/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Amply",
+      "url": "https://sendo.vn/amply/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Dàn âm thanh",
+      "url": "https://sendo.vn/dan-am-thanh/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Máy quay, thiết bị ghi hình",
+      "url": "https://sendo.vn/may-quay-phim-may-quay-hanh-dong/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Camera giám sát",
+      "url": "https://sendo.vn/camera-giam-sat/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Camera hành trình ô tô",
+      "url": "https://sendo.vn/camera-hanh-trinh-o-to/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Camera thể thao, hành động",
+      "url": "https://sendo.vn/may-quay-phim-the-thao-hanh-dong/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Phụ kiện camera thể thao",
+      "url": "https://sendo.vn/phu-kien-may-quay-phim-the-thao/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Máy ảnh",
+      "url": "https://sendo.vn/may-anh/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Phụ kiện máy ảnh, máy quay",
+      "url": "https://sendo.vn/phu-kien-may-anh-may-quay/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Chân máy ảnh",
+      "url": "https://sendo.vn/chan-may-anh/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Pin, sạc",
+      "url": "https://sendo.vn/pin-sac/",
+      "parent": "sendo_cate_12"
+    },
+    {
+      "name": "Trang trí nhà cửa",
+      "url": "https://sendo.vn/trang-tri-tuong/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Sticker & decal dán tường",
+      "url": "https://sendo.vn/decal-trang-tri/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Xốp, giấy dán tường",
+      "url": "https://sendo.vn/xop-giay-dan-tuong/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Tranh chữ thập",
+      "url": "https://sendo.vn/tranh-chu-thap/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Đồng hồ treo tường",
+      "url": "https://sendo.vn/dong-ho/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Tranh trang trí",
+      "url": "https://sendo.vn/tranh/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Tượng, mô hình trang trí",
+      "url": "https://sendo.vn/tuong-mo-hinh-trang-tri/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Khung hình treo tường",
+      "url": "https://sendo.vn/khung-hinh/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Trang trí bàn",
+      "url": "https://sendo.vn/trang-tri-ban",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Đồng hồ để bàn",
+      "url": "https://sendo.vn/dong-ho-de-ban/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Bình, lọ cắm hoa",
+      "url": "https://sendo.vn/binh-lo-chau/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Giá , kệ, bình để rượu",
+      "url": "https://sendo.vn/gia-ke-binh-de-ruou/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Nguyên vật liệu đồ handmade",
+      "url": "https://sendo.vn/nguyen-vat-lieu-lam-do-handmade/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Chỉ thêu, chỉ may, len sợi",
+      "url": "https://sendo.vn/chi-theu-chi-may-len-soi/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Hạt cườm, pha lê, gỗ, đá",
+      "url": "https://sendo.vn/hat-cuom-pha-le-hat-go-hat-da/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Dụng cụ làm đồ handmade",
+      "url": "https://sendo.vn/dung-cu-lam-do-handmade/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Quà tặng, hàng thủ công",
+      "url": "https://sendo.vn/qua-tang-hang-thu-cong/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Móc khóa",
+      "url": "https://sendo.vn/moc-khoa/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Hộp, túi đựng quà",
+      "url": "https://sendo.vn/hop-qua-tui-qua/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Đồ gỗ thủ công mỹ nghệ",
+      "url": "https://sendo.vn/do-go-thu-cong-my-nghe/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Sản phẩm thơm phòng",
+      "url": "https://sendo.vn/nen-va-san-pham-lam-thom-phong/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Đèn xông tinh dầu",
+      "url": "https://sendo.vn/den-xong-tinh-dau-bang-dien/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Tinh dầu xông phòng",
+      "url": "https://sendo.vn/tinh-dau-thom-phong/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Sáp, túi, xịt thơm phòng",
+      "url": "https://sendo.vn/sap-tui-xit-thom-phong/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Hoa, Cây cảnh",
+      "url": "https://sendo.vn/hoa-cay-canh",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Hoa giả, hoa khô",
+      "url": "https://sendo.vn/cay-hoa-trang-tri",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Cây cảnh",
+      "url": "https://sendo.vn/cay-canh",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Hoa Lan",
+      "url": "https://sendo.vn/hoa-lan/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Kệ để hoa, cây cảnh",
+      "url": "https://sendo.vn/ke-de-chau-hoa-cay-canh/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Chậu cây giả",
+      "url": "https://sendo.vn/chau-cay-gia/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Trang trí tiệc, sự kiện",
+      "url": "https://sendo.vn/trang-tri-tiec-va-su-kien/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Trang trí cửa sổ, lối đi",
+      "url": "https://sendo.vn/trang-tri-cua-so-loi-di/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Vật phẩm phong thủy",
+      "url": "https://sendo.vn/vat-pham-phong-thuy/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Tượng Phật",
+      "url": "https://sendo.vn/tuong-phat/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Linh vật phong thủy",
+      "url": "https://sendo.vn/linh-vat-phong-thuy/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Đá phong thủy",
+      "url": "https://sendo.vn/da-phong-thuy-trang-tri/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Tranh phong thủy",
+      "url": "https://sendo.vn/tranh-phong-thuy/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Phong thủy trang trí",
+      "url": "https://sendo.vn/phong-thuy-trang-tri/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Đồ thờ cúng",
+      "url": "https://sendo.vn/do-tho-cung/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Trang sức phong thủy",
+      "url": "https://sendo.vn/trang-suc-deo-phong-thuy/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Văn phòng phẩm",
+      "url": "https://sendo.vn/van-phong-pham/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Dụng cụ học sinh, văn phòng",
+      "url": "https://sendo.vn/dung-cu-hoc-sinh-van-phong/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Bảng học sinh, văn phòng",
+      "url": "https://sendo.vn/bang-hoc-sinh-van-phong/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Máy tính casio- Pin",
+      "url": "https://sendo.vn/may-tinh-casio-pin/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Sổ tay-Tập vở",
+      "url": "https://sendo.vn/so-tay-tap-vo/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Dụng cụ mỹ thuật",
+      "url": "https://sendo.vn/dung-cu-my-thuat/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Sách Thường thức - Đời sống",
+      "url": "https://sendo.vn/sach-thuong-thuc-doi-song/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Sách Văn học - Tiểu thuyết",
+      "url": "https://sendo.vn/sach-van-hoc-tieu-thuyet/",
+      "parent": "sendo_cate_13"
+    },
+    {
+      "name": "Giặt giũ và chăm sóc nhà cửa",
+      "url": "https://sendo.vn/giat-giu-cham-soc-nha-cua/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Bột giặt, nước giặt",
+      "url": "https://sendo.vn/bot-giat-nuoc-giat/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Nước xả vải",
+      "url": "https://sendo.vn/nuoc-xa-vai/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Tẩy rửa, thông bồn cầu",
+      "url": "https://sendo.vn/ve-sinh-phong-tam/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Nước lau sàn, kính",
+      "url": "https://sendo.vn/nuoc-lau-san-kinh/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Dung dịch tẩy",
+      "url": "https://sendo.vn/dung-dich-tay/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Các loại thực phẩm khô",
+      "url": "https://sendo.vn/cac-loai-thuc-pham-say-kho/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Các loại hạt sấy khô",
+      "url": "https://sendo.vn/cac-loai-hat-say-kho/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Ngũ cốc, bột",
+      "url": "https://sendo.vn/ngu-coc-bot/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Thịt sấy khô",
+      "url": "https://sendo.vn/thit-say-kho/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Thủy hải sản sấy khô",
+      "url": "https://sendo.vn/thuy-hai-san-say-kho/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Rau củ quả sấy khô",
+      "url": "https://sendo.vn/rau-cu-qua-say-kho/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Kẹo",
+      "url": "https://sendo.vn/keo/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Gia vị",
+      "url": "https://sendo.vn/gia-vi/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Thực phẩm tươi sống",
+      "url": "https://sendo.vn/thuc-pham-tuoi-song/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Rau - củ - quả",
+      "url": "https://sendo.vn/rau-cu-qua/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Thịt - Trứng",
+      "url": "https://sendo.vn/thit-trung/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Thực phẩm bổ dưỡng",
+      "url": "https://sendo.vn/thuc-pham-bo-duong/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Tổ yến, yến sào",
+      "url": "https://sendo.vn/to-yen-yen-sao/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Nhân sâm, hồng sâm",
+      "url": "https://sendo.vn/nhan-sam-hong-sam/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Sản phẩm từ mật ong",
+      "url": "https://sendo.vn/san-pham-tu-mat-ong/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Sữa và các thực phẩm từ sữa",
+      "url": "https://sendo.vn/sua-va-thuc-pham-tu-sua/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Sữa bột",
+      "url": "https://sendo.vn/sua-bot/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Đồ uống",
+      "url": "https://sendo.vn/do-uong/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Cà phê",
+      "url": "https://sendo.vn/cafe/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Trà",
+      "url": "https://sendo.vn/tra/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Bánh, mứt",
+      "url": "https://sendo.vn/banh-mut/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Bánh quy",
+      "url": "https://sendo.vn/banh-quy/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Mứt các loại",
+      "url": "https://sendo.vn/mut/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Voucher dịch vụ",
+      "url": "https://sendo.vn/voucher-dich-vu/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Ẩm thực",
+      "url": "https://sendo.vn/am-thuc/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Du lịch - Khách sạn",
+      "url": "https://sendo.vn/du-lich-khach-san/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Giải trí",
+      "url": "https://sendo.vn/giai-tri/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Chăm sóc chó",
+      "url": "https://sendo.vn/cham-soc-cho/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Thức ăn cho chó",
+      "url": "https://sendo.vn/thuc-an-cho-cho/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Dụng cụ ăn uống cho chó",
+      "url": "https://sendo.vn/dung-cu-an-uong-cho-cho/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Thời trang cho chó",
+      "url": "https://sendo.vn/thoi-trang-cho-cho/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Nhà, lồng cho chó",
+      "url": "https://sendo.vn/nha-long-cho-cho/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Balo, túi vận chuyển chó",
+      "url": "https://sendo.vn/balo-tui-van-chuyen-cho/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Chăm sóc mèo",
+      "url": "https://sendo.vn/cham-soc-meo/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Thức ăn cho mèo",
+      "url": "https://sendo.vn/thuc-an-cho-meo/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Dụng cụ ăn uống cho mèo",
+      "url": "https://sendo.vn/dung-cu-an-uong-cho-meo/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Thời trang cho mèo",
+      "url": "https://sendo.vn/thoi-trang-cho-meo/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Nệm, thảm cho mèo",
+      "url": "https://sendo.vn/nem-tham-cho-meo/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Bồn, cát & dụng cụ vệ sinh ",
+      "url": "https://sendo.vn/bon-cat-and-dung-cu-ve-sinh-meo/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Chăm sóc cá",
+      "url": "https://sendo.vn/cham-soc-ca-be-thuy-sinh/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Chăm sóc chim",
+      "url": "https://sendo.vn/cham-soc-chim/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Chăm sóc hamster",
+      "url": "https://sendo.vn/cham-soc-hamster/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Chăm sóc thú cưng khác",
+      "url": "https://sendo.vn/cham-soc-thu-cung-khac/",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_14"
+    },
+    {
+      "name": "Thời trang trẻ em",
+      "url": "https://sendo.vn/thoi-trang-tre-em/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Bé gái 1-4 tuổi",
+      "url": "https://sendo.vn/be-gai-1-4-tuoi/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Đồ bộ bé gái 1-4 tuổi",
+      "url": "https://sendo.vn/do-bo-cho-be-gai-1-4-tuoi/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Đầm bé gái 1-4 tuổi",
+      "url": "https://sendo.vn/dam-be-gai-1-4-tuoi/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Bé gái 5-14 tuổi",
+      "url": "https://sendo.vn/be-gai-5-14-tuoi/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Đồ bộ bé gái 5-14 tuổi",
+      "url": "https://sendo.vn/do-bo-cho-be-gai-5-14-tuoi/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Đầm bé gái 5-14 tuổi",
+      "url": "https://sendo.vn/dam-be-gai-5-14-tuoi/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Bé trai 1-4 tuổi",
+      "url": "https://sendo.vn/be-trai-1-4-tuoi/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Đồ bộ bé trai 1-4 tuổi",
+      "url": "https://sendo.vn/do-bo-be-trai-1-4-tuoi/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Áo thun bé trai 1-4 tuổi",
+      "url": "https://sendo.vn/ao-thun-be-trai-1-4-tuoi/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Bé trai 5-14 tuổi",
+      "url": "https://sendo.vn/be-trai-5-14-tuoi/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Đồ bộ bé trai 5-14 tuổi",
+      "url": "https://sendo.vn/do-bo-be-trai-5-14-tuoi/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Áo thun bé trai 5-14 tuổi",
+      "url": "https://sendo.vn/ao-thun-be-trai-5-14-tuoi/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Quần áo sơ sinh",
+      "url": "https://sendo.vn/quan-ao-tre-so-sinh/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Giày dép bé gái",
+      "url": "https://sendo.vn/giay-dep-cho-be-gai/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Giày dép bé trai",
+      "url": "https://sendo.vn/giay-dep-cho-be-trai/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Phụ kiện thời trang",
+      "url": "https://sendo.vn/phu-kien-thoi-trang-tre-em/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Bỉm, tã, vệ sinh",
+      "url": "https://sendo.vn/bim-ta-ve-sinh/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Bỉm, tã giấy",
+      "url": "https://sendo.vn/bim-ta/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Vệ sinh răng miệng",
+      "url": "https://sendo.vn/ve-sinh-cham-soc-rang-mieng/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Đồ cho bé ra ngoài",
+      "url": "https://sendo.vn/do-cho-be-khi-ra-ngoai/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Xe đẩy em bé",
+      "url": "https://sendo.vn/xe-day/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Địu em bé",
+      "url": "https://sendo.vn/diu/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Đồ dùng phòng tắm",
+      "url": "https://sendo.vn/do-dung-phong-tam/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Đồ dùng phòng ngủ ",
+      "url": "https://sendo.vn/do-dung-phong-ngu-cho-be/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Giường, cũi, nôi",
+      "url": "https://sendo.vn/giuong-cui-noi-cho-be/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Gối chặn cho bé",
+      "url": "https://sendo.vn/goi-chan-cho-be/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Dụng cụ ăn uống",
+      "url": "https://sendo.vn/dung-cu-va-do-an-uong/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Sức khỏe và an toàn",
+      "url": "https://sendo.vn/cham-soc-suc-khoe-va-an-toan/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Sữa và thức ăn dặm",
+      "url": "https://sendo.vn/sua-va-thuc-an-dam/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Thời trang mẹ bầu",
+      "url": "https://sendo.vn/do-dung-cho-me-truoc-khi-sinh/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Đồ dùng cho mẹ bầu",
+      "url": "https://sendo.vn/do-dung-cho-me-bau/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Thời trang gia đình",
+      "url": "https://sendo.vn/thoi-trang-gia-dinh-set-trang-phuc/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Đồ chơi vận động cho bé",
+      "url": "https://sendo.vn/hoat-dong-ngoai-troi-pinic/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Các loại đồ chơi vận động",
+      "url": "https://sendo.vn/cac-loai-do-choi-van-dong/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Bể phao bơi",
+      "url": "https://sendo.vn/be-phao-boi-va-phu-kien-boi/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Xe điện cân bằng",
+      "url": "https://sendo.vn/xe-dien-can-bang/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Đồ chơi phát triển trí tuệ",
+      "url": "https://sendo.vn/do-choi-phat-trien-tri-tue/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Đồ chơi lắp ráp",
+      "url": "https://sendo.vn/do-choi-lap-rap/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Dụng cụ thanh nhạc",
+      "url": "https://sendo.vn/dung-cu-thanh-nhac/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Đồ chơi điều khiển từ xa",
+      "url": "https://sendo.vn/do-choi-dieu-khien-tu-xa/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Ô tô điều khiển",
+      "url": "https://sendo.vn/o-to/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Máy bay, trực thăng",
+      "url": "https://sendo.vn/may-bay-truc-thang/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Mô hình đồ chơi",
+      "url": "https://sendo.vn/mo-hinh-do-choi/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Mô hình nhân vật, động vật",
+      "url": "https://sendo.vn/mo-hinh-nhan-vat-dong-vat/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Mô hình xe ô tô",
+      "url": "https://sendo.vn/mo-hinh-xe-o-to/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Trò chơi",
+      "url": "https://sendo.vn/tro-choi/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Thẻ bài",
+      "url": "https://sendo.vn/the-bai/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Board games",
+      "url": "https://sendo.vn/board-games/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Búp bê, thú bông",
+      "url": "https://sendo.vn/bup-be-thu-bong/",
+      "parent": "sendo_cate_15"
+    },
+    {
+      "name": "Mua xe Trực tuyến Giảm 3 triệu + Trả góp 0% + Miễn phí chuyển đổi",
+      "url": "https://www.sendo.vn/su-kien/deal-soc-xe-may",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Khuyến mãi từ Hãng",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "+ Yamaha: Mua xe Grande Nhận mặt dây chuyền vàng SJC 9999 trị giá 2.250.000đ áp dụng đến 30/11/2019",
+      "url": "https://www.sendo.vn/o-to-xe-may/?cabinet_list=7111",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Mô tô, Xe máy, xe đạp điện",
+      "url": "https://sendo.vn/motor-xe-may-xe-dap-dien/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Xe số",
+      "url": "https://sendo.vn/xe-so/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Xe côn tay, xe phân khối lớn",
+      "url": "https://sendo.vn/xe-con-tay-xe-phan-khoi-lon/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Xe tay ga",
+      "url": "https://sendo.vn/xe-tay-ga/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Xe đạp điện",
+      "url": "https://sendo.vn/xe-dap-dien",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Phụ tùng xe máy",
+      "url": "https://sendo.vn/phu-tung-xe-may/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Pô xe máy",
+      "url": "https://sendo.vn/po-xe-may",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Dàn áo xe máy",
+      "url": "https://sendo.vn/dan-ao-xe-may/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Phuộc nhún giảm xóc xe máy",
+      "url": "https://sendo.vn/phuoc-nhun-giam-xoc-xe-may",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Gương chiếu hậu xe máy",
+      "url": "https://sendo.vn/guong-chieu-hau-xe-may/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Phanh, thắng xe máy",
+      "url": "https://sendo.vn/phanh-thang-xe-may",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Đèn xe máy",
+      "url": "https://sendo.vn/den-xe-may/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Đèn trợ sáng xe máy",
+      "url": "https://sendo.vn/den-tro-sang-xe-may/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Đèn pha xe máy",
+      "url": "https://sendo.vn/den-pha-xe-may/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Đồ bảo hộ, mô tô xe máy",
+      "url": "https://sendo.vn/do-bao-ho-mo-to-xe-may/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Mũ bảo hiểm xe máy",
+      "url": "https://sendo.vn/mu-bao-hiem-xe-may/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Găng tay xe máy",
+      "url": "https://sendo.vn/gang-tay-xe-may",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Giáp bảo hộ đi phượt",
+      "url": "https://sendo.vn/giap-bao-ho-di-phuot",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Kính chống bụi đi xe máy",
+      "url": "https://sendo.vn/kinh-chong-bui-di-xe-may",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Phụ kiện, đồ chơi xe máy",
+      "url": "https://sendo.vn/phu-kien-do-choi-xe-may/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Khóa chống trộm xe máy",
+      "url": "https://sendo.vn/khoa-chong-trom-xe-may",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Tem, Decal xe máy",
+      "url": "https://sendo.vn/tem-decal-xe-may/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Túi treo, thùng đựng đồ xe máy",
+      "url": "https://sendo.vn/tui-treo-thung-dung-do-xe-may/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Lưới, giá chở hàng xe máy",
+      "url": "https://sendo.vn/luoi-gia-cho-hang-xe-may",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Ốp pô xe máy",
+      "url": "https://sendo.vn/op-po-xe-may",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Hệ thống, cơ điện nhiên liệu, bộ lọc",
+      "url": "https://sendo.vn/he-thong-co-dien-nhien-lieu-bo-loc/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Thiết bị số cho ô tô",
+      "url": "https://sendo.vn/thiet-bi-so-cho-o-to",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Bánh xe, lốp xe máy",
+      "url": "https://sendo.vn/banh-xe-lop-xe-may/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Chăm sóc bảo dưỡng ô tô, xe máy",
+      "url": "https://sendo.vn/cham-soc-va-bao-duong-o-to-xe-may/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Máy rửa xe",
+      "url": "https://sendo.vn/may-rua-xe",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Bộ bơm hơi xe",
+      "url": "https://sendo.vn/bo-bom-hoi-xe/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Bộ dụng cụ sữa chữa xe máy",
+      "url": "https://sendo.vn/bo-dung-cu-sua-chua-xe-may",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Dầu, nhớt xe máy",
+      "url": "https://sendo.vn/dau-nhot-xe-may",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Phụ kiện bên trong ô tô",
+      "url": "https://sendo.vn/phu-kien-ben-trong-o-to/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Trang trí ô tô",
+      "url": "https://sendo.vn/trang-tri-o-to/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Bao ghế ô tô",
+      "url": "https://sendo.vn/bao-ghe-o-to/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Phụ kiện bên ngoài ô tô",
+      "url": "https://sendo.vn/phu-kien-ben-ngoai-o-to-phu-tung/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Đèn, phụ kiện",
+      "url": "https://sendo.vn/den-phu-kien/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Bạt phủ ô tô",
+      "url": "https://sendo.vn/bat-phu-o-to/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Xe đạp",
+      "url": "https://sendo.vn/xe-dap-phu-kien/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Phụ kiện xe đạp",
+      "url": "https://sendo.vn/phu-kien-xe-dap/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Phụ tùng xe đạp",
+      "url": "https://sendo.vn/phu-tung-xe-dap/",
+      "parent": "sendo_cate_16"
+    },
+    {
+      "name": "Dụng cụ, thiết bị tập thể dục",
+      "url": "https://sendo.vn/dung-cu-thiet-bi-tap-the-duc",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Dụng cụ, máy tập cơ bụng",
+      "url": "https://sendo.vn/may-tap-bung",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Xà đơn",
+      "url": "https://sendo.vn/xa-don",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Xe đạp tập thể dục",
+      "url": "https://sendo.vn/may-tap-dap-xe",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Tạ, giàn tạ đa năng",
+      "url": "https://sendo.vn/dan-tap-ta",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Máy chạy bộ",
+      "url": "https://sendo.vn/may-tap-chay-bo",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Bàn xoay, dụng cụ tập eo",
+      "url": "https://sendo.vn/may-tap-lac-eo",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Dụng cụ tập cơ tay",
+      "url": "https://sendo.vn/dung-cu-tap-co-tay",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Câu cá",
+      "url": "https://sendo.vn/cau-ca",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Cần câu cá",
+      "url": "https://sendo.vn/can-cau",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Máy câu cá",
+      "url": "https://sendo.vn/may-cau",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Mồi câu cá",
+      "url": "https://sendo.vn/moi-cau-ca",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Lưỡi câu, cước câu cá",
+      "url": "https://sendo.vn/luoi-cau-cuoc-cau-ca",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Lưới đánh cá",
+      "url": "https://sendo.vn/luoi-danh-ca/",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Dã ngoại, cắm trại",
+      "url": "https://sendo.vn/da-ngoai-cam-trai",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Ống nhòm",
+      "url": "https://sendo.vn/ong-nhom-du-lich",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Lều, bạt phủ dã ngoại",
+      "url": "https://sendo.vn/leu-cam-trai-bat-phu-mai-che-da-ngoai",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Túi ngủ du lịch, dã ngoại",
+      "url": "https://sendo.vn/tui-ngu-du-lich-da-ngoai",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "An toàn, sinh tồn",
+      "url": "https://sendo.vn/an-toan-sinh-ton",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Yoga, võ thuật, đấm bốc",
+      "url": "https://sendo.vn/yoga-vo-thuat-dam-boc",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Thảm tập yoga",
+      "url": "https://sendo.vn/tham-tap-yoga",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Dụng cụ tập võ thuật",
+      "url": "https://sendo.vn/dung-cu-tap-vo-thuat-dam-boc",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Nhạc cụ",
+      "url": "https://sendo.vn/cac-loai-nhac-cu",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Guitar, ukulele",
+      "url": "https://sendo.vn/guitar-ukulele",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Piano, organ",
+      "url": "https://sendo.vn/piano-organ",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Sáo, tiêu",
+      "url": "https://sendo.vn/sao-tieu",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Hỗ trợ an toàn",
+      "url": "https://sendo.vn/dung-cu-ho-tro-an-toan",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Bảo vệ khuỷu tay & đầu gối",
+      "url": "https://sendo.vn/bao-ve-khuyu-tay-va-dau-goi",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Bơi lội, lặn",
+      "url": "https://sendo.vn/boi-loi",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Phao, áo phao",
+      "url": "https://sendo.vn/phao-ao-phao",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Kính bơi",
+      "url": "https://sendo.vn/kinh-boi",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Bóng đá",
+      "url": "https://sendo.vn/bong-da",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Găng tay thủ môn",
+      "url": "https://sendo.vn/gang-tay-thu-mon",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Quả bóng đá",
+      "url": "https://sendo.vn/qua-bong-da",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Bóng bàn",
+      "url": "https://sendo.vn/bong-ban",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Bóng rổ",
+      "url": "https://sendo.vn/bong-ro",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Bóng chuyền",
+      "url": "https://sendo.vn/bong-chuyen",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Tennis",
+      "url": "https://sendo.vn/tennis",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Cầu lông",
+      "url": "https://sendo.vn/cau-long",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "Các môn thể thao khác",
+      "url": "https://sendo.vn/cac-mon-the-thao-khac",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_17"
+    },
+    {
+      "name": "",
+      "url": "https://sendo.vn",
+      "parent": "sendo_cate_17"
+    }
+  ]
+}
