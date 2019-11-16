@@ -7,15 +7,12 @@
 
 
   <ItemGroup>
-<<<<<<< HEAD
     <PackageReference Include="Microsoft.AspNetCore.App">
       <PrivateAssets Condition="'%(PackageReference.Version)' == ''">all</PrivateAssets>
       <Publish Condition="'%(PackageReference.Version)' == ''">true</Publish>
     </PackageReference>
-=======
     <PackageReference Include="Mapster" Version="4.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
->>>>>>> de68b44c4038f0f51fadd2e7bb179d59a6fdc636
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
   </ItemGroup>
 
