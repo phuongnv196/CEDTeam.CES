@@ -33,19 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu_UI_v1.52">
-      <HintPath>F:\Programing\CSharp\Documents\Bunifu_UI_v1.52.dll</HintPath>
-    </Reference>
     <Reference Include="CheckBoxComboBox">
       <HintPath>..\..\..\..\Desktop\Combobox\DemoApp\bin\Debug\CheckBoxComboBox.dll</HintPath>
     </Reference>
-    <Reference Include="DevComponents.DotNetBar2">
-      <HintPath>F:\Programing\CrackDotNetBar\DevComponents.DotNetBar2.dll</HintPath>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.30\lib\net461\Dapper.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
@@ -59,7 +57,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\ReadCategory.cs" />
     <Compile Include="Constants\ApiConstant.cs" />
+    <Compile Include="Enums\SiteType.cs" />
     <Compile Include="Helpers\ApiHelper.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -67,10 +67,14 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Common\DropdownItem.cs" />
-    <Compile Include="Models\Shopee\ShopeeCategory.cs" />
+    <Compile Include="Models\Shopee\ShopeeDetailItem.cs" />
+    <Compile Include="Models\Shopee\ShopeeSearchItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\BaseRepository.cs" />
+    <Compile Include="Repositories\CategoryRepository.cs" />
     <Compile Include="Test.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +105,18 @@
     <EmbeddedResource Include="UserControls\MultiSelectDropdownList.resx">
       <DependentUpon>MultiSelectDropdownList.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Datas\lazadaCategory.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Datas\sendoCategory.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Datas\shopeeCategory.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Datas\tikiCategory.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

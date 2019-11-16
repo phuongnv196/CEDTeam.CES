@@ -47,10 +47,11 @@ namespace CEDTeam.CES.Tool.Helpers
             return input;
         }
 
-        public T Get<T>(string url, bool isAllowRedirect = false)
+        public T Get<T>(string uri, bool isAllowRedirect = false)
         {
             try
             {
+                var url = uri.Contains("://") ? uri : (BASE_URL + uri);
                 HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
                 request.Method = "GET";
                 if (!isAllowRedirect) request.AllowAutoRedirect = false;

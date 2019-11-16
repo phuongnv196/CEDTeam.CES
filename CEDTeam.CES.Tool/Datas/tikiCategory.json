@@ -1,0 +1,856 @@
+﻿{
+  "category": [
+    {
+      "name": "Điện Thoại - Máy Tính Bảng",
+      "url": "https://tiki.vnhttps://tiki.vn/dien-thoai-may-tinh-bang/c1789?src=c.1789.hamburger_menu_fly_out_banner",
+      "id": "tiki_cate_1"
+    },
+    {
+      "name": "Điện Tử - Điện Lạnh",
+      "url": "https://tiki.vnhttps://tiki.vn/tivi-thiet-bi-nghe-nhin/c4221?src=c.4221.hamburger_menu_fly_out_banner",
+      "id": "tiki_cate_2"
+    },
+    {
+      "name": "Phụ Kiện - Thiết Bị Số",
+      "url": "https://tiki.vnhttps://tiki.vn/thiet-bi-kts-phu-kien-so/c1815?src=c.1815.hamburger_menu_fly_out_banner",
+      "id": "tiki_cate_3"
+    },
+    {
+      "name": "Laptop - Thiết bị IT",
+      "url": "https://tiki.vnhttps://tiki.vn/laptop-may-vi-tinh/c1846?src=c.1846.hamburger_menu_fly_out_banner",
+      "id": "tiki_cate_4"
+    },
+    {
+      "name": "Máy Ảnh - Quay Phim",
+      "url": "https://tiki.vnhttps://tiki.vn/may-anh/c1801?src=c.1801.hamburger_menu_fly_out_banner",
+      "id": "tiki_cate_5"
+    },
+    {
+      "name": "Điện Gia Dụng",
+      "url": "https://tiki.vnhttps://tiki.vn/dien-gia-dung/c1882?src=c.1882.hamburger_menu_fly_out_banner",
+      "id": "tiki_cate_6"
+    },
+    {
+      "name": "Nhà Cửa Đời Sống",
+      "url": "https://tiki.vnhttps://tiki.vn/nha-cua-doi-song/c1883?src=c.1883.hamburger_menu_fly_out_banner",
+      "id": "tiki_cate_7"
+    },
+    {
+      "name": "Hàng Tiêu Dùng - Thực Phẩm",
+      "url": "https://tiki.vnhttps://tiki.vn/bach-hoa-online/c4384?src=c.4384.hamburger_menu_fly_out_banner",
+      "id": "tiki_cate_8"
+    },
+    {
+      "name": "Đồ chơi, Mẹ & Bé",
+      "url": "https://tiki.vnhttps://tiki.vn/me-va-be/c2549?src=c.2549.hamburger_menu_fly_out_banner",
+      "id": "tiki_cate_9"
+    },
+    {
+      "name": "Làm Đẹp - Sức Khỏe",
+      "url": "https://tiki.vnhttps://tiki.vn/lam-dep-suc-khoe/c1520?src=c.1520.hamburger_menu_fly_out_banner",
+      "id": "tiki_cate_10"
+    },
+    {
+      "name": "Thời trang - Phụ kiện",
+      "url": "https://tiki.vnhttps://tiki.vn/thoi-trang/c914?src=c.914.hamburger_menu_fly_out_banner",
+      "id": "tiki_cate_11"
+    },
+    {
+      "name": "Thể Thao - Dã Ngoại",
+      "url": "https://tiki.vnhttps://tiki.vn/the-thao/c1975?src=c.1975.hamburger_menu_fly_out_banner",
+      "id": "tiki_cate_12"
+    },
+    {
+      "name": "Xe Máy, Ô tô, Xe Đạp",
+      "url": "https://tiki.vnhttps://tiki.vn/o-to-xe-may-xe-dap/c8594?src=c.8594.hamburger_menu_fly_out_banner",
+      "id": "tiki_cate_13"
+    },
+    {
+      "name": "Hàng quốc tế",
+      "url": "https://tiki.vnhttps://tiki.vn/hang-quoc-te/c17166?src=c.17166.hamburger_menu_fly_out_banner",
+      "id": "tiki_cate_14"
+    },
+    {
+      "name": "Sách, VPP & Quà Tặng",
+      "url": "https://tiki.vnhttps://tiki.vn/nha-sach-tiki/c8322?src=c.8322.hamburger_menu_fly_out_banner",
+      "id": "tiki_cate_15"
+    },
+    {
+      "name": "Voucher - Dịch Vụ - Thẻ Cào",
+      "url": "https://tiki.vnhttps://tiki.vn/voucher-dich-vu/c11312?src=c.11312.hamburger_menu_fly_out_banner",
+      "id": "tiki_cate_16"
+    }
+  ],
+  "subcategory": [
+    {
+      "name": "Điện thoại Smartphone",
+      "url": "https://tiki.vn/dien-thoai-smartphone/c1795?src=tree",
+      "parent": "tiki_cate_1"
+    },
+    {
+      "name": "Máy tính bảng",
+      "url": "https://tiki.vn/may-tinh-bang/c1794?src=tree",
+      "parent": "tiki_cate_1"
+    },
+    {
+      "name": "Máy đọc sách",
+      "url": "https://tiki.vn/may-doc-sach/c28856?src=tree",
+      "parent": "tiki_cate_1"
+    },
+    {
+      "name": "Điện thoại phổ thông",
+      "url": "https://tiki.vn/dien-thoai-pho-thong/c1796?src=tree",
+      "parent": "tiki_cate_1"
+    },
+    {
+      "name": "Điện thoại bàn",
+      "url": "https://tiki.vn/dien-thoai-ban/c8061?src=tree",
+      "parent": "tiki_cate_1"
+    },
+    {
+      "name": "Tivi",
+      "url": "https://tiki.vn/tivi/c5015?src=tree",
+      "parent": "tiki_cate_2"
+    },
+    {
+      "name": "Âm thanh & Phụ kiện Tivi",
+      "url": "https://tiki.vn/am-thanh-phu-kien-tivi/c26568?src=tree",
+      "parent": "tiki_cate_2"
+    },
+    {
+      "name": "Máy giặt",
+      "url": "https://tiki.vn/may-giat/c3862?src=tree",
+      "parent": "tiki_cate_2"
+    },
+    {
+      "name": "Máy sấy quần áo",
+      "url": "https://tiki.vn/may-say-quan-ao/c3863?src=tree",
+      "parent": "tiki_cate_2"
+    },
+    {
+      "name": "Máy rửa chén",
+      "url": "https://tiki.vn/may-rua-chen/c3864?src=tree",
+      "parent": "tiki_cate_2"
+    },
+    {
+      "name": "Máy lạnh - Máy điều hòa",
+      "url": "https://tiki.vn/may-lanh-may-dieu-hoa/c3865?src=tree",
+      "parent": "tiki_cate_2"
+    },
+    {
+      "name": "Máy nước nóng",
+      "url": "https://tiki.vn/may-nuoc-nong/c3866?src=tree",
+      "parent": "tiki_cate_2"
+    },
+    {
+      "name": "Tủ lạnh",
+      "url": "https://tiki.vn/tu-lanh/c2328?src=tree",
+      "parent": "tiki_cate_2"
+    },
+    {
+      "name": "Tủ đông - Tủ mát",
+      "url": "https://tiki.vn/tu-dong-tu-mat/c3868?src=tree",
+      "parent": "tiki_cate_2"
+    },
+    {
+      "name": "Tủ ướp rượu",
+      "url": "https://tiki.vn/tu-uop-ruou/c3869?src=tree",
+      "parent": "tiki_cate_2"
+    },
+    {
+      "name": "Phụ kiện điện lạnh",
+      "url": "https://tiki.vn/phu-kien-dien-lanh/c8074?src=tree",
+      "parent": "tiki_cate_2"
+    },
+    {
+      "name": "Thiết bị âm thanh và phụ kiện",
+      "url": "https://tiki.vn/thiet-bi-am-thanh-va-phu-kien/c8215?src=tree",
+      "parent": "tiki_cate_3"
+    },
+    {
+      "name": "Thiết bị chơi game và phụ kiện",
+      "url": "https://tiki.vn/thiet-bi-choi-game-va-phu-kien/c2667?src=tree",
+      "parent": "tiki_cate_3"
+    },
+    {
+      "name": "Thiết bị đeo thông minh và phụ kiện",
+      "url": "https://tiki.vn/thiet-bi-deo-thong-minh-va-phu-kien/c8039?src=tree",
+      "parent": "tiki_cate_3"
+    },
+    {
+      "name": "Thiết bị thông minh và linh kiện điện tử",
+      "url": "https://tiki.vn/thiet-bi-thong-minh-va-linh-kien-dien-tu/c28432?src=tree",
+      "parent": "tiki_cate_3"
+    },
+    {
+      "name": "Phụ kiện điện thoại và máy tính bảng",
+      "url": "https://tiki.vn/phu-kien-dien-thoai-va-may-tinh-bang/c8214?src=tree",
+      "parent": "tiki_cate_3"
+    },
+    {
+      "name": "Phụ kiện máy tính và Laptop",
+      "url": "https://tiki.vn/phu-kien-may-tinh-va-laptop/c28670?src=tree",
+      "parent": "tiki_cate_3"
+    },
+    {
+      "name": "Laptop",
+      "url": "https://tiki.vn/laptop/c8095?src=tree",
+      "parent": "tiki_cate_4"
+    },
+    {
+      "name": "PC - Máy Tính Bộ",
+      "url": "https://tiki.vn/pc-may-tinh-bo/c8093?src=tree",
+      "parent": "tiki_cate_4"
+    },
+    {
+      "name": "Thiết bị lưu trữ",
+      "url": "https://tiki.vn/thiet-bi-luu-tru/c8060?src=tree",
+      "parent": "tiki_cate_4"
+    },
+    {
+      "name": "Thiết bị mạng",
+      "url": "https://tiki.vn/thiet-bi-mang/c2663?src=tree",
+      "parent": "tiki_cate_4"
+    },
+    {
+      "name": "Linh kiện máy tính, phụ kiện máy tính",
+      "url": "https://tiki.vn/linh-kien-phu-kien-may-tinh/c8129?src=tree",
+      "parent": "tiki_cate_4"
+    },
+    {
+      "name": "Thiết bị mạng",
+      "url": "https://tiki.vn/thiet-bi-mang/c7284?src=tree",
+      "parent": "tiki_cate_4"
+    },
+    {
+      "name": "Thiết bị văn phòng - Thiết bị ngoại vi",
+      "url": "https://tiki.vn/thiet-bi-van-phong-thiet-bi-ngoai-vi/c12884?src=tree",
+      "parent": "tiki_cate_4"
+    },
+    {
+      "name": "Máy ảnh",
+      "url": "https://tiki.vn/may-anh/c28806?src=tree",
+      "parent": "tiki_cate_5"
+    },
+    {
+      "name": "Phụ kiện máy ảnh, máy quay",
+      "url": "https://tiki.vn/phu-kien-may-anh-may-quay/c1818?src=tree",
+      "parent": "tiki_cate_5"
+    },
+    {
+      "name": "Balo - Túi đựng - Bao da",
+      "url": "https://tiki.vn/balo-tui-dung-bao-da/c1840?src=tree",
+      "parent": "tiki_cate_5"
+    },
+    {
+      "name": "Ống kính, ống ngắm",
+      "url": "https://tiki.vn/ong-kinh-ong-ngam/c28794?src=tree",
+      "parent": "tiki_cate_5"
+    },
+    {
+      "name": "Ống kính (Lens)",
+      "url": "https://tiki.vn/ong-kinh-lens-may-anh/c2757?src=tree",
+      "parent": "tiki_cate_5"
+    },
+    {
+      "name": "Thiết bị ánh sáng",
+      "url": "https://tiki.vn/thiet-bi-anh-sang/c28814?src=tree",
+      "parent": "tiki_cate_5"
+    },
+    {
+      "name": "Thiết bị quay phim",
+      "url": "https://tiki.vn/thiet-bi-quay-phim/c28822?src=tree",
+      "parent": "tiki_cate_5"
+    },
+    {
+      "name": "Camera giám sát",
+      "url": "https://tiki.vn/camera-giam-sat/c4077?src=tree",
+      "parent": "tiki_cate_5"
+    },
+    {
+      "name": "Máy bay camera và phụ kiện",
+      "url": "https://tiki.vn/may-bay-camera-va-phu-kien/c8047?src=tree",
+      "parent": "tiki_cate_5"
+    },
+    {
+      "name": "Camera hành trình - Action camera và phụ kiện",
+      "url": "https://tiki.vn/camera-hanh-trinh-action-camera-va-phu-kien/c28834?src=tree",
+      "parent": "tiki_cate_5"
+    },
+    {
+      "name": "Đồ dùng nhà bếp",
+      "url": "https://tiki.vn/do-dung-nha-bep/c1884?src=tree",
+      "parent": "tiki_cate_6"
+    },
+    {
+      "name": "Thiết bị gia đình",
+      "url": "https://tiki.vn/thiet-bi-gia-dinh/c1946?src=tree",
+      "parent": "tiki_cate_6"
+    },
+    {
+      "name": "Dụng cụ nhà bếp",
+      "url": "https://tiki.vn/nha-bep/c1951?src=tree",
+      "parent": "tiki_cate_7"
+    },
+    {
+      "name": "Đồ dùng phòng ăn",
+      "url": "https://tiki.vn/phong-an/c1954?src=tree",
+      "parent": "tiki_cate_7"
+    },
+    {
+      "name": "Đồ dùng phòng ngủ",
+      "url": "https://tiki.vn/do-dung-phong-ngu/c8313?src=tree",
+      "parent": "tiki_cate_7"
+    },
+    {
+      "name": "Nội thất",
+      "url": "https://tiki.vn/noi-that/c2150?src=tree",
+      "parent": "tiki_cate_7"
+    },
+    {
+      "name": "Trang trí nhà cửa",
+      "url": "https://tiki.vn/trang-tri-nha-cua/c1973?src=tree",
+      "parent": "tiki_cate_7"
+    },
+    {
+      "name": "Đèn & thiết bị chiếu sáng",
+      "url": "https://tiki.vn/den-thiet-bi-chieu-sang/c2015?src=tree",
+      "parent": "tiki_cate_7"
+    },
+    {
+      "name": "Ngoài trời & sân vườn",
+      "url": "https://tiki.vn/ngoai-troi-san-vuon/c2223?src=tree",
+      "parent": "tiki_cate_7"
+    },
+    {
+      "name": "Đồ dùng và thiết bị nhà tắm",
+      "url": "https://tiki.vn/do-dung-va-thiet-bi-nha-tam/c1966?src=tree",
+      "parent": "tiki_cate_7"
+    },
+    {
+      "name": "Sửa chữa nhà cửa",
+      "url": "https://tiki.vn/sua-chua-nha-cua/c1974?src=tree",
+      "parent": "tiki_cate_7"
+    },
+    {
+      "name": "Nhạc cụ",
+      "url": "https://tiki.vn/nhac-cu/c10068?src=tree",
+      "parent": "tiki_cate_7"
+    },
+    {
+      "name": "Hoa tươi và cây cảnh",
+      "url": "https://tiki.vn/hoa-tuoi-va-cay-canh/c18852?src=tree",
+      "parent": "tiki_cate_7"
+    },
+    {
+      "name": "Thiết bị điều khiển thông minh",
+      "url": "https://tiki.vn/thiet-bi-dieu-khien-thong-minh/c20492?src=tree",
+      "parent": "tiki_cate_7"
+    },
+    {
+      "name": "Dụng cụ diệt chuột, côn trùng",
+      "url": "https://tiki.vn/dung-cu-diet-chuot-con-trung/c23004?src=tree",
+      "parent": "tiki_cate_7"
+    },
+    {
+      "name": "Pin và dụng cụ sạc pin",
+      "url": "https://tiki.vn/pin-va-dung-cu-sac-pin/c23012?src=tree",
+      "parent": "tiki_cate_7"
+    },
+    {
+      "name": "Ổ cắm điện",
+      "url": "https://tiki.vn/o-cam-dien/c2021?src=tree",
+      "parent": "tiki_cate_7"
+    },
+    {
+      "name": "Dụng cụ vệ sinh",
+      "url": "https://tiki.vn/dung-cu-ve-sinh/c23018?src=tree",
+      "parent": "tiki_cate_7"
+    },
+    {
+      "name": "Phụ kiện giặt ủi",
+      "url": "https://tiki.vn/phu-kien-giat-ui/c23044?src=tree",
+      "parent": "tiki_cate_7"
+    },
+    {
+      "name": "Bảo vệ nhà cửa",
+      "url": "https://tiki.vn/bao-ve-nha-cua/c23046?src=tree",
+      "parent": "tiki_cate_7"
+    },
+    {
+      "name": "Đồ thờ cúng",
+      "url": "https://tiki.vn/do-tho-cung/c23054?src=tree",
+      "parent": "tiki_cate_7"
+    },
+    {
+      "name": "Vật phẩm phong thủy",
+      "url": "https://tiki.vn/vat-pham-phong-thuy/c5848?src=tree",
+      "parent": "tiki_cate_7"
+    },
+    {
+      "name": "Ổn áp, biến áp",
+      "url": "https://tiki.vn/on-ap-bien-ap/c11854?src=tree",
+      "parent": "tiki_cate_7"
+    },
+    {
+      "name": "Chăm sóc nhà cửa",
+      "url": "https://tiki.vn/cham-soc-nha-cua/c15078?src=tree",
+      "parent": "tiki_cate_8"
+    },
+    {
+      "name": "Bánh kẹo",
+      "url": "https://tiki.vn/banh-keo/c4421?src=tree",
+      "parent": "tiki_cate_8"
+    },
+    {
+      "name": "Thực phẩm",
+      "url": "https://tiki.vn/thuc-pham/c15074?src=tree",
+      "parent": "tiki_cate_8"
+    },
+    {
+      "name": "Đồ uống - Giải khát",
+      "url": "https://tiki.vn/do-uong-giai-khat/c24024?src=tree",
+      "parent": "tiki_cate_8"
+    },
+    {
+      "name": "Gia vị",
+      "url": "https://tiki.vn/gia-vi/c4422?src=tree",
+      "parent": "tiki_cate_8"
+    },
+    {
+      "name": "Chăm sóc thú cưng",
+      "url": "https://tiki.vn/thu-cung/c5451?src=tree",
+      "parent": "tiki_cate_8"
+    },
+    {
+      "name": "Bộ quà tặng",
+      "url": "https://tiki.vn/bo-qua-tang/c11347?src=tree",
+      "parent": "tiki_cate_8"
+    },
+    {
+      "name": "Đồ uống - Pha chế",
+      "url": "https://tiki.vn/do-uong-pha-che/c22998?src=tree",
+      "parent": "tiki_cate_8"
+    },
+    {
+      "name": "Thực phẩm chay",
+      "url": "https://tiki.vn/thuc-pham-chay/c5479?src=tree",
+      "parent": "tiki_cate_8"
+    },
+    {
+      "name": "Thực phẩm bổ dưỡng",
+      "url": "https://tiki.vn/thuc-pham-bo-duong/c8240?src=tree",
+      "parent": "tiki_cate_8"
+    },
+    {
+      "name": "Thực phẩm bảo vệ sức khỏe",
+      "url": "https://tiki.vn/thuc-pham-bao-ve-suc-khoe/c11251?src=tree",
+      "parent": "tiki_cate_8"
+    },
+    {
+      "name": "Thực phẩm cao cấp",
+      "url": "https://tiki.vn/thuc-pham-cao-cap/c11346?src=tree",
+      "parent": "tiki_cate_8"
+    },
+    {
+      "name": "Thực phẩm hữu cơ",
+      "url": "https://tiki.vn/thuc-pham-huu-co/c11660?src=tree",
+      "parent": "tiki_cate_8"
+    },
+    {
+      "name": "Tã, Bỉm",
+      "url": "https://tiki.vn/ta-bim-cho-be/c2551?src=tree",
+      "parent": "tiki_cate_9"
+    },
+    {
+      "name": "Dinh dưỡng cho bé",
+      "url": "https://tiki.vn/dinh-duong-cho-be/c8339?src=tree",
+      "parent": "tiki_cate_9"
+    },
+    {
+      "name": "Dinh dưỡng cho mẹ",
+      "url": "https://tiki.vn/dinh-duong-cho-me/c10416?src=tree",
+      "parent": "tiki_cate_9"
+    },
+    {
+      "name": "Dinh dưỡng cho người lớn",
+      "url": "https://tiki.vn/dinh-duong-cho-nguoi-lon/c10418?src=tree",
+      "parent": "tiki_cate_9"
+    },
+    {
+      "name": "Đồ dùng cho bé",
+      "url": "https://tiki.vn/do-dung-cho-be/c11601?src=tree",
+      "parent": "tiki_cate_9"
+    },
+    {
+      "name": "Thời Trang Cho Mẹ Và Bé",
+      "url": "https://tiki.vn/thoi-trang-cho-me-va-be/c11603?src=tree",
+      "parent": "tiki_cate_9"
+    },
+    {
+      "name": "Đồ chơi",
+      "url": "https://tiki.vn/do-choi/c5250?src=tree",
+      "parent": "tiki_cate_9"
+    },
+    {
+      "name": "Chăm sóc mẹ mang thai, sau sinh",
+      "url": "https://tiki.vn/cham-soc-me-mang-thai-sau-sinh/c2640?src=tree",
+      "parent": "tiki_cate_9"
+    },
+    {
+      "name": "Chuẩn bị mang thai",
+      "url": "https://tiki.vn/chuan-bi-mang-thai/c10570?src=tree",
+      "parent": "tiki_cate_9"
+    },
+    {
+      "name": "Trang điểm",
+      "url": "https://tiki.vn/trang-diem/c1584?src=tree",
+      "parent": "tiki_cate_10"
+    },
+    {
+      "name": "Chăm sóc da mặt",
+      "url": "https://tiki.vn/cham-soc-da-mat/c1582?src=tree",
+      "parent": "tiki_cate_10"
+    },
+    {
+      "name": "Chăm sóc cơ thể",
+      "url": "https://tiki.vn/cham-soc-co-the/c1592?src=tree",
+      "parent": "tiki_cate_10"
+    },
+    {
+      "name": "Dược mỹ phẩm",
+      "url": "https://tiki.vn/duoc-my-pham/c5874?src=tree",
+      "parent": "tiki_cate_10"
+    },
+    {
+      "name": "Sản phẩm thiên nhiên",
+      "url": "https://tiki.vn/san-pham-thien-nhien-handmade/c5873?src=tree",
+      "parent": "tiki_cate_10"
+    },
+    {
+      "name": "Chăm sóc tóc và da đầu",
+      "url": "https://tiki.vn/cham-soc-toc-da-dau/c1591?src=tree",
+      "parent": "tiki_cate_10"
+    },
+    {
+      "name": "Chăm sóc cá nhân",
+      "url": "https://tiki.vn/cham-soc-ca-nhan/c1594?src=tree",
+      "parent": "tiki_cate_10"
+    },
+    {
+      "name": "Thực phẩm chức năng",
+      "url": "https://tiki.vn/thuc-pham-chuc-nang/c2322?src=tree",
+      "parent": "tiki_cate_10"
+    },
+    {
+      "name": "Thiết bị chăm sóc sức khỏe",
+      "url": "https://tiki.vn/thiet-bi-cham-soc-suc-khoe/c2307?src=tree",
+      "parent": "tiki_cate_10"
+    },
+    {
+      "name": "Hỗ trợ tình dục",
+      "url": "https://tiki.vn/ho-tro-tinh-duc/c8142?src=tree",
+      "parent": "tiki_cate_10"
+    },
+    {
+      "name": "Thiết bị làm đẹp",
+      "url": "https://tiki.vn/thiet-bi-lam-dep/c2306?src=tree",
+      "parent": "tiki_cate_10"
+    },
+    {
+      "name": "Bộ sản phẩm làm đẹp",
+      "url": "https://tiki.vn/bo-san-pham-lam-dep/c8161?src=tree",
+      "parent": "tiki_cate_10"
+    },
+    {
+      "name": "Nước hoa",
+      "url": "https://tiki.vn/nuoc-hoa/c1595?src=tree",
+      "parent": "tiki_cate_10"
+    },
+    {
+      "name": "Tinh dầu spa",
+      "url": "https://tiki.vn/tinh-dau-spa/c11348?src=tree",
+      "parent": "tiki_cate_10"
+    },
+    {
+      "name": "Thời trang nữ",
+      "url": "https://tiki.vn/thoi-trang-nu/c931?src=tree",
+      "parent": "tiki_cate_11"
+    },
+    {
+      "name": "Thời trang nam",
+      "url": "https://tiki.vn/thoi-trang-nam/c915?src=tree",
+      "parent": "tiki_cate_11"
+    },
+    {
+      "name": "Vali - Balo - Túi xách",
+      "url": "https://tiki.vn/vali-balo-tui-xach/c6000?src=tree",
+      "parent": "tiki_cate_11"
+    },
+    {
+      "name": "Phụ kiện thời trang",
+      "url": "https://tiki.vn/phu-kien-thoi-trang/c27498?src=tree",
+      "parent": "tiki_cate_11"
+    },
+    {
+      "name": "Các môn thể thao chơi vợt",
+      "url": "https://tiki.vn/cac-mon-the-thao-choi-vot/c8411?src=tree",
+      "parent": "tiki_cate_12"
+    },
+    {
+      "name": "Các môn thể thao đồng đội",
+      "url": "https://tiki.vn/the-thao-dong-doi/c4227?src=tree",
+      "parent": "tiki_cate_12"
+    },
+    {
+      "name": "Các môn thể thao đối kháng",
+      "url": "https://tiki.vn/cac-mon-the-thao-doi-khang/c23120?src=tree",
+      "parent": "tiki_cate_12"
+    },
+    {
+      "name": "Các môn thể thao khác",
+      "url": "https://tiki.vn/cac-mon-the-thao-khac/c24002?src=tree",
+      "parent": "tiki_cate_12"
+    },
+    {
+      "name": "Dụng cụ - thiết bị tập thể thao",
+      "url": "https://tiki.vn/dung-cu-thiet-bi-tap-the-thao/c24128?src=tree",
+      "parent": "tiki_cate_12"
+    },
+    {
+      "name": "Giày thể thao nam",
+      "url": "https://tiki.vn/giay-the-thao-nam/c6826?src=tree",
+      "parent": "tiki_cate_12"
+    },
+    {
+      "name": "Trang phục thể thao nam",
+      "url": "https://tiki.vn/trang-phuc-the-thao-nam/c6140?src=tree",
+      "parent": "tiki_cate_12"
+    },
+    {
+      "name": "Giày thể thao nữ",
+      "url": "https://tiki.vn/giay-the-thao-nu/c6827?src=tree",
+      "parent": "tiki_cate_12"
+    },
+    {
+      "name": "Trang phục thể thao nữ",
+      "url": "https://tiki.vn/trang-phuc-the-thao-nu/c6141?src=tree",
+      "parent": "tiki_cate_12"
+    },
+    {
+      "name": "Dụng cụ leo núi",
+      "url": "https://tiki.vn/dung-cu-leo-nui/c24258?src=tree",
+      "parent": "tiki_cate_12"
+    },
+    {
+      "name": "Đồ dùng dã ngoại",
+      "url": "https://tiki.vn/do-dung-da-ngoai/c8428?src=tree",
+      "parent": "tiki_cate_12"
+    },
+    {
+      "name": "Dụng cụ câu cá",
+      "url": "https://tiki.vn/dung-cu-cau-ca/c24294?src=tree",
+      "parent": "tiki_cate_12"
+    },
+    {
+      "name": "Phụ kiện thể thao",
+      "url": "https://tiki.vn/phu-kien-the-thao/c24306?src=tree",
+      "parent": "tiki_cate_12"
+    },
+    {
+      "name": "Thể thao dưới nước",
+      "url": "https://tiki.vn/the-thao-duoi-nuoc/c8413?src=tree",
+      "parent": "tiki_cate_12"
+    },
+    {
+      "name": "Thực phẩm bổ sung năng lượng",
+      "url": "https://tiki.vn/thuc-pham-bo-sung-nang-luong/c10803?src=tree",
+      "parent": "tiki_cate_12"
+    },
+    {
+      "name": "Xe máy",
+      "url": "https://tiki.vn/xe-may/c8597?src=tree",
+      "parent": "tiki_cate_13"
+    },
+    {
+      "name": "Xe điện",
+      "url": "https://tiki.vn/xe-dien/c6070?src=tree",
+      "parent": "tiki_cate_13"
+    },
+    {
+      "name": "Xe đạp",
+      "url": "https://tiki.vn/xe-dap/c8431?src=tree",
+      "parent": "tiki_cate_13"
+    },
+    {
+      "name": "Xe Scooter",
+      "url": "https://tiki.vn/xe-scooter/c8435?src=tree",
+      "parent": "tiki_cate_13"
+    },
+    {
+      "name": "Ô tô",
+      "url": "https://tiki.vn/o-to/c8595?src=tree",
+      "parent": "tiki_cate_13"
+    },
+    {
+      "name": "Dịch vụ, lắp đặt",
+      "url": "https://tiki.vn/dich-vu-lap-dat/c17208?src=tree",
+      "parent": "tiki_cate_13"
+    },
+    {
+      "name": "Phụ kiện - Chăm sóc xe",
+      "url": "https://tiki.vn/phu-kien-cham-soc-xe/c24832?src=tree",
+      "parent": "tiki_cate_13"
+    },
+    {
+      "name": "Bách hóa online",
+      "url": "https://tiki.vn/bach-hoa-online/c20766?src=tree",
+      "parent": "tiki_cate_14"
+    },
+    {
+      "name": "Điện gia dụng",
+      "url": "https://tiki.vn/dien-gia-dung/c20824?src=tree",
+      "parent": "tiki_cate_14"
+    },
+    {
+      "name": "Làm Đẹp - Sức Khỏe",
+      "url": "https://tiki.vn/lam-dep-suc-khoe/c20908?src=tree",
+      "parent": "tiki_cate_14"
+    },
+    {
+      "name": "Điện Thoại - Máy Tính Bảng",
+      "url": "https://tiki.vn/dien-thoai-may-tinh-bang/c21054?src=tree",
+      "parent": "tiki_cate_14"
+    },
+    {
+      "name": "Laptop & Máy Vi Tính",
+      "url": "https://tiki.vn/laptop-may-vi-tinh/c21074?src=tree",
+      "parent": "tiki_cate_14"
+    },
+    {
+      "name": "Máy Ảnh - Máy Quay Phim",
+      "url": "https://tiki.vn/may-anh-may-quay-phim/c21134?src=tree",
+      "parent": "tiki_cate_14"
+    },
+    {
+      "name": "Mẹ & Bé",
+      "url": "https://tiki.vn/me-be/c21166?src=tree",
+      "parent": "tiki_cate_14"
+    },
+    {
+      "name": "Nhà Cửa - Đời Sống",
+      "url": "https://tiki.vn/nha-cua-doi-song/c21268?src=tree",
+      "parent": "tiki_cate_14"
+    },
+    {
+      "name": "Sách, Văn phòng phẩm & Quà lưu niệm",
+      "url": "https://tiki.vn/sach-van-phong-pham-qua-luu-niem/c21298?src=tree",
+      "parent": "tiki_cate_14"
+    },
+    {
+      "name": "Ô tô, xe máy, xe đạp",
+      "url": "https://tiki.vn/o-to-xe-may-xe-dap/c21346?src=tree",
+      "parent": "tiki_cate_14"
+    },
+    {
+      "name": "Thể thao - Dã ngoại",
+      "url": "https://tiki.vn/the-thao-da-ngoai/c21356?src=tree",
+      "parent": "tiki_cate_14"
+    },
+    {
+      "name": "Thiết Bị Số - Phụ Kiện Số",
+      "url": "https://tiki.vn/thiet-bi-so-phu-kien-so/c21382?src=tree",
+      "parent": "tiki_cate_14"
+    },
+    {
+      "name": "Thời Trang",
+      "url": "https://tiki.vn/thoi-trang/c21442?src=tree",
+      "parent": "tiki_cate_14"
+    },
+    {
+      "name": "Tivi & Thiết Bị Nghe Nhìn",
+      "url": "https://tiki.vn/tivi-thiet-bi-nghe-nhin/c21496?src=tree",
+      "parent": "tiki_cate_14"
+    },
+    {
+      "name": "Sản phẩm - thiết bị công nghiệp",
+      "url": "https://tiki.vn/san-pham-thiet-bi-cong-nghiep/c25036?src=tree",
+      "parent": "tiki_cate_14"
+    },
+    {
+      "name": "Artist Collection",
+      "url": "https://tiki.vn/artist-collection/c27468?src=tree",
+      "parent": "tiki_cate_14"
+    },
+    {
+      "name": "English Books",
+      "url": "https://tiki.vn/sach-tieng-anh/c320?src=tree",
+      "parent": "tiki_cate_15"
+    },
+    {
+      "name": "Sách tiếng Việt",
+      "url": "https://tiki.vn/sach-truyen-tieng-viet/c316?src=tree",
+      "parent": "tiki_cate_15"
+    },
+    {
+      "name": "Văn phòng phẩm",
+      "url": "https://tiki.vn/van-phong-pham-qua-luu-niem/c7741?src=tree",
+      "parent": "tiki_cate_15"
+    },
+    {
+      "name": "Quà lưu niệm",
+      "url": "https://tiki.vn/qua-luu-niem/c18328?src=tree",
+      "parent": "tiki_cate_15"
+    },
+    {
+      "name": "Nhà hàng - Ăn uống",
+      "url": "https://tiki.vn/nha-hang-an-uong/c11313?src=tree",
+      "parent": "tiki_cate_16"
+    },
+    {
+      "name": "Du lịch - Khách sạn",
+      "url": "https://tiki.vn/du-lich-khach-san/c11319?src=tree",
+      "parent": "tiki_cate_16"
+    },
+    {
+      "name": "Spa & Làm đẹp",
+      "url": "https://tiki.vn/spa-lam-dep/c11322?src=tree",
+      "parent": "tiki_cate_16"
+    },
+    {
+      "name": "Sự kiện - Giải trí",
+      "url": "https://tiki.vn/su-kien-giai-tri/c11327?src=tree",
+      "parent": "tiki_cate_16"
+    },
+    {
+      "name": "Sự kiện - Thể thao",
+      "url": "https://tiki.vn/su-kien-the-thao/c11333?src=tree",
+      "parent": "tiki_cate_16"
+    },
+    {
+      "name": "Nha khoa - Sức khỏe",
+      "url": "https://tiki.vn/nha-khoa-suc-khoe/c11326?src=tree",
+      "parent": "tiki_cate_16"
+    },
+    {
+      "name": "Khóa học",
+      "url": "https://tiki.vn/khoa-hoc/c11332?src=tree",
+      "parent": "tiki_cate_16"
+    },
+    {
+      "name": "Dịch vụ khác",
+      "url": "https://tiki.vn/dich-vu-khac/c11334?src=tree",
+      "parent": "tiki_cate_16"
+    },
+    {
+      "name": "Phiếu quà tặng",
+      "url": "https://tiki.vn/phieu-qua-tang/c13744?src=tree",
+      "parent": "tiki_cate_16"
+    },
+    {
+      "name": "TikiNOW",
+      "url": "https://tiki.vn/tikinow/c33466?src=tree",
+      "parent": "tiki_cate_16"
+    }
+  ]
+}

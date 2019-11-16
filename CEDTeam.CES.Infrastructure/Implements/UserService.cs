@@ -20,6 +20,11 @@ namespace CEDTeam.CES.Infrastructure.Implements
             return await _userRepository.GetAll();
         }
 
+        public async Task<bool> Insert(UserDto userDto)
+        {
+            return true;
+        }
+
         public async Task<bool> InsertFirstLogin(UserDto userDto)
         {
             return await _userRepository.InsertFirstLogin(userDto);
