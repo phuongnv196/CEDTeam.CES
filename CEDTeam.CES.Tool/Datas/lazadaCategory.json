@@ -1,0 +1,5846 @@
+﻿{
+  "category": [
+    {
+      "name": "Điện thoại di động",
+      "url": "https://www.lazada.vn/dien-thoai-di-dong/",
+      "id": "cate_1_1"
+    },
+    {
+      "name": "Máy tính bảng",
+      "url": "https://www.lazada.vn/may-tinh-bang/",
+      "id": "cate_1_2"
+    },
+    {
+      "name": "Laptop",
+      "url": "https://www.lazada.vn/laptop/",
+      "id": "cate_1_3"
+    },
+    {
+      "name": "Máy tính để bàn",
+      "url": "https://www.lazada.vn/may-tinh-de-ban-va-phu-kien/",
+      "id": "cate_1_4"
+    },
+    {
+      "name": "Âm thanh",
+      "url": "https://www.lazada.vn/am-thanh/",
+      "id": "cate_1_5"
+    },
+    {
+      "name": "Camera giám sát",
+      "url": "https://www.lazada.vn/camera-giam-sat-2/",
+      "id": "cate_1_6"
+    },
+    {
+      "name": "Máy ảnh kỷ thuật số",
+      "url": "https://www.lazada.vn/may-anh-may-quay-phim/",
+      "id": "cate_1_7"
+    },
+    {
+      "name": "Máy quay phim & Máy quay hành động",
+      "url": "https://www.lazada.vn/may-quay-phim/",
+      "id": "cate_1_8"
+    },
+    {
+      "name": "Màn hình vi tính",
+      "url": "https://www.lazada.vn/man-hinh-vi-tinh/",
+      "id": "cate_1_9"
+    },
+    {
+      "name": "Máy in",
+      "url": "https://www.lazada.vn/man-hinh-may-in/",
+      "id": "cate_1_10"
+    },
+    {
+      "name": "Đồng hồ thông minh",
+      "url": "https://www.lazada.vn/dong-ho-thong-minh/",
+      "id": "cate_1_11"
+    },
+    {
+      "name": "Máy chơi game",
+      "url": "https://www.lazada.vn/dieu-khien-choi-game/",
+      "id": "cate_1_12"
+    },
+    {
+      "name": "Phụ kiện di động",
+      "url": "https://www.lazada.vn/phu-kien-dien-thoai-may-tinh-bang/",
+      "id": "cate_2_1"
+    },
+    {
+      "name": "Thiết bị thông minh",
+      "url": "https://www.lazada.vn/thiet-bi-thong-minh/",
+      "id": "cate_2_2"
+    },
+    {
+      "name": "Thiết bị số",
+      "url": "https://www.lazada.vn/thiet-bi-so/",
+      "id": "cate_2_3"
+    },
+    {
+      "name": "Phụ kiện Máy ảnh",
+      "url": "https://www.lazada.vn/phu-kien-may-anh-may-quay-phim/",
+      "id": "cate_2_4"
+    },
+    {
+      "name": "Phụ kiện máy bay camera",
+      "url": "https://www.lazada.vn/phu-kien-may-bay-camera/",
+      "id": "cate_2_5"
+    },
+    {
+      "name": "Thiết bị lưu trữ",
+      "url": "https://www.lazada.vn/thiet-bi-luu-tru-2/",
+      "id": "cate_2_6"
+    },
+    {
+      "name": "Phụ kiện Máy tính",
+      "url": "https://www.lazada.vn/phu-kien-may-vi-tinh/",
+      "id": "cate_2_7"
+    },
+    {
+      "name": "Linh kiện máy tính",
+      "url": "https://www.lazada.vn/linh-kien-may-tinh/",
+      "id": "cate_2_8"
+    },
+    {
+      "name": "Phụ kiện ống kính",
+      "url": "https://www.lazada.vn/phu-kien-ong-kinh/",
+      "id": "cate_2_9"
+    },
+    {
+      "name": "Thiết bị mạng",
+      "url": "https://www.lazada.vn/thiet-bi-mang/",
+      "id": "cate_2_10"
+    },
+    {
+      "name": "Phụ kiệm máy chơi game",
+      "url": "https://www.lazada.vn/phu-kien-may-choi-game/",
+      "id": "cate_2_11"
+    },
+    {
+      "name": "Tivi & Videos",
+      "url": "https://www.lazada.vn/tv-video-am-thanh-thiet-bi-deo-cong-nghe/",
+      "id": "cate_3_1"
+    },
+    {
+      "name": "Điện gia dụng nhỏ",
+      "url": "https://www.lazada.vn/do-gia-dung-nho/",
+      "id": "cate_3_2"
+    },
+    {
+      "name": "Điện gia dụng lớn",
+      "url": "https://www.lazada.vn/do-gia-dung-lon/",
+      "id": "cate_3_3"
+    },
+    {
+      "name": "Phụ kiện Tivi",
+      "url": "https://www.lazada.vn/phu-kien-cho-tv/",
+      "id": "cate_3_4"
+    },
+    {
+      "name": "Chăm Sóc Da",
+      "url": "https://www.lazada.vn/cham-soc-da-mat/",
+      "id": "cate_4_1"
+    },
+    {
+      "name": "Trang Điểm",
+      "url": "https://www.lazada.vn/trang-diem/",
+      "id": "cate_4_2"
+    },
+    {
+      "name": "Dụng Cụ Làm Đẹp",
+      "url": "https://www.lazada.vn/dung-cu-cham-soc-sac-dep/",
+      "id": "cate_4_3"
+    },
+    {
+      "name": "Chăm Sóc Cơ Thể",
+      "url": "https://www.lazada.vn/san-pham-tam-cham-soc-co-the/",
+      "id": "cate_4_4"
+    },
+    {
+      "name": "Chăm Sóc Tóc",
+      "url": "https://www.lazada.vn/san-pham-cham-soc-toc/",
+      "id": "cate_4_5"
+    },
+    {
+      "name": "Chăm Sóc Cá Nhân",
+      "url": "https://www.lazada.vn/cham-soc-ca-nhan/",
+      "id": "cate_4_6"
+    },
+    {
+      "name": "Dành Cho Nam Giới",
+      "url": "https://www.lazada.vn/cham-soc-cho-nam-gioi/",
+      "id": "cate_4_7"
+    },
+    {
+      "name": "Nước Hoa",
+      "url": "https://www.lazada.vn/nuoc-hoa/",
+      "id": "cate_4_8"
+    },
+    {
+      "name": "Thực Phẩm Chức Năng",
+      "url": "https://www.lazada.vn/thuc-pham-bo-sung/",
+      "id": "cate_4_9"
+    },
+    {
+      "name": "Thực Phẩm Cho Sắc Đẹp",
+      "url": "https://www.lazada.vn/thuc-pham-cho-sac-dep/",
+      "id": "cate_4_10"
+    },
+    {
+      "name": "Sức Khỏe Tình Dục",
+      "url": "https://www.lazada.vn/ho-tro-tinh-duc/",
+      "id": "cate_4_11"
+    },
+    {
+      "name": "Thiết Bị Y Tế",
+      "url": "https://www.lazada.vn/thiet-bi-y-te/",
+      "id": "cate_4_12"
+    },
+    {
+      "name": "Tã bỉm & Dụng cụ vệ sinh",
+      "url": "https://www.lazada.vn/ta-dung-cu-ve-sinh/",
+      "id": "cate_5_1"
+    },
+    {
+      "name": "Sữa bột & Thức ăn cho bé",
+      "url": "https://www.lazada.vn/sua-cong-thuc-bot-an-dam/",
+      "id": "cate_5_2"
+    },
+    {
+      "name": "Thời trang cho bé",
+      "url": "https://www.lazada.vn/quan-ao-phu-kien-cho-be/",
+      "id": "cate_5_3"
+    },
+    {
+      "name": "Đồ dùng ăn dặm & Bú sữa",
+      "url": "https://www.lazada.vn/do-dung-bu-sua-an-dam/",
+      "id": "cate_5_4"
+    },
+    {
+      "name": "Xe, Ghế & Đai địu",
+      "url": "https://www.lazada.vn/xe-ghe-em-be/",
+      "id": "cate_5_5"
+    },
+    {
+      "name": "Đồ dùng phòng ngủ",
+      "url": "https://www.lazada.vn/cham-soc-tre-so-sinh-tre-nho/",
+      "id": "cate_5_6"
+    },
+    {
+      "name": "Tắm gội & Chăm sóc cơ thể",
+      "url": "https://www.lazada.vn/tam-cham-soc-co-the-tre-so-sinh/",
+      "id": "cate_5_7"
+    },
+    {
+      "name": "Đồ chơi cho bé",
+      "url": "https://www.lazada.vn/do-choi-tro-choi/",
+      "id": "cate_5_8"
+    },
+    {
+      "name": "Đồ chơi điện tử & điều khiển từ xa",
+      "url": "https://www.lazada.vn/xe-mo-hinh-tro-choi-dieu-khien-tu-xa/",
+      "id": "cate_5_9"
+    },
+    {
+      "name": "Đồ chơi thể thao & ngoài trời",
+      "url": "https://www.lazada.vn/the-thao-tro-choi-ngoai-troi/",
+      "id": "cate_5_10"
+    },
+    {
+      "name": "Đồ chơi cho bé chập chững",
+      "url": "https://www.lazada.vn/do-choi-cho-tre-so-sinh-chap-chung/",
+      "id": "cate_5_11"
+    },
+    {
+      "name": "Đồ chơi giáo dục",
+      "url": "https://www.lazada.vn/do-choi-giao-duc-tre-em/",
+      "id": "cate_5_12"
+    },
+    {
+      "name": "Sữa tiệt trùng & Sữa bột",
+      "url": "https://www.lazada.vn/bach-hoa-online-sua-uht-tiet-trung-sua-bot/",
+      "id": "cate_6_1"
+    },
+    {
+      "name": "Đồ uống, Bia, Rượu",
+      "url": "https://www.lazada.vn/cac-loai-do-uong/",
+      "id": "cate_6_2"
+    },
+    {
+      "name": "Thực phẩm từ sữa & Đồ lạnh",
+      "url": "https://www.lazada.vn/shop-Thuc-pham-tu-sua-do-lanh/",
+      "id": "cate_6_3"
+    },
+    {
+      "name": "Đồ hộp, Thực phẩm đóng gói & Sấy khô",
+      "url": "https://www.lazada.vn/shop-do-hop/",
+      "id": "cate_6_4"
+    },
+    {
+      "name": "Kẹo & Socola & Đồ ăn vặt",
+      "url": "https://www.lazada.vn/shop-So-co-la-Snack-Keo/",
+      "id": "cate_6_5"
+    },
+    {
+      "name": "Nguyên liệu nấu ăn & làm bánh",
+      "url": "https://www.lazada.vn/shop-Nguyen-lieu-nau-an-lam-banh/",
+      "id": "cate_6_6"
+    },
+    {
+      "name": "Giấy & vệ sinh nhà cửa",
+      "url": "https://www.lazada.vn/bach-hoa-online-chat-lau-chui-nha-cua/",
+      "id": "cate_6_7"
+    },
+    {
+      "name": "Lau chùi vệ sinh nhà bếp",
+      "url": "https://www.lazada.vn/bach-hoa-online-muong-nia-nhua/",
+      "id": "cate_6_8"
+    },
+    {
+      "name": "Đồ dùng giặt giũ",
+      "url": "https://www.lazada.vn/cham-soc-nha-cua/",
+      "id": "cate_6_9"
+    },
+    {
+      "name": "Phụ kiện thú cưng",
+      "url": "https://www.lazada.vn/phu-kien-cho-thu-cung/",
+      "id": "cate_6_10"
+    },
+    {
+      "name": "Thức ăn và chăm sóc thú cưng",
+      "url": "https://www.lazada.vn/thuc-an-thu-cung/",
+      "id": "cate_6_11"
+    },
+    {
+      "name": "Bếp & Phòng Ăn",
+      "url": "https://www.lazada.vn/do-dung-bep-phong-an/",
+      "id": "cate_7_1"
+    },
+    {
+      "name": "Sửa chữa nhà cửa",
+      "url": "https://www.lazada.vn/tan-trang-nha-cua/",
+      "id": "cate_7_2"
+    },
+    {
+      "name": "Dụng cụ điện",
+      "url": "https://www.lazada.vn/dung-cu-dien/",
+      "id": "cate_7_3"
+    },
+    {
+      "name": "Dụng cụ cầm tay",
+      "url": "https://www.lazada.vn/dung-cu-cam-tay-da-nang/",
+      "id": "cate_7_4"
+    },
+    {
+      "name": "Phòng ngủ",
+      "url": "https://www.lazada.vn/do-dung-phong-ngu-gia-dinh/",
+      "id": "cate_7_5"
+    },
+    {
+      "name": "Phòng tắm",
+      "url": "https://www.lazada.vn/do-dung-phu-kien-phong-tam/",
+      "id": "cate_7_6"
+    },
+    {
+      "name": "Đèn & Thiết bị đèn",
+      "url": "https://www.lazada.vn/cac-loai-den/",
+      "id": "cate_7_7"
+    },
+    {
+      "name": "Trang trí nhà cửa",
+      "url": "https://www.lazada.vn/san-pham-trang-tri-nha-cua/",
+      "id": "cate_7_8"
+    },
+    {
+      "name": "Đồ nội thất",
+      "url": "https://www.lazada.vn/san-pham-noi-that/",
+      "id": "cate_7_9"
+    },
+    {
+      "name": "Văn phòng phẩm & thủ công",
+      "url": "https://www.lazada.vn/van-phong-pham-va-nghe-thu-cong/",
+      "id": "cate_7_10"
+    },
+    {
+      "name": "Sách",
+      "url": "https://www.lazada.vn/sach/",
+      "id": "cate_7_11"
+    },
+    {
+      "name": "Nhạc cụ",
+      "url": "https://www.lazada.vn/nhac-cu-moi/",
+      "id": "cate_7_12"
+    },
+    {
+      "name": "Đầm nữ",
+      "url": "https://www.lazada.vn/dam-nu/",
+      "id": "cate_8_1"
+    },
+    {
+      "name": "Quần và chân váy",
+      "url": "https://www.lazada.vn/jeans-nu/",
+      "id": "cate_8_2"
+    },
+    {
+      "name": "Áo nữ",
+      "url": "https://www.lazada.vn/ao-nu/",
+      "id": "cate_8_3"
+    },
+    {
+      "name": "Jumpsuits",
+      "url": "https://www.lazada.vn/jumpsuit-nu/",
+      "id": "cate_8_4"
+    },
+    {
+      "name": "Đồ đôi và gia đình",
+      "url": "https://www.lazada.vn/invisible-unisex-fashion-4/",
+      "id": "cate_8_5"
+    },
+    {
+      "name": "Đồ ngủ và nội y",
+      "url": "https://www.lazada.vn/do-ngu-noi-y/",
+      "id": "cate_8_6"
+    },
+    {
+      "name": "Phụ kiện nữ",
+      "url": "https://www.lazada.vn/phu-kien-cho-nu/",
+      "id": "cate_8_7"
+    },
+    {
+      "name": "Giày nữ",
+      "url": "https://www.lazada.vn/giay-nu-thoi-trang/",
+      "id": "cate_8_8"
+    },
+    {
+      "name": "Trang phục bé gái",
+      "url": "https://www.lazada.vn/trang-phuc-cua-be-gai/",
+      "id": "cate_8_9"
+    },
+    {
+      "name": "Giày bé gái",
+      "url": "https://www.lazada.vn/thoi-trang-giay-danh-cho-be-gai/",
+      "id": "cate_8_10"
+    },
+    {
+      "name": "Trang phục nam",
+      "url": "https://www.lazada.vn/trang-phuc-nam/",
+      "id": "cate_9_1"
+    },
+    {
+      "name": "Giày dép nam",
+      "url": "https://www.lazada.vn/giay-nam-thoi-trang/",
+      "id": "cate_9_2"
+    },
+    {
+      "name": "Đồ lót nam",
+      "url": "https://www.lazada.vn/do-lot-nam/",
+      "id": "cate_9_3"
+    },
+    {
+      "name": "Phụ kiện thời trang nam",
+      "url": "https://www.lazada.vn/phu-kien-thoi-trang-nam/",
+      "id": "cate_9_4"
+    },
+    {
+      "name": "Trang phục bé trai",
+      "url": "https://www.lazada.vn/trang-phuc-cua-be-trai/",
+      "id": "cate_9_5"
+    },
+    {
+      "name": "Giày bé trai",
+      "url": "https://www.lazada.vn/thoi-trang-giay-cho-be-trai/",
+      "id": "cate_9_6"
+    },
+    {
+      "name": "Đồng Hồ Nữ",
+      "url": "https://www.lazada.vn/dong-ho-nu-thoi-trang/",
+      "id": "cate_10_1"
+    },
+    {
+      "name": "Trang Sức Nữ",
+      "url": "https://www.lazada.vn/Fashion-Accessories/",
+      "id": "cate_10_2"
+    },
+    {
+      "name": "Kính Mát",
+      "url": "https://www.lazada.vn/kinh-mat/",
+      "id": "cate_10_3"
+    },
+    {
+      "name": "Kính Thời Trang",
+      "url": "https://www.lazada.vn/kinh-mat-2/",
+      "id": "cate_10_4"
+    },
+    {
+      "name": "Túi Xách Nữ",
+      "url": "https://www.lazada.vn/tui-cho-nu/",
+      "id": "cate_10_5"
+    },
+    {
+      "name": "Ba Lô Nữ",
+      "url": "https://www.lazada.vn/ba-lo-nu/",
+      "id": "cate_10_6"
+    },
+    {
+      "name": "Đồng Hồ Nam",
+      "url": "https://www.lazada.vn/dong-ho-nam-gioi/",
+      "id": "cate_10_7"
+    },
+    {
+      "name": "Trang Sức Nam",
+      "url": "https://www.lazada.vn/trang-suc-nam/",
+      "id": "cate_10_8"
+    },
+    {
+      "name": "Túi Xách Nam",
+      "url": "https://www.lazada.vn/tui-nam/",
+      "id": "cate_10_9"
+    },
+    {
+      "name": "Túi Đeo Chéo Nam",
+      "url": "https://www.lazada.vn/tui-deo-cheo-cho-nam/",
+      "id": "cate_10_10"
+    },
+    {
+      "name": "Vali & Túi Du Lịch",
+      "url": "https://www.lazada.vn/vali-ba-lo-tui-du-lich-2/",
+      "id": "cate_10_11"
+    },
+    {
+      "name": "Túi Trẻ Em",
+      "url": "https://www.lazada.vn/tui-danh-cho-tre-em/",
+      "id": "cate_10_12"
+    },
+    {
+      "name": "Giày Thể Thao Nam",
+      "url": "https://www.lazada.vn/do-the-thao-nam/",
+      "id": "cate_11_1"
+    },
+    {
+      "name": "Trang Phục Nam",
+      "url": "https://www.lazada.vn/quan-ao-the-thao-cho-nam/",
+      "id": "cate_11_2"
+    },
+    {
+      "name": "Giày Thể Thao Nữ",
+      "url": "https://www.lazada.vn/do-the-thao-nu/",
+      "id": "cate_11_3"
+    },
+    {
+      "name": "Trang Phục Nữ",
+      "url": "https://www.lazada.vn/quan-ao-the-thao-cho-nu/",
+      "id": "cate_11_4"
+    },
+    {
+      "name": "Vali & Túi Du Lịch",
+      "url": "https://www.lazada.vn/vali-ba-lo-tui-du-lich-2/",
+      "id": "cate_11_5"
+    },
+    {
+      "name": "Hoạt Động Dã Ngoại",
+      "url": "https://www.lazada.vn/hoat-dong-da-ngoai/",
+      "id": "cate_11_6"
+    },
+    {
+      "name": "Thể Thao & Thể Hình",
+      "url": "https://www.lazada.vn/dung-cu-de-tap-the-hinh/",
+      "id": "cate_11_7"
+    },
+    {
+      "name": "Thể Thao Dùng Vợt",
+      "url": "https://www.lazada.vn/cac-mon-the-thao-vot/",
+      "id": "cate_11_8"
+    },
+    {
+      "name": "Thể Thao Đồng Đội",
+      "url": "https://www.lazada.vn/cac-mon-tap-luyen-doi-khang/",
+      "id": "cate_11_9"
+    },
+    {
+      "name": "Đấm Bốc & Võ Thuật",
+      "url": "https://www.lazada.vn/dam-boc-vo-thuat-danh-mma/",
+      "id": "cate_11_10"
+    },
+    {
+      "name": "Thể Thao Dưới Nước",
+      "url": "https://www.lazada.vn/cac-mon-the-thao-duoi-nuoc/",
+      "id": "cate_11_11"
+    },
+    {
+      "name": "Phụ Kiện Thể Thao",
+      "url": "https://www.lazada.vn/phu-kien-the-thao/",
+      "id": "cate_11_12"
+    },
+    {
+      "name": "Xe máy",
+      "url": "https://www.lazada.vn/xe-mo-to-xe-tay-ga/",
+      "id": "cate_12_1"
+    },
+    {
+      "name": "Chăm sóc ô tô",
+      "url": "https://www.lazada.vn/cham-soc-o-to/",
+      "id": "cate_12_2"
+    },
+    {
+      "name": "Trang trí nội thất ô tô",
+      "url": "https://www.lazada.vn/phu-kien-trong-o-to-xe-may/",
+      "id": "cate_12_3"
+    },
+    {
+      "name": "Trang trí ngoại thất ô tô",
+      "url": "https://www.lazada.vn/phu-kien-ngoai-o-to-xe-may/",
+      "id": "cate_12_4"
+    },
+    {
+      "name": "Phụ tùng & phụ kiện ô tô",
+      "url": "https://www.lazada.vn/bo-phan-phu-tung-thay-the-cho-xe/",
+      "id": "cate_12_5"
+    },
+    {
+      "name": "Đồ điện tử dành cho ô tô",
+      "url": "https://www.lazada.vn/hang-dien-tu-2/",
+      "id": "cate_12_6"
+    },
+    {
+      "name": "Dầu nhớt & phụ gia ô tô",
+      "url": "https://www.lazada.vn/dau-nhot-o-to-xe-may/",
+      "id": "cate_12_7"
+    },
+    {
+      "name": "Phụ tùng xe máy",
+      "url": "https://www.lazada.vn/bo-phan-mo-to-phu-tung-thay-the-cho-mo-to/",
+      "id": "cate_12_8"
+    },
+    {
+      "name": "Đồ bảo hộ khi đi xe máy",
+      "url": "https://www.lazada.vn/do-bao-ho-mo-to/",
+      "id": "cate_12_9"
+    },
+    {
+      "name": "Phụ kiện & đồ chơi xe máy",
+      "url": "https://www.lazada.vn/phu-kien-gan-ngoai-mo-to/",
+      "id": "cate_12_10"
+    },
+    {
+      "name": "Dầu nhớt & phụ gia xe máy",
+      "url": "https://www.lazada.vn/dau-nhot-mo-to/",
+      "id": "cate_12_11"
+    },
+    {
+      "name": "Vỏ ruột bánh xe máy & Mâm xe",
+      "url": "https://www.lazada.vn/banh-xe-lop-xe-may/",
+      "id": "cate_12_12"
+    }
+  ],
+  "subcategory": [
+    {
+      "name": "Laptop cơ bản",
+      "url": "https://www.lazada.vn/laptop-co-ban/",
+      "parent": "cate_1_3"
+    },
+    {
+      "name": "Laptop chơi game",
+      "url": "https://www.lazada.vn/laptop-giai-tri/",
+      "parent": "cate_1_3"
+    },
+    {
+      "name": "Dòng 2 trong 1",
+      "url": "https://www.lazada.vn/dong-2-in-1/",
+      "parent": "cate_1_3"
+    },
+    {
+      "name": "Máy tính nguyên bộ",
+      "url": "https://www.lazada.vn/may-tinh-all-in-one/",
+      "parent": "cate_1_4"
+    },
+    {
+      "name": "Máy tính để bàn chơi game",
+      "url": "https://www.lazada.vn/may-tinh-choi-game/",
+      "parent": "cate_1_4"
+    },
+    {
+      "name": "Máy tính tự ráp",
+      "url": "https://www.lazada.vn/may-tinh-tu-lap-rap/",
+      "parent": "cate_1_4"
+    },
+    {
+      "name": "Các loại tai nghe",
+      "url": "https://www.lazada.vn/cac-loai-tai-nghe/",
+      "parent": "cate_1_5"
+    },
+    {
+      "name": "Loa di động",
+      "url": "https://www.lazada.vn/loa-di-dong/",
+      "parent": "cate_1_5"
+    },
+    {
+      "name": "Âm thanh tại nhà",
+      "url": "https://www.lazada.vn/he-thong-giai-tri-cho-tai-gia/",
+      "parent": "cate_1_5"
+    },
+    {
+      "name": "Thiết bị Audio chuyên nghiệp",
+      "url": "https://www.lazada.vn/am-thanh-song-san-khau/",
+      "parent": "cate_1_5"
+    },
+    {
+      "name": "Thiết bị DJ",
+      "url": "https://www.lazada.vn/thiet-bi-dj-2/",
+      "parent": "cate_1_5"
+    },
+    {
+      "name": "Máy đọc đĩa than",
+      "url": "https://www.lazada.vn/may-doc-dia-than/",
+      "parent": "cate_1_5"
+    },
+    {
+      "name": "Phụ kiện tại nghe",
+      "url": "https://www.lazada.vn/phu-kien-tai-nghe/",
+      "parent": "cate_1_5"
+    },
+    {
+      "name": "Phụ kiện loa di động",
+      "url": "https://www.lazada.vn/phu-kien-loa-de-ban/",
+      "parent": "cate_1_5"
+    },
+    {
+      "name": "Phụ kiện âm thanh tại nhà",
+      "url": "https://www.lazada.vn/phu-kien-am-thanh-tai-gia/",
+      "parent": "cate_1_5"
+    },
+    {
+      "name": "Phụ kiện thiết bị âm thanh chuyên nghiệp",
+      "url": "https://www.lazada.vn/phu-kien-am-thanh-chuyen-nghiep/",
+      "parent": "cate_1_5"
+    },
+    {
+      "name": "Thiết bị âm thanh di động",
+      "url": "https://www.lazada.vn/thiet-bi-phat-am-thanh-di-dong/",
+      "parent": "cate_1_5"
+    },
+    {
+      "name": "Camera IP kết nối internet",
+      "url": "https://www.lazada.vn/camera-ip-ket-noi-internet/",
+      "parent": "cate_1_6"
+    },
+    {
+      "name": "Camera an ninh CCTV",
+      "url": "https://www.lazada.vn/camera-an-ninh-cctv/",
+      "parent": "cate_1_6"
+    },
+    {
+      "name": "Hệ thống an ninh IP",
+      "url": "https://www.lazada.vn/he-thong-an-ninh-ip/",
+      "parent": "cate_1_6"
+    },
+    {
+      "name": "Hệ thống an ninh CCTV",
+      "url": "https://www.lazada.vn/he-thong-an-ninh-cctv/",
+      "parent": "cate_1_6"
+    },
+    {
+      "name": "Camera chống trộm",
+      "url": "https://www.lazada.vn/dummy-cameras/",
+      "parent": "cate_1_6"
+    },
+    {
+      "name": "Máy ảnh DSLR",
+      "url": "https://www.lazada.vn/may-anh-slr/",
+      "parent": "cate_1_7"
+    },
+    {
+      "name": "Máy ảnh không gương lật",
+      "url": "https://www.lazada.vn/may-anh-khong-guong-lat/",
+      "parent": "cate_1_7"
+    },
+    {
+      "name": "Máy ảnh du lịch",
+      "url": "https://www.lazada.vn/may-anh-du-lich/",
+      "parent": "cate_1_7"
+    },
+    {
+      "name": "Máy ảnh siêu zoom",
+      "url": "https://www.lazada.vn/may-anh-sieu-zoom/",
+      "parent": "cate_1_7"
+    },
+    {
+      "name": "Máy bay camera",
+      "url": "https://www.lazada.vn/may-bay-co-camera/",
+      "parent": "cate_1_7"
+    },
+    {
+      "name": "Máy chụp lấy ngay & Phụ kiện",
+      "url": "https://www.lazada.vn/may-anh-chup-lay-ngay/",
+      "parent": "cate_1_7"
+    },
+    {
+      "name": "Ống kính",
+      "url": "https://www.lazada.vn/cac-loai-ong-kinh/",
+      "parent": "cate_1_7"
+    },
+    {
+      "name": "Ống nhòm",
+      "url": "https://www.lazada.vn/cac-loai-ong-nhom/",
+      "parent": "cate_1_7"
+    },
+    {
+      "name": "Các loại máy ảnh khác & Phụ kiện",
+      "url": "https://www.lazada.vn/cac-loai-may-anh-khac/",
+      "parent": "cate_1_7"
+    },
+    {
+      "name": "Camera thể thao & Hành động",
+      "url": "https://www.lazada.vn/may-quay-hanh-dong/",
+      "parent": "cate_1_8"
+    },
+    {
+      "name": "Máy quay phim",
+      "url": "https://www.lazada.vn/mua-may-quay-phim/",
+      "parent": "cate_1_8"
+    },
+    {
+      "name": "Máy quay phim chuyên nghiệp",
+      "url": "https://www.lazada.vn/camera-chuyen-nghiep/",
+      "parent": "cate_1_8"
+    },
+    {
+      "name": "Camera 360",
+      "url": "https://www.lazada.vn/360-camera/",
+      "parent": "cate_1_8"
+    },
+    {
+      "name": "Máy quay dưới nước",
+      "url": "https://www.lazada.vn/may-quay-phim-duoi-nuoc/",
+      "parent": "cate_1_8"
+    },
+    {
+      "name": "Máy in",
+      "url": "https://www.lazada.vn/may-in/",
+      "parent": "cate_1_10"
+    },
+    {
+      "name": "Máy Scan",
+      "url": "https://www.lazada.vn/may-scan/",
+      "parent": "cate_1_10"
+    },
+    {
+      "name": "Máy fax",
+      "url": "https://www.lazada.vn/may-fax/",
+      "parent": "cate_1_10"
+    },
+    {
+      "name": "Máy in 3D",
+      "url": "https://www.lazada.vn/may-in-3d/",
+      "parent": "cate_1_10"
+    },
+    {
+      "name": "Máy in cắt",
+      "url": "https://www.lazada.vn/may-in-cat/",
+      "parent": "cate_1_10"
+    },
+    {
+      "name": "Mực máy in",
+      "url": "https://www.lazada.vn/muc-in/",
+      "parent": "cate_1_10"
+    },
+    {
+      "name": "Bộ nhớ máy in",
+      "url": "https://www.lazada.vn/bo-nho-may-in/",
+      "parent": "cate_1_10"
+    },
+    {
+      "name": "Đồng hồ thông minh",
+      "url": "https://www.lazada.vn/dong-ho-thong-minh/",
+      "parent": "cate_1_11"
+    },
+    {
+      "name": "Đồng hồ Thông minh trẻ em",
+      "url": "https://www.lazada.vn/dong-ho-thong-minh-cho-tre-em/",
+      "parent": "cate_1_11"
+    },
+    {
+      "name": "Đồng hồ thông minh thiết kế",
+      "url": "https://www.lazada.vn/dong-ho-thong-minh-thiet-ke/",
+      "parent": "cate_1_11"
+    },
+    {
+      "name": "Máy chơi game",
+      "url": "https://www.lazada.vn/bang-dieu-khien-game/",
+      "parent": "cate_1_12"
+    },
+    {
+      "name": "Trò chơi máy console",
+      "url": "https://www.lazada.vn/tay-cam-choi-game-2/",
+      "parent": "cate_1_12"
+    },
+    {
+      "name": "Tai nghe chơi game",
+      "url": "https://www.lazada.vn/tai-nghe-choi-game/",
+      "parent": "cate_1_12"
+    },
+    {
+      "name": "Ốp lưng & bao da máy tính bảng",
+      "url": "https://www.lazada.vn/op-lung-bao-da-bang-dieu-khien-game/",
+      "parent": "cate_1_12"
+    },
+    {
+      "name": "Miếng dán màn hình điện thoại",
+      "url": "https://www.lazada.vn/bao-ve-bang-dieu-khien-choi-game/",
+      "parent": "cate_1_12"
+    },
+    {
+      "name": "Pin sạc dự phòng",
+      "url": "https://www.lazada.vn/pin-sac-du-phong/",
+      "parent": "cate_2_1"
+    },
+    {
+      "name": "Cáp & Dock sạc",
+      "url": "https://www.lazada.vn/\\N/",
+      "parent": "cate_2_1"
+    },
+    {
+      "name": "Bộ sạc có dây",
+      "url": "https://www.lazada.vn/bo-sac-co-day-cho-dien-thoai/",
+      "parent": "cate_2_1"
+    },
+    {
+      "name": "Bộ sạc không dây",
+      "url": "https://www.lazada.vn/bo-sac-khong-day-cho-dien-thoai/",
+      "parent": "cate_2_1"
+    },
+    {
+      "name": "Ốp lưng và bao da điện thoại",
+      "url": "https://www.lazada.vn/op-lung-bao-da-dien-thoai/",
+      "parent": "cate_2_1"
+    },
+    {
+      "name": "Ốp lưng và bao da máy tính bảng",
+      "url": "https://www.lazada.vn/op-lung-bao-da-may-tinh-bang/",
+      "parent": "cate_2_1"
+    },
+    {
+      "name": "Miếng dán màn hình điện thoại",
+      "url": "https://www.lazada.vn/mieng-dan-man-hinh-dien-thoai/",
+      "parent": "cate_2_1"
+    },
+    {
+      "name": "Gậy chụp ảnh",
+      "url": "https://www.lazada.vn/gay-chup-anh/",
+      "parent": "cate_2_1"
+    },
+    {
+      "name": "Sạc trên xe hơi",
+      "url": "https://www.lazada.vn/sac-tren-xe-hoi/",
+      "parent": "cate_2_1"
+    },
+    {
+      "name": "SIM & Thẻ cào",
+      "url": "https://www.lazada.vn/sim-the-cao/",
+      "parent": "cate_2_1"
+    },
+    {
+      "name": "Dock sạc & Giá đỡ",
+      "url": "https://www.lazada.vn/dock-sac-dien-thoai/",
+      "parent": "cate_2_1"
+    },
+    {
+      "name": "Đồng hồ thông minh & Phụ kiện",
+      "url": "https://www.lazada.vn/dong-ho-thong-minh-phu-kien/",
+      "parent": "cate_2_2"
+    },
+    {
+      "name": "Thiết bị theo dõi vận động & Phụ kiện",
+      "url": "https://www.lazada.vn/phu-kien-thiet-bi-theo-doi-van-dong/",
+      "parent": "cate_2_2"
+    },
+    {
+      "name": "Loa thông minh",
+      "url": "https://www.lazada.vn/loa-thong-minh/",
+      "parent": "cate_2_2"
+    },
+    {
+      "name": "Công tắc thông minh",
+      "url": "https://www.lazada.vn/cong-tat-thong-minh/",
+      "parent": "cate_2_2"
+    },
+    {
+      "name": "Mắt kính thông minh",
+      "url": "https://www.lazada.vn/mat-kinh-thong-minh/",
+      "parent": "cate_2_2"
+    },
+    {
+      "name": "Nhẫn thông minh",
+      "url": "https://www.lazada.vn/nhan-thong-minh/",
+      "parent": "cate_2_2"
+    },
+    {
+      "name": "Phụ kiện thiết bị thực tế ảo",
+      "url": "https://www.lazada.vn/phu-kien-thiet-bi-thuc-te-ao/",
+      "parent": "cate_2_2"
+    },
+    {
+      "name": "Thiết bị thực tế ảo",
+      "url": "https://www.lazada.vn/thiet-bi-thuc-te-ao-cong-nghe/",
+      "parent": "cate_2_2"
+    },
+    {
+      "name": "Thiết bị điều khiển qua cử chỉ",
+      "url": "https://www.lazada.vn/thiet-bi-dieu-khien-bang-cu-chi/",
+      "parent": "cate_2_2"
+    },
+    {
+      "name": "Thiết bị giám sát thông minh",
+      "url": "https://www.lazada.vn/thiet-bi-giam-sat-thong-minh/",
+      "parent": "cate_2_2"
+    },
+    {
+      "name": "Thiết bị streaming",
+      "url": "https://www.lazada.vn/thiet-bi-streaming/",
+      "parent": "cate_2_2"
+    },
+    {
+      "name": "Bút laser",
+      "url": "https://www.lazada.vn/but-laser/",
+      "parent": "cate_2_3"
+    },
+    {
+      "name": "Máy dò kim loại",
+      "url": "https://www.lazada.vn/may-do-kim-loai/",
+      "parent": "cate_2_3"
+    },
+    {
+      "name": "Kim tự điển & Máy thông dịch",
+      "url": "https://www.lazada.vn/kim-tu-dien-va-may-thong-dich/",
+      "parent": "cate_2_3"
+    },
+    {
+      "name": "Bộ sạc đa năng",
+      "url": "https://www.lazada.vn/bo-sac-da-nang-thiet-bi-so/",
+      "parent": "cate_2_3"
+    },
+    {
+      "name": "Bảng vẽ",
+      "url": "https://www.lazada.vn/bang-ve/",
+      "parent": "cate_2_3"
+    },
+    {
+      "name": "Bộ đàm",
+      "url": "https://www.lazada.vn/bo-dam-thiet-bi-so/",
+      "parent": "cate_2_3"
+    },
+    {
+      "name": "Balo máy ảnh",
+      "url": "https://www.lazada.vn/tui-balo-dung-may-anh/",
+      "parent": "cate_2_4"
+    },
+    {
+      "name": "Pin máy ảnh",
+      "url": "https://www.lazada.vn/pin-may-anh/",
+      "parent": "cate_2_4"
+    },
+    {
+      "name": "Sạc pin máy ảnh",
+      "url": "https://www.lazada.vn/sac-pin-may-anh/",
+      "parent": "cate_2_4"
+    },
+    {
+      "name": "Tay cầm chống rung",
+      "url": "https://www.lazada.vn/tay-cam-chong-rung/",
+      "parent": "cate_2_4"
+    },
+    {
+      "name": "Tripods & Monopods",
+      "url": "https://www.lazada.vn/tripods-monopods/",
+      "parent": "cate_2_4"
+    },
+    {
+      "name": "Bộ sạc",
+      "url": "https://www.lazada.vn/bo-sac-day-cap/",
+      "parent": "cate_2_4"
+    },
+    {
+      "name": "Dây đeo",
+      "url": "https://www.lazada.vn/day-deo-moi/",
+      "parent": "cate_2_4"
+    },
+    {
+      "name": "Đèn flash",
+      "url": "https://www.lazada.vn/den-flash/",
+      "parent": "cate_2_4"
+    },
+    {
+      "name": "Hộp chống ẩm",
+      "url": "https://www.lazada.vn/hop-chong-am/",
+      "parent": "cate_2_4"
+    },
+    {
+      "name": "Kính lọc máy ảnh",
+      "url": "https://www.lazada.vn/kinh-loc-phu-kien-may-anh/",
+      "parent": "cate_2_4"
+    },
+    {
+      "name": "Micro quay phim",
+      "url": "https://www.lazada.vn/micro-quay-phim/",
+      "parent": "cate_2_4"
+    },
+    {
+      "name": "Túi đựng máy bay Camera",
+      "url": "https://www.lazada.vn/tui-bao-danh-cho-drones/",
+      "parent": "cate_2_5"
+    },
+    {
+      "name": "Pin máy bay Camera",
+      "url": "https://www.lazada.vn/pin-danh-cho-drones/",
+      "parent": "cate_2_5"
+    },
+    {
+      "name": "Điều khiển từ xa",
+      "url": "https://www.lazada.vn/dieu-khien-phu-kien-drones/",
+      "parent": "cate_2_5"
+    },
+    {
+      "name": "Cánh và các bộ phận khác",
+      "url": "https://www.lazada.vn/canh-quat-bo-phan-khac/",
+      "parent": "cate_2_5"
+    },
+    {
+      "name": "Ổ cứng gắn trong",
+      "url": "https://www.lazada.vn/o-cung-gan-trong/",
+      "parent": "cate_2_6"
+    },
+    {
+      "name": "Ổ cứng gắn ngoài",
+      "url": "https://www.lazada.vn/o-cung-di-dong/",
+      "parent": "cate_2_6"
+    },
+    {
+      "name": "Thẻ nhớ",
+      "url": "https://www.lazada.vn/the-nho-may-anh/",
+      "parent": "cate_2_6"
+    },
+    {
+      "name": "Thiết bị lưu trữ mạng NAS",
+      "url": "https://www.lazada.vn/thiet-bi-luu-tru-mang-nas/",
+      "parent": "cate_2_6"
+    },
+    {
+      "name": "USB OTG",
+      "url": "https://www.lazada.vn/usb-otg/",
+      "parent": "cate_2_6"
+    },
+    {
+      "name": "USB",
+      "url": "https://www.lazada.vn/usb/",
+      "parent": "cate_2_6"
+    },
+    {
+      "name": "Bộ nhớ ngoài Macbook",
+      "url": "https://www.lazada.vn/bo-nho-ngoai-macbook/",
+      "parent": "cate_2_6"
+    },
+    {
+      "name": "Ổ cứng SSD gắn trong",
+      "url": "https://www.lazada.vn/o-cung-ssd-gan-trong/",
+      "parent": "cate_2_6"
+    },
+    {
+      "name": "Ổ cứng SSD gắn ngoài",
+      "url": "https://www.lazada.vn/o-cung-ssd-gan-ngoai/",
+      "parent": "cate_2_6"
+    },
+    {
+      "name": "Phụ kiện Macbook",
+      "url": "https://www.lazada.vn/phu-kien-mac/",
+      "parent": "cate_2_7"
+    },
+    {
+      "name": "Bàn phím",
+      "url": "https://www.lazada.vn/ban-phim/",
+      "parent": "cate_2_7"
+    },
+    {
+      "name": "Chuột",
+      "url": "https://www.lazada.vn/chuot/",
+      "parent": "cate_2_7"
+    },
+    {
+      "name": "Webcam",
+      "url": "https://www.lazada.vn/webcam-may-tinh/",
+      "parent": "cate_2_7"
+    },
+    {
+      "name": "Đế tản nhiệt",
+      "url": "https://www.lazada.vn/de-tan-nhiet/",
+      "parent": "cate_2_7"
+    },
+    {
+      "name": "Ổ đĩa rời",
+      "url": "https://www.lazada.vn/o-dia-roi/",
+      "parent": "cate_2_7"
+    },
+    {
+      "name": "Pin Laptop",
+      "url": "https://www.lazada.vn/pin-may-tinh/",
+      "parent": "cate_2_7"
+    },
+    {
+      "name": "Phần mềm",
+      "url": "https://www.lazada.vn/phan-mem-may-tinh-laptop/",
+      "parent": "cate_2_7"
+    },
+    {
+      "name": "Miếng lót chuột",
+      "url": "https://www.lazada.vn/mieng-lot-chuot/",
+      "parent": "cate_2_7"
+    },
+    {
+      "name": "Decal dán",
+      "url": "https://www.lazada.vn/mieng-dan-decal-macbook/",
+      "parent": "cate_2_7"
+    },
+    {
+      "name": "USB Hub",
+      "url": "https://www.lazada.vn/usb-hub/",
+      "parent": "cate_2_7"
+    },
+    {
+      "name": "Bo mạch chủ",
+      "url": "https://www.lazada.vn/bo-mach-chu/",
+      "parent": "cate_2_8"
+    },
+    {
+      "name": "Bộ vi xử lý",
+      "url": "https://www.lazada.vn/bo-vi-xu-ly/",
+      "parent": "cate_2_8"
+    },
+    {
+      "name": "Card âm thanh",
+      "url": "https://www.lazada.vn/card-am-thanh/",
+      "parent": "cate_2_8"
+    },
+    {
+      "name": "Card đồ họa",
+      "url": "https://www.lazada.vn/card-man-hinh/",
+      "parent": "cate_2_8"
+    },
+    {
+      "name": "RAM máy tính",
+      "url": "https://www.lazada.vn/ram-may-tinh/",
+      "parent": "cate_2_8"
+    },
+    {
+      "name": "Case máy tính",
+      "url": "https://www.lazada.vn/case-may-tinh-de-ban/",
+      "parent": "cate_2_8"
+    },
+    {
+      "name": "Hệ Thống Làm Mát Bằng Nước",
+      "url": "https://www.lazada.vn/mua-he-thong-tan-nhiet/",
+      "parent": "cate_2_8"
+    },
+    {
+      "name": "Máy tính một Board",
+      "url": "https://www.lazada.vn/temporary-url-key-electronics-level3-24/",
+      "parent": "cate_2_8"
+    },
+    {
+      "name": "Nguồn máy tính",
+      "url": "https://www.lazada.vn/nguon-may-tinh/",
+      "parent": "cate_2_8"
+    },
+    {
+      "name": "Ổ đĩa quang",
+      "url": "https://www.lazada.vn/o-dia-quang/",
+      "parent": "cate_2_8"
+    },
+    {
+      "name": "Quạt (cho Case)",
+      "url": "https://www.lazada.vn/quat-cho-case/",
+      "parent": "cate_2_8"
+    },
+    {
+      "name": "Loa che nắng",
+      "url": "https://www.lazada.vn/loa-che-nang/",
+      "parent": "cate_2_9"
+    },
+    {
+      "name": "Thiết bị vệ sinh ống kính",
+      "url": "https://www.lazada.vn/thiet-bi-ve-sinh-ong-kinh/",
+      "parent": "cate_2_9"
+    },
+    {
+      "name": "Nắp ống kính",
+      "url": "https://www.lazada.vn/nap-ong-kinh/",
+      "parent": "cate_2_9"
+    },
+    {
+      "name": "Kính lọc",
+      "url": "https://www.lazada.vn/kinh-loc/",
+      "parent": "cate_2_9"
+    },
+    {
+      "name": "túi đựng ống kính",
+      "url": "https://www.lazada.vn/tui-dung-ong-kinh/",
+      "parent": "cate_2_9"
+    },
+    {
+      "name": "Bộ chuyển đổi",
+      "url": "https://www.lazada.vn/adapter-bo-chuyen-ong-kinh/",
+      "parent": "cate_2_9"
+    },
+    {
+      "name": "Vòng hỗ trợ lấy nét",
+      "url": "https://www.lazada.vn/vong-ho-tro-lay-net/",
+      "parent": "cate_2_9"
+    },
+    {
+      "name": "Hộp che nắng ống kính",
+      "url": "https://www.lazada.vn/hop-che-nang-ong-kinh/",
+      "parent": "cate_2_9"
+    },
+    {
+      "name": "Ống tăng tiêu cự",
+      "url": "https://www.lazada.vn/ong-tang-tieu-cu/",
+      "parent": "cate_2_9"
+    },
+    {
+      "name": "Router",
+      "url": "https://www.lazada.vn/router/",
+      "parent": "cate_2_10"
+    },
+    {
+      "name": "Điểm truy cập mạng",
+      "url": "https://www.lazada.vn/bo-phat-song-wifi/",
+      "parent": "cate_2_10"
+    },
+    {
+      "name": "Switch",
+      "url": "https://www.lazada.vn/switch/",
+      "parent": "cate_2_10"
+    },
+    {
+      "name": "Card mạng",
+      "url": "https://www.lazada.vn/card-mang/",
+      "parent": "cate_2_10"
+    },
+    {
+      "name": "Bộ thu sóng Wifi",
+      "url": "https://www.lazada.vn/bo-thu-song-wifi/",
+      "parent": "cate_2_10"
+    },
+    {
+      "name": "Modems",
+      "url": "https://www.lazada.vn/modems/",
+      "parent": "cate_2_10"
+    },
+    {
+      "name": "Bộ khuếch đại wifi",
+      "url": "https://www.lazada.vn/bo-khuech-dai-wifi/",
+      "parent": "cate_2_10"
+    },
+    {
+      "name": "Wifi Modems",
+      "url": "https://www.lazada.vn/wifi-modems-may-tinh/",
+      "parent": "cate_2_10"
+    },
+    {
+      "name": "Modem USB",
+      "url": "https://www.lazada.vn/usb-modems-may-tinh/",
+      "parent": "cate_2_10"
+    },
+    {
+      "name": "Tay cầm chơi game",
+      "url": "https://www.lazada.vn/tay-cam-choi-game/",
+      "parent": "cate_2_11"
+    },
+    {
+      "name": "Ốp lưng & bao da máy tính bảng",
+      "url": "https://www.lazada.vn/op-lung-bao-da-bang-dieu-khien-choi-game/",
+      "parent": "cate_2_11"
+    },
+    {
+      "name": "Kệ treo & Chân đế",
+      "url": "https://www.lazada.vn/ke-treo-chan-de-cho-bang-dieu-khien/",
+      "parent": "cate_2_11"
+    },
+    {
+      "name": "Cáp & Bộ sạc",
+      "url": "https://www.lazada.vn/cap-bo-sac-the-hinh/",
+      "parent": "cate_2_11"
+    },
+    {
+      "name": "Mô hình tương tác chơi game",
+      "url": "https://www.lazada.vn/mo-hinh-tuong-tac-choi-game/",
+      "parent": "cate_2_11"
+    },
+    {
+      "name": "Miếng dán màn hình điện thoại",
+      "url": "https://www.lazada.vn/phu-kien-bao-ve-bang-dieu-khien-choi-game/",
+      "parent": "cate_2_11"
+    },
+    {
+      "name": "Tivi thông minh",
+      "url": "https://www.lazada.vn/smart-tivi/",
+      "parent": "cate_3_1"
+    },
+    {
+      "name": "Tivi kỷ thuật số",
+      "url": "https://www.lazada.vn/tivi-ky-thuat-so/",
+      "parent": "cate_3_1"
+    },
+    {
+      "name": "Tivi Analog",
+      "url": "https://www.lazada.vn/tivi-analog/",
+      "parent": "cate_3_1"
+    },
+    {
+      "name": "Video",
+      "url": "https://www.lazada.vn/video/",
+      "parent": "cate_3_1"
+    },
+    {
+      "name": "Thiết bị làm mát",
+      "url": "https://www.lazada.vn/thiet-bi-lam-mat-nho-dieu-hoa-khong-khi/",
+      "parent": "cate_3_2"
+    },
+    {
+      "name": "Đồ gia dụng nhỏ",
+      "url": "https://www.lazada.vn/do-gia-dung-nho/",
+      "parent": "cate_3_2"
+    },
+    {
+      "name": "Đồ gia dụng nhà bếp",
+      "url": "https://www.lazada.vn/do-gia-dung-nha-bep/",
+      "parent": "cate_3_2"
+    },
+    {
+      "name": "Phụ kiện đồ gia dụng",
+      "url": "https://www.lazada.vn/thiet-bi-do-gia-dung/",
+      "parent": "cate_3_2"
+    },
+    {
+      "name": "Đồ gia dụng chăm sóc cá nhân",
+      "url": "https://www.lazada.vn/do-gia-dung-cham-soc-ca-nhan/",
+      "parent": "cate_3_2"
+    },
+    {
+      "name": "Máy lạnh",
+      "url": "https://www.lazada.vn/may-lanh/",
+      "parent": "cate_3_3"
+    },
+    {
+      "name": "Tủ lạnh",
+      "url": "https://www.lazada.vn/tu-lanh/",
+      "parent": "cate_3_3"
+    },
+    {
+      "name": "Tủ đông",
+      "url": "https://www.lazada.vn/tu-dong/",
+      "parent": "cate_3_3"
+    },
+    {
+      "name": "Máy rửa chén",
+      "url": "https://www.lazada.vn/temporary-dish-washers/",
+      "parent": "cate_3_3"
+    },
+    {
+      "name": "Máy sấy chén dĩa",
+      "url": "https://www.lazada.vn/may-say-chen-dia/",
+      "parent": "cate_3_3"
+    },
+    {
+      "name": "Bếp điện",
+      "url": "https://www.lazada.vn/bep-nau-lon/",
+      "parent": "cate_3_3"
+    },
+    {
+      "name": "Cây nước nóng lạnh",
+      "url": "https://www.lazada.vn/cay-nuoc-nong-lanh/",
+      "parent": "cate_3_3"
+    },
+    {
+      "name": "Hệ thống lọc nước uống",
+      "url": "https://www.lazada.vn/binh-loc-nuoc/",
+      "parent": "cate_3_3"
+    },
+    {
+      "name": "Máy giặt",
+      "url": "https://www.lazada.vn/may-giat/",
+      "parent": "cate_3_3"
+    },
+    {
+      "name": "Máy sấy",
+      "url": "https://www.lazada.vn/may-giat-say/",
+      "parent": "cate_3_3"
+    },
+    {
+      "name": "Máy giặt - sấy",
+      "url": "https://www.lazada.vn/may-say/",
+      "parent": "cate_3_3"
+    },
+    {
+      "name": "Dưỡng Da Chuyên Sâu",
+      "url": "https://www.lazada.vn/duong-am-da-mat-chuyen-sau/",
+      "parent": "cate_4_1"
+    },
+    {
+      "name": "Mặt Nạ Lột & Tẩy Tế Bào",
+      "url": "https://www.lazada.vn/mat-na-lot-va-hat-tay-te-bao/",
+      "parent": "cate_4_1"
+    },
+    {
+      "name": "Sữa Rửa Mặt",
+      "url": "https://www.lazada.vn/sua-rua-mat/",
+      "parent": "cate_4_1"
+    },
+    {
+      "name": "Nước Hoa Hồng",
+      "url": "https://www.lazada.vn/nuoc-hoa-hong-va-xit-khoang/",
+      "parent": "cate_4_1"
+    },
+    {
+      "name": "Tinh Chất Dưỡng Da Chuyên Sâu",
+      "url": "https://www.lazada.vn/duong-da-va-serum-chuyen-sau/",
+      "parent": "cate_4_1"
+    },
+    {
+      "name": "Tinh Chất Dưỡng Da",
+      "url": "https://www.lazada.vn/duong-da-va-serum/",
+      "parent": "cate_4_1"
+    },
+    {
+      "name": "Kem Dưỡng Ẩm",
+      "url": "https://www.lazada.vn/kem-duong-am-da-mat/",
+      "parent": "cate_4_1"
+    },
+    {
+      "name": "Dưỡng Môi",
+      "url": "https://www.lazada.vn/son-duong-va-tri-tham/",
+      "parent": "cate_4_1"
+    },
+    {
+      "name": "Điều Trị Mụn",
+      "url": "https://www.lazada.vn/shop-Tri-mun/",
+      "parent": "cate_4_1"
+    },
+    {
+      "name": "Kem Mắt",
+      "url": "https://www.lazada.vn/cham-soc-mat-2/",
+      "parent": "cate_4_1"
+    },
+    {
+      "name": "Kem Chống Nắng",
+      "url": "https://www.lazada.vn/kem-chong-nang-phuc-hoi-sau-di-nang/",
+      "parent": "cate_4_1"
+    },
+    {
+      "name": "Mắt",
+      "url": "https://www.lazada.vn/trang-diem-mat/",
+      "parent": "cate_4_2"
+    },
+    {
+      "name": "Mascara",
+      "url": "https://www.lazada.vn/mascara/",
+      "parent": "cate_4_2"
+    },
+    {
+      "name": "Mặt",
+      "url": "https://www.lazada.vn/mat/",
+      "parent": "cate_4_2"
+    },
+    {
+      "name": "Kem Nền BB",
+      "url": "https://www.lazada.vn/bb-va-cc-cream/",
+      "parent": "cate_4_2"
+    },
+    {
+      "name": "Kem Nền Trang Điểm",
+      "url": "https://www.lazada.vn/kem-nen-trang-diem/",
+      "parent": "cate_4_2"
+    },
+    {
+      "name": "Phấn Phủ",
+      "url": "https://www.lazada.vn/phan-phu/",
+      "parent": "cate_4_2"
+    },
+    {
+      "name": "Phấn Má",
+      "url": "https://www.lazada.vn/phan-ma/",
+      "parent": "cate_4_2"
+    },
+    {
+      "name": "Môi",
+      "url": "https://www.lazada.vn/moi/",
+      "parent": "cate_4_2"
+    },
+    {
+      "name": "Phụ Kiện Trang Điểm",
+      "url": "https://www.lazada.vn/phu-kien-trang-diem/",
+      "parent": "cate_4_2"
+    },
+    {
+      "name": "Tẩy Trang",
+      "url": "https://www.lazada.vn/tay-trang/",
+      "parent": "cate_4_2"
+    },
+    {
+      "name": "Sơn Móng Tay",
+      "url": "https://www.lazada.vn/mong/",
+      "parent": "cate_4_2"
+    },
+    {
+      "name": "Máy Giảm Cân",
+      "url": "https://www.lazada.vn/may-massage-lam-thon-co-the/",
+      "parent": "cate_4_3"
+    },
+    {
+      "name": "Dụng Cụ Mát Xa Chân",
+      "url": "https://www.lazada.vn/giam-dau-nhuc-chan/",
+      "parent": "cate_4_3"
+    },
+    {
+      "name": "Dụng Cụ Tẩy Lông/Tóc",
+      "url": "https://www.lazada.vn/phu-kien-tay-long/",
+      "parent": "cate_4_3"
+    },
+    {
+      "name": "Sản Phẩm Spa",
+      "url": "https://www.lazada.vn/san-pham-cho-spa/",
+      "parent": "cate_4_3"
+    },
+    {
+      "name": "Dụng Cụ Chăm Sóc Cơ Thể",
+      "url": "https://www.lazada.vn/dung-cu-cham-soc-co-the/",
+      "parent": "cate_4_3"
+    },
+    {
+      "name": "Chăm Sóc Mặt",
+      "url": "https://www.lazada.vn/dung-cu-cham-soc-da-mat-2/",
+      "parent": "cate_4_3"
+    },
+    {
+      "name": "Sữa Tắm",
+      "url": "https://www.lazada.vn/shop-Sua-tam/",
+      "parent": "cate_4_4"
+    },
+    {
+      "name": "Muối Tắm & Sữa Tắm Tạo Bọt",
+      "url": "https://www.lazada.vn/shop-Muoi-tam-Sua-tam-tao-bot/",
+      "parent": "cate_4_4"
+    },
+    {
+      "name": "Tẩy Tế Bào Chết",
+      "url": "https://www.lazada.vn/tay-te-bao-chet-toan-than/",
+      "parent": "cate_4_4"
+    },
+    {
+      "name": "Sữa Dưỡng Thể",
+      "url": "https://www.lazada.vn/lotion-bo/",
+      "parent": "cate_4_4"
+    },
+    {
+      "name": "Phụ Kiện Phòng Tắm",
+      "url": "https://www.lazada.vn/dung-cu-tam-cham-soc-co-the/",
+      "parent": "cate_4_4"
+    },
+    {
+      "name": "Cải Thiện & Chăm Sóc Cơ Thể",
+      "url": "https://www.lazada.vn/shop-Cai-thien-Cham-soc-co-the/",
+      "parent": "cate_4_4"
+    },
+    {
+      "name": "Tinh Dầu Tắm",
+      "url": "https://www.lazada.vn/dau-massage/",
+      "parent": "cate_4_4"
+    },
+    {
+      "name": "Chăm Sóc Ngực",
+      "url": "https://www.lazada.vn/cham-soc-nguc/",
+      "parent": "cate_4_4"
+    },
+    {
+      "name": "Chăm Sóc Tay",
+      "url": "https://www.lazada.vn/cham-soc-tay/",
+      "parent": "cate_4_4"
+    },
+    {
+      "name": "Chăm Sóc Chân",
+      "url": "https://www.lazada.vn/san-pham-cham-soc-chan/",
+      "parent": "cate_4_4"
+    },
+    {
+      "name": "Tẩy Lông",
+      "url": "https://www.lazada.vn/tay-long/",
+      "parent": "cate_4_4"
+    },
+    {
+      "name": "Dầu Gội",
+      "url": "https://www.lazada.vn/dau-goi-va-dau-xa/",
+      "parent": "cate_4_5"
+    },
+    {
+      "name": "Dầu Xả",
+      "url": "https://www.lazada.vn/dau-xa/",
+      "parent": "cate_4_5"
+    },
+    {
+      "name": "Chăm Sóc Tóc Chuyên Sâu",
+      "url": "https://www.lazada.vn/cham-soc-toc-chuyen-sau/",
+      "parent": "cate_4_5"
+    },
+    {
+      "name": "Tạo Kiểu Tóc",
+      "url": "https://www.lazada.vn/tao-kieu-toc/",
+      "parent": "cate_4_5"
+    },
+    {
+      "name": "Thuốc Nhuộm Tóc",
+      "url": "https://www.lazada.vn/thuoc-nhuom-toc/",
+      "parent": "cate_4_5"
+    },
+    {
+      "name": "Phụ Kiện Chăm Sóc Tóc",
+      "url": "https://www.lazada.vn/phu-kien-cham-soc-toc/",
+      "parent": "cate_4_5"
+    },
+    {
+      "name": "Gói Khuyến Mãi",
+      "url": "https://www.lazada.vn/bo-duong-toc/",
+      "parent": "cate_4_5"
+    },
+    {
+      "name": "Khử Mùi",
+      "url": "https://www.lazada.vn/khu-mui-co-the/",
+      "parent": "cate_4_6"
+    },
+    {
+      "name": "Chăm Sóc Răng Miệng",
+      "url": "https://www.lazada.vn/san-pham-cham-soc-rang-mieng/",
+      "parent": "cate_4_6"
+    },
+    {
+      "name": "Vệ Sinh Phụ Nữ",
+      "url": "https://www.lazada.vn/ve-sinh-phu-nu/",
+      "parent": "cate_4_6"
+    },
+    {
+      "name": "Chăm Sóc Cho Người Cao Tuổi",
+      "url": "https://www.lazada.vn/cham-soc-cho-nguoi-cao-tuoi/",
+      "parent": "cate_4_6"
+    },
+    {
+      "name": "Bảo Vệ An Toàn",
+      "url": "https://www.lazada.vn/dung-cu-bao-ve-an-toan/",
+      "parent": "cate_4_6"
+    },
+    {
+      "name": "Chăm Sóc Mắt",
+      "url": "https://www.lazada.vn/cham-soc-mat-kinh-ca-nhan/",
+      "parent": "cate_4_6"
+    },
+    {
+      "name": "Chống Côn Trùng",
+      "url": "https://www.lazada.vn/shop-Chong-con-trung/",
+      "parent": "cate_4_6"
+    },
+    {
+      "name": "Nước Súc Miệng",
+      "url": "https://www.lazada.vn/nuoc-suc-mieng/",
+      "parent": "cate_4_6"
+    },
+    {
+      "name": "Làm Trắng Răng",
+      "url": "https://www.lazada.vn/san-pham-lam-trang-rang/",
+      "parent": "cate_4_6"
+    },
+    {
+      "name": "Kem Đánh Răng",
+      "url": "https://www.lazada.vn/kem-danh-rang/",
+      "parent": "cate_4_6"
+    },
+    {
+      "name": "Nước Rửa Phụ Khoa",
+      "url": "https://www.lazada.vn/nuoc-rua-phu-khoa/",
+      "parent": "cate_4_6"
+    },
+    {
+      "name": "Tắm & Chăm Sóc Cơ Thể",
+      "url": "https://www.lazada.vn/cham-soc-co-the-cho-nam/",
+      "parent": "cate_4_7"
+    },
+    {
+      "name": "Khử Mùi",
+      "url": "https://www.lazada.vn/khu-mui-nam/",
+      "parent": "cate_4_7"
+    },
+    {
+      "name": "Chăm Sóc Tóc",
+      "url": "https://www.lazada.vn/cham-soc-toc-nam/",
+      "parent": "cate_4_7"
+    },
+    {
+      "name": "Cạo Râu Và Chăm Sóc",
+      "url": "https://www.lazada.vn/cham-soc-rau/",
+      "parent": "cate_4_7"
+    },
+    {
+      "name": "Chăm Sóc Da Mặt",
+      "url": "https://www.lazada.vn/cham-soc-da-mat-cho-nam/",
+      "parent": "cate_4_7"
+    },
+    {
+      "name": "Tạo Kiểu Tóc",
+      "url": "https://www.lazada.vn/tao-kieu-toc-nam/",
+      "parent": "cate_4_7"
+    },
+    {
+      "name": "Dao Cạo",
+      "url": "https://www.lazada.vn/luoi-dao-dao-cao-co-phet-bot-cao/",
+      "parent": "cate_4_7"
+    },
+    {
+      "name": "Sữa Rửa Mặt",
+      "url": "https://www.lazada.vn/sua-rua-mat-nam/",
+      "parent": "cate_4_7"
+    },
+    {
+      "name": "Kem Dưỡng Ẩm Nam",
+      "url": "https://www.lazada.vn/duong-am-kem-duong-cho-nam/",
+      "parent": "cate_4_7"
+    },
+    {
+      "name": "Tinh Chất Dưỡng Da",
+      "url": "https://www.lazada.vn/duong-da-serum-nam/",
+      "parent": "cate_4_7"
+    },
+    {
+      "name": "Nước Hoa Hồng & Xịt Khoáng",
+      "url": "https://www.lazada.vn/nuoc-hoa-hong-nam/",
+      "parent": "cate_4_7"
+    },
+    {
+      "name": "Nam",
+      "url": "https://www.lazada.vn/nuoc-hoa-nam/",
+      "parent": "cate_4_8"
+    },
+    {
+      "name": "Nữ",
+      "url": "https://www.lazada.vn/nuoc-hoa-nu/",
+      "parent": "cate_4_8"
+    },
+    {
+      "name": "Unisex",
+      "url": "https://www.lazada.vn/nuoc-hoa-unisex/",
+      "parent": "cate_4_8"
+    },
+    {
+      "name": "Thực Phẩm Sắc Đẹp",
+      "url": "https://www.lazada.vn/thuc-pham-cho-sac-dep/",
+      "parent": "cate_4_9"
+    },
+    {
+      "name": "Dinh Dưỡng Thể Thao",
+      "url": "https://www.lazada.vn/thuc-pham-cho-sac-dep/",
+      "parent": "cate_4_9"
+    },
+    {
+      "name": "Kiểm Soát Cân Nặng",
+      "url": "https://www.lazada.vn/kiem-soat-can-nang/",
+      "parent": "cate_4_9"
+    },
+    {
+      "name": "Chăm Sóc Sức Khỏe",
+      "url": "https://www.lazada.vn/cham-soc-suc-khoe/",
+      "parent": "cate_4_9"
+    },
+    {
+      "name": "Trắng Da",
+      "url": "https://www.lazada.vn/trang-da/",
+      "parent": "cate_4_9"
+    },
+    {
+      "name": "Chăm Sóc Da Mụn",
+      "url": "https://www.lazada.vn/ch-m-soc-da-m-n/",
+      "parent": "cate_4_9"
+    },
+    {
+      "name": "Sức Khỏe Phái Nam",
+      "url": "https://www.lazada.vn/suc-khoe-phai-nam/",
+      "parent": "cate_4_9"
+    },
+    {
+      "name": "Tăng Cơ",
+      "url": "https://www.lazada.vn/tang-can/",
+      "parent": "cate_4_9"
+    },
+    {
+      "name": "Kiểm Soát & Đốt Mỡ",
+      "url": "https://www.lazada.vn/dot-mo-kiem-soat-can-nang/",
+      "parent": "cate_4_9"
+    },
+    {
+      "name": "Trà Giảm Cân",
+      "url": "https://www.lazada.vn/tra-giam-can-2/",
+      "parent": "cate_4_9"
+    },
+    {
+      "name": "Hỗ Trợ Xương Khớp",
+      "url": "https://www.lazada.vn/ho-tro-xuong-khop/",
+      "parent": "cate_4_9"
+    },
+    {
+      "name": "Kem Ngực",
+      "url": "https://www.lazada.vn/tang-kich-co-nguc/",
+      "parent": "cate_4_10"
+    },
+    {
+      "name": "Gói Khuyến Mãi",
+      "url": "https://www.lazada.vn/set-qua-tang-khuyen-mai/",
+      "parent": "cate_4_10"
+    },
+    {
+      "name": "Tóc & Móng",
+      "url": "https://www.lazada.vn/toc-mong/",
+      "parent": "cate_4_10"
+    },
+    {
+      "name": "Dưỡng Da",
+      "url": "https://www.lazada.vn/d-ng-da/",
+      "parent": "cate_4_10"
+    },
+    {
+      "name": "Trắng da",
+      "url": "https://www.lazada.vn/trang-da/",
+      "parent": "cate_4_10"
+    },
+    {
+      "name": "Chăm sóc da mụn",
+      "url": "https://www.lazada.vn/ch-m-soc-da-m-n/",
+      "parent": "cate_4_10"
+    },
+    {
+      "name": "Bao Cao Su",
+      "url": "https://www.lazada.vn/san-pham-ho-tro-tinh-duc-bao-cao-su/",
+      "parent": "cate_4_11"
+    },
+    {
+      "name": "Chất Bôi Trơn",
+      "url": "https://www.lazada.vn/chat-boi-tron/",
+      "parent": "cate_4_11"
+    },
+    {
+      "name": "Đồ Chơi Tình Dục",
+      "url": "https://www.lazada.vn/do-choi-tinh-duc/",
+      "parent": "cate_4_11"
+    },
+    {
+      "name": "Dụng Cụ Sơ Cứu",
+      "url": "https://www.lazada.vn/dung-cu-so-cuu/",
+      "parent": "cate_4_12"
+    },
+    {
+      "name": "Dụng Cụ Chăm Sóc Sức Khỏe",
+      "url": "https://www.lazada.vn/dung-cu-cham-soc-suc-khoe/",
+      "parent": "cate_4_12"
+    },
+    {
+      "name": "Cân & Phân Tích Lượng Mỡ Cơ Thể",
+      "url": "https://www.lazada.vn/can-phan-tich-luong-mo-co-the/",
+      "parent": "cate_4_12"
+    },
+    {
+      "name": "Thiết Bị Theo Dõi Sức Khỏe",
+      "url": "https://www.lazada.vn/thiet-bi-theo-doi-suc-khoe/",
+      "parent": "cate_4_12"
+    },
+    {
+      "name": "Chăm Sóc Chấn Thương",
+      "url": "https://www.lazada.vn/cham-soc-chan-thuong/",
+      "parent": "cate_4_12"
+    },
+    {
+      "name": "Các Xét Nghiệm Y Tế",
+      "url": "https://www.lazada.vn/xet-nghiem-y-khoa/",
+      "parent": "cate_4_12"
+    },
+    {
+      "name": "Máy Xông Mũi Họng",
+      "url": "https://www.lazada.vn/may-xong-mui-va-hong/",
+      "parent": "cate_4_12"
+    },
+    {
+      "name": "Thuốc Mỡ & Kem",
+      "url": "https://www.lazada.vn/shop-thupc-mo-kem/",
+      "parent": "cate_4_12"
+    },
+    {
+      "name": "Máy Đo Bước",
+      "url": "https://www.lazada.vn/may-do-buoc-chan/",
+      "parent": "cate_4_12"
+    },
+    {
+      "name": "Ống Nghe",
+      "url": "https://www.lazada.vn/ong-nghe/",
+      "parent": "cate_4_12"
+    },
+    {
+      "name": "tã giấy",
+      "url": "https://www.lazada.vn/ta-giay/",
+      "parent": "cate_5_1"
+    },
+    {
+      "name": "tã vải cho bé",
+      "url": "https://www.lazada.vn/ta-vai-cho-be/",
+      "parent": "cate_5_1"
+    },
+    {
+      "name": "khăn ướt",
+      "url": "https://www.lazada.vn/khan-uot/",
+      "parent": "cate_5_1"
+    },
+    {
+      "name": "chăm sóc thay tã",
+      "url": "https://www.lazada.vn/cham-soc-thay-ta/",
+      "parent": "cate_5_1"
+    },
+    {
+      "name": "kem và dầu thoa",
+      "url": "https://www.lazada.vn/kem-va-dau-thoa/",
+      "parent": "cate_5_1"
+    },
+    {
+      "name": "túi đựng tã cho bé",
+      "url": "https://www.lazada.vn/tui-dung-ta-cho-be/",
+      "parent": "cate_5_1"
+    },
+    {
+      "name": "bàn thay tã cho trẻ sơ sinh",
+      "url": "https://www.lazada.vn/ban-thay-ta-cho-tre-so-sinh/",
+      "parent": "cate_5_1"
+    },
+    {
+      "name": "miếng lót chống thấm",
+      "url": "https://www.lazada.vn/mieng-lot-chong-tham/",
+      "parent": "cate_5_1"
+    },
+    {
+      "name": "miếng lót tã",
+      "url": "https://www.lazada.vn/mieng-lot-ta/",
+      "parent": "cate_5_1"
+    },
+    {
+      "name": "ghế ngồi đi vệ sinh",
+      "url": "https://www.lazada.vn/ghe-ngoi-di-ve-sinh-2/",
+      "parent": "cate_5_1"
+    },
+    {
+      "name": "thang bậc cho trẻ",
+      "url": "https://www.lazada.vn/thang-bac-cho-tre/",
+      "parent": "cate_5_1"
+    },
+    {
+      "name": "sản phẩm sữa cho mẹ",
+      "url": "https://www.lazada.vn/san-pham-sua-cho-me/",
+      "parent": "cate_5_2"
+    },
+    {
+      "name": "sữa cho bé sơ sinh",
+      "url": "https://www.lazada.vn/sua-cho-be-so-sinh/",
+      "parent": "cate_5_2"
+    },
+    {
+      "name": "sữa cho trẻ 6-12 tháng tuổi",
+      "url": "https://www.lazada.vn/sua-cho-tre-6-12-thang-tuoi/",
+      "parent": "cate_5_2"
+    },
+    {
+      "name": "sữa cho trẻ tập đi từ 1-3 tuổi",
+      "url": "https://www.lazada.vn/sua-cho-tre-tap-di-tu-1-3-tuoi/",
+      "parent": "cate_5_2"
+    },
+    {
+      "name": "sữa cho trẻ từ 1-3 tuổi",
+      "url": "https://www.lazada.vn/sua-cho-tre-tu-1-3-tuoi/",
+      "parent": "cate_5_2"
+    },
+    {
+      "name": "sữa dinh dưỡng",
+      "url": "https://www.lazada.vn/sua-dinh-duong/",
+      "parent": "cate_5_2"
+    },
+    {
+      "name": "sản phẩm đồ uống cho bé",
+      "url": "https://www.lazada.vn/san-pham-do-uong-cho-be/",
+      "parent": "cate_5_2"
+    },
+    {
+      "name": "ngũ cốc cho bé",
+      "url": "https://www.lazada.vn/ngu-coc-cho-be/",
+      "parent": "cate_5_2"
+    },
+    {
+      "name": "bánh quy cho bé",
+      "url": "https://www.lazada.vn/banh-quy-cho-be/",
+      "parent": "cate_5_2"
+    },
+    {
+      "name": "thức ăn dặm cho bé",
+      "url": "https://www.lazada.vn/thuc-an-dam-cho-be/",
+      "parent": "cate_5_2"
+    },
+    {
+      "name": "bột ăn dặm",
+      "url": "https://www.lazada.vn/bot-an-dam/",
+      "parent": "cate_5_2"
+    },
+    {
+      "name": "bộ áo quần cho trẻ sơ sinh",
+      "url": "https://www.lazada.vn/bo-ao-quan-cho-tre-so-sinh/",
+      "parent": "cate_5_3"
+    },
+    {
+      "name": "áo liền quần cho trẻ sơ sinh",
+      "url": "https://www.lazada.vn/ao-lien-quan-cho-tre-so-sinh/",
+      "parent": "cate_5_3"
+    },
+    {
+      "name": "phụ kiện cho trẻ sơ sinh",
+      "url": "https://www.lazada.vn/phu-kien-cho-tre-so-sinh/",
+      "parent": "cate_5_3"
+    },
+    {
+      "name": "quần áo bé gái",
+      "url": "https://www.lazada.vn/quan-ao-be-gai/",
+      "parent": "cate_5_3"
+    },
+    {
+      "name": "đầm bé gái",
+      "url": "https://www.lazada.vn/dam-be-gai/",
+      "parent": "cate_5_3"
+    },
+    {
+      "name": "giày dép bé gái",
+      "url": "https://www.lazada.vn/giay-dep-be-gai/",
+      "parent": "cate_5_3"
+    },
+    {
+      "name": "phụ kiện bé gái",
+      "url": "https://www.lazada.vn/phu-kien-be-gai/",
+      "parent": "cate_5_3"
+    },
+    {
+      "name": "đồ đi bơi bé gái",
+      "url": "https://www.lazada.vn/do-di-boi-be-gai/",
+      "parent": "cate_5_3"
+    },
+    {
+      "name": "quần áo bé trai",
+      "url": "https://www.lazada.vn/quan-ao-be-trai/",
+      "parent": "cate_5_3"
+    },
+    {
+      "name": "giày dép của bé trai",
+      "url": "https://www.lazada.vn/giay-dep-cua-be-trai/",
+      "parent": "cate_5_3"
+    },
+    {
+      "name": "phụ kiện bé trai",
+      "url": "https://www.lazada.vn/phu-kien-be-trai/",
+      "parent": "cate_5_3"
+    },
+    {
+      "name": "đồ bơi bé trai",
+      "url": "https://www.lazada.vn/do-boi-be-trai/",
+      "parent": "cate_5_3"
+    },
+    {
+      "name": "bình sữa phụ kiện",
+      "url": "https://www.lazada.vn/binh-sua-phu-kien/",
+      "parent": "cate_5_4"
+    },
+    {
+      "name": "bình sữa",
+      "url": "https://www.lazada.vn/binh-sua/",
+      "parent": "cate_5_4"
+    },
+    {
+      "name": "núm ty",
+      "url": "https://www.lazada.vn/num-ty/",
+      "parent": "cate_5_4"
+    },
+    {
+      "name": "máy tiệt trùng ủ bình sữa",
+      "url": "https://www.lazada.vn/may-tiet-trung-u-binh-sua/",
+      "parent": "cate_5_4"
+    },
+    {
+      "name": "dụng cụ hút sữa",
+      "url": "https://www.lazada.vn/dung-cu-hut-sua/",
+      "parent": "cate_5_4"
+    },
+    {
+      "name": "phụ kiện máy hút sữa",
+      "url": "https://www.lazada.vn/phu-kien-may-hut-sua/",
+      "parent": "cate_5_4"
+    },
+    {
+      "name": "chăm sóc núm vú",
+      "url": "https://www.lazada.vn/cham-soc-num-vu/",
+      "parent": "cate_5_4"
+    },
+    {
+      "name": "gối và ghế đòn",
+      "url": "https://www.lazada.vn/goi-va-ghe-don/",
+      "parent": "cate_5_4"
+    },
+    {
+      "name": "ghé ngồi ăn cho bé",
+      "url": "https://www.lazada.vn/ghe-ngoi-an-cho-be/",
+      "parent": "cate_5_4"
+    },
+    {
+      "name": "dụng cụ chế biến thức ăn",
+      "url": "https://www.lazada.vn/dung-cu-che-bien-thuc-an/",
+      "parent": "cate_5_4"
+    },
+    {
+      "name": "đồ dùng ăn dặm cho bé",
+      "url": "https://www.lazada.vn/do-dung-an-dam-cho-be/",
+      "parent": "cate_5_4"
+    },
+    {
+      "name": "chén tập ăn",
+      "url": "https://www.lazada.vn/chen-tap-an/",
+      "parent": "cate_5_4"
+    },
+    {
+      "name": "địu dạng võng",
+      "url": "https://www.lazada.vn/diu-dang-vong/",
+      "parent": "cate_5_5"
+    },
+    {
+      "name": "địu mềm cho bé",
+      "url": "https://www.lazada.vn/diu-mem-cho-be/",
+      "parent": "cate_5_5"
+    },
+    {
+      "name": "xe đẩy cao cấp",
+      "url": "https://www.lazada.vn/xe-day-cao-cap/",
+      "parent": "cate_5_5"
+    },
+    {
+      "name": "ghế ngồi ô tô",
+      "url": "https://www.lazada.vn/ghe-ngoi-o-to/",
+      "parent": "cate_5_5"
+    },
+    {
+      "name": "nôi chơi",
+      "url": "https://www.lazada.vn/noi-choi/",
+      "parent": "cate_5_5"
+    },
+    {
+      "name": "dụng cụ tập đi - ghế rung",
+      "url": "https://www.lazada.vn/dung-cu-tap-di-ghe-rung/",
+      "parent": "cate_5_5"
+    },
+    {
+      "name": "khung tập đi cho bé",
+      "url": "https://www.lazada.vn/khung-tap-di-cho-be/",
+      "parent": "cate_5_5"
+    },
+    {
+      "name": "ghế xe đạp rơ moóc em bé",
+      "url": "https://www.lazada.vn/ghe-xe-dap-ro-mooc-em-be/",
+      "parent": "cate_5_5"
+    },
+    {
+      "name": "túi cho bé",
+      "url": "https://www.lazada.vn/tui-cho-be/",
+      "parent": "cate_5_5"
+    },
+    {
+      "name": "hành lý cho bé",
+      "url": "https://www.lazada.vn/hanh-ly-cho-be/",
+      "parent": "cate_5_5"
+    },
+    {
+      "name": "dây đai an toàn cho bé",
+      "url": "https://www.lazada.vn/day-dai-an-toan-cho-be/",
+      "parent": "cate_5_5"
+    },
+    {
+      "name": "nệm cho trẻ",
+      "url": "https://www.lazada.vn/nem-cho-tre/",
+      "parent": "cate_5_6"
+    },
+    {
+      "name": "chăn cho bé",
+      "url": "https://www.lazada.vn/chan-cho-be/",
+      "parent": "cate_5_6"
+    },
+    {
+      "name": "đồ dùng cho nôi",
+      "url": "https://www.lazada.vn/do-dung-cho-noi/",
+      "parent": "cate_5_6"
+    },
+    {
+      "name": "đồ dùng đi ngủ",
+      "url": "https://www.lazada.vn/do-dung-di-ngu/",
+      "parent": "cate_5_6"
+    },
+    {
+      "name": "chăn bông ra giường cho trẻ",
+      "url": "https://www.lazada.vn/chan-bong-ra-giuong-cho-tre/",
+      "parent": "cate_5_6"
+    },
+    {
+      "name": "phụ kiện phòng ngủ trẻ sơ sinh",
+      "url": "https://www.lazada.vn/phu-kien-phong-ngu-tre-so-sinh/",
+      "parent": "cate_5_6"
+    },
+    {
+      "name": "nội thất phòng ngủ cho bé",
+      "url": "https://www.lazada.vn/noi-that-phong-ngu-cho-be/",
+      "parent": "cate_5_6"
+    },
+    {
+      "name": "sản phẩm cũi bé sơ sinh",
+      "url": "https://www.lazada.vn/san-pham-cui-be-so-sinh/",
+      "parent": "cate_5_6"
+    },
+    {
+      "name": "nôi trẻ sơ sinh",
+      "url": "https://www.lazada.vn/noi-tre-so-sinh/",
+      "parent": "cate_5_6"
+    },
+    {
+      "name": "rương tủ ngăn kéo",
+      "url": "https://www.lazada.vn/ruong-tu-ngan-keo/",
+      "parent": "cate_5_6"
+    },
+    {
+      "name": "đồ dùng sắp xếp",
+      "url": "https://www.lazada.vn/do-dung-sap-xep/",
+      "parent": "cate_5_6"
+    },
+    {
+      "name": "trang trí phòng cho trẻ",
+      "url": "https://www.lazada.vn/trang-tri-phong-cho-tre/",
+      "parent": "cate_5_6"
+    },
+    {
+      "name": "dưỡng da cho bé sơ sinh",
+      "url": "https://www.lazada.vn/duong-da-cho-be-so-sinh/",
+      "parent": "cate_5_7"
+    },
+    {
+      "name": "dầu gội trẻ sơ sinh",
+      "url": "https://www.lazada.vn/dau-goi-tre-so-sinh/",
+      "parent": "cate_5_7"
+    },
+    {
+      "name": "xà phòng sữa rửa mặt cho bé",
+      "url": "https://www.lazada.vn/xa-phong-sua-rua-mat-cho-be/",
+      "parent": "cate_5_7"
+    },
+    {
+      "name": "sản phẩm chăm sóc răng miệng bé sơ sinh",
+      "url": "https://www.lazada.vn/san-pham-cham-soc-rang-mieng-be-so-sinh/",
+      "parent": "cate_5_7"
+    },
+    {
+      "name": "chậu tắm phụ kiện",
+      "url": "https://www.lazada.vn/chau-tam-phu-kien/",
+      "parent": "cate_5_7"
+    },
+    {
+      "name": "khăn tắm - khăn choàng",
+      "url": "https://www.lazada.vn/khan-tam-khan-choang/",
+      "parent": "cate_5_7"
+    },
+    {
+      "name": "chống nắng cho trẻ",
+      "url": "https://www.lazada.vn/chong-nang-cho-tre/",
+      "parent": "cate_5_7"
+    },
+    {
+      "name": "tinh dầu tắm",
+      "url": "https://www.lazada.vn/tinh-dau-tam/",
+      "parent": "cate_5_7"
+    },
+    {
+      "name": "dụng cụ chăm sóc cơ thể trẻ em",
+      "url": "https://www.lazada.vn/dung-cu-cham-soc-co-the-tre-em/",
+      "parent": "cate_5_7"
+    },
+    {
+      "name": "thảm tắm chống trượt cho bé",
+      "url": "https://www.lazada.vn/tham-tam-chong-truot-cho-be/",
+      "parent": "cate_5_7"
+    },
+    {
+      "name": "bong bóng tắm cho bé",
+      "url": "https://www.lazada.vn/bong-bong-tam-cho-be/",
+      "parent": "cate_5_7"
+    },
+    {
+      "name": "đồ chơi bộ sưu tập nhân vật",
+      "url": "https://www.lazada.vn/do-choi-bo-suu-tap-nhan-vat/",
+      "parent": "cate_5_8"
+    },
+    {
+      "name": "bộ sưu tập nhân vật",
+      "url": "https://www.lazada.vn/bo-suu-tap-nhan-vat/",
+      "parent": "cate_5_8"
+    },
+    {
+      "name": "mô hình mini cho bé",
+      "url": "https://www.lazada.vn/mo-hinh-mini-cho-be/",
+      "parent": "cate_5_8"
+    },
+    {
+      "name": "thủ công nghệ thuật",
+      "url": "https://www.lazada.vn/thu-cong-nghe-thuat/",
+      "parent": "cate_5_8"
+    },
+    {
+      "name": "đồ chơi lắp ráp xây dựng",
+      "url": "https://www.lazada.vn/do-choi-lap-rap-xay-dung/",
+      "parent": "cate_5_8"
+    },
+    {
+      "name": "búp bê nhà búp bê",
+      "url": "https://www.lazada.vn/bup-be-nha-bup-be/",
+      "parent": "cate_5_8"
+    },
+    {
+      "name": "đồ chơi hóa trang",
+      "url": "https://www.lazada.vn/do-choi-hoa-trang/",
+      "parent": "cate_5_8"
+    },
+    {
+      "name": "đồ chơi giáo dục trẻ em",
+      "url": "https://www.lazada.vn/do-choi-giao-duc-tre-em/",
+      "parent": "cate_5_8"
+    },
+    {
+      "name": "trò chơi truyền thống",
+      "url": "https://www.lazada.vn/tro-choi-truyen-thong/",
+      "parent": "cate_5_8"
+    },
+    {
+      "name": "đồ chơi bằng bóng",
+      "url": "https://www.lazada.vn/do-choi-bang-bong/",
+      "parent": "cate_5_8"
+    },
+    {
+      "name": "đồ chơi dẻo",
+      "url": "https://www.lazada.vn/do-choi-deo/",
+      "parent": "cate_5_8"
+    },
+    {
+      "name": "đồ dùng tiệc cho bé",
+      "url": "https://www.lazada.vn/do-dung-tiec-cho-be/",
+      "parent": "cate_5_8"
+    },
+    {
+      "name": "giả trí video game",
+      "url": "https://www.lazada.vn/gia-tri-video-game/",
+      "parent": "cate_5_9"
+    },
+    {
+      "name": "bộ mô hình xe lửa đường ray",
+      "url": "https://www.lazada.vn/bo-mo-hinh-xe-lua-duong-ray/",
+      "parent": "cate_5_9"
+    },
+    {
+      "name": "máy bay drone trực thăng 4 cánh",
+      "url": "https://www.lazada.vn/may-bay-drone-truc-thang-4-canh/",
+      "parent": "cate_5_9"
+    },
+    {
+      "name": "xe mô hình die-cast",
+      "url": "https://www.lazada.vn/xe-mo-hinh-die-cast/",
+      "parent": "cate_5_9"
+    },
+    {
+      "name": "xe mô hình điều khiển từ xa",
+      "url": "https://www.lazada.vn/xe-mo-hinh-dieu-khien-tu-xa/",
+      "parent": "cate_5_9"
+    },
+    {
+      "name": "xe mô hình điều khiển từ xa pin",
+      "url": "https://www.lazada.vn/xe-mo-hinh-dieu-khien-tu-xa-pin/",
+      "parent": "cate_5_9"
+    },
+    {
+      "name": "robot nhân vật mô hình điều khiển",
+      "url": "https://www.lazada.vn/robot-nhan-vat-mo-hinh-dieu-khien/",
+      "parent": "cate_5_9"
+    },
+    {
+      "name": "máy bay trực thăng",
+      "url": "https://www.lazada.vn/may-bay-truc-thang/",
+      "parent": "cate_5_9"
+    },
+    {
+      "name": "bộ đàm cho bé",
+      "url": "https://www.lazada.vn/bo-dam-cho-be/",
+      "parent": "cate_5_9"
+    },
+    {
+      "name": "đồ chơi hồ bơi",
+      "url": "https://www.lazada.vn/do-choi-ho-boi/",
+      "parent": "cate_5_10"
+    },
+    {
+      "name": "trò chơi thể thao cho bé",
+      "url": "https://www.lazada.vn/tro-choi-the-thao-cho-be/",
+      "parent": "cate_5_10"
+    },
+    {
+      "name": "đồ chơi ngoài trời cho bé",
+      "url": "https://www.lazada.vn/do-choi-ngoai-troi-cho-be/",
+      "parent": "cate_5_10"
+    },
+    {
+      "name": "đồ chơi bắn súng",
+      "url": "https://www.lazada.vn/do-choi-ban-sung/",
+      "parent": "cate_5_10"
+    },
+    {
+      "name": "nhà banh phụ kiện",
+      "url": "https://www.lazada.vn/nha-banh-phu-kien/",
+      "parent": "cate_5_10"
+    },
+    {
+      "name": "đồ chơi trên không",
+      "url": "https://www.lazada.vn/do-choi-tren-khong/",
+      "parent": "cate_5_10"
+    },
+    {
+      "name": "diều chong chóng",
+      "url": "https://www.lazada.vn/dieu-chong-chong/",
+      "parent": "cate_5_10"
+    },
+    {
+      "name": "nhà hơi",
+      "url": "https://www.lazada.vn/nha-hoi/",
+      "parent": "cate_5_10"
+    },
+    {
+      "name": "yoyo & kendama",
+      "url": "https://www.lazada.vn/yo-yo-kendama/",
+      "parent": "cate_5_10"
+    },
+    {
+      "name": "bộ đồ chơi và thiết bị cho sân chơi",
+      "url": "https://www.lazada.vn/bo-do-choi-thiet-bi-cho-san-choi/",
+      "parent": "cate_5_10"
+    },
+    {
+      "name": "lều cho bé",
+      "url": "https://www.lazada.vn/leu-cho-be/",
+      "parent": "cate_5_10"
+    },
+    {
+      "name": "nhà chơi cho bé",
+      "url": "https://www.lazada.vn/nha-choi-cho-be/",
+      "parent": "cate_5_10"
+    },
+    {
+      "name": "thảm chơi cho trẻ",
+      "url": "https://www.lazada.vn/tham-choi-cho-tre/",
+      "parent": "cate_5_11"
+    },
+    {
+      "name": "đồ chơi xếp khối",
+      "url": "https://www.lazada.vn/do-choi-xep-khoi/",
+      "parent": "cate_5_11"
+    },
+    {
+      "name": "đồ chơi bồn tắm cho bé",
+      "url": "https://www.lazada.vn/do-choi-bon-tam-cho-be/",
+      "parent": "cate_5_11"
+    },
+    {
+      "name": "đồ chơi treo cũi cho bé",
+      "url": "https://www.lazada.vn/do-choi-treo-cui-cho-be/",
+      "parent": "cate_5_11"
+    },
+    {
+      "name": "đồ chơi giáo dục",
+      "url": "https://www.lazada.vn/do-choi-giao-duc/",
+      "parent": "cate_5_11"
+    },
+    {
+      "name": "đồ chơi âm thanh cho bé",
+      "url": "https://www.lazada.vn/do-choi-am-thanh-cho-be/",
+      "parent": "cate_5_11"
+    },
+    {
+      "name": "đồ chơi kéo đẩy dây cót",
+      "url": "https://www.lazada.vn/do-choi-keo-day-day-cot/",
+      "parent": "cate_5_11"
+    },
+    {
+      "name": "đồ chơi thả hình khối",
+      "url": "https://www.lazada.vn/do-choi-tha-hinh-khoi/",
+      "parent": "cate_5_11"
+    },
+    {
+      "name": "đồ chơi lúc lắc xúc xắc",
+      "url": "https://www.lazada.vn/do-choi-luc-lac-xuc-xac/",
+      "parent": "cate_5_11"
+    },
+    {
+      "name": "bộ đồ chơi vận động trong nhà",
+      "url": "https://www.lazada.vn/bo-do-choi-van-dong-trong-nha/",
+      "parent": "cate_5_11"
+    },
+    {
+      "name": "đồ chơi nhún và bập bênh trong nhà cho bé",
+      "url": "https://www.lazada.vn/do-choi-nhun-va-bap-benh-trong-nha-cho-be/",
+      "parent": "cate_5_11"
+    },
+    {
+      "name": "máy tính giáo dục",
+      "url": "https://www.lazada.vn/may-tinh-giao-duc/",
+      "parent": "cate_5_12"
+    },
+    {
+      "name": "đồ chơi kỹ năng cơ bản",
+      "url": "https://www.lazada.vn/do-choi-ky-nang-co-ban/",
+      "parent": "cate_5_12"
+    },
+    {
+      "name": "flash cards cho bé",
+      "url": "https://www.lazada.vn/flash-cards-cho-be/",
+      "parent": "cate_5_12"
+    },
+    {
+      "name": "địa lý cho bé",
+      "url": "https://www.lazada.vn/dia-ly-cho-be/",
+      "parent": "cate_5_12"
+    },
+    {
+      "name": "đồ chơi đọc viết",
+      "url": "https://www.lazada.vn/do-choi-doc-viet/",
+      "parent": "cate_5_12"
+    },
+    {
+      "name": "mô hình hệ mặt trời",
+      "url": "https://www.lazada.vn/mo-hinh-he-mat-troi/",
+      "parent": "cate_5_12"
+    },
+    {
+      "name": "đồ chơi gỗ học tập",
+      "url": "https://www.lazada.vn/do-choi-go-hoc-tap/",
+      "parent": "cate_5_12"
+    },
+    {
+      "name": "đồ chơi nghiên cứu khoa học",
+      "url": "https://www.lazada.vn/do-choi-nghien-cuu-khoa-hoc/",
+      "parent": "cate_5_12"
+    },
+    {
+      "name": "Sữa tiệt trùng",
+      "url": "https://www.lazada.vn/bach-hoa-online-sua-uht/",
+      "parent": "cate_6_1"
+    },
+    {
+      "name": "Sữa bột",
+      "url": "https://www.lazada.vn/bach-hoa-online-sua-bot/",
+      "parent": "cate_6_1"
+    },
+    {
+      "name": "Sữa Đặc",
+      "url": "https://www.lazada.vn/bach-hoa-online-sua-dac/",
+      "parent": "cate_6_1"
+    },
+    {
+      "name": "Bột kem",
+      "url": "https://www.lazada.vn/bach-hoa-online-kem-creamer/",
+      "parent": "cate_6_1"
+    },
+    {
+      "name": "Sữa Hương Vị",
+      "url": "https://www.lazada.vn/bach-hoa-online-sua-co-vi/",
+      "parent": "cate_6_1"
+    },
+    {
+      "name": "Sữa đậu nành",
+      "url": "https://www.lazada.vn/bach-hoa-online-sua-dau-nanh/",
+      "parent": "cate_6_1"
+    },
+    {
+      "name": "Sữa Đậu Nành Tiệt Trùng",
+      "url": "https://www.lazada.vn/bach-hoa-online-sua-dau-nanh-uht/",
+      "parent": "cate_6_1"
+    },
+    {
+      "name": "Bia",
+      "url": "https://www.lazada.vn/bach-hoa-online-bia/",
+      "parent": "cate_6_2"
+    },
+    {
+      "name": "Cider",
+      "url": "https://www.lazada.vn/nuoc-tao-len-men-2/",
+      "parent": "cate_6_2"
+    },
+    {
+      "name": "Nước tăng lực, thể thao",
+      "url": "https://www.lazada.vn/shop-Nuoc-ngot-Nuoc-tang-luc/",
+      "parent": "cate_6_2"
+    },
+    {
+      "name": "Nước ngọt",
+      "url": "https://www.lazada.vn/bach-hoa-online-nuoc-ngot-do-uong-khong-co-con/",
+      "parent": "cate_6_2"
+    },
+    {
+      "name": "Cà phê",
+      "url": "https://www.lazada.vn/ca-phe/",
+      "parent": "cate_6_2"
+    },
+    {
+      "name": "Trà",
+      "url": "https://www.lazada.vn/tra/",
+      "parent": "cate_6_2"
+    },
+    {
+      "name": "Bột socola",
+      "url": "https://www.lazada.vn/bot-socola/",
+      "parent": "cate_6_2"
+    },
+    {
+      "name": "Đồ uống khác",
+      "url": "https://www.lazada.vn/bach-hoa-online-do-uong-chau-a/",
+      "parent": "cate_6_2"
+    },
+    {
+      "name": "Nước",
+      "url": "https://www.lazada.vn/bach-hoa-online-nuoc/",
+      "parent": "cate_6_2"
+    },
+    {
+      "name": "Nước Trái Cây",
+      "url": "https://www.lazada.vn/bach-hoa-online-nuoc-trai-cay-nuoc-dua/",
+      "parent": "cate_6_2"
+    },
+    {
+      "name": "Bột pha nước trái cây",
+      "url": "https://www.lazada.vn/bot-pha-nuoc-trai-cay/",
+      "parent": "cate_6_2"
+    },
+    {
+      "name": "Siro",
+      "url": "https://www.lazada.vn/siro-mui/",
+      "parent": "cate_6_2"
+    },
+    {
+      "name": "Bơ, Bơ thực vật & Bơ phết",
+      "url": "https://www.lazada.vn/shop-bo-bo-thuc-vat-bo-phet/",
+      "parent": "cate_6_3"
+    },
+    {
+      "name": "Phô mai",
+      "url": "https://www.lazada.vn/shop-Pho-mai/",
+      "parent": "cate_6_3"
+    },
+    {
+      "name": "Sữa chua",
+      "url": "https://www.lazada.vn/shop-Sua-chua/",
+      "parent": "cate_6_3"
+    },
+    {
+      "name": "Nguyên liệu nấu ăn",
+      "url": "https://www.lazada.vn/shop-Nguyen-lieu-nau-an/",
+      "parent": "cate_6_3"
+    },
+    {
+      "name": "Món tráng miệng lạnh",
+      "url": "https://www.lazada.vn/shop-Mon-trang-mien-lanh/",
+      "parent": "cate_6_3"
+    },
+    {
+      "name": "Nước ép & Thức uống làm lạnh",
+      "url": "https://www.lazada.vn/shop-Nuoc-uong-lanh/",
+      "parent": "cate_6_3"
+    },
+    {
+      "name": "Kem tươi",
+      "url": "https://www.lazada.vn/shop-Kem-tuoi/",
+      "parent": "cate_6_3"
+    },
+    {
+      "name": "Kim chi, Dưa chua & Chutney",
+      "url": "https://www.lazada.vn/shop-kim-chi-dua-chua-chutney/",
+      "parent": "cate_6_3"
+    },
+    {
+      "name": "Thực phẩm chế biến sẵn",
+      "url": "https://www.lazada.vn/shop-Mon-an-nau-san/",
+      "parent": "cate_6_3"
+    },
+    {
+      "name": "Thực Phẩm Đóng Hộp",
+      "url": "https://www.lazada.vn/shop-do-hop/",
+      "parent": "cate_6_4"
+    },
+    {
+      "name": "Mì ăn liền",
+      "url": "https://www.lazada.vn/shop-mi-an-lien/",
+      "parent": "cate_6_4"
+    },
+    {
+      "name": "Mì Ý",
+      "url": "https://www.lazada.vn/shop-pasta/",
+      "parent": "cate_6_4"
+    },
+    {
+      "name": "Thực Phẩm Chế Biến Sẳn",
+      "url": "https://www.lazada.vn/bach-hoa-online-mi-an-lien/",
+      "parent": "cate_6_4"
+    },
+    {
+      "name": "Đậu và Các Loại Ngũ Cốc",
+      "url": "https://www.lazada.vn/bach-hoa-online-ngu-coc/",
+      "parent": "cate_6_4"
+    },
+    {
+      "name": "Nông Phẩm Khô",
+      "url": "https://www.lazada.vn/shop-Thuc-pham-say-kho/",
+      "parent": "cate_6_4"
+    },
+    {
+      "name": "Thực phẩm đóng lọ",
+      "url": "https://www.lazada.vn/bach-hoa-online-cac-thuc-pham-dong-hop-khac/",
+      "parent": "cate_6_4"
+    },
+    {
+      "name": "Đồ ăn sẵn",
+      "url": "https://www.lazada.vn/bach-hoa-online-thuc-pham-che-bien-san/",
+      "parent": "cate_6_4"
+    },
+    {
+      "name": "Các loại hạt",
+      "url": "https://www.lazada.vn/shop-Hat/",
+      "parent": "cate_6_4"
+    },
+    {
+      "name": "Nước sốt các loại",
+      "url": "https://www.lazada.vn/shop-do-gia-vi-Sot/",
+      "parent": "cate_6_4"
+    },
+    {
+      "name": "Gia vị & Rau thơm sấy khô",
+      "url": "https://www.lazada.vn/shop-muoi-gia-vi/",
+      "parent": "cate_6_4"
+    },
+    {
+      "name": "Tương ớt",
+      "url": "https://www.lazada.vn/shop-gia-vi-tuong-ot/",
+      "parent": "cate_6_4"
+    },
+    {
+      "name": "Socola viên & Socola hộp",
+      "url": "https://www.lazada.vn/shop-so-co-la/",
+      "parent": "cate_6_5"
+    },
+    {
+      "name": "Kẹo bạc hà",
+      "url": "https://www.lazada.vn/shop-keo-bac-ha/",
+      "parent": "cate_6_5"
+    },
+    {
+      "name": "Kẹo",
+      "url": "https://www.lazada.vn/shop-do-ngot/",
+      "parent": "cate_6_5"
+    },
+    {
+      "name": "Bánh quy",
+      "url": "https://www.lazada.vn/shop-Banh-quy-so-co-la/",
+      "parent": "cate_6_5"
+    },
+    {
+      "name": "Bánh crackers",
+      "url": "https://www.lazada.vn/shop-banh-quy-gion/",
+      "parent": "cate_6_5"
+    },
+    {
+      "name": "Bánh cookies",
+      "url": "https://www.lazada.vn/shop-banh-cookie/",
+      "parent": "cate_6_5"
+    },
+    {
+      "name": "Khoai tây chiên",
+      "url": "https://www.lazada.vn/shop-Khoai-tay-chien/",
+      "parent": "cate_6_5"
+    },
+    {
+      "name": "Các loại hạt & Trái cây khô",
+      "url": "https://www.lazada.vn/shop-Trai-cay-say-Cac-loai-hat/",
+      "parent": "cate_6_5"
+    },
+    {
+      "name": "Trái cây và rau củ sấy",
+      "url": "https://www.lazada.vn/shop-Trai-cay-an-vat/",
+      "parent": "cate_6_5"
+    },
+    {
+      "name": "Snack bắp",
+      "url": "https://www.lazada.vn/shop-Snack-bap/",
+      "parent": "cate_6_5"
+    },
+    {
+      "name": "Snack mặn và bánh xoắn",
+      "url": "https://www.lazada.vn/shop-Banh-quy-man-Thuc-an-nhe/",
+      "parent": "cate_6_5"
+    },
+    {
+      "name": "Snack rong biển",
+      "url": "https://www.lazada.vn/shop-Snack-rong-bien/",
+      "parent": "cate_6_5"
+    },
+    {
+      "name": "Đường và nguyên liệu làm bánh",
+      "url": "https://www.lazada.vn/shop-Lam-banh-duong/",
+      "parent": "cate_6_6"
+    },
+    {
+      "name": "Mật ong",
+      "url": "https://www.lazada.vn/bach-hoa-online-mat-ong/",
+      "parent": "cate_6_6"
+    },
+    {
+      "name": "Thực Phẩm Đóng Hộp",
+      "url": "https://www.lazada.vn/shop-do-hop/",
+      "parent": "cate_6_6"
+    },
+    {
+      "name": "Ngũ cốc ăn sáng & Bánh mì phết",
+      "url": "https://www.lazada.vn/do-an-sang/",
+      "parent": "cate_6_6"
+    },
+    {
+      "name": "Dầu ăn",
+      "url": "https://www.lazada.vn/shop-Dau/",
+      "parent": "cate_6_6"
+    },
+    {
+      "name": "Gạo",
+      "url": "https://www.lazada.vn/shop-Gao/",
+      "parent": "cate_6_6"
+    },
+    {
+      "name": "Thực phẩm ăn liền",
+      "url": "https://www.lazada.vn/shop-Thuc-pham-an-lien/",
+      "parent": "cate_6_6"
+    },
+    {
+      "name": "Mì và bún",
+      "url": "https://www.lazada.vn/shop-Mi-Bun/",
+      "parent": "cate_6_6"
+    },
+    {
+      "name": "Muối và gia vị",
+      "url": "https://www.lazada.vn/shop-Muoi-Gia-vi/",
+      "parent": "cate_6_6"
+    },
+    {
+      "name": "Gia vị và sốt ăn liền",
+      "url": "https://www.lazada.vn/shop-do-gia-vi-Sot/",
+      "parent": "cate_6_6"
+    },
+    {
+      "name": "Sốt nấu ăn và phụ gia",
+      "url": "https://www.lazada.vn/shop-Sot-nau-an-phu-gia/",
+      "parent": "cate_6_6"
+    },
+    {
+      "name": "Nguyên liệu khác",
+      "url": "https://www.lazada.vn/shop-Thanh-phan-dac-biet/",
+      "parent": "cate_6_6"
+    },
+    {
+      "name": "Giấy vệ sinh",
+      "url": "https://www.lazada.vn/bach-hoa-online-giay-ve-sinh/",
+      "parent": "cate_6_7"
+    },
+    {
+      "name": "Khăn giấy",
+      "url": "https://www.lazada.vn/khan-giay/",
+      "parent": "cate_6_7"
+    },
+    {
+      "name": "Nước lau sàn",
+      "url": "https://www.lazada.vn/bach-hoa-online-nuoc-lau-san/",
+      "parent": "cate_6_7"
+    },
+    {
+      "name": "Nước và dụng cụ lau bếp",
+      "url": "https://www.lazada.vn/bach-hoa-online-nuoc-lau-bep/",
+      "parent": "cate_6_7"
+    },
+    {
+      "name": "Khử mùi và xịt thơm phòng",
+      "url": "https://www.lazada.vn/cham-soc-khong-khi/",
+      "parent": "cate_6_7"
+    },
+    {
+      "name": "Chất tẩy phòng tắm",
+      "url": "https://www.lazada.vn/bach-hoa-online-chat-tay-phong-tam/",
+      "parent": "cate_6_7"
+    },
+    {
+      "name": "Chất tẩy trắng và khử trùng",
+      "url": "https://www.lazada.vn/bach-hoa-online-chat-tay-trang/",
+      "parent": "cate_6_7"
+    },
+    {
+      "name": "Dụng cụ làm sạch",
+      "url": "https://www.lazada.vn/bach-hoa-online-phu-kien-lam-sach/",
+      "parent": "cate_6_7"
+    },
+    {
+      "name": "Chất thông tắc cống, ống nước",
+      "url": "https://www.lazada.vn/bach-hoa-online-chat-tay-ong-thoat-nuoc/",
+      "parent": "cate_6_7"
+    },
+    {
+      "name": "Chất tẩy đa năng",
+      "url": "https://www.lazada.vn/bach-hoa-online-chat-tay-da-nang/",
+      "parent": "cate_6_7"
+    },
+    {
+      "name": "Vệ sinh cửa sổ cửa kính",
+      "url": "https://www.lazada.vn/shop-Ve-sinh-Cua-so-Cua-kinh/",
+      "parent": "cate_6_7"
+    },
+    {
+      "name": "Diệt côn trùng",
+      "url": "https://www.lazada.vn/bach-hoa-online-diet-con-trung/",
+      "parent": "cate_6_7"
+    },
+    {
+      "name": "Nước rửa chén cho máy",
+      "url": "https://www.lazada.vn/bach-hoa-online-nuoc-rua-chen-cho-may/",
+      "parent": "cate_6_8"
+    },
+    {
+      "name": "Nước rửa chén bằng tay",
+      "url": "https://www.lazada.vn/bach-hoa-online-nuoc-rua-chen-bang-tay/",
+      "parent": "cate_6_8"
+    },
+    {
+      "name": "Diêm-hộp quẹt",
+      "url": "https://www.lazada.vn/diem-hop-quet/",
+      "parent": "cate_6_8"
+    },
+    {
+      "name": "Bao đựng rác",
+      "url": "https://www.lazada.vn/bach-hoa-online-bao-dung-rac/",
+      "parent": "cate_6_8"
+    },
+    {
+      "name": "Chén dĩa dùng một lần",
+      "url": "https://www.lazada.vn/bach-hoa-online-muong-nia-nhua/",
+      "parent": "cate_6_8"
+    },
+    {
+      "name": "Giấy bóng, Giấy bạc, Giấy nướng bánh",
+      "url": "https://www.lazada.vn/shop-Giay-bong-Giay-bac-Giay-nuong-banh/",
+      "parent": "cate_6_8"
+    },
+    {
+      "name": "Túi đựng thực phẩm",
+      "url": "https://www.lazada.vn/shop-Tui-dung-thuc-pham/",
+      "parent": "cate_6_8"
+    },
+    {
+      "name": "Hộp đựng thực phẩm",
+      "url": "https://www.lazada.vn/shop-Hop-dung-thuc-pham/",
+      "parent": "cate_6_8"
+    },
+    {
+      "name": "Pin",
+      "url": "https://www.lazada.vn/shop-Pin/",
+      "parent": "cate_6_8"
+    },
+    {
+      "name": "Bóng đèn",
+      "url": "https://www.lazada.vn/shop-Bong-den/",
+      "parent": "cate_6_8"
+    },
+    {
+      "name": "Nước giặt",
+      "url": "https://www.lazada.vn/bach-hoa-online-nuoc-giat/",
+      "parent": "cate_6_9"
+    },
+    {
+      "name": "Bột giặt",
+      "url": "https://www.lazada.vn/bach-hoa-online-bot-giat/",
+      "parent": "cate_6_9"
+    },
+    {
+      "name": "Nước xả",
+      "url": "https://www.lazada.vn/bach-hoa-online-nuoc-lam-mem-vai/",
+      "parent": "cate_6_9"
+    },
+    {
+      "name": "Chất tẩy",
+      "url": "https://www.lazada.vn/bach-hoa-online-chat-tay/",
+      "parent": "cate_6_9"
+    },
+    {
+      "name": "Chất tẩy vết bẩn",
+      "url": "https://www.lazada.vn/bach-hoa-online-chat-tay-vet-ban-/",
+      "parent": "cate_6_9"
+    },
+    {
+      "name": "Nước làm thơm, nước ủi quần áo",
+      "url": "https://www.lazada.vn/bach-hoa-online-nuoc-lam-thom-nuoc-ui-quan-ao/",
+      "parent": "cate_6_9"
+    },
+    {
+      "name": "Chăm sóc đặc biệt",
+      "url": "https://www.lazada.vn/bach-hoa-online-cham-soc-dac-biet/",
+      "parent": "cate_6_9"
+    },
+    {
+      "name": "Nước rửa máy giặt",
+      "url": "https://www.lazada.vn/bach-hoa-online-nuoc-rua-may-giat/",
+      "parent": "cate_6_9"
+    },
+    {
+      "name": "Thiết bị hồ cá",
+      "url": "https://www.lazada.vn/thiet-bi-be-ca/",
+      "parent": "cate_6_10"
+    },
+    {
+      "name": "Nệm ngủ, Thảm & Nhà thú cưng",
+      "url": "https://www.lazada.vn/nem-ngu-tham-va-nha-cho-cho/",
+      "parent": "cate_6_10"
+    },
+    {
+      "name": "Lồng, cũi, cửa nhà cho thú cưng",
+      "url": "https://www.lazada.vn/long-va-cua-phu-cho/",
+      "parent": "cate_6_10"
+    },
+    {
+      "name": "Nhà cây, bàn cào móng cho mèo",
+      "url": "https://www.lazada.vn/nha-cay-mong-cao-cho-meo/",
+      "parent": "cate_6_10"
+    },
+    {
+      "name": "Dụng cụ đựng thức ăn thú cưng",
+      "url": "https://www.lazada.vn/bat-thuc-an-cho-cung/",
+      "parent": "cate_6_10"
+    },
+    {
+      "name": "Dụng cụ vận chuyển và balo du lịch",
+      "url": "https://www.lazada.vn/tui-van-chuyen-du-lich/",
+      "parent": "cate_6_10"
+    },
+    {
+      "name": "Phụ kiện làm đẹp",
+      "url": "https://www.lazada.vn/ve-sinh-cho-cho/",
+      "parent": "cate_6_10"
+    },
+    {
+      "name": "Dây dắt,vòng cổ & rọ mõm",
+      "url": "https://www.lazada.vn/day-dat-vong-co-cho-cung/",
+      "parent": "cate_6_10"
+    },
+    {
+      "name": "Cát và dụng cụ vệ sinh",
+      "url": "https://www.lazada.vn/bon-va-cat-ve-sinh-cho-meo/",
+      "parent": "cate_6_10"
+    },
+    {
+      "name": "Đồ chơi",
+      "url": "https://www.lazada.vn/do-choi/",
+      "parent": "cate_6_10"
+    },
+    {
+      "name": "Hỗ trợ huấn luyện chó",
+      "url": "https://www.lazada.vn/ho-tro-huan-luyen-cho/",
+      "parent": "cate_6_10"
+    },
+    {
+      "name": "Thức ăn cho mèo",
+      "url": "https://www.lazada.vn/thuc-an-cho-meo/",
+      "parent": "cate_6_11"
+    },
+    {
+      "name": "Thức ăn cho chó",
+      "url": "https://www.lazada.vn/thuc-an-cho-cho/",
+      "parent": "cate_6_11"
+    },
+    {
+      "name": "Thức ăn cho cá",
+      "url": "https://www.lazada.vn/thuc-an-cho-ca/",
+      "parent": "cate_6_11"
+    },
+    {
+      "name": "Thức ăn cho chim",
+      "url": "https://www.lazada.vn/thuc-an-cho-chim/",
+      "parent": "cate_6_11"
+    },
+    {
+      "name": "Thức ăn cho bò sát",
+      "url": "https://www.lazada.vn/thuc-an-cho-bo-sat/",
+      "parent": "cate_6_11"
+    },
+    {
+      "name": "Thức ăn cho thú nhỏ",
+      "url": "https://www.lazada.vn/thuc-an-cho-thu-nho/",
+      "parent": "cate_6_11"
+    },
+    {
+      "name": "Chăm sóc răng miệng và sức khỏe",
+      "url": "https://www.lazada.vn/cham-soc-rang-cho-cung/",
+      "parent": "cate_6_11"
+    },
+    {
+      "name": "Trị ve rận, bọ chét",
+      "url": "https://www.lazada.vn/tri-ven-ran/",
+      "parent": "cate_6_11"
+    },
+    {
+      "name": "Nồi & Chảo",
+      "url": "https://www.lazada.vn/noi-chao/",
+      "parent": "cate_7_1"
+    },
+    {
+      "name": "Bình nước",
+      "url": "https://www.lazada.vn/binh-nuoc-cao-cap/",
+      "parent": "cate_7_1"
+    },
+    {
+      "name": "Bình giữ nhiệt",
+      "url": "https://www.lazada.vn/binh-giu-nhiet-cao-cap/",
+      "parent": "cate_7_1"
+    },
+    {
+      "name": "Chứa đồ nhà bếp & phụ kiện",
+      "url": "https://www.lazada.vn/do-nha-bep/",
+      "parent": "cate_7_1"
+    },
+    {
+      "name": "Dao bếp và phụ kiện",
+      "url": "https://www.lazada.vn/cac-phu-kien-dao/",
+      "parent": "cate_7_1"
+    },
+    {
+      "name": "Đồ dùng uống nước",
+      "url": "https://www.lazada.vn/do-dung-uong-nuoc/",
+      "parent": "cate_7_1"
+    },
+    {
+      "name": "Đồ dùng nhà bếp đặc biệt",
+      "url": "https://www.lazada.vn/dung-cu-nha-bep/",
+      "parent": "cate_7_1"
+    },
+    {
+      "name": "Dụng cụ làm bánh",
+      "url": "https://www.lazada.vn/dung-cu-phu-kien-lam-banh/",
+      "parent": "cate_7_1"
+    },
+    {
+      "name": "Đồ dùng uống trà & café",
+      "url": "https://www.lazada.vn/do-dung-uong-tra-ca-phe/",
+      "parent": "cate_7_1"
+    },
+    {
+      "name": "Dụng cụ nấu ăn",
+      "url": "https://www.lazada.vn/dung-cu-nau-an/",
+      "parent": "cate_7_1"
+    },
+    {
+      "name": "Thiết bị điện",
+      "url": "https://www.lazada.vn/thiet-bi-dung-cu-dien/",
+      "parent": "cate_7_2"
+    },
+    {
+      "name": "Đồ dùng làm vườn",
+      "url": "https://www.lazada.vn/do-dung-lam-vuon/",
+      "parent": "cate_7_2"
+    },
+    {
+      "name": "Đồ kim khí",
+      "url": "https://www.lazada.vn/dung-cu-kim-khi/",
+      "parent": "cate_7_2"
+    },
+    {
+      "name": "Bảo vệ nhà cửa",
+      "url": "https://www.lazada.vn/bao-ve-nha-cua-2/",
+      "parent": "cate_7_2"
+    },
+    {
+      "name": "Dụng cụ an toàn lao động",
+      "url": "https://www.lazada.vn/dung-cu-an-toan-lao-dong/",
+      "parent": "cate_7_2"
+    },
+    {
+      "name": "Sơn & trang trí nhà",
+      "url": "https://www.lazada.vn/son-trang-tri/",
+      "parent": "cate_7_2"
+    },
+    {
+      "name": "Dụng cụ điện ngoài trời & làm vườn",
+      "url": "https://www.lazada.vn/dung-cu-dien-ngoai-troi-lam-vuon/",
+      "parent": "cate_7_2"
+    },
+    {
+      "name": "Ổ cắm điện",
+      "url": "https://www.lazada.vn/phich-cam-dien/",
+      "parent": "cate_7_2"
+    },
+    {
+      "name": "Hệ thống tưới nước",
+      "url": "https://www.lazada.vn/he-thong-tuoi-nuoc-san-vuon/",
+      "parent": "cate_7_2"
+    },
+    {
+      "name": "Hạt giống hoa quả",
+      "url": "https://www.lazada.vn/cac-loai-cay-hat-giong/",
+      "parent": "cate_7_2"
+    },
+    {
+      "name": "Máy khoan",
+      "url": "https://www.lazada.vn/may-khoan/",
+      "parent": "cate_7_3"
+    },
+    {
+      "name": "Máy khoan cắt đa năng",
+      "url": "https://www.lazada.vn/may-khoan-cat-da-nang/",
+      "parent": "cate_7_3"
+    },
+    {
+      "name": "Bộ dụng cụ cầm tay",
+      "url": "https://www.lazada.vn/bo-cong-cu-cam-tay/",
+      "parent": "cate_7_3"
+    },
+    {
+      "name": "Máy khoan cắt bê tông",
+      "url": "https://www.lazada.vn/may-khoan-cat-be-tong/",
+      "parent": "cate_7_3"
+    },
+    {
+      "name": "Máy cầm tay đa năng",
+      "url": "https://www.lazada.vn/may-cam-tay-da-nang/",
+      "parent": "cate_7_3"
+    },
+    {
+      "name": "Máy mài",
+      "url": "https://www.lazada.vn/may-danh-bong-2/",
+      "parent": "cate_7_3"
+    },
+    {
+      "name": "Máy cưa",
+      "url": "https://www.lazada.vn/may-cua/",
+      "parent": "cate_7_3"
+    },
+    {
+      "name": "Máy bào",
+      "url": "https://www.lazada.vn/may-bao-cam-tay-bao-xoi-cam-tay/",
+      "parent": "cate_7_3"
+    },
+    {
+      "name": "Súng hơi",
+      "url": "https://www.lazada.vn/sung-hoi/",
+      "parent": "cate_7_3"
+    },
+    {
+      "name": "Máy bắn đinh & ghim",
+      "url": "https://www.lazada.vn/may-ban-dinh-ghim/",
+      "parent": "cate_7_3"
+    },
+    {
+      "name": "Dụng cụ hàn tiện",
+      "url": "https://www.lazada.vn/dung-cu-han-tien/",
+      "parent": "cate_7_3"
+    },
+    {
+      "name": "Súng bắn keo",
+      "url": "https://www.lazada.vn/sung-ban-keo/",
+      "parent": "cate_7_4"
+    },
+    {
+      "name": "Dao & dụng cụ đa năng",
+      "url": "https://www.lazada.vn/dao-va-dung-cu-da-nang/",
+      "parent": "cate_7_4"
+    },
+    {
+      "name": "Dụng cụ lau chùi",
+      "url": "https://www.lazada.vn/dung-cu-lau-chui/",
+      "parent": "cate_7_4"
+    },
+    {
+      "name": "Kềm",
+      "url": "https://www.lazada.vn/cac-loai-kem/",
+      "parent": "cate_7_4"
+    },
+    {
+      "name": "Máy vặn ốc",
+      "url": "https://www.lazada.vn/cac-loai-may-van-oc/",
+      "parent": "cate_7_4"
+    },
+    {
+      "name": "Mài, dũa",
+      "url": "https://www.lazada.vn/mai-va-dua/",
+      "parent": "cate_7_4"
+    },
+    {
+      "name": "Búa",
+      "url": "https://www.lazada.vn/cac-loai-bua/",
+      "parent": "cate_7_4"
+    },
+    {
+      "name": "Phụ kiện dụng cụ cầm tay",
+      "url": "https://www.lazada.vn/phu-kien-dung-cu-cam-tay/",
+      "parent": "cate_7_4"
+    },
+    {
+      "name": "Khoá lục giác",
+      "url": "https://www.lazada.vn/khoa-cua-luc-giac/",
+      "parent": "cate_7_4"
+    },
+    {
+      "name": "Bộ tuýp",
+      "url": "https://www.lazada.vn/bo-tuyp/",
+      "parent": "cate_7_4"
+    },
+    {
+      "name": "Cưa",
+      "url": "https://www.lazada.vn/cac-loai-cua/",
+      "parent": "cate_7_4"
+    },
+    {
+      "name": "Đai, keo & hàn",
+      "url": "https://www.lazada.vn/dai-keo-va-han/",
+      "parent": "cate_7_4"
+    },
+    {
+      "name": "Bộ chăn ga gối",
+      "url": "https://www.lazada.vn/bo-chan-ra-goi-nem-2/",
+      "parent": "cate_7_5"
+    },
+    {
+      "name": "Ga giường",
+      "url": "https://www.lazada.vn/ga-giuong/",
+      "parent": "cate_7_5"
+    },
+    {
+      "name": "Gối",
+      "url": "https://www.lazada.vn/goi/",
+      "parent": "cate_7_5"
+    },
+    {
+      "name": "Chăn mền",
+      "url": "https://www.lazada.vn/chan-men/",
+      "parent": "cate_7_5"
+    },
+    {
+      "name": "Chăn chần gòn",
+      "url": "https://www.lazada.vn/chan-chan-gon/",
+      "parent": "cate_7_5"
+    },
+    {
+      "name": "Chăn điện",
+      "url": "https://www.lazada.vn/chan-dien-cao-cap/",
+      "parent": "cate_7_5"
+    },
+    {
+      "name": "Phụ kiện giường ngủ",
+      "url": "https://www.lazada.vn/phu-kien-cho-giuong-ngu-2/",
+      "parent": "cate_7_5"
+    },
+    {
+      "name": "Vỏ gối",
+      "url": "https://www.lazada.vn/vo-goi/",
+      "parent": "cate_7_5"
+    },
+    {
+      "name": "Ren ga giường chống trượt",
+      "url": "https://www.lazada.vn/phu-kien-cho-giuong-ngu/",
+      "parent": "cate_7_5"
+    },
+    {
+      "name": "Vỏ lót bảo vệ nệm",
+      "url": "https://www.lazada.vn/nem-va-vo-nem/",
+      "parent": "cate_7_5"
+    },
+    {
+      "name": "Tấm trải nệm",
+      "url": "https://www.lazada.vn/vo-bao-ve-nem/",
+      "parent": "cate_7_5"
+    },
+    {
+      "name": "Khăn tắm",
+      "url": "https://www.lazada.vn/khan-tam/",
+      "parent": "cate_7_6"
+    },
+    {
+      "name": "Kệ phòng tắm",
+      "url": "https://www.lazada.vn/ke-nha-tam/",
+      "parent": "cate_7_6"
+    },
+    {
+      "name": "Thiết bị phòng tắm",
+      "url": "https://www.lazada.vn/vat-dung-chua-do/",
+      "parent": "cate_7_6"
+    },
+    {
+      "name": "Hộp đựng giấy vệ sinh",
+      "url": "https://www.lazada.vn/hop-dung-giay-ve-sinh/",
+      "parent": "cate_7_6"
+    },
+    {
+      "name": "Giá treo khăn",
+      "url": "https://www.lazada.vn/gia-phoi-may-lam-am-khan/",
+      "parent": "cate_7_6"
+    },
+    {
+      "name": "Cân sức khoẻ",
+      "url": "https://www.lazada.vn/can-suc-khoe-phong-tam/",
+      "parent": "cate_7_6"
+    },
+    {
+      "name": "Thảm phòng tắm",
+      "url": "https://www.lazada.vn/tham-phong-tam/",
+      "parent": "cate_7_6"
+    },
+    {
+      "name": "Gương phòng tắm",
+      "url": "https://www.lazada.vn/guong-trong-phong-tam/",
+      "parent": "cate_7_6"
+    },
+    {
+      "name": "Áo choàng tắm",
+      "url": "https://www.lazada.vn/ao-choang-tam/",
+      "parent": "cate_7_6"
+    },
+    {
+      "name": "Rèm phòng tắm",
+      "url": "https://www.lazada.vn/tam-rem-phu-kien/",
+      "parent": "cate_7_6"
+    },
+    {
+      "name": "Phủ bồn cầu",
+      "url": "https://www.lazada.vn/phu-bon-cau/",
+      "parent": "cate_7_6"
+    },
+    {
+      "name": "Giá treo vòi sen",
+      "url": "https://www.lazada.vn/gia-treo-voi-sen/",
+      "parent": "cate_7_6"
+    },
+    {
+      "name": "Bóng đèn",
+      "url": "https://www.lazada.vn/bong-den/",
+      "parent": "cate_7_7"
+    },
+    {
+      "name": "Đèn trần",
+      "url": "https://www.lazada.vn/den-tran-trang-tri/",
+      "parent": "cate_7_7"
+    },
+    {
+      "name": "Đèn tường",
+      "url": "https://www.lazada.vn/chan-den-tuong/",
+      "parent": "cate_7_7"
+    },
+    {
+      "name": "Đèn bàn",
+      "url": "https://www.lazada.vn/den-de-ban/",
+      "parent": "cate_7_7"
+    },
+    {
+      "name": "Đèn ngoài trời",
+      "url": "https://www.lazada.vn/den-su-dung-ngoai-troi/",
+      "parent": "cate_7_7"
+    },
+    {
+      "name": "Đèn trang trí",
+      "url": "https://www.lazada.vn/den-trang-tri-chuyen-dung/",
+      "parent": "cate_7_7"
+    },
+    {
+      "name": "Chụp đèn",
+      "url": "https://www.lazada.vn/chup-den-kieu/",
+      "parent": "cate_7_7"
+    },
+    {
+      "name": "Linh kiện đèn",
+      "url": "https://www.lazada.vn/linh-kien-den/",
+      "parent": "cate_7_7"
+    },
+    {
+      "name": "Đèn chuyên dụng",
+      "url": "https://www.lazada.vn/den-disco/",
+      "parent": "cate_7_7"
+    },
+    {
+      "name": "Đèn đứng",
+      "url": "https://www.lazada.vn/den-dung-kieu/",
+      "parent": "cate_7_7"
+    },
+    {
+      "name": "Đèn pin & Đèn flash",
+      "url": "https://www.lazada.vn/den-pin-gia-dinh/",
+      "parent": "cate_7_7"
+    },
+    {
+      "name": "Đèn trang trí phòng tắm",
+      "url": "https://www.lazada.vn/den-trang-tri-phong-tam/",
+      "parent": "cate_7_7"
+    },
+    {
+      "name": "Giấy dán tường, decal",
+      "url": "https://www.lazada.vn/giay-dan-tuong-nha/",
+      "parent": "cate_7_8"
+    },
+    {
+      "name": "Trang trí tường",
+      "url": "https://www.lazada.vn/trang-tri-tuong/",
+      "parent": "cate_7_8"
+    },
+    {
+      "name": "Phụ kiện làm thơm phòng",
+      "url": "https://www.lazada.vn/do-dung-lam-thom-phong/",
+      "parent": "cate_7_8"
+    },
+    {
+      "name": "Thảm",
+      "url": "https://www.lazada.vn/tham/",
+      "parent": "cate_7_8"
+    },
+    {
+      "name": "Đồng hồ",
+      "url": "https://www.lazada.vn/dong-ho-trang-tri/",
+      "parent": "cate_7_8"
+    },
+    {
+      "name": "Rèm & Màn cửa",
+      "url": "https://www.lazada.vn/rem-man-cua/",
+      "parent": "cate_7_8"
+    },
+    {
+      "name": "Tranh & khung ảnh",
+      "url": "https://www.lazada.vn/khung-hinh-trang-tri/",
+      "parent": "cate_7_8"
+    },
+    {
+      "name": "Cây & hoa giả",
+      "url": "https://www.lazada.vn/cay-hoa-gia/",
+      "parent": "cate_7_8"
+    },
+    {
+      "name": "Lọ & Bình trang trí",
+      "url": "https://www.lazada.vn/lo-binh-trang-tri/",
+      "parent": "cate_7_8"
+    },
+    {
+      "name": "Điểm nhấn trang trí",
+      "url": "https://www.lazada.vn/diem-nhan-trang-tri-2/",
+      "parent": "cate_7_8"
+    },
+    {
+      "name": "Bộ nến trang trí",
+      "url": "https://www.lazada.vn/nen-chan-nen-trang-tri/",
+      "parent": "cate_7_8"
+    },
+    {
+      "name": "Gương",
+      "url": "https://www.lazada.vn/guong-trang-tri/",
+      "parent": "cate_7_8"
+    },
+    {
+      "name": "Nệm",
+      "url": "https://www.lazada.vn/nem/",
+      "parent": "cate_7_9"
+    },
+    {
+      "name": "Tủ quần áo",
+      "url": "https://www.lazada.vn/tu-dung-quan-ao/",
+      "parent": "cate_7_9"
+    },
+    {
+      "name": "Bàn làm việc",
+      "url": "https://www.lazada.vn/ban-dung-lam-viec/",
+      "parent": "cate_7_9"
+    },
+    {
+      "name": "Tủ sắp xếp giày",
+      "url": "https://www.lazada.vn/tu-giay-xep/",
+      "parent": "cate_7_9"
+    },
+    {
+      "name": "Nội thất phòng ngủ",
+      "url": "https://www.lazada.vn/noi-that-phong-ngu/",
+      "parent": "cate_7_9"
+    },
+    {
+      "name": "Nội thất phòng khách",
+      "url": "https://www.lazada.vn/bo-noi-that-phong-khach/",
+      "parent": "cate_7_9"
+    },
+    {
+      "name": "Nội thất phòng làm việc",
+      "url": "https://www.lazada.vn/noi-that-phong-lam-viec-tai-gia/",
+      "parent": "cate_7_9"
+    },
+    {
+      "name": "Nội thất bếp & phòng ăn",
+      "url": "https://www.lazada.vn/noi-that-nha-bep-phong-an/",
+      "parent": "cate_7_9"
+    },
+    {
+      "name": "Nội thất phòng giải trí",
+      "url": "https://www.lazada.vn/noi-that-phong-giai-tri-van-phong/",
+      "parent": "cate_7_9"
+    },
+    {
+      "name": "Nội thất ngoài trời",
+      "url": "https://www.lazada.vn/do-dung-ngoai-troi/",
+      "parent": "cate_7_9"
+    },
+    {
+      "name": "Nội thất hành lang & lối vào",
+      "url": "https://www.lazada.vn/noi-that-cho-hanh-lang-loi-vao-van-phong/",
+      "parent": "cate_7_9"
+    },
+    {
+      "name": "Tủ chứa & Sắp xếp đồ",
+      "url": "https://www.lazada.vn/tu-dung-va-sap-xep-do/",
+      "parent": "cate_7_9"
+    },
+    {
+      "name": "Phụ kiện trường học & văn phòng",
+      "url": "https://www.lazada.vn/phu-kien-truong-hoc-van-phong/",
+      "parent": "cate_7_10"
+    },
+    {
+      "name": "Máy tính học sinh",
+      "url": "https://www.lazada.vn/may-tinh/",
+      "parent": "cate_7_10"
+    },
+    {
+      "name": "Bộ dụng cụ học tập",
+      "url": "https://www.lazada.vn/bo-do-dung-di-hoc/",
+      "parent": "cate_7_10"
+    },
+    {
+      "name": "Bút viết các loại",
+      "url": "https://www.lazada.vn/dung-cu-viet-lach/",
+      "parent": "cate_7_10"
+    },
+    {
+      "name": "Quà tặng & Đồ dùng gói quà",
+      "url": "https://www.lazada.vn/qua-tang-goi-qua/",
+      "parent": "cate_7_10"
+    },
+    {
+      "name": "Đồ thủ công",
+      "url": "https://www.lazada.vn/thiet-bi-thu-cong/",
+      "parent": "cate_7_10"
+    },
+    {
+      "name": "Dụng cụ vẽ",
+      "url": "https://www.lazada.vn/vat-tu-nghe-thuat/",
+      "parent": "cate_7_10"
+    },
+    {
+      "name": "Dụng cụ may vá",
+      "url": "https://www.lazada.vn/may-va-2/",
+      "parent": "cate_7_10"
+    },
+    {
+      "name": "Sản phẩm từ giấy",
+      "url": "https://www.lazada.vn/cac-san-pham-tu-giay/",
+      "parent": "cate_7_10"
+    },
+    {
+      "name": "Quà lưu niệm",
+      "url": "https://www.lazada.vn/qua-tang-2/",
+      "parent": "cate_7_10"
+    },
+    {
+      "name": "Giấy in các loại",
+      "url": "https://www.lazada.vn/giay-photocopy/",
+      "parent": "cate_7_10"
+    },
+    {
+      "name": "Thùng carton",
+      "url": "https://www.lazada.vn/bao-bi-cac-tong/",
+      "parent": "cate_7_10"
+    },
+    {
+      "name": "Sách Tiếng Việt",
+      "url": "https://www.lazada.vn/sach-tieng-viet/",
+      "parent": "cate_7_11"
+    },
+    {
+      "name": "Sách văn học",
+      "url": "https://www.lazada.vn/sach-tieng-viet-van-hoc/",
+      "parent": "cate_7_11"
+    },
+    {
+      "name": "Sách động lực học",
+      "url": "https://www.lazada.vn/sach-nghe-thuat-song-sach-tieng-viet/",
+      "parent": "cate_7_11"
+    },
+    {
+      "name": "Sách ngôn tình",
+      "url": "https://www.lazada.vn/tieu-thuyet-lang-man-sach-tieng-anh/",
+      "parent": "cate_7_11"
+    },
+    {
+      "name": "Sách dành cho Ba Mẹ",
+      "url": "https://www.lazada.vn/sach-cho-cha-me-tieng-hoa/",
+      "parent": "cate_7_11"
+    },
+    {
+      "name": "Sách học ngoại ngữ",
+      "url": "https://www.lazada.vn/sach-day-hoc-ngon-ngu-tieng-anh/",
+      "parent": "cate_7_11"
+    },
+    {
+      "name": "Sách tiếng Anh",
+      "url": "https://www.lazada.vn/sach-tieng-anh/",
+      "parent": "cate_7_11"
+    },
+    {
+      "name": "Sách tiếng Hoa",
+      "url": "https://www.lazada.vn/sach-tieng-hoa/",
+      "parent": "cate_7_11"
+    },
+    {
+      "name": "Sách thiếu nhi",
+      "url": "https://www.lazada.vn/sach-thieu-nhi-sach-tieng-viet/",
+      "parent": "cate_7_11"
+    },
+    {
+      "name": "Sách dành cho thanh thiếu niên",
+      "url": "https://www.lazada.vn/trung-hoc/",
+      "parent": "cate_7_11"
+    },
+    {
+      "name": "Truyện tranh",
+      "url": "https://www.lazada.vn/truyen-tranh-sach-tieng-viet/",
+      "parent": "cate_7_11"
+    },
+    {
+      "name": "Các loại lịch",
+      "url": "https://www.lazada.vn/lich-tieng-viet/",
+      "parent": "cate_7_11"
+    },
+    {
+      "name": "Đàn ukulele",
+      "url": "https://www.lazada.vn/ukulele/",
+      "parent": "cate_7_12"
+    },
+    {
+      "name": "Đàn guitar acoustic",
+      "url": "https://www.lazada.vn/ghi-ta-acoustic/",
+      "parent": "cate_7_12"
+    },
+    {
+      "name": "Đàn violin",
+      "url": "https://www.lazada.vn/vi-cam/",
+      "parent": "cate_7_12"
+    },
+    {
+      "name": "Piano & organ di động",
+      "url": "https://www.lazada.vn/dan-organ/",
+      "parent": "cate_7_12"
+    },
+    {
+      "name": "Piano điện",
+      "url": "https://www.lazada.vn/dan-piano-dien/",
+      "parent": "cate_7_12"
+    },
+    {
+      "name": "Nhạc cụ truyền thống",
+      "url": "https://www.lazada.vn/nhac-cu-truyen-thong/",
+      "parent": "cate_7_12"
+    },
+    {
+      "name": "Sáo các loại",
+      "url": "https://www.lazada.vn/ken-flute/",
+      "parent": "cate_7_12"
+    },
+    {
+      "name": "Phụ kiện âm nhạc",
+      "url": "https://www.lazada.vn/phu-kien-am-nhac/",
+      "parent": "cate_7_12"
+    },
+    {
+      "name": "Phụ kiện cho DJ, karaoke, nhạc điện tử",
+      "url": "https://www.lazada.vn/dj-karaoke-electronic-music/",
+      "parent": "cate_7_12"
+    },
+    {
+      "name": "MIDI Controllers",
+      "url": "https://www.lazada.vn/midi-controllers/",
+      "parent": "cate_7_12"
+    },
+    {
+      "name": "Trống và bộ gõ",
+      "url": "https://www.lazada.vn/bo-go-trong/",
+      "parent": "cate_7_12"
+    },
+    {
+      "name": "Fuzz",
+      "url": "https://www.lazada.vn/effects-pedals/",
+      "parent": "cate_7_12"
+    },
+    {
+      "name": "Quần dài và quần bó",
+      "url": "https://www.lazada.vn/quan-dai-cho-nu/",
+      "parent": "cate_8_2"
+    },
+    {
+      "name": "Jeans",
+      "url": "https://www.lazada.vn/jeans-nu/",
+      "parent": "cate_8_2"
+    },
+    {
+      "name": "Chân váy",
+      "url": "https://www.lazada.vn/chan-vay/",
+      "parent": "cate_8_2"
+    },
+    {
+      "name": "Quần short",
+      "url": "https://www.lazada.vn/quan-short-cho-nu/",
+      "parent": "cate_8_2"
+    },
+    {
+      "name": "Áo khoác",
+      "url": "https://www.lazada.vn/ao-khoac-nu/",
+      "parent": "cate_8_3"
+    },
+    {
+      "name": "Áo hoodies",
+      "url": "https://www.lazada.vn/ao-hoodies-sweaters-nu-2/",
+      "parent": "cate_8_3"
+    },
+    {
+      "name": "Áo len và áo cardigan",
+      "url": "https://www.lazada.vn/ao-sweater-cardigan-nu/",
+      "parent": "cate_8_3"
+    },
+    {
+      "name": "Áo sơ mi",
+      "url": "https://www.lazada.vn/ao-so-mi-ao-blouse-nu/",
+      "parent": "cate_8_3"
+    },
+    {
+      "name": "Áo polo",
+      "url": "https://www.lazada.vn/ao-thun-co-co-nam/",
+      "parent": "cate_8_3"
+    },
+    {
+      "name": "Áo sơ mi kiểu",
+      "url": "https://www.lazada.vn/ao-so-mi-ao-blouse-nu/",
+      "parent": "cate_8_3"
+    },
+    {
+      "name": "Áo thun",
+      "url": "https://www.lazada.vn/ao-thun-cho-nu/",
+      "parent": "cate_8_3"
+    },
+    {
+      "name": "Áo hai dây",
+      "url": "https://www.lazada.vn/ao-hai-day-nu/",
+      "parent": "cate_8_3"
+    },
+    {
+      "name": "Áo kiểu nữ",
+      "url": "https://www.lazada.vn/ao-kieu-cho-nu/",
+      "parent": "cate_8_3"
+    },
+    {
+      "name": "Đồ ngủ nữ",
+      "url": "https://www.lazada.vn/do-ngu-nu/",
+      "parent": "cate_8_6"
+    },
+    {
+      "name": "Quần lót nữ",
+      "url": "https://www.lazada.vn/mua-quan-lot-nu/",
+      "parent": "cate_8_6"
+    },
+    {
+      "name": "Áo ngực",
+      "url": "https://www.lazada.vn/mua-ao-nguc/",
+      "parent": "cate_8_6"
+    },
+    {
+      "name": "Đồ lót định hình",
+      "url": "https://www.lazada.vn/do-lot-dinh-hinh/",
+      "parent": "cate_8_6"
+    },
+    {
+      "name": "Bộ đồ lót nữ",
+      "url": "https://www.lazada.vn/bo-do-lot-nu/",
+      "parent": "cate_8_6"
+    },
+    {
+      "name": "Phụ kiện đồ lót",
+      "url": "https://www.lazada.vn/phu-kien-do-lot/",
+      "parent": "cate_8_6"
+    },
+    {
+      "name": "Áo lót hai dây",
+      "url": "https://www.lazada.vn/ao-dam-hai-day/",
+      "parent": "cate_8_6"
+    },
+    {
+      "name": "Áo choàng nữ",
+      "url": "https://www.lazada.vn/ao-choang-nu/",
+      "parent": "cate_8_6"
+    },
+    {
+      "name": "Đồ lót gợi cảm",
+      "url": "https://www.lazada.vn/do-lot-goi-cam/",
+      "parent": "cate_8_6"
+    },
+    {
+      "name": "Đồ bơi một mảnh",
+      "url": "https://www.lazada.vn/do-boi-nu/",
+      "parent": "cate_8_6"
+    },
+    {
+      "name": "Bikini",
+      "url": "https://www.lazada.vn/bikini-2/",
+      "parent": "cate_8_6"
+    },
+    {
+      "name": "Phụ kiện đồ lót và đồ bơi nữ",
+      "url": "https://www.lazada.vn/trang-phuc-phu-kien-di-bien/",
+      "parent": "cate_8_6"
+    },
+    {
+      "name": "Vớ và quần vớ nữ",
+      "url": "https://www.lazada.vn/vo-quan-vo-nu/",
+      "parent": "cate_8_7"
+    },
+    {
+      "name": "Phụ kiện tóc nữ",
+      "url": "https://www.lazada.vn/phu-kien-toc-nu/",
+      "parent": "cate_8_7"
+    },
+    {
+      "name": "Nón thời trang nữ",
+      "url": "https://www.lazada.vn/non-thoi-trang-nu/",
+      "parent": "cate_8_7"
+    },
+    {
+      "name": "Dù nữ",
+      "url": "https://www.lazada.vn/du-nu/",
+      "parent": "cate_8_7"
+    },
+    {
+      "name": "Thắt lưng nữ",
+      "url": "https://www.lazada.vn/that-lung-nu/",
+      "parent": "cate_8_7"
+    },
+    {
+      "name": "Phụ kiện thời trang khác",
+      "url": "https://www.lazada.vn/phu-kien-thoi-trang-nu-khac/",
+      "parent": "cate_8_7"
+    },
+    {
+      "name": "Khăn choàng thời trang",
+      "url": "https://www.lazada.vn/khan-choang-thoi-trang-nu/",
+      "parent": "cate_8_7"
+    },
+    {
+      "name": "Găng tay nữ",
+      "url": "https://www.lazada.vn/gang-tay-thoi-trang-nu/",
+      "parent": "cate_8_7"
+    },
+    {
+      "name": "Sneakers",
+      "url": "https://www.lazada.vn/giay-sneaker-cho-nu/",
+      "parent": "cate_8_8"
+    },
+    {
+      "name": "Giày cao gót",
+      "url": "https://www.lazada.vn/giay-cao-got-nu-thoi-trang/",
+      "parent": "cate_8_8"
+    },
+    {
+      "name": "Dép",
+      "url": "https://www.lazada.vn/dep-nu/",
+      "parent": "cate_8_8"
+    },
+    {
+      "name": "Sandals",
+      "url": "https://www.lazada.vn/xang-dan-nu/",
+      "parent": "cate_8_8"
+    },
+    {
+      "name": "Giày đế bằng",
+      "url": "https://www.lazada.vn/giay-nu-de-bang/",
+      "parent": "cate_8_8"
+    },
+    {
+      "name": "Giày đế xuồng",
+      "url": "https://www.lazada.vn/giay-de-xuong-nu-thoi-trang/",
+      "parent": "cate_8_8"
+    },
+    {
+      "name": "Giày bốt",
+      "url": "https://www.lazada.vn/giay-bot-nu/",
+      "parent": "cate_8_8"
+    },
+    {
+      "name": "Phụ kiện giày",
+      "url": "https://www.lazada.vn/phu-kien-giay-nu-thoi-trang/",
+      "parent": "cate_8_8"
+    },
+    {
+      "name": "Mules",
+      "url": "https://www.lazada.vn/giay-luoi-nu-thoi-trang/",
+      "parent": "cate_8_8"
+    },
+    {
+      "name": "Đầm bé gái",
+      "url": "https://www.lazada.vn/dam-cho-be-gai/",
+      "parent": "cate_8_9"
+    },
+    {
+      "name": "Đồ bơi bé gái",
+      "url": "https://www.lazada.vn/do-boi-cua-be-gai/",
+      "parent": "cate_8_9"
+    },
+    {
+      "name": "Đồ lót và đồ ngủ",
+      "url": "https://www.lazada.vn/do-lot-do-ngu-be-gai/",
+      "parent": "cate_8_9"
+    },
+    {
+      "name": "Phụ kiện tóc",
+      "url": "https://www.lazada.vn/phu-kien-toc-cho-be-gai/",
+      "parent": "cate_8_9"
+    },
+    {
+      "name": "Áo bé gái",
+      "url": "https://www.lazada.vn/ao-cua-be-gai/",
+      "parent": "cate_8_9"
+    },
+    {
+      "name": "Quần và chân váy",
+      "url": "https://www.lazada.vn/quan-vay-be-gai/",
+      "parent": "cate_8_9"
+    },
+    {
+      "name": "Áo khoác",
+      "url": "https://www.lazada.vn/ao-khoac-danh-cho-be-gai/",
+      "parent": "cate_8_9"
+    },
+    {
+      "name": "Nón",
+      "url": "https://www.lazada.vn/non-danh-cho-be-gai/",
+      "parent": "cate_8_9"
+    },
+    {
+      "name": "Vớ và quần vớ",
+      "url": "https://www.lazada.vn/vo-quan-vo-be-gai/",
+      "parent": "cate_8_9"
+    },
+    {
+      "name": "Dù",
+      "url": "https://www.lazada.vn/du-be-gai/",
+      "parent": "cate_8_9"
+    },
+    {
+      "name": "Găng tay, khăn choàng, phụ kiện",
+      "url": "https://www.lazada.vn/gang-tay-khan-choang-phu-kien-giu-am-be-gai/",
+      "parent": "cate_8_9"
+    },
+    {
+      "name": "Áo Hoodies",
+      "url": "https://www.lazada.vn/ao-hoodie-be-gai/",
+      "parent": "cate_8_9"
+    },
+    {
+      "name": "Dép và sandals",
+      "url": "https://www.lazada.vn/xang-dan-dep-be-gai/",
+      "parent": "cate_8_10"
+    },
+    {
+      "name": "Sneakers",
+      "url": "https://www.lazada.vn/giay-the-thao-cua-be-gai/",
+      "parent": "cate_8_10"
+    },
+    {
+      "name": "Giày đế bằng",
+      "url": "https://www.lazada.vn/giay-de-bang-giay-luoi-be-gai/",
+      "parent": "cate_8_10"
+    },
+    {
+      "name": "Giày đi học",
+      "url": "https://www.lazada.vn/giay-di-hoc-cua-be-gai/",
+      "parent": "cate_8_10"
+    },
+    {
+      "name": "Giày bốt",
+      "url": "https://www.lazada.vn/giay-bot-be-gai/",
+      "parent": "cate_8_10"
+    },
+    {
+      "name": "Phụ kiện giày",
+      "url": "https://www.lazada.vn/phu-kien-giay-danh-cho-be-gai/",
+      "parent": "cate_8_10"
+    },
+    {
+      "name": "Áo thun nam",
+      "url": "https://www.lazada.vn/ao-thoi-trang-nam/",
+      "parent": "cate_9_1"
+    },
+    {
+      "name": "Áo sơ mi nam",
+      "url": "https://www.lazada.vn/ao-so-mi-nam/",
+      "parent": "cate_9_1"
+    },
+    {
+      "name": "Áo polo nam",
+      "url": "https://www.lazada.vn/ao-thun-polo-shirts-thoi-trang-nam/",
+      "parent": "cate_9_1"
+    },
+    {
+      "name": "Áo khoác nam",
+      "url": "https://www.lazada.vn/ao-khoac-nam/",
+      "parent": "cate_9_1"
+    },
+    {
+      "name": "Quần jean nam",
+      "url": "https://www.lazada.vn/quan-jeans/",
+      "parent": "cate_9_1"
+    },
+    {
+      "name": "Quần dài nam",
+      "url": "https://www.lazada.vn/quan-nam/",
+      "parent": "cate_9_1"
+    },
+    {
+      "name": "Quần short nam",
+      "url": "https://www.lazada.vn/quan-short-nam/",
+      "parent": "cate_9_1"
+    },
+    {
+      "name": "Đồ vest nam",
+      "url": "https://www.lazada.vn/bo-vest-nam/",
+      "parent": "cate_9_1"
+    },
+    {
+      "name": "Áo hoodie nam",
+      "url": "https://www.lazada.vn/ao-hoodie-cua-nam/",
+      "parent": "cate_9_1"
+    },
+    {
+      "name": "Áo trùm đầu & cardigan nam",
+      "url": "https://www.lazada.vn/ao-sweater-cardigan-nam/",
+      "parent": "cate_9_1"
+    },
+    {
+      "name": "Đồ bơi nam",
+      "url": "https://www.lazada.vn/do-boi-nam/",
+      "parent": "cate_9_1"
+    },
+    {
+      "name": "Trang phục Hồi Giáo",
+      "url": "https://www.lazada.vn/trang-phuc-hoi-giao-nam-hoi-trang/",
+      "parent": "cate_9_1"
+    },
+    {
+      "name": "Giày sneaker",
+      "url": "https://www.lazada.vn/giay-sneaker-nam/",
+      "parent": "cate_9_2"
+    },
+    {
+      "name": "Dép & sandal",
+      "url": "https://www.lazada.vn/dep-xo-ngon-cho-nam/",
+      "parent": "cate_9_2"
+    },
+    {
+      "name": "Giày lười",
+      "url": "https://www.lazada.vn/giay-luoi-giay-moi-nam/",
+      "parent": "cate_9_2"
+    },
+    {
+      "name": "Giày công sở",
+      "url": "https://www.lazada.vn/giay-cong-so-nam-thoi-trang/",
+      "parent": "cate_9_2"
+    },
+    {
+      "name": "Giày bốt",
+      "url": "https://www.lazada.vn/giay-bot-nam/",
+      "parent": "cate_9_2"
+    },
+    {
+      "name": "Phụ kiện giày dép",
+      "url": "https://www.lazada.vn/phu-kien-giay-nam/",
+      "parent": "cate_9_2"
+    },
+    {
+      "name": "Quần lót boxer nam",
+      "url": "https://www.lazada.vn/quan-lot-boxer/",
+      "parent": "cate_9_3"
+    },
+    {
+      "name": "Quần lót tam giác nam",
+      "url": "https://www.lazada.vn/do-lot-cho-nam/",
+      "parent": "cate_9_3"
+    },
+    {
+      "name": "Đồ mặc ngủ nam",
+      "url": "https://www.lazada.vn/do-ngu-thoi-trang-nam/",
+      "parent": "cate_9_3"
+    },
+    {
+      "name": "Quần lọt khe",
+      "url": "https://www.lazada.vn/quan-lot-khe/",
+      "parent": "cate_9_3"
+    },
+    {
+      "name": "Nón mũ nam",
+      "url": "https://www.lazada.vn/non-thoi-trang-nam/",
+      "parent": "cate_9_4"
+    },
+    {
+      "name": "Thắt lưng nam",
+      "url": "https://www.lazada.vn/that-lung-nam/",
+      "parent": "cate_9_4"
+    },
+    {
+      "name": "Tất vớ nam",
+      "url": "https://www.lazada.vn/vo-nam/",
+      "parent": "cate_9_4"
+    },
+    {
+      "name": "Găng tay nam",
+      "url": "https://www.lazada.vn/gang-tay-thoi-trang-nam/",
+      "parent": "cate_9_4"
+    },
+    {
+      "name": "Dây đai quần nam",
+      "url": "https://www.lazada.vn/dai-deo-quan-nam/",
+      "parent": "cate_9_4"
+    },
+    {
+      "name": "Cà vạt",
+      "url": "https://www.lazada.vn/ca-vat-thoi-trang-nam/",
+      "parent": "cate_9_4"
+    },
+    {
+      "name": "Khăn choàng nam",
+      "url": "https://www.lazada.vn/khan-choang-thoi-trang-nam/",
+      "parent": "cate_9_4"
+    },
+    {
+      "name": "Ô dù",
+      "url": "https://www.lazada.vn/du-thoi-trang-nam/",
+      "parent": "cate_9_4"
+    },
+    {
+      "name": "Nơ thời trang",
+      "url": "https://www.lazada.vn/no-buom-nam/",
+      "parent": "cate_9_4"
+    },
+    {
+      "name": "Áo thun bé trai",
+      "url": "https://www.lazada.vn/ao-cho-be-trai/",
+      "parent": "cate_9_5"
+    },
+    {
+      "name": "Đồ bơi bé trai",
+      "url": "https://www.lazada.vn/do-boi-cua-be-trai/",
+      "parent": "cate_9_5"
+    },
+    {
+      "name": "Đồ ngủ bé trai",
+      "url": "https://www.lazada.vn/do-ngu-danh-cho-be-trai/",
+      "parent": "cate_9_5"
+    },
+    {
+      "name": "Quần đùi bé trai",
+      "url": "https://www.lazada.vn/quan-short-be-trai/",
+      "parent": "cate_9_5"
+    },
+    {
+      "name": "Áo khoác bé trai",
+      "url": "https://www.lazada.vn/ao-khoac-cho-be-trai/",
+      "parent": "cate_9_5"
+    },
+    {
+      "name": "Quần dài bé trai",
+      "url": "https://www.lazada.vn/quan-dai-quan-jeans-be-trai/",
+      "parent": "cate_9_5"
+    },
+    {
+      "name": "Nón bé trai",
+      "url": "https://www.lazada.vn/non-cho-be-trai/",
+      "parent": "cate_9_5"
+    },
+    {
+      "name": "Quần lót bé trai",
+      "url": "https://www.lazada.vn/do-lot/",
+      "parent": "cate_9_5"
+    },
+    {
+      "name": "Tất bé trai",
+      "url": "https://www.lazada.vn/vo-2/",
+      "parent": "cate_9_5"
+    },
+    {
+      "name": "Áo mưa bé trai",
+      "url": "https://www.lazada.vn/du-ao-mua-cho-be-trai/",
+      "parent": "cate_9_5"
+    },
+    {
+      "name": "Áo hoodie bé trai",
+      "url": "https://www.lazada.vn/ao-hoodie-be-trai/",
+      "parent": "cate_9_5"
+    },
+    {
+      "name": "Găng tay, khăn choàng bé trai",
+      "url": "https://www.lazada.vn/gang-tay-khan-choang-be-trai/",
+      "parent": "cate_9_5"
+    },
+    {
+      "name": "Dép & sandal bé trai",
+      "url": "https://www.lazada.vn/dep-xang-dan-be-trai/",
+      "parent": "cate_9_6"
+    },
+    {
+      "name": "Giày sneaker bé trai",
+      "url": "https://www.lazada.vn/giay-the-thao-cua-be-trai/",
+      "parent": "cate_9_6"
+    },
+    {
+      "name": "Giày lười bé trai",
+      "url": "https://www.lazada.vn/giay-luoi-giay-moi-be-trai/",
+      "parent": "cate_9_6"
+    },
+    {
+      "name": "Giày bốt bé trai",
+      "url": "https://www.lazada.vn/giay-bot-cho-be-trai/",
+      "parent": "cate_9_6"
+    },
+    {
+      "name": "Giày đi học bé trai",
+      "url": "https://www.lazada.vn/giay-di-hoc-cua-be-trai/",
+      "parent": "cate_9_6"
+    },
+    {
+      "name": "Phụ kiện giày bé trai",
+      "url": "https://www.lazada.vn/phu-kien-giay-cho-be-trai/",
+      "parent": "cate_9_6"
+    },
+    {
+      "name": "Đồng Hồ Đi Chơi",
+      "url": "https://www.lazada.vn/dong-ho-nu-casual/",
+      "parent": "cate_10_1"
+    },
+    {
+      "name": "Đồng Hồ Đi Làm",
+      "url": "https://www.lazada.vn/dong-ho-nu-doanh-nhan/",
+      "parent": "cate_10_1"
+    },
+    {
+      "name": "Đồng Hồ Thể Thao",
+      "url": "https://www.lazada.vn/dong-ho-the-thao-danh-cho-nu/",
+      "parent": "cate_10_1"
+    },
+    {
+      "name": "Đồng Hồ Đã Qua Sử Dụng",
+      "url": "https://www.lazada.vn/dong-ho-nu-qua-su-dung/",
+      "parent": "cate_10_1"
+    },
+    {
+      "name": "Đồng Hồ Cao Cấp",
+      "url": "https://www.lazada.vn/dong-ho-nu-cao-cap/",
+      "parent": "cate_10_1"
+    },
+    {
+      "name": "Phụ Kiện Đồng Hồ",
+      "url": "https://www.lazada.vn/phu-kien-dong-ho-nu/",
+      "parent": "cate_10_1"
+    },
+    {
+      "name": "Trang Sức Thời Trang",
+      "url": "https://www.lazada.vn/trang-suc-thoi-trang/",
+      "parent": "cate_10_2"
+    },
+    {
+      "name": "Vòng Tay Thời Trang",
+      "url": "https://www.lazada.vn/vong-tay-thoi-trang-nu-2/",
+      "parent": "cate_10_2"
+    },
+    {
+      "name": "Vòng Cổ Thời Trang",
+      "url": "https://www.lazada.vn/vong-co-thoi-trang-nu/",
+      "parent": "cate_10_2"
+    },
+    {
+      "name": "Bông Tay Thời Trang",
+      "url": "https://www.lazada.vn/bong-tai-nu/",
+      "parent": "cate_10_2"
+    },
+    {
+      "name": "Nhẫn Thời Trang",
+      "url": "https://www.lazada.vn/bo-trang-suc-phu-kien-nu/",
+      "parent": "cate_10_2"
+    },
+    {
+      "name": "Trang Sức Đính Hôn",
+      "url": "https://www.lazada.vn/trang-suc-ket-hon-dinh-hon-cho-nu/",
+      "parent": "cate_10_2"
+    },
+    {
+      "name": "Trang Sức Cao Cấp",
+      "url": "https://www.lazada.vn/trang-suc-cao-cap-nu/",
+      "parent": "cate_10_2"
+    },
+    {
+      "name": "Trang Sức Kim Cương",
+      "url": "https://www.lazada.vn/trang-suc-kim-cuong-cho-nu/",
+      "parent": "cate_10_2"
+    },
+    {
+      "name": "Trang Sức Ngọc Bích",
+      "url": "https://www.lazada.vn/trang-suc-ngoc-bich-cho-nu/",
+      "parent": "cate_10_2"
+    },
+    {
+      "name": "Vàng Nguyên Chất",
+      "url": "https://www.lazada.vn/vang-nguyen-chat-vang-mieng-nu/",
+      "parent": "cate_10_2"
+    },
+    {
+      "name": "Đá Quý",
+      "url": "https://www.lazada.vn/da-quy/",
+      "parent": "cate_10_2"
+    },
+    {
+      "name": "Kính Mát Nam",
+      "url": "https://www.lazada.vn/kinh-mat-danh-cho-nam/",
+      "parent": "cate_10_3"
+    },
+    {
+      "name": "Kính Mát Nữ",
+      "url": "https://www.lazada.vn/kinh-mat-danh-cho-nu/",
+      "parent": "cate_10_3"
+    },
+    {
+      "name": "Kính Mát Trẻ Em",
+      "url": "https://www.lazada.vn/kinh-mat-danh-cho-tre-em/",
+      "parent": "cate_10_3"
+    },
+    {
+      "name": "Kính Cận Nam",
+      "url": "https://www.lazada.vn/kinh-deo-mat-nam/",
+      "parent": "cate_10_4"
+    },
+    {
+      "name": "Kính Cận Nữ",
+      "url": "https://www.lazada.vn/kinh-deo-mat-nu/",
+      "parent": "cate_10_4"
+    },
+    {
+      "name": "Kính Cận Trẻ Em",
+      "url": "https://www.lazada.vn/mat-kinh-tre-em/",
+      "parent": "cate_10_4"
+    },
+    {
+      "name": "Phụ Kiện Đồng Hồ",
+      "url": "https://www.lazada.vn/kinh-phu-kien/",
+      "parent": "cate_10_4"
+    },
+    {
+      "name": "Túi Đeo Chéo",
+      "url": "https://www.lazada.vn/tui-deo-cheo-deo-vai-nu/",
+      "parent": "cate_10_5"
+    },
+    {
+      "name": "Túi Xách",
+      "url": "https://www.lazada.vn/tui-xach-tay-nu/",
+      "parent": "cate_10_5"
+    },
+    {
+      "name": "Ví Dự Tiệc",
+      "url": "https://www.lazada.vn/clutch-nu/",
+      "parent": "cate_10_5"
+    },
+    {
+      "name": "Túi Tote",
+      "url": "https://www.lazada.vn/tui-tote-nu/",
+      "parent": "cate_10_5"
+    },
+    {
+      "name": "Ví & Phụ Kiện",
+      "url": "https://www.lazada.vn/vi-cho-nu/",
+      "parent": "cate_10_5"
+    },
+    {
+      "name": "Túi Đeo Tay",
+      "url": "https://www.lazada.vn/tui-deo-tay-nu/",
+      "parent": "cate_10_5"
+    },
+    {
+      "name": "Charm Phụ Kiện Gắn Túi",
+      "url": "https://www.lazada.vn/charm-phu-kien-gan-tui/",
+      "parent": "cate_10_5"
+    },
+    {
+      "name": "Đồng Hồ Đi Chơi",
+      "url": "https://www.lazada.vn/dong-ho-casual-nam-gioi/",
+      "parent": "cate_10_7"
+    },
+    {
+      "name": "Đồng Hồ Đi Làm",
+      "url": "https://www.lazada.vn/dong-ho-business-nam-gioi/",
+      "parent": "cate_10_7"
+    },
+    {
+      "name": "Đồng Hồ Thể Thao",
+      "url": "https://www.lazada.vn/dong-ho-the-thao-danh-cho-nam-gioi/",
+      "parent": "cate_10_7"
+    },
+    {
+      "name": "Đồng Hồ Đã Qua Sử Dụng",
+      "url": "https://www.lazada.vn/dong-ho-nam-qua-su-dung/",
+      "parent": "cate_10_7"
+    },
+    {
+      "name": "Đồng Hồ Cao Cấp",
+      "url": "https://www.lazada.vn/dong-ho-nam-cao-cap/",
+      "parent": "cate_10_7"
+    },
+    {
+      "name": "Phụ Kiện Đồng Hồ",
+      "url": "https://www.lazada.vn/phu-kien-dong-ho-danh-cho-nam-gioi/",
+      "parent": "cate_10_7"
+    },
+    {
+      "name": "Trang Sức Đính Hôn",
+      "url": "https://www.lazada.vn/trang-suc-ket-hon-dinh-hon-cho-nu/",
+      "parent": "cate_10_8"
+    },
+    {
+      "name": "Trang Sức Thời Trang",
+      "url": "https://www.lazada.vn/trang-suc-thoi-trang-nam/",
+      "parent": "cate_10_8"
+    },
+    {
+      "name": "Nhẫn Nam",
+      "url": "https://www.lazada.vn/nhan-nam/",
+      "parent": "cate_10_8"
+    },
+    {
+      "name": "Vòng Tay Nam",
+      "url": "https://www.lazada.vn/vong-tay-thoi-trang-nam/",
+      "parent": "cate_10_8"
+    },
+    {
+      "name": "Mặt Dây Chuyền Nam",
+      "url": "https://www.lazada.vn/mat-vong-co-nam/",
+      "parent": "cate_10_8"
+    },
+    {
+      "name": "Bông Tai Cho Nam",
+      "url": "https://www.lazada.vn/bong-tai-nam/",
+      "parent": "cate_10_8"
+    },
+    {
+      "name": "Trang Sức Cao Cấp",
+      "url": "https://www.lazada.vn/trang-suc-cao-cap-nam/",
+      "parent": "cate_10_8"
+    },
+    {
+      "name": "Phụ Kiện Trang Phục Nam",
+      "url": "https://www.lazada.vn/mang-set-nut-ao-so-mi-kep-ca-vat/",
+      "parent": "cate_10_8"
+    },
+    {
+      "name": "Ba Lô Nam",
+      "url": "https://www.lazada.vn/ba-lo-thoi-trang/",
+      "parent": "cate_10_9"
+    },
+    {
+      "name": "Cặp Xách Công Sở",
+      "url": "https://www.lazada.vn/tui-xach-cong-so-thoi-trang-nam/",
+      "parent": "cate_10_9"
+    },
+    {
+      "name": "Túi Messenger",
+      "url": "https://www.lazada.vn/tui-messenger-thoi-trang-nam/",
+      "parent": "cate_10_9"
+    },
+    {
+      "name": "Túi Đeo Nam",
+      "url": "https://www.lazada.vn/tui-tote-cho-nam/",
+      "parent": "cate_10_9"
+    },
+    {
+      "name": "Ví Nam",
+      "url": "https://www.lazada.vn/vi-nam-phu-kien/",
+      "parent": "cate_10_9"
+    },
+    {
+      "name": "Túi Đeo Hông",
+      "url": "https://www.lazada.vn/tui-deo-hong/",
+      "parent": "cate_10_9"
+    },
+    {
+      "name": "Ví Đựng Thẻ Cho Nam",
+      "url": "https://www.lazada.vn/vi-dung-the-cho-nam/",
+      "parent": "cate_10_9"
+    },
+    {
+      "name": "Ba Lô & Túi Laptop",
+      "url": "https://www.lazada.vn/ba-lo-tui-laptop/",
+      "parent": "cate_10_11"
+    },
+    {
+      "name": "Vali Du Lịch",
+      "url": "https://www.lazada.vn/vali-du-lich/",
+      "parent": "cate_10_11"
+    },
+    {
+      "name": "Phụ Kiện Du Lịch",
+      "url": "https://www.lazada.vn/phu-kien-du-lich/",
+      "parent": "cate_10_11"
+    },
+    {
+      "name": "Túi Du Lịch",
+      "url": "https://www.lazada.vn/tui-cac-loai/",
+      "parent": "cate_10_11"
+    },
+    {
+      "name": "Ba Lô Kéo Trẻ Em",
+      "url": "https://www.lazada.vn/balo-keo-tre-em/",
+      "parent": "cate_10_12"
+    },
+    {
+      "name": "Ba Lô Trẻ Em",
+      "url": "https://www.lazada.vn/balo-tre-em/",
+      "parent": "cate_10_12"
+    },
+    {
+      "name": "Túi Trẻ Em",
+      "url": "https://www.lazada.vn/tui-deo-vai-tre-em/",
+      "parent": "cate_10_12"
+    },
+    {
+      "name": "Phụ Kiện Túi Trẻ Em",
+      "url": "https://www.lazada.vn/tui-phu-kien-tre-em/",
+      "parent": "cate_10_12"
+    },
+    {
+      "name": "Giày chạy bộ",
+      "url": "https://www.lazada.vn/giay-chay-bo-cho-nam/",
+      "parent": "cate_11_1"
+    },
+    {
+      "name": "Giày đá bóng",
+      "url": "https://www.lazada.vn/giay-da-bong-nam-the-thao/",
+      "parent": "cate_11_1"
+    },
+    {
+      "name": "Giày tennis nam",
+      "url": "https://www.lazada.vn/giay-tennis-cua-nam/",
+      "parent": "cate_11_1"
+    },
+    {
+      "name": "Giày cầu lông nam",
+      "url": "https://www.lazada.vn/giay-cau-long-cua-nam/",
+      "parent": "cate_11_1"
+    },
+    {
+      "name": "Giày thể thao sneakers nam",
+      "url": "https://www.lazada.vn/giay-the-thao-da-nang-nam/",
+      "parent": "cate_11_1"
+    },
+    {
+      "name": "Giày chơi bóng rổ",
+      "url": "https://www.lazada.vn/giay-choi-bong-ro-nam/",
+      "parent": "cate_11_1"
+    },
+    {
+      "name": "Giày leo núi",
+      "url": "https://www.lazada.vn/giay-leo-nui-cho-nam/",
+      "parent": "cate_11_1"
+    },
+    {
+      "name": "Sandal thể thao nam",
+      "url": "https://www.lazada.vn/sandal-the-thao-nam/",
+      "parent": "cate_11_1"
+    },
+    {
+      "name": "Giày chơi thể thao dưới nước",
+      "url": "https://www.lazada.vn/giay-choi-the-thao-duoi-nuoc-nam/",
+      "parent": "cate_11_1"
+    },
+    {
+      "name": "Giày đạp xe",
+      "url": "https://www.lazada.vn/giay-dap-xe-nam/",
+      "parent": "cate_11_1"
+    },
+    {
+      "name": "Giày tập golf",
+      "url": "https://www.lazada.vn/giay-golf-nam/",
+      "parent": "cate_11_1"
+    },
+    {
+      "name": "Áo thun thể thao",
+      "url": "https://www.lazada.vn/ao-thun-the-thao-nam/",
+      "parent": "cate_11_2"
+    },
+    {
+      "name": "Quần dài thể thao nam",
+      "url": "https://www.lazada.vn/quan-dai-the-thao-nam/",
+      "parent": "cate_11_2"
+    },
+    {
+      "name": "Quần shorts thể thao nam",
+      "url": "https://www.lazada.vn/quan-shorts-the-thao-cua-nam/",
+      "parent": "cate_11_2"
+    },
+    {
+      "name": "Áo khoác thể thao nam",
+      "url": "https://www.lazada.vn/ao-khoac-ao-gio-the-thao-nam/",
+      "parent": "cate_11_2"
+    },
+    {
+      "name": "Đồ bơi",
+      "url": "https://www.lazada.vn/do-boi-nam-gioi/",
+      "parent": "cate_11_2"
+    },
+    {
+      "name": "Áo Jersey",
+      "url": "https://www.lazada.vn/ao-jersey-nam/",
+      "parent": "cate_11_2"
+    },
+    {
+      "name": "Túi thể thao",
+      "url": "https://www.lazada.vn/tui-the-thao-nam/",
+      "parent": "cate_11_2"
+    },
+    {
+      "name": "Phụ kiện thể thao",
+      "url": "https://www.lazada.vn/phu-kien-nam/",
+      "parent": "cate_11_2"
+    },
+    {
+      "name": "Giày chạy bộ",
+      "url": "https://www.lazada.vn/giay-the-thao-chay-bo-nu/",
+      "parent": "cate_11_3"
+    },
+    {
+      "name": "Giày thể thao sneakers nam",
+      "url": "https://www.lazada.vn/giay-the-thao-da-nang-nu/",
+      "parent": "cate_11_3"
+    },
+    {
+      "name": "Giày chơi bóng rổ",
+      "url": "https://www.lazada.vn/giay-choi-bong-ro-nu/",
+      "parent": "cate_11_3"
+    },
+    {
+      "name": "Giày đá bóng",
+      "url": "https://www.lazada.vn/giay-da-bong-nu/",
+      "parent": "cate_11_3"
+    },
+    {
+      "name": "Giày leo núi",
+      "url": "https://www.lazada.vn/giay-leo-nui-nu/",
+      "parent": "cate_11_3"
+    },
+    {
+      "name": "Giày cầu lông nam",
+      "url": "https://www.lazada.vn/giay-cau-long-nu/",
+      "parent": "cate_11_3"
+    },
+    {
+      "name": "Sandal thể thao nam",
+      "url": "https://www.lazada.vn/sandal-the-thao-nu/",
+      "parent": "cate_11_3"
+    },
+    {
+      "name": "Giày chơi thể thao dưới nước",
+      "url": "https://www.lazada.vn/giay-the-thao-duoi-nuoc-nu/",
+      "parent": "cate_11_3"
+    },
+    {
+      "name": "Giày đạp xe",
+      "url": "https://www.lazada.vn/giay-dap-xe-nu/",
+      "parent": "cate_11_3"
+    },
+    {
+      "name": "Giày tập golf",
+      "url": "https://www.lazada.vn/giay-golf-nu/",
+      "parent": "cate_11_3"
+    },
+    {
+      "name": "Giày tennis nam",
+      "url": "https://www.lazada.vn/giay-tennis-cua-nu/",
+      "parent": "cate_11_3"
+    },
+    {
+      "name": "Áo thun thể thao",
+      "url": "https://www.lazada.vn/ao-thun-ao-ngoai-the-thao-nu/",
+      "parent": "cate_11_4"
+    },
+    {
+      "name": "Quần dài thể thao",
+      "url": "https://www.lazada.vn/quan-dai-the-thao-nu/",
+      "parent": "cate_11_4"
+    },
+    {
+      "name": "Quần shorts thể thao",
+      "url": "https://www.lazada.vn/quan-shorts-the-thao-cho-nu/",
+      "parent": "cate_11_4"
+    },
+    {
+      "name": "Áo lót thể thao",
+      "url": "https://www.lazada.vn/ao-lot-the-thao-nu/",
+      "parent": "cate_11_4"
+    },
+    {
+      "name": "Áo khoác thể thao",
+      "url": "https://www.lazada.vn/ao-khoac-ao-gio-the-thao-nu/",
+      "parent": "cate_11_4"
+    },
+    {
+      "name": "Đồ bơi",
+      "url": "https://www.lazada.vn/trang-phuc-boi-luot-van-nu/",
+      "parent": "cate_11_4"
+    },
+    {
+      "name": "Túi thể thao",
+      "url": "https://www.lazada.vn/tui-the-thao-nu/",
+      "parent": "cate_11_4"
+    },
+    {
+      "name": "Phụ kiện thể thao",
+      "url": "https://www.lazada.vn/phu-kien-the-thao-nu/",
+      "parent": "cate_11_4"
+    },
+    {
+      "name": "Ba Lô & Túi Laptop",
+      "url": "https://www.lazada.vn/ba-lo-tui-laptop/",
+      "parent": "cate_11_5"
+    },
+    {
+      "name": "Vali Du Lịch",
+      "url": "https://www.lazada.vn/vali-du-lich/",
+      "parent": "cate_11_5"
+    },
+    {
+      "name": "Phụ Kiện Du Lịch",
+      "url": "https://www.lazada.vn/phu-kien-du-lich/",
+      "parent": "cate_11_5"
+    },
+    {
+      "name": "Đạp Xe",
+      "url": "https://www.lazada.vn/mon-xe-dap/",
+      "parent": "cate_11_6"
+    },
+    {
+      "name": "Câu Cá",
+      "url": "https://www.lazada.vn/cau-ca/",
+      "parent": "cate_11_6"
+    },
+    {
+      "name": "Dã Ngoại & Đi Bộ Đường Trường",
+      "url": "https://www.lazada.vn/da-ngoai-leo-nui/",
+      "parent": "cate_11_6"
+    },
+    {
+      "name": "Leo Núi",
+      "url": "https://www.lazada.vn/leo-nui/",
+      "parent": "cate_11_6"
+    },
+    {
+      "name": "Golf",
+      "url": "https://www.lazada.vn/choi-golf/",
+      "parent": "cate_11_6"
+    },
+    {
+      "name": "Trượt Patin",
+      "url": "https://www.lazada.vn/truot-bang-trong-nha/",
+      "parent": "cate_11_6"
+    },
+    {
+      "name": "Trượt Ván",
+      "url": "https://www.lazada.vn/truot-van/",
+      "parent": "cate_11_6"
+    },
+    {
+      "name": "Xe Scooter",
+      "url": "https://www.lazada.vn/scooters/",
+      "parent": "cate_11_6"
+    },
+    {
+      "name": "Bắn Súng",
+      "url": "https://www.lazada.vn/ban-sung-ngoai-troi/",
+      "parent": "cate_11_6"
+    },
+    {
+      "name": "Máy Tập Thể Hình",
+      "url": "https://www.lazada.vn/may-tap-the-hinh/",
+      "parent": "cate_11_7"
+    },
+    {
+      "name": "Máy Tập Thể Lực",
+      "url": "https://www.lazada.vn/may-tap-the-luc/",
+      "parent": "cate_11_7"
+    },
+    {
+      "name": "Tạ",
+      "url": "https://www.lazada.vn/ta-tap-the-hinh/",
+      "parent": "cate_11_7"
+    },
+    {
+      "name": "Yoga",
+      "url": "https://www.lazada.vn/yoga/",
+      "parent": "cate_11_7"
+    },
+    {
+      "name": "Pilates",
+      "url": "https://www.lazada.vn/pilates/",
+      "parent": "cate_11_7"
+    },
+    {
+      "name": "Chạy Bộ",
+      "url": "https://www.lazada.vn/chay-bo/",
+      "parent": "cate_11_7"
+    },
+    {
+      "name": "Vợt Cầu Lông",
+      "url": "https://www.lazada.vn/vot-cau-long/",
+      "parent": "cate_11_8"
+    },
+    {
+      "name": "Vợt Bóng Bàn",
+      "url": "https://www.lazada.vn/vot-bong-ban/",
+      "parent": "cate_11_8"
+    },
+    {
+      "name": "Vợt Tennis",
+      "url": "https://www.lazada.vn/vot-tennis/",
+      "parent": "cate_11_8"
+    },
+    {
+      "name": "Quả Cầu Lông",
+      "url": "https://www.lazada.vn/qua-cau-long/",
+      "parent": "cate_11_8"
+    },
+    {
+      "name": "Bóng Bàn",
+      "url": "https://www.lazada.vn/bong-bong-ban/",
+      "parent": "cate_11_8"
+    },
+    {
+      "name": "Bóng Tennis",
+      "url": "https://www.lazada.vn/banh-tennis/",
+      "parent": "cate_11_8"
+    },
+    {
+      "name": "Bóng Quần",
+      "url": "https://www.lazada.vn/bong-quan/",
+      "parent": "cate_11_8"
+    },
+    {
+      "name": "Bóng Rổ",
+      "url": "https://www.lazada.vn/bong-ro/",
+      "parent": "cate_11_9"
+    },
+    {
+      "name": "Bóng Chuyền",
+      "url": "https://www.lazada.vn/bong-chuyen/",
+      "parent": "cate_11_9"
+    },
+    {
+      "name": "Bóng Đá",
+      "url": "https://www.lazada.vn/bong-da/",
+      "parent": "cate_11_9"
+    },
+    {
+      "name": "Bóng Chày",
+      "url": "https://www.lazada.vn/bong-chay-dong-doi/",
+      "parent": "cate_11_9"
+    },
+    {
+      "name": "Bóng Bầu Dục",
+      "url": "https://www.lazada.vn/rugby/",
+      "parent": "cate_11_9"
+    },
+    {
+      "name": "Cầu Mây",
+      "url": "https://www.lazada.vn/cau-may/",
+      "parent": "cate_11_9"
+    },
+    {
+      "name": "Cổ Động",
+      "url": "https://www.lazada.vn/co-dong/",
+      "parent": "cate_11_9"
+    },
+    {
+      "name": "Cricket",
+      "url": "https://www.lazada.vn/bong-gay/",
+      "parent": "cate_11_9"
+    },
+    {
+      "name": "Khúc Côn Cầu",
+      "url": "https://www.lazada.vn/khuc-con-cau-tren-co/",
+      "parent": "cate_11_9"
+    },
+    {
+      "name": "Thể Dục Dụng Cụ",
+      "url": "https://www.lazada.vn/the-duc-va-dung-cu/",
+      "parent": "cate_11_9"
+    },
+    {
+      "name": "Thiết Bị Tập Võ Thuật",
+      "url": "https://www.lazada.vn/thiet-bi-tap-vo-thuat/",
+      "parent": "cate_11_10"
+    },
+    {
+      "name": "Thiết Bị Tập Đấm Bốc",
+      "url": "https://www.lazada.vn/thiet-bi-tap-dam-boc/",
+      "parent": "cate_11_10"
+    },
+    {
+      "name": "Bao Cát & Phụ Kiện",
+      "url": "https://www.lazada.vn/bao-cat-phu-kien/",
+      "parent": "cate_11_10"
+    },
+    {
+      "name": "Bao Tay",
+      "url": "https://www.lazada.vn/boc-tay/",
+      "parent": "cate_11_10"
+    },
+    {
+      "name": "Đích Đá",
+      "url": "https://www.lazada.vn/dich-da/",
+      "parent": "cate_11_10"
+    },
+    {
+      "name": "Đồng Phục Võ Thuật",
+      "url": "https://www.lazada.vn/dong-phuc-vo-thuat/",
+      "parent": "cate_11_10"
+    },
+    {
+      "name": "Dụng Cụ Bảo Hộ",
+      "url": "https://www.lazada.vn/dung-cu-bao-ho/",
+      "parent": "cate_11_10"
+    },
+    {
+      "name": "Găng Tay Đấm Bốc",
+      "url": "https://www.lazada.vn/gang-tay-dam-boc/",
+      "parent": "cate_11_10"
+    },
+    {
+      "name": "Găng Tay MMA",
+      "url": "https://www.lazada.vn/gang-tay-mma/",
+      "parent": "cate_11_10"
+    },
+    {
+      "name": "Tấm Lót Đấm Bốc",
+      "url": "https://www.lazada.vn/dich-dam/",
+      "parent": "cate_11_10"
+    },
+    {
+      "name": "Bơi Lội",
+      "url": "https://www.lazada.vn/boi-loi-the-thao/",
+      "parent": "cate_11_11"
+    },
+    {
+      "name": "Chèo Thuyền",
+      "url": "https://www.lazada.vn/cheo-thuyen-the-thao/",
+      "parent": "cate_11_11"
+    },
+    {
+      "name": "Lặn & Lặn Dùng Ống Thở",
+      "url": "https://www.lazada.vn/dung-cu-lan-binh-duong-khi-lan-ong-tho/",
+      "parent": "cate_11_11"
+    },
+    {
+      "name": "Lướt Ván",
+      "url": "https://www.lazada.vn/luot-van/",
+      "parent": "cate_11_11"
+    },
+    {
+      "name": "Phao Trượt",
+      "url": "https://www.lazada.vn/phao-truot/",
+      "parent": "cate_11_11"
+    },
+    {
+      "name": "Áo Cứu Hộ",
+      "url": "https://www.lazada.vn/ao-phao-cuu-ho/",
+      "parent": "cate_11_11"
+    },
+    {
+      "name": "Túi Chống Nước",
+      "url": "https://www.lazada.vn/tui-chong-nuoc/",
+      "parent": "cate_11_11"
+    },
+    {
+      "name": "Bình Nước Thể Thao",
+      "url": "https://www.lazada.vn/binh-nuoc-the-thao/",
+      "parent": "cate_11_12"
+    },
+    {
+      "name": "Ống Bơm",
+      "url": "https://www.lazada.vn/ong-bom-the-thao/",
+      "parent": "cate_11_12"
+    },
+    {
+      "name": "Nẹp & Hỗ Trợ",
+      "url": "https://www.lazada.vn/nep-dung-cu-y-te-ho-tro/",
+      "parent": "cate_11_12"
+    },
+    {
+      "name": "Túi Y Tế",
+      "url": "https://www.lazada.vn/tui-y-te/",
+      "parent": "cate_11_12"
+    },
+    {
+      "name": "Xe tay ga",
+      "url": "https://www.lazada.vn/xe-tay-ga/",
+      "parent": "cate_12_1"
+    },
+    {
+      "name": "Xe côn tay",
+      "url": "https://www.lazada.vn/xe-mo-to-the-thao/",
+      "parent": "cate_12_1"
+    },
+    {
+      "name": "Xe số",
+      "url": "https://www.lazada.vn/xe-standard/",
+      "parent": "cate_12_1"
+    },
+    {
+      "name": "Xe máy điện",
+      "url": "https://www.lazada.vn/thiet-bi-xe-may-dien/",
+      "parent": "cate_12_1"
+    },
+    {
+      "name": "Xe 50cc",
+      "url": "https://www.lazada.vn/xe-mo-to-duong-truong/",
+      "parent": "cate_12_1"
+    },
+    {
+      "name": "Nội thất ô tô",
+      "url": "https://www.lazada.vn/noi-that-o-to-xe-may/",
+      "parent": "cate_12_2"
+    },
+    {
+      "name": "Gói chăm sóc xe",
+      "url": "https://www.lazada.vn/bo-dung-cu-cham-soc-o-to/",
+      "parent": "cate_12_2"
+    },
+    {
+      "name": "Máy bơm lốp",
+      "url": "https://www.lazada.vn/cham-soc-lop-mam-cho-xe/",
+      "parent": "cate_12_2"
+    },
+    {
+      "name": "Máy hút bụi ô tô",
+      "url": "https://www.lazada.vn/phu-gam-xe/",
+      "parent": "cate_12_2"
+    },
+    {
+      "name": "Xịt khử mùi dành cho ô tô",
+      "url": "https://www.lazada.vn/dung-moi-cho-xe/",
+      "parent": "cate_12_2"
+    },
+    {
+      "name": "Bộ sản phẩm vệ sinh nội thất",
+      "url": "https://www.lazada.vn/cham-soc-ni-vai-cho-xe/",
+      "parent": "cate_12_2"
+    },
+    {
+      "name": "Chất làm mờ vết xước",
+      "url": "https://www.lazada.vn/may-hut-bui-cho-xe/",
+      "parent": "cate_12_2"
+    },
+    {
+      "name": "Bộ sản phẩm vệ sinh xe",
+      "url": "https://www.lazada.vn/cham-soc-ngoai-xe/",
+      "parent": "cate_12_2"
+    },
+    {
+      "name": "Dụng cụ làm sạch nước",
+      "url": "https://www.lazada.vn/sap-danh-bong-xe/",
+      "parent": "cate_12_2"
+    },
+    {
+      "name": "Xịt chống rỉ sét gầm ô tô",
+      "url": "https://www.lazada.vn/san-pham-cham-soc-o-to-xe-may/",
+      "parent": "cate_12_2"
+    },
+    {
+      "name": "Nước lau kiếng xe",
+      "url": "https://www.lazada.vn/bo-do-nghe-danh-bong-cho-xe/",
+      "parent": "cate_12_2"
+    },
+    {
+      "name": "Xịt bảo dưỡng vỏ & mâm xe",
+      "url": "https://www.lazada.vn/luoi-gat-nuoc-cho-xe/",
+      "parent": "cate_12_2"
+    },
+    {
+      "name": "Xịt thơm xe",
+      "url": "https://www.lazada.vn/xit-thom-xe-hoi/",
+      "parent": "cate_12_3"
+    },
+    {
+      "name": "Lót sàn ô tô",
+      "url": "https://www.lazada.vn/lot-san-khoang-hanh-ly-xe/",
+      "parent": "cate_12_3"
+    },
+    {
+      "name": "Gạt tàn ô tô",
+      "url": "https://www.lazada.vn/gat-tan-xe/",
+      "parent": "cate_12_3"
+    },
+    {
+      "name": "Bọc vô lăng xe hơi",
+      "url": "https://www.lazada.vn/can-lai-phu-kien-trong-xe-hoi/",
+      "parent": "cate_12_3"
+    },
+    {
+      "name": "Bao ghế & phụ kiện",
+      "url": "https://www.lazada.vn/bao-ghe-phu-kien/",
+      "parent": "cate_12_3"
+    },
+    {
+      "name": "Móc khóa ô tô",
+      "url": "https://www.lazada.vn/moc-khoa-xe/",
+      "parent": "cate_12_3"
+    },
+    {
+      "name": "Tấm che nắng kính chắn gió",
+      "url": "https://www.lazada.vn/tam-che-nang-kinh-chan-gio-o-to/",
+      "parent": "cate_12_3"
+    },
+    {
+      "name": "Bọc cần số",
+      "url": "https://www.lazada.vn/trum-dau-can-so-cho-xe/",
+      "parent": "cate_12_3"
+    },
+    {
+      "name": "Dụng cụ thoát hiểm",
+      "url": "https://www.lazada.vn/dung-cu-thoat-hiem-o-to/",
+      "parent": "cate_12_3"
+    },
+    {
+      "name": "Lọc không khí ô tô",
+      "url": "https://www.lazada.vn/loc-khong-khi-o-to/",
+      "parent": "cate_12_3"
+    },
+    {
+      "name": "Bộ dụng cụ sơ cứu",
+      "url": "https://www.lazada.vn/phu-kien-noi-that-en-toan-xe-hoi/",
+      "parent": "cate_12_3"
+    },
+    {
+      "name": "Decal và trang trí ô tô",
+      "url": "https://www.lazada.vn/mieng-dan-trang-tri-o-to/",
+      "parent": "cate_12_4"
+    },
+    {
+      "name": "Vật dụng sắp xếp hàng hóa",
+      "url": "https://www.lazada.vn/vat-dung-sap-xep-hang-hoa/",
+      "parent": "cate_12_4"
+    },
+    {
+      "name": "Phụ kiện trang trí ăng ten xe hơi",
+      "url": "https://www.lazada.vn/anten-ngoai-cho-xe/",
+      "parent": "cate_12_4"
+    },
+    {
+      "name": "Decal nam châm",
+      "url": "https://www.lazada.vn/sticker-decal-mieng-trang-tri-nam-cham-tren-can-xe/",
+      "parent": "cate_12_4"
+    },
+    {
+      "name": "Khung bọc biển số",
+      "url": "https://www.lazada.vn/khung-bien-so-cho-xe/",
+      "parent": "cate_12_4"
+    },
+    {
+      "name": "Chắn mưa ô tô",
+      "url": "https://www.lazada.vn/can-xe-tam-chan-o-to-xe-may/",
+      "parent": "cate_12_4"
+    },
+    {
+      "name": "Chắn bùn xe hơi",
+      "url": "https://www.lazada.vn/chan-bun-xe/",
+      "parent": "cate_12_4"
+    },
+    {
+      "name": "Còi ô tô",
+      "url": "https://www.lazada.vn/thiet-bi-ken-phu-kien-cho-xe/",
+      "parent": "cate_12_4"
+    },
+    {
+      "name": "Ốp crom xe hơi",
+      "url": "https://www.lazada.vn/do-ma-crom-phu-kien-xe/",
+      "parent": "cate_12_4"
+    },
+    {
+      "name": "Logo xe hơi",
+      "url": "https://www.lazada.vn/huy-hieu-xe/",
+      "parent": "cate_12_4"
+    },
+    {
+      "name": "Viền carbon xe ô tô",
+      "url": "https://www.lazada.vn/ve-xe-vien-cho-xe/",
+      "parent": "cate_12_4"
+    },
+    {
+      "name": "Đèn trợ sáng ô tô",
+      "url": "https://www.lazada.vn/den-chieu-sang-den-suong-mu-o-to/",
+      "parent": "cate_12_5"
+    },
+    {
+      "name": "Ắc quy xe hơi",
+      "url": "https://www.lazada.vn/ac-quy-cho-xe/",
+      "parent": "cate_12_5"
+    },
+    {
+      "name": "Body bảo vệ xe hơi",
+      "url": "https://www.lazada.vn/vien-xe/",
+      "parent": "cate_12_5"
+    },
+    {
+      "name": "Nắp chụp trang trí ô tô",
+      "url": "https://www.lazada.vn/nap-chup-cac-loai-cho-xe/",
+      "parent": "cate_12_5"
+    },
+    {
+      "name": "Hệ thống phanh xe",
+      "url": "https://www.lazada.vn/do-nghe-sua-tu-chinh-cho-xe/",
+      "parent": "cate_12_5"
+    },
+    {
+      "name": "Điều hòa xe hơi",
+      "url": "https://www.lazada.vn/dieu-hoa-khong-khi-xe/",
+      "parent": "cate_12_5"
+    },
+    {
+      "name": "Thiết bị lọc nhiên liệu",
+      "url": "https://www.lazada.vn/thiet-bi-loc-nhien-lieu-cho-xe/",
+      "parent": "cate_12_5"
+    },
+    {
+      "name": "Thiết bị lọc nhớt",
+      "url": "https://www.lazada.vn/thiet-bi-loc-nhot-cho-xe/",
+      "parent": "cate_12_5"
+    },
+    {
+      "name": "Bugi xe hơi",
+      "url": "https://www.lazada.vn/bugi-phich-cam-cho-xe/",
+      "parent": "cate_12_5"
+    },
+    {
+      "name": "Bộ đánh lửa xe ô tô",
+      "url": "https://www.lazada.vn/bo-do-nghe-danh-lua-cho-xe/",
+      "parent": "cate_12_5"
+    },
+    {
+      "name": "Hệ thống định vị",
+      "url": "https://www.lazada.vn/he-thong-dinh-vi-cho-xe/",
+      "parent": "cate_12_5"
+    },
+    {
+      "name": "Bộ dụng cụ sữa chữa",
+      "url": "https://www.lazada.vn/bo-dung-cu-sua-chua-cho-xe/",
+      "parent": "cate_12_5"
+    },
+    {
+      "name": "Camera xe hơi",
+      "url": "https://www.lazada.vn/camera-xe-hoi-2/",
+      "parent": "cate_12_6"
+    },
+    {
+      "name": "Thiết bị định vị GPS",
+      "url": "https://www.lazada.vn/thiet-bi-dinh-vi-xe-hoi/",
+      "parent": "cate_12_6"
+    },
+    {
+      "name": "Phụ kiện điện tử xe hơi",
+      "url": "https://www.lazada.vn/phu-kien-dien-tu-o-to/",
+      "parent": "cate_12_6"
+    },
+    {
+      "name": "Bộ chuyển đổi âm thanh",
+      "url": "https://www.lazada.vn/bo-chuyen-doi-am-thanh-o-to/",
+      "parent": "cate_12_6"
+    },
+    {
+      "name": "Thiết bị kỹ thuật số xe hơi",
+      "url": "https://www.lazada.vn/digital-media-receiver-tren-o-to/",
+      "parent": "cate_12_6"
+    },
+    {
+      "name": "Camera hành trình",
+      "url": "https://www.lazada.vn/camera-hanh-trinh-xe-hoi-co-man-hinh/",
+      "parent": "cate_12_6"
+    },
+    {
+      "name": "Bộ khuếch đại âm thanh",
+      "url": "https://www.lazada.vn/bo-khuyech-dai-am-thanh-tren-o-to/",
+      "parent": "cate_12_6"
+    },
+    {
+      "name": "Camera lùi",
+      "url": "https://www.lazada.vn/camera-lui-cho-o-to/",
+      "parent": "cate_12_6"
+    },
+    {
+      "name": "Phụ kiện âm thanh & hình ảnh",
+      "url": "https://www.lazada.vn/phu-kien-am-thanh-hinh-anh/",
+      "parent": "cate_12_6"
+    },
+    {
+      "name": "Phụ kiện điện thoại trên xe",
+      "url": "https://www.lazada.vn/phu-kien-dien-thoai-tren-xe/",
+      "parent": "cate_12_6"
+    },
+    {
+      "name": "Dầu nhớt động cơ",
+      "url": "https://www.lazada.vn/dau-cho-xe/",
+      "parent": "cate_12_7"
+    },
+    {
+      "name": "Nước mát",
+      "url": "https://www.lazada.vn/chat-bao-ve-ket-nuoc-cho-xe/",
+      "parent": "cate_12_7"
+    },
+    {
+      "name": "Nước vệ sinh kính chắn gió",
+      "url": "https://www.lazada.vn/nuoc-ve-sinh-kinh-lai-cho-xe/",
+      "parent": "cate_12_7"
+    },
+    {
+      "name": "Nước làm sạch động cơ",
+      "url": "https://www.lazada.vn/chat-lam-sach-cho-xe/",
+      "parent": "cate_12_7"
+    },
+    {
+      "name": "Chất phụ gia động cơ",
+      "url": "https://www.lazada.vn/phu-gia-xe/",
+      "parent": "cate_12_7"
+    },
+    {
+      "name": "Dầu phanh",
+      "url": "https://www.lazada.vn/dau-phanh-xe/",
+      "parent": "cate_12_7"
+    },
+    {
+      "name": "Nước xả cho xe",
+      "url": "https://www.lazada.vn/chat-xa-cho-xe/",
+      "parent": "cate_12_7"
+    },
+    {
+      "name": "Mỡ & dầu nhờn",
+      "url": "https://www.lazada.vn/mo-chat-boi-tron-cho-xe/",
+      "parent": "cate_12_7"
+    },
+    {
+      "name": "Nhớt hộp số",
+      "url": "https://www.lazada.vn/dau-tro-luc-lai-cho-xe/",
+      "parent": "cate_12_7"
+    },
+    {
+      "name": "Thiết bị đo nhớt",
+      "url": "https://www.lazada.vn/thiet-bi-dau-hop-so-cho-xe/",
+      "parent": "cate_12_7"
+    },
+    {
+      "name": "Chất vệ sinh máy lạnh",
+      "url": "https://www.lazada.vn/chat-lam-lanh-cho-xe/",
+      "parent": "cate_12_7"
+    },
+    {
+      "name": "Keo chuyên dụng",
+      "url": "https://www.lazada.vn/chat-dinh-cho-xe/",
+      "parent": "cate_12_7"
+    },
+    {
+      "name": "Đèn xe máy",
+      "url": "https://www.lazada.vn/den/",
+      "parent": "cate_12_8"
+    },
+    {
+      "name": "Khung bảo vệ xe máy",
+      "url": "https://www.lazada.vn/khung-bao-ve-xe-may/",
+      "parent": "cate_12_8"
+    },
+    {
+      "name": "Gương xe",
+      "url": "https://www.lazada.vn/guong-cho-mo-to/",
+      "parent": "cate_12_8"
+    },
+    {
+      "name": "Chân chống & phụ kiện",
+      "url": "https://www.lazada.vn/chan-chong-phu-kien-cho-mo-to/",
+      "parent": "cate_12_8"
+    },
+    {
+      "name": "Lọc gió và nhiên liệu",
+      "url": "https://www.lazada.vn/thiet-bi-loc-nhien-lieu-cho-mo-to/",
+      "parent": "cate_12_8"
+    },
+    {
+      "name": "Khung & thân xe máy",
+      "url": "https://www.lazada.vn/khung-cho-mo-to/",
+      "parent": "cate_12_8"
+    },
+    {
+      "name": "Phuộc nhún",
+      "url": "https://www.lazada.vn/bo-phuoc-nhun-cho-mo-to/",
+      "parent": "cate_12_8"
+    },
+    {
+      "name": "Ắc quy xe máy",
+      "url": "https://www.lazada.vn/ac-quy-phu-tung-cho-mo-to/",
+      "parent": "cate_12_8"
+    },
+    {
+      "name": "Đèn led xe máy",
+      "url": "https://www.lazada.vn/bong-den-led-hid-cho-mo-to/",
+      "parent": "cate_12_8"
+    },
+    {
+      "name": "Đèn trợ sáng",
+      "url": "https://www.lazada.vn/cum-den-suong-mu-cho-mo-to/",
+      "parent": "cate_12_8"
+    },
+    {
+      "name": "Pô xe",
+      "url": "https://www.lazada.vn/moto-po-va-giam-thanh/",
+      "parent": "cate_12_8"
+    },
+    {
+      "name": "Lọc gió xe máy",
+      "url": "https://www.lazada.vn/thiet-bi-loc-nhot-cho-xe/",
+      "parent": "cate_12_8"
+    },
+    {
+      "name": "Mũ bảo hiểm",
+      "url": "https://www.lazada.vn/mu-bao-hiem-xe-mo-to-xe-dia-hinh/",
+      "parent": "cate_12_9"
+    },
+    {
+      "name": "Áo mưa",
+      "url": "https://www.lazada.vn/ao-mua/",
+      "parent": "cate_12_9"
+    },
+    {
+      "name": "Phụ kiện mũ bảo hiểm",
+      "url": "https://www.lazada.vn/phu-kien-mu-bao-hiem-cho-mo-to/",
+      "parent": "cate_12_9"
+    },
+    {
+      "name": "Nón bảo hiểm full face",
+      "url": "https://www.lazada.vn/non-trum-dau-di-mo-to/",
+      "parent": "cate_12_9"
+    },
+    {
+      "name": "Găng tay lái xe",
+      "url": "https://www.lazada.vn/gang-tay-di-mo-to/",
+      "parent": "cate_12_9"
+    },
+    {
+      "name": "Giầy đi xe máy",
+      "url": "https://www.lazada.vn/giay-di-mo-to/",
+      "parent": "cate_12_9"
+    },
+    {
+      "name": "Áo khoát chuyên dụng",
+      "url": "https://www.lazada.vn/bo-do-dua-mo-to/",
+      "parent": "cate_12_9"
+    },
+    {
+      "name": "Khẩu trang",
+      "url": "https://www.lazada.vn/mat-na-di-mo-to/",
+      "parent": "cate_12_9"
+    },
+    {
+      "name": "Bảo vệ cổ",
+      "url": "https://www.lazada.vn/san-pham-bao-ve-co-di-mo-to/",
+      "parent": "cate_12_9"
+    },
+    {
+      "name": "Áo giáp",
+      "url": "https://www.lazada.vn/do-bao-ho-mo-to-xe-dia-hinh/",
+      "parent": "cate_12_9"
+    },
+    {
+      "name": "Bảo vệ đầu gối",
+      "url": "https://www.lazada.vn/bao-ve-goi-ong-quyen-di-mo-to/",
+      "parent": "cate_12_9"
+    },
+    {
+      "name": "Decal trang trí xe máy",
+      "url": "https://www.lazada.vn/de-can-bieu-tuong-cho-xe-may/",
+      "parent": "cate_12_10"
+    },
+    {
+      "name": "Bọc yên xe máy",
+      "url": "https://www.lazada.vn/boc-yen-xe-may/",
+      "parent": "cate_12_10"
+    },
+    {
+      "name": "Khung biển số xe máy",
+      "url": "https://www.lazada.vn/khung-bien-so xe-may/",
+      "parent": "cate_12_10"
+    },
+    {
+      "name": "Baga xe máy",
+      "url": "https://www.lazada.vn/gia-treo-phu-kien-hang-hoa-cho-mo-to/",
+      "parent": "cate_12_10"
+    },
+    {
+      "name": "Bạt trùm xe máy",
+      "url": "https://www.lazada.vn/trum-xe-cho-mo-to/",
+      "parent": "cate_12_10"
+    },
+    {
+      "name": "Kính chắn gió xe máy",
+      "url": "https://www.lazada.vn/kinh-chan-gio-phu-kien-mo-to/",
+      "parent": "cate_12_10"
+    },
+    {
+      "name": "Ốc vít & phụ kiện trang trí xe máy",
+      "url": "https://www.lazada.vn/bo-phan-khuon-thay-the-mo-to/",
+      "parent": "cate_12_10"
+    },
+    {
+      "name": "Baga hành lý xe máy",
+      "url": "https://www.lazada.vn/gia-do-hanh-ly-cho-mo-to/",
+      "parent": "cate_12_10"
+    },
+    {
+      "name": "Yên xe máy",
+      "url": "https://www.lazada.vn/ghe-nem-cho-mo-to/",
+      "parent": "cate_12_10"
+    },
+    {
+      "name": "Tựa lưng xe máy",
+      "url": "https://www.lazada.vn/thanh-tua-lung-cho-mo-to/",
+      "parent": "cate_12_10"
+    },
+    {
+      "name": "Khóa bảo vệ xe máy",
+      "url": "https://www.lazada.vn/khoa-an-toan-cho-xe-may/",
+      "parent": "cate_12_10"
+    },
+    {
+      "name": "Dầu động cơ",
+      "url": "https://www.lazada.vn/dau-dong-co-xe-may/",
+      "parent": "cate_12_11"
+    },
+    {
+      "name": "Dầu hộp số",
+      "url": "https://www.lazada.vn/dau-hop-so-xe-may/",
+      "parent": "cate_12_11"
+    },
+    {
+      "name": "Nước làm mát",
+      "url": "https://www.lazada.vn/nuoc-lam-mat-xe-may/",
+      "parent": "cate_12_11"
+    },
+    {
+      "name": "Dầu bôi trơn dung môi",
+      "url": "https://www.lazada.vn/dau-boi-tron-dung-moi/",
+      "parent": "cate_12_11"
+    },
+    {
+      "name": "Mỡ bôi trơn",
+      "url": "https://www.lazada.vn/mo-boi-tron-xe-may/",
+      "parent": "cate_12_11"
+    },
+    {
+      "name": "Dầu thắng",
+      "url": "https://www.lazada.vn/dau-thang-cho-mo-to/",
+      "parent": "cate_12_11"
+    },
+    {
+      "name": "Chất tẩy rửa xe",
+      "url": "https://www.lazada.vn/chat-tay-rua-xe-may/",
+      "parent": "cate_12_11"
+    },
+    {
+      "name": "Dầu nhớt phuộc nhún",
+      "url": "https://www.lazada.vn/dau-nhot-phuoc-nhun-xe-may/",
+      "parent": "cate_12_11"
+    },
+    {
+      "name": "Lốp & Ruột xe máy",
+      "url": "https://www.lazada.vn/lop-ruot-xe-may/",
+      "parent": "cate_12_12"
+    },
+    {
+      "name": "Bộ bánh, lốp xe máy",
+      "url": "https://www.lazada.vn/bo-banh-lop-xe-may/",
+      "parent": "cate_12_12"
+    },
+    {
+      "name": "Mâm, vành xe máy",
+      "url": "https://www.lazada.vn/banh-vanh-xe-may/",
+      "parent": "cate_12_12"
+    },
+    {
+      "name": "Đùm xe máy",
+      "url": "https://www.lazada.vn/dum-xe-may/",
+      "parent": "cate_12_12"
+    },
+    {
+      "name": "Dán vành & Trang trí bánh",
+      "url": "https://www.lazada.vn/dan-vanh-trang-tri-banh-xe-may/",
+      "parent": "cate_12_12"
+    },
+    {
+      "name": "Phụ kiện bánh xe máy",
+      "url": "https://www.lazada.vn/phu-kien-banh-xe-may/",
+      "parent": "cate_12_12"
+    },
+    {
+      "name": "Vít lốp xe",
+      "url": "https://www.lazada.vn/vit-lop-xe-may/",
+      "parent": "cate_12_12"
+    },
+    {
+      "name": "Nắp van xe",
+      "url": "https://www.lazada.vn/nap-can-van-xe/",
+      "parent": "cate_12_12"
+    },
+    {
+      "name": "Vòng bi đệm lốp xe",
+      "url": "https://www.lazada.vn/vong-bi-phan-cung-mieng-dem-lop-xe/",
+      "parent": "cate_12_12"
+    },
+    {
+      "name": "Trục & đệm phuộc xe máy",
+      "url": "https://www.lazada.vn/truc-vong-bi-vong-dem-phuoc-xe-may/",
+      "parent": "cate_12_12"
+    },
+    {
+      "name": "Bộ phận khác cho lốp & mâm xe",
+      "url": "https://www.lazada.vn/bo-phan-lop-mam-khac-cho-mo-to/",
+      "parent": "cate_12_12"
+    }
+  ]
+}
