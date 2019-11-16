@@ -8,5 +8,6 @@ namespace CEDTeam.CES.Core.Interfaces
     {
         Task<bool> InsertFirstLogin(UserDto userDto);
         Task<List<UserDto>> Get();
+        Task<bool> Insert(UserDto userDto);
     }
 }
