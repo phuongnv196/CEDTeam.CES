@@ -44,6 +44,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cateShopee = new System.Windows.Forms.TreeView();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnStartDailySync = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
@@ -94,6 +95,7 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.btnStartDailySync);
             this.splitContainer1.Panel2.Controls.Add(this.btnStart);
             this.splitContainer1.Panel2.Controls.Add(this.dateTimePicker1);
             this.splitContainer1.Panel2.Controls.Add(this.label7);
@@ -261,14 +263,25 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Select category:";
             // 
+            // btnStartDailySync
+            // 
+            this.btnStartDailySync.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnStartDailySync.Location = new System.Drawing.Point(333, 40);
+            this.btnStartDailySync.Name = "btnStartDailySync";
+            this.btnStartDailySync.Size = new System.Drawing.Size(97, 27);
+            this.btnStartDailySync.TabIndex = 16;
+            this.btnStartDailySync.Text = "Start Sync";
+            this.btnStartDailySync.UseVisualStyleBackColor = true;
+            this.btnStartDailySync.Click += new System.EventHandler(this.btnStartDailySync_Click);
+            // 
             // btnStart
             // 
             this.btnStart.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnStart.Location = new System.Drawing.Point(284, 40);
+            this.btnStart.Location = new System.Drawing.Point(230, 40);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(87, 27);
+            this.btnStart.Size = new System.Drawing.Size(97, 27);
             this.btnStart.TabIndex = 15;
-            this.btnStart.Text = "Start";
+            this.btnStart.Text = "Start Sync";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click_1);
             // 
@@ -348,13 +361,15 @@
             // 
             // txtLog
             // 
+            this.txtLog.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtLog.Enabled = false;
-            this.txtLog.Location = new System.Drawing.Point(7, 23);
+            this.txtLog.Location = new System.Drawing.Point(3, 19);
             this.txtLog.Multiline = true;
             this.txtLog.Name = "txtLog";
             this.txtLog.ReadOnly = true;
-            this.txtLog.Size = new System.Drawing.Size(525, 99);
+            this.txtLog.Size = new System.Drawing.Size(677, 107);
             this.txtLog.TabIndex = 0;
+            this.txtLog.TextChanged += new System.EventHandler(this.txtLog_TextChanged);
             // 
             // Form1
             // 
@@ -369,6 +384,7 @@
             this.MinimumSize = new System.Drawing.Size(700, 600);
             this.Name = "Form1";
             this.Text = "Crawl Data";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
@@ -419,6 +435,7 @@
         private System.Windows.Forms.TreeView cateSendo;
         private System.Windows.Forms.TreeView cateTiki;
         private System.Windows.Forms.TreeView cateLazada;
+        private System.Windows.Forms.Button btnStartDailySync;
     }
 }
 

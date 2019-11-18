@@ -31,11 +31,13 @@ namespace CEDTeam.CES.Tool.Repositories
                 db.Execute("insertCategories", dynamicParameters, commandType: System.Data.CommandType.StoredProcedure, commandTimeout: 20);
             }
         }
-        public bool CheckCategory()
+        public bool CheckCategory(string id)
         {
             using(var db = GetConnection())
             {
-                return db.ExecuteScalar<int>("spCheckCategory", commandType: System.Data.CommandType.StoredProcedure) > 0;
+                DynamicParameters dynamicParameters = new DynamicParameters();
+                dynamicParameters.Add("siteId", id, System.Data.DbType.String);
+                return db.ExecuteScalar<int>("spCheckCategory", dynamicParameters, commandType: System.Data.CommandType.StoredProcedure) > 0;
             }
         }
     }

@@ -16,7 +16,7 @@ namespace CEDTeam.CES.Tool.Helpers
         {
             BASE_URL = baseUrl;
         }
-        public static string BASE_URL;
+        public string BASE_URL;
         public async Task<T> GetAsync<T>(string requestUri, string contentType = "application/json")
         {
             var client = new HttpClient();
@@ -92,8 +92,33 @@ namespace CEDTeam.CES.Tool.Helpers
                 if (!HttpStatusCode.OK.Equals(response.StatusCode)) return null;
                 var dataStream = response.GetResponseStream();
                 var reader = new StreamReader(dataStream);
-                result = reader.ReadToEnd();
+                result = result = FixApiResponseString(reader.ReadToEnd());
                 if (!string.IsNullOrWhiteSpace(result)) return Html.StringToHtmlDoc(result);
+                return null;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
+
+        public string GetString(string uri, bool isAllowRedirect = false)
+        {
+            string result = "";
+            try
+            {
+                var url = uri.Contains("://") ? uri : (BASE_URL + uri);
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+                request.Method = "GET";
+                request.AllowAutoRedirect = isAllowRedirect;
+                request.Accept = "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8";
+                request.UserAgent = "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/66.4.120 Chrome/60.4.3112.120 Safari/537.36";
+                request.Headers.Add("Accept-Language:vi-VN,vi;q=0.8,fr-FR;q=0.6,fr;q=0.4,en-US;q=0.2,en;q=0.2");
+                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+                var dataStream = response.GetResponseStream();
+                var reader = new StreamReader(dataStream);
+                result = reader.ReadToEnd();
+                if (!string.IsNullOrWhiteSpace(result)) return result;
                 return null;
             }
             catch (Exception e)

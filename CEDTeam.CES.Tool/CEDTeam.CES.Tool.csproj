@@ -93,6 +93,7 @@
     <Compile Include="Models\Common\DropdownItem.cs" />
     <Compile Include="Models\Lazada\LazadaSearchItem.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Sendo\SendoProductItem.cs" />
     <Compile Include="Models\Shopee\ShopeeDetailItem.cs" />
     <Compile Include="Models\Shopee\ShopeeSearchItem.cs" />
     <Compile Include="Program.cs" />

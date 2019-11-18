@@ -26,7 +26,15 @@ namespace CEDTeam.CES.Tool.Repositories
                 {
                     DynamicParameters param = new DynamicParameters();
                     param.Add("listProduct", JsonConvert.SerializeObject(listInsert));
-                    db.Execute("insertProduct", param, commandType: System.Data.CommandType.StoredProcedure);
+                    try
+                    {
+                        db.Execute("insertProduct", param, commandType: System.Data.CommandType.StoredProcedure);
+
+                    }
+                    catch(Exception e)
+                    {
+
+                    }
                 }
             }
         } 
