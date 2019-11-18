@@ -7,25 +7,44 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using CEDTeam.CES.Tool.Repositories;
 
 namespace CEDTeam.CES.Tool.Business
 {
     public class ReadCategory
     {
+        private readonly CategoryRepository categoryRepository = new CategoryRepository();
         public Dictionary<string, List<Category>> GetAllCategory(SiteType siteType)
         {
             var path = "Datas/";
+            var siteId = 0;
             switch(siteType)
             {
-                case SiteType.Shopee: path += "shopeeCategory.json"; break;
-                case SiteType.Lazada: path += "lazadaCategory.json"; break;
-                case SiteType.Tiki: path += "tikiCategory.json"; break;
-                case SiteType.Sendo: path += "sendoCategory.json"; break;
+                case SiteType.Shopee: path += "shopeeCategory.json"; siteId = 1; break;
+                case SiteType.Lazada: path += "lazadaCategory.json"; siteId = 2; break;
+                case SiteType.Tiki: path += "tikiCategory.json"; siteId = 3; break;
+                case SiteType.Sendo: path += "sendoCategory.json"; siteId = 4; break;
             }
             var categorys = new Dictionary<string, List<Category>>();
             using (var reader = new StreamReader(path))
             {
                 categorys = JsonConvert.DeserializeObject<Dictionary<string, List<Category>>>(reader.ReadToEnd());
+            }
+            categorys["category"].ForEach(item => {
+                item.SiteId = siteId;
+            });
+            categorys["subcategory"].ForEach(item => {
+                item.SiteId = siteId;
+            });
+            
+            if(!categoryRepository.CheckCategory())
+            {
+                var task = new Task(() =>
+                {
+                    categoryRepository.AddCategory(categorys["category"]);
+                    categoryRepository.AddCategory(categorys["subcategory"]);
+                });
+                task.Start();
             }
             return categorys;
         }

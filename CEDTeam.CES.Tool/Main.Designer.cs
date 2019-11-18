@@ -48,7 +48,7 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.sleepTime = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.txtLog = new System.Windows.Forms.TextBox();
@@ -63,7 +63,7 @@
             this.groupBox3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sleepTime)).BeginInit();
             this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,7 +98,7 @@
             this.splitContainer1.Panel2.Controls.Add(this.dateTimePicker1);
             this.splitContainer1.Panel2.Controls.Add(this.label7);
             this.splitContainer1.Panel2.Controls.Add(this.label6);
-            this.splitContainer1.Panel2.Controls.Add(this.numericUpDown1);
+            this.splitContainer1.Panel2.Controls.Add(this.sleepTime);
             this.splitContainer1.Panel2.Controls.Add(this.label5);
             this.splitContainer1.Size = new System.Drawing.Size(677, 378);
             this.splitContainer1.SplitterDistance = 291;
@@ -251,7 +251,6 @@
             this.cateShopee.Name = "cateShopee";
             this.cateShopee.Size = new System.Drawing.Size(188, 105);
             this.cateShopee.TabIndex = 1;
-            this.cateShopee.AfterCheck += new System.Windows.Forms.TreeViewEventHandler(this.cateShopee_AfterCheck);
             // 
             // label1
             // 
@@ -302,24 +301,24 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Second(s)";
             // 
-            // numericUpDown1
+            // sleepTime
             // 
-            this.numericUpDown1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDown1.Location = new System.Drawing.Point(161, 7);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.sleepTime.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sleepTime.Location = new System.Drawing.Point(161, 7);
+            this.sleepTime.Maximum = new decimal(new int[] {
             60,
             0,
             0,
             0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.sleepTime.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(73, 23);
-            this.numericUpDown1.TabIndex = 11;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.sleepTime.Name = "sleepTime";
+            this.sleepTime.Size = new System.Drawing.Size(73, 23);
+            this.sleepTime.TabIndex = 11;
+            this.sleepTime.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -387,7 +386,7 @@
             this.panel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sleepTime)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
@@ -404,7 +403,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown sleepTime;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;

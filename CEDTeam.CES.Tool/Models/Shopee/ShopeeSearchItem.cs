@@ -98,7 +98,7 @@ namespace CEDTeam.CES.Tool.Models.Shopee
         public string name { get; set; }
         public object distance { get; set; }
         public object adsid { get; set; }
-        public object ctime { get; set; }
+        public double? ctime { get; set; }
         public List<object> wholesale_tier_list { get; set; }
         public bool? show_shopee_verified_label { get; set; }
         public object campaignid { get; set; }
@@ -115,8 +115,33 @@ namespace CEDTeam.CES.Tool.Models.Shopee
         public int? badge_icon_type { get; set; }
         public int? historical_sold { get; set; }
         public string transparent_background_image { get; set; }
+        public dynamic models { get; set; }
     }
 
+    public class Extinfo
+    {
+        public int? seller_promotion_limit { get; set; }
+        public bool? has_shopee_promo { get; set; }
+        public object group_buy_info { get; set; }
+        public object holiday_mode_old_stock { get; set; }
+        public List<int> tier_index { get; set; }
+        public int seller_promotion_refresh_time { get; set; }
+    }
+
+    public class Model
+    {
+        public int itemid { get; set; }
+        public int status { get; set; }
+        public string name { get; set; }
+        public int promotionid { get; set; }
+        public object price { get; set; }
+        public string currency { get; set; }
+        public Extinfo extinfo { get; set; }
+        public object price_before_discount { get; set; }
+        public object modelid { get; set; }
+        public int sold { get; set; }
+        public int stock { get; set; }
+    }
     public class ShopeeSearchItem
     {
         public bool? show_disclaimer { get; set; }

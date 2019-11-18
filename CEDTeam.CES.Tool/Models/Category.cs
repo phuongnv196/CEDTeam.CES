@@ -12,5 +12,6 @@ namespace CEDTeam.CES.Tool.Models
         public string Url { get; set; }
         public string Id { get; set; }
         public string Parent { get; set; }
+        public int SiteId { get; set; }
     }
 }

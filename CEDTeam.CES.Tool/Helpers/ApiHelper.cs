@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using HtmlAgilityPack;
 
 namespace CEDTeam.CES.Tool.Helpers
 {
@@ -49,6 +50,7 @@ namespace CEDTeam.CES.Tool.Helpers
 
         public T Get<T>(string uri, bool isAllowRedirect = false)
         {
+            string result = "";
             try
             {
                 var url = uri.Contains("://") ? uri : (BASE_URL + uri);
@@ -63,13 +65,40 @@ namespace CEDTeam.CES.Tool.Helpers
                 if (!HttpStatusCode.OK.Equals(response.StatusCode)) return default(T);
                 var dataStream = response.GetResponseStream();
                 var reader = new StreamReader(dataStream);
-                var result = reader.ReadToEnd();
+                 result = reader.ReadToEnd();
                 if (string.IsNullOrWhiteSpace(result)) return default(T);
                 return JsonConvert.DeserializeObject<T>(result);
             } 
             catch (Exception e)
             {
-                throw e;
+                return default(T);
+            }
+        }
+
+        public HtmlDocument Get(string uri, bool isAllowRedirect = false)
+        {
+            string result = "";
+            try
+            {
+                var url = uri.Contains("://") ? uri : (BASE_URL + uri);
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+                request.Method = "GET";
+                if (!isAllowRedirect) request.AllowAutoRedirect = false;
+                request.Headers.Add("Upgrade-Insecure-Requests: 1");
+                request.Accept = "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8";
+                request.UserAgent = "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/66.4.120 Chrome/60.4.3112.120 Safari/537.36";
+                request.Headers.Add("Accept-Language:vi-VN,vi;q=0.8,fr-FR;q=0.6,fr;q=0.4,en-US;q=0.2,en;q=0.2");
+                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+                if (!HttpStatusCode.OK.Equals(response.StatusCode)) return null;
+                var dataStream = response.GetResponseStream();
+                var reader = new StreamReader(dataStream);
+                result = reader.ReadToEnd();
+                if (!string.IsNullOrWhiteSpace(result)) return Html.StringToHtmlDoc(result);
+                return null;
+            }
+            catch (Exception e)
+            {
+                return null;
             }
         }
 

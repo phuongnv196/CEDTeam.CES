@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Configuration;
 using System.Data;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CEDTeam.CES.Tool.Repositories
 {
@@ -14,7 +10,7 @@ namespace CEDTeam.CES.Tool.Repositories
         private readonly string _connectString = ConfigurationManager.AppSettings["connectString"];
         public IDbConnection GetConnection()
         {
-            return new SqlConnection(_connectString);
+            return new MySqlConnection(_connectString);
         }
     }
 }

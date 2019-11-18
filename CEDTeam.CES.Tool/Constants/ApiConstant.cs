@@ -17,11 +17,12 @@ namespace CEDTeam.CES.Tool.Constants
         }
         public static class Lazada
         {
-
+            public const string LAZADA_BASE = "https://www.lazada.vn/";
+            public const string GET_PROD_AJAX = "?ajax=true&page={0}";
         }
         public static class Tiki
         {
-
+            public const string TIKI_BASE = "https://tiki.vn/";
         }
         public static class Sendo
         {
