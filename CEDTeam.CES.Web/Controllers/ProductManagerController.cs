@@ -21,14 +21,17 @@ namespace CEDTeam.CES.Web.Controllers
         }
 
         [Route("get-product")]
+        [HttpPost]
         public async Task<IActionResult> GetProduct()
         {
-            int draw = int.Parse(Request.Query["draw"]);
-            int start = int.Parse(Request.Query["start"]);
-            int length = int.Parse(Request.Query["length"]);
-            string search = Request.Query["search[value]"];
-
-            var result = await _productService.GetProductAsync(start, length, "", 0, true);
+            int draw = int.Parse(Request.Form["draw"]);
+            int start = int.Parse(Request.Form["start"]);
+            int length = int.Parse(Request.Form["length"]);
+            string search = Request.Form["search[value]"];
+            int columnOrder = int.Parse(Request.Form["order[0][column]"]);
+            bool isAsc = "asc".Equals(Request.Form["order[0][dir]"]);
+            var result = await _productService.GetProductAsync(start, length, search, columnOrder, isAsc);
+            result.Draw = draw;
             return new ObjectResult(result);
         }
     }

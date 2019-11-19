@@ -6,9 +6,10 @@ namespace CEDTeam.CES.Core.Dtos
 {
     public class ProductDto
     {
+        public string Id { get; set; }
         public string ProductId { get; set; }
         public string Name { get; set; }
-        public DateTime? CreatedDate { get; set; }
+        public string CreatedDate { get; set; }
         public long? Price { get; set; }
         public long? Quantity { get; set; }
         public string CategoryId { get; set; }

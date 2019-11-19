@@ -4,8 +4,6 @@
 }
 
 <h1>Product Manager</h1>
-<link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
-<script src="/lib/jquery/dist/jquery.js"></script>
 <table id="product-datatable">
     <thead>
         <tr>
@@ -47,6 +45,7 @@
             "serverSide": true,
             "ajax": {
                 url: "../product-manager/get-product",
+                type: "POST",
                 data: function (d) {
                     d._csrf = "<?= Yii::$app->request->getCsrfToken(); ?>";
                 },
@@ -60,14 +59,15 @@
                 }
             },
             "columns": [
-                { "data": "productid" },
+                { "data": "id" },
+                { "data": "productId" },
                 { "data": "name" },
                 { "data": "price" },
-                { "data": "createddate" },
+                { "data": "createdDate" },
                 { "data": "quantity" },
-                { "data": "categoryid" },
-                { "data": "quantitysold" },
-                { "data": "commentcount" },
+                { "data": "categoryId" },
+                { "data": "quantitySold" },
+                { "data": "commentCount" },
                 { "data": "discount" },
                 { "data": "url" }
             ]
