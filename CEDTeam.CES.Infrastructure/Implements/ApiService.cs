@@ -15,5 +15,15 @@ namespace CEDTeam.CES.Infrastructure.Implements
         {
             return APIHelper.GetAsync<ShopeeHotSearchDto>(ApiConstant.SHOPEE_HOT_SEARCH_URL);
         }
+
+        public TikiHotSearchDto GetTikiHotSearch()
+        {
+            return APIHelper.GetAsync<TikiHotSearchDto>(ApiConstant.TIKI_HOT_SEARCH_URL);
+        }
+
+        public SendoHotSearchDto GetSendoHotSearch()
+        {
+            return APIHelper.GetAsync<SendoHotSearchDto>(ApiConstant.SENDO_HOT_SEARCH_URL);
+        }
     }
 }

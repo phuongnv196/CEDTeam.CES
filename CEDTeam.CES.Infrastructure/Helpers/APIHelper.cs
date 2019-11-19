@@ -31,6 +31,7 @@ namespace CEDTeam.CES.Infrastructure.Helpers
             }
             catch (Exception e)
             {
+                Console.Write(e);
                 return default(T);
             }
         }
