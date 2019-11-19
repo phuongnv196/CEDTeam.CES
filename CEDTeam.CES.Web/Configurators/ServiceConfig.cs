@@ -13,6 +13,7 @@ namespace CEDTeam.CES.Web.Configurators
         public static void ConfigService(this IServiceCollection services)
         {
             services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IApiService, ApiService>();
             services.AddTransient<IProductService, ProductService>();
         }
     }

@@ -5,17 +5,14 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
 
-
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App">
+      <PrivateAssets Condition="'%(PackageReference.Version)' == ''">all</PrivateAssets>
+      <Publish Condition="'%(PackageReference.Version)' == ''">true</Publish>
+    </PackageReference>
     <PackageReference Include="Mapster" Version="4.1.1" />
-    <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
-  </ItemGroup>
-
-
-  <ItemGroup>
     <ProjectReference Include="..\CEDTeam.CES.Core\CEDTeam.CES.Core.csproj" />
     <ProjectReference Include="..\CEDTeam.CES.Infrastructure\CEDTeam.CES.Infrastructure.csproj" />
   </ItemGroup>
-
 </Project>
