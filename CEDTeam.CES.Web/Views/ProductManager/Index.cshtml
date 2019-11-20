@@ -4,7 +4,7 @@
 }
 
 <h1>Product Manager</h1>
-<table id="product-datatable">
+<table id="product-datatable" class="display nowrap" style="width:100%">
     <thead>
         <tr>
             <th>Id</th>
@@ -39,8 +39,11 @@
 <script>
     $(function () {
         var table = $('#product-datatable').DataTable({
-            responsive: true,
-            pageLength: 10,
+            "responsive": true,
+            "dom": 'Bfrtip',
+            "buttons": [
+               'pageLength', 'copy', 'csv', 'excel', 'pdf', 'print'
+            ],
             "processing": true,
             "serverSide": true,
             "ajax": {
