@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Product Manager</h1>
+<table id="product-datatable" class="display nowrap" style="width:100%">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>ProductId</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>CreatedDate</th>
+            <th>Quantity</th>
+            <th>CategoryId</th>
+            <th>QuantitySold</th>
+            <th>CommentCount</th>
+            <th>Discount</th>
+            <th>Url</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>Id</th>
+            <th>ProductId</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>CreatedDate</th>
+            <th>Quantity</th>
+            <th>CategoryId</th>
+            <th>QuantitySold</th>
+            <th>CommentCount</th>
+            <th>Discount</th>
+            <th>Url</th>
+        </tr>
+    </tfoot>
+</table>
+<script>
+    $(function () {
+        var table = $('#product-datatable').DataTable({
+            "responsive": true,
+            "dom": 'Bfrtip',
+            "buttons": [
+               'pageLength', 'copy', 'csv', 'excel', 'pdf', 'print'
+            ],
+            "processing": true,
+            "serverSide": true,
+            "ajax": {
+                url: "../product-manager/get-product",
+                type: "POST",
+                data: function (d) {
+                    d._csrf = "<?= Yii::$app->request->getCsrfToken(); ?>";
+                },
+                dataFilter: function (data) {
+                    var json = jQuery.parseJSON(data);
+                    console.log(json);
+                    json.recordsTotal = json.recordsTotal;
+                    json.recordsFiltered = json.recordsFiltered;
+                    json.data = json.data;
+                    return JSON.stringify(json);
+                }
+            },
+            "columns": [
+                { "data": "id" },
+                { "data": "productId" },
+                { "data": "name" },
+                { "data": "price" },
+                { "data": "createdDate" },
+                { "data": "quantity" },
+                { "data": "categoryId" },
+                { "data": "quantitySold" },
+                { "data": "commentCount" },
+                { "data": "discount" },
+                { "data": "url" }
+            ]
+            });
+    });
+</script>
