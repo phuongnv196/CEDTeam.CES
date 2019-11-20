@@ -31,5 +31,15 @@ namespace CEDTeam.CES.Web.Controllers
         {
             return new ObjectResult(_apiService.GetShopeeHotSearch());
         }
+
+        public IActionResult GetTikiHotSearch()
+        {
+            return new ObjectResult(_apiService.GetTikiHotSearch());
+        }
+
+        public IActionResult GetSendoHotSearch()
+        {
+            return new ObjectResult(_apiService.GetSendoHotSearch());
+        }
     }
 }
