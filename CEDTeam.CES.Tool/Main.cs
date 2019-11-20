@@ -184,7 +184,7 @@ namespace CEDTeam.CES.Tool
                             result = apiHelper.Get<ShopeeSearchItem>(uri);
                             newest += 50;
                             listProduct.Clear();
-                            result.items?.ForEach(prod =>
+                            result?.items?.ForEach(prod =>
                             {
                                 var prodDetail = apiHelper.Get<ShopeeDetailItem>(string.Format(ApiConstant.Shopee.PROD_DETAIL, prod.itemid, prod.shopid));
                                 txtLog.AppendText(prodDetail.item.name + "\r\n");
@@ -207,7 +207,7 @@ namespace CEDTeam.CES.Tool
                             productRepository.InsertProduct(listProduct);
                             Count += listProduct.Count;
                             Thread.Sleep((int)sleepTime.Value * 1000);
-                        } while (result.items != null);
+                        } while (result != null || result.items != null);
                         txtLog.AppendText("---Done get Shopee Category" + item.Url);
                     });
                     Thread.Sleep((int)sleepTime.Value * 1000);
@@ -277,7 +277,7 @@ namespace CEDTeam.CES.Tool
                         result = apiHelper.Get<LazadaSearchItem>(uri);
                         page++;
                         listProduct.Clear();
-                        result.mods?.listItems?.ForEach(prod =>
+                        result?.mods?.listItems?.ForEach(prod =>
                         {
                             //var prodDetail = apiHelper.Get<ShopeeDetailItem>(string.Format(ApiConstant.Shopee.PROD_DETAIL, prod.itemid, prod.shopid));
                             txtLog.AppendText("--LAZADA: " + prod.name + "\r\n");
@@ -304,11 +304,11 @@ namespace CEDTeam.CES.Tool
                             }
                     });
                         productRepository.InsertProduct(listProduct);
-                        Thread.Sleep((int)sleepTime.Value * 5000);
                         Count += listProduct.Count;
-                    } while (result.mods?.listItems != null);
+                        Thread.Sleep(5 * 1000);
+                    } while (result != null || result.mods?.listItems != null);
                     txtLog.AppendText("---Done get Lazada Category" + item.Url);
-                    Thread.Sleep((int)sleepTime.Value * 5000);
+                    //Thread.Sleep((int)sleepTime.Value * 1000);
                 });
             });
             lazadaTask.Start();

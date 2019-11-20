@@ -61,6 +61,10 @@ namespace CEDTeam.CES.Tool.Helpers
                 request.Accept = "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8";
                 request.UserAgent = "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/66.4.120 Chrome/60.4.3112.120 Safari/537.36";
                 request.Headers.Add("Accept-Language:vi-VN,vi;q=0.8,fr-FR;q=0.6,fr;q=0.4,en-US;q=0.2,en;q=0.2");
+                if(url.Contains("lazada.vn"))
+                {
+                    request.Headers.Add("Cookie", "client_type=desktop; l=dBgVRWWPqXuiGEO0BOfZdurza77TWQdfCsPzaNbMiICPsD5NdH_hWZp5Qs8eCnMNn6kBR3P5zp3_BU362yC5ilLDeh5oLXOn3dTh.; isg=BIaGZG33J0SDlPN8W9TST3R613zIT8vIpNhFE3CsiahZcyON2HcRsChCS_caW8K5; lzd_cid=de5be1a1-986b-4b5c-8124-c7543f0b10e8; t_uid=de5be1a1-986b-4b5c-8124-c7543f0b10e8; t_fv=1574260517255; t_sid=FUJMi3UuQQOl4QRmvlFtf8beyWYe88XG; utm_channel=NA; lzd_sid=1bf30f83fd9b9f210b2fc429563aa3a7; _tb_token_=7787a1deee637; hng=VN|vi|VND|704; cna=yOkQFmr6mloCAXG5bIjvywsr");
+                }
                 HttpWebResponse response = (HttpWebResponse)request.GetResponse();
                 if (!HttpStatusCode.OK.Equals(response.StatusCode)) return default(T);
                 var dataStream = response.GetResponseStream();
