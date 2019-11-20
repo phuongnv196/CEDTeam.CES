@@ -9,5 +9,9 @@ namespace CEDTeam.CES.Core.Interfaces
     public interface IApiService
     {
         ShopeeHotSearchDto GetShopeeHotSearch();
+
+        TikiHotSearchDto GetTikiHotSearch();
+
+        SendoHotSearchDto GetSendoHotSearch();
     }
 }
