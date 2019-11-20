@@ -236,7 +236,8 @@ namespace CEDTeam.CES.Tool
                             listKey.Add(new Product
                             {
                                 Url = treenode.Name,
-                                CategoryId = treenode.Tag.ToString()
+                                CategoryId = treenode.Tag.ToString(),
+                                CategoryUrl = treenode.Name
                             });
                         }
                     }
@@ -250,7 +251,8 @@ namespace CEDTeam.CES.Tool
                                 listKey.Add(new Product
                                 {
                                     Url = subnode.Name,
-                                    CategoryId = subnode.Tag.ToString()
+                                    CategoryId = subnode.Tag.ToString(),
+                                    CategoryUrl = subnode.Name
                                 });
                             }
                         }
@@ -282,7 +284,9 @@ namespace CEDTeam.CES.Tool
                             try
                             {
                                 var product = new Product();
+                                product.Price = (long)prod.price;
                                 product.Name = prod.name;
+                                product.ProductId = prod.itemId;
                                 product.CommentCount = prod.review;
                                 product.Url = prod.productUrl;
                                 product.CategoryId = item.CategoryId;
@@ -291,6 +295,7 @@ namespace CEDTeam.CES.Tool
                                 product.Quantity = 0;
                                 product.QuantitySold = 0;
                                 product.VariableJson = null;
+                                product.CategoryUrl = item.CategoryUrl;
                                 listProduct.Add(product);
                             }
                             catch (Exception e)
@@ -326,7 +331,8 @@ namespace CEDTeam.CES.Tool
                             listKey.Add(new Product
                             {
                                 Url = treenode.Name,
-                                CategoryId = treenode.Tag.ToString()
+                                CategoryId = treenode.Tag.ToString(),
+                                CategoryUrl = treenode.Name
                             });
                         }
                     }
@@ -340,7 +346,8 @@ namespace CEDTeam.CES.Tool
                                 listKey.Add(new Product
                                 {
                                     Url = subnode.Name,
-                                    CategoryId = subnode.Tag.ToString()
+                                    CategoryId = subnode.Tag.ToString(),
+                                    CategoryUrl = subnode.Name
                                 });
                             }
                         }
