@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CEDTeam.CES.Core.Dtos
 {
-    public class Datum
+    public class DataTiki
     {
         public int updated_at { get; set; }
         public string image_url { get; set; }
@@ -14,7 +14,7 @@ namespace CEDTeam.CES.Core.Dtos
 
     public class TikiHotSearchDto
     {
-        public List<Datum> data { get; set; }
+        public List<DataTiki> data { get; set; }
         public int is_personalized { get; set; }
     }
 }
