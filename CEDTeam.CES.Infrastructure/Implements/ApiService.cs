@@ -25,5 +25,10 @@ namespace CEDTeam.CES.Infrastructure.Implements
         {
             return APIHelper.GetAsync<SendoHotSearchDto>(ApiConstant.SENDO_HOT_SEARCH_URL);
         }
+
+        public ShopeeTopProductDto GetShopeeTopProduct()
+        {
+            return APIHelper.GetAsync<ShopeeTopProductDto>(ApiConstant.SHOPEE_TOP_PRODUCTS_URL);
+        }
     }
 }
