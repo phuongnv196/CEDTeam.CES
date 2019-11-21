@@ -3,15 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CEDTeam.CES.Core", "CEDTeam.CES.Core\CEDTeam.CES.Core.csproj", "{1CFEA2EF-0AC8-4706-A66B-C35C89FFD3BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CEDTeam.CES.Core", "CEDTeam.CES.Core\CEDTeam.CES.Core.csproj", "{1CFEA2EF-0AC8-4706-A66B-C35C89FFD3BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CEDTeam.CES.Infrastructure", "CEDTeam.CES.Infrastructure\CEDTeam.CES.Infrastructure.csproj", "{56DC3173-F5F1-4DDA-831E-ADFBEDB1A2F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CEDTeam.CES.Infrastructure", "CEDTeam.CES.Infrastructure\CEDTeam.CES.Infrastructure.csproj", "{56DC3173-F5F1-4DDA-831E-ADFBEDB1A2F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CEDTeam.CES.Web", "CEDTeam.CES.Web\CEDTeam.CES.Web.csproj", "{C78C7D11-491B-4710-919D-305DA4B269DF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CEDTeam.CES.Tool", "CEDTeam.CES.Tool\CEDTeam.CES.Tool.csproj", "{550B6295-A0A8-40F3-9E5B-BACBAB11BEBB}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tool", "Tool", "{67A3C7E6-4038-4FC1-9784-0EB30EE78D89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CEDTeam.CES.Web", "CEDTeam.CES.Web\CEDTeam.CES.Web.csproj", "{C78C7D11-491B-4710-919D-305DA4B269DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,16 +27,9 @@ Global
 		{C78C7D11-491B-4710-919D-305DA4B269DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C78C7D11-491B-4710-919D-305DA4B269DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C78C7D11-491B-4710-919D-305DA4B269DF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{550B6295-A0A8-40F3-9E5B-BACBAB11BEBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{550B6295-A0A8-40F3-9E5B-BACBAB11BEBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{550B6295-A0A8-40F3-9E5B-BACBAB11BEBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{550B6295-A0A8-40F3-9E5B-BACBAB11BEBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{550B6295-A0A8-40F3-9E5B-BACBAB11BEBB} = {67A3C7E6-4038-4FC1-9784-0EB30EE78D89}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ABB17000-2D01-4C87-A224-C88AE67C140F}
