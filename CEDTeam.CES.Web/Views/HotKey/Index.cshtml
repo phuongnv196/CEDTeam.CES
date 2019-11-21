@@ -1,50 +1,35 @@
-﻿
+﻿@model HotKeyModel
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Từ khóa hot";
 }
-
+<style>
+    .hot-key {
+        margin-top: 1px;
+    }
+</style>
 <h1>Shopee</h1>
 <div class="container-fluid">
-    <button type="button" class="btn btn-outline-primary">Primary</button>
-    <button type="button" class="btn btn-outline-secondary">Secondary</button>
-    <button type="button" class="btn btn-outline-success">Success</button>
-    <button type="button" class="btn btn-outline-danger">Danger</button>
-    <button type="button" class="btn btn-outline-warning">Warning</button>
-    <button type="button" class="btn btn-outline-info">Info</button>
-    <button type="button" class="btn btn-outline-dark">Dark</button>
-    <button type="button" class="btn btn-outline-primary">Primary</button>
-    <button type="button" class="btn btn-outline-secondary">Secondary</button>
-    <button type="button" class="btn btn-outline-success">Success</button>
-    <button type="button" class="btn btn-outline-danger">Danger</button>
-    <button type="button" class="btn btn-outline-warning">Warning</button>
-    <button type="button" class="btn btn-outline-info">Info</button>
-    <button type="button" class="btn btn-outline-dark">Dark</button>
+    @foreach (var item in Model.Shopee?.data.items)
+    {
+        <a href="https://shopee.vn/search?keyword=@item.keyword" class="btn btn-outline-warning hot-key" target="_blank">@item.keyword</a>
+    }
 </div>
-<h1>Tiki</h1>
+@*<hr />
+<h3>Lazada</h3>
+Comming soon*@
+<hr />
+<h3>Tiki</h3>
 <div class="container-fluid">
-    <button type="button" class="btn btn-outline-primary">Primary</button>
-    <button type="button" class="btn btn-outline-secondary">Secondary</button>
-    <button type="button" class="btn btn-outline-success">Success</button>
-    <button type="button" class="btn btn-outline-danger">Danger</button>
-    <button type="button" class="btn btn-outline-warning">Warning</button>
-    <button type="button" class="btn btn-outline-info">Info</button>
-    <button type="button" class="btn btn-outline-dark">Dark</button>
-    <button type="button" class="btn btn-outline-primary">Primary</button>
-    <button type="button" class="btn btn-outline-secondary">Secondary</button>
-    <button type="button" class="btn btn-outline-success">Success</button>
-    <button type="button" class="btn btn-outline-danger">Danger</button>
-    <button type="button" class="btn btn-outline-warning">Warning</button>
-    <button type="button" class="btn btn-outline-info">Info</button>
-    <button type="button" class="btn btn-outline-dark">Dark</button>
+    @foreach (var item in Model.Tiki?.data)
+    {
+        <a href="https://tiki.vn/search?q=@item.keyword" class="btn btn-outline-primary hot-key" target="_blank">@item.keyword</a>
+    }
 </div>
-<h1>Sendo</h1>
+<hr />
+<h3>Sendo</h3>
 <div class="container-fluid">
-    <button type="button" class="btn btn-outline-primary">Primary</button>
-    <button type="button" class="btn btn-outline-secondary">Secondary</button>
-    <button type="button" class="btn btn-outline-success">Success</button>
-    <button type="button" class="btn btn-outline-danger">Danger</button>
-    <button type="button" class="btn btn-outline-warning">Warning</button>
-    <button type="button" class="btn btn-outline-info">Info</button>
-    <button type="button" class="btn btn-outline-light">Light</button>
-    <button type="button" class="btn btn-outline-dark">Dark</button>
+    @foreach (var item in Model.Sendo?.result?.data)
+    {
+        <a href="https://www.sendo.vn/tim-kiem?q=@item.name" class="btn btn-outline-danger hot-key" target="_blank">@item.name</a>
+    }
 </div>

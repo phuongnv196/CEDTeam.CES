@@ -1,0 +1,18 @@
+﻿@model ShopeeTopProductModel;
+@{
+    ViewData["Title"] = "Sản phẩm hot - Shopee";
+}
+<style>
+    .hot-product{
+        margin-top: 1px;
+    }
+</style>
+<div class="container-fluid">
+    @{ 
+        var category = Model?.data?.categories.OrderByDescending(item => item.sold);
+    }
+    @foreach(var item in category)
+    {
+        <button type="button" class="btn btn-outline-warning hot-product">@(item.name) <small>(@item.sold)</small></button>
+    }
+</div>

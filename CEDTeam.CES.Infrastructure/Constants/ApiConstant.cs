@@ -7,7 +7,7 @@ namespace CEDTeam.CES.Infrastructure.Constants
     public class ApiConstant
     {
         // HOT KEYWORDS
-        public const string SHOPEE_HOT_SEARCH_URL = "https://shopee.vn/api/v2/recommendation/hot_search_words?limit=-1&offset=0";
+        public const string SHOPEE_HOT_SEARCH_URL = "https://shopee.vn/api/v2/recommendation/hot_search_words?limit=100&offset=0";
 
         public const string TIKI_HOT_SEARCH_URL = "https://tiki.vn/api/v2/personalization/v2/keywords";
 
