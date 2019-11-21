@@ -36,5 +36,16 @@ namespace CEDTeam.CES.Infrastructure.Implements
         {
             return APIHelper.PostAsync<ShopeeTopProductItem>(ApiConstant.SHOPEE_GET_LIST_URL, JsonConvert.SerializeObject(listProducts), "application/json");
         }
+
+        public TikiCategoryDto GetTikiCategory()
+        {
+            return APIHelper.GetAsync<TikiCategoryDto>(ApiConstant.TIKI_GET_CATEGORY_URL);
+        }
+
+        public TikiTopProductDto GetTikiTopProductByCategory(int id, int limit, int page)
+        {
+            return APIHelper.GetAsync<TikiTopProductDto>(String.Format(ApiConstant.TIKI_TOP_PRODUCTS_BY_CATEGORY, id, limit, page));  
+        }
+
     }
 }

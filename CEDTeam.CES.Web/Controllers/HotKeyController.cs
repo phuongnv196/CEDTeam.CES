@@ -37,7 +37,7 @@ namespace CEDTeam.CES.Web.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public IActionResult ShopeeHotProduct()
+        public IActionResult ShopeeTopProduct()
         {
             var model = _apiService.GetShopeeTopProduct().Adapt<ShopeeTopProductModel>();
             ViewBag.Json = JsonConvert.SerializeObject(model.data.categories);
@@ -48,6 +48,18 @@ namespace CEDTeam.CES.Web.Controllers
         public IActionResult ShopeeHotProductDetail([FromBody]ShopeeProductItemCollectionModel productItems)
         {
             var model = _apiService.GetShopeeTopProductDetail(productItems.Adapt<ShopeeProductItemCollectionDto>()).Adapt<ShopeeTopProductItemModel>();
+            return PartialView(model);
+        }
+
+        public IActionResult TikiTopProduct()
+        {
+            var model = _apiService.GetTikiCategory().Adapt<TikiCategoryModel>();
+            return View(model);
+        }
+
+        public IActionResult TikiTopProductByCategory(int id, int limit = 100, int page = 1)
+        {
+            var model = _apiService.GetTikiTopProductByCategory(id, limit, page).Adapt<TikiTopProductModel>();
             return PartialView(model);
         }
     }

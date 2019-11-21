@@ -1,0 +1,22 @@
+﻿@model TikiCategoryModel;
+@{
+    ViewData["Title"] = "Top sản phẩm Tiki";
+}
+<style>
+    .hot-product {
+        margin-top: 1px;
+    }
+</style>
+<div class="container-fluid">
+    @foreach (var item in Model.data)
+    {
+        <button onclick="getProductByCategory(@item.id)" type="button" class="btn btn-outline-primary hot-product">@item.name</button>
+    }
+</div>
+<div id="product-datatable-content"></div>
+<script>
+    function getProductByCategory(id) {
+        console.log(id);
+        LoadPartialViewWithAjax("#product-datatable-content", "/HotKey/TikiTopProductByCategory?id=" + id, "GET");
+    };
+</script>

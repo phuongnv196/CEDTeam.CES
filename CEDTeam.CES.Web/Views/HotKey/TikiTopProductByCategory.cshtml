@@ -1,0 +1,50 @@
+﻿@model TikiTopProductModel
+<style>
+    table {
+        clear: both;
+        border-collapse: collapse;
+        table-layout: fixed;
+        word-wrap: break-word;
+    }
+
+    table.dataTable tbody th, table.dataTable tbody td {
+        padding: 2px 2px;
+    }
+</style>
+<div class="" style="padding-left: 10px; padding-right: 10px; padding-top: 20px">
+    <table id="product-datatable" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Tên sản phẩm</th>
+                <th>Lượt bình luận</th>
+                <th>Giá <small>(VND)</small></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.data)
+            {
+                <tr>
+                    <td><a href="https://tiki.vn/@item.url_path" target="_blank">@item.name</a></td>
+                    <td>@item.review_count</td>
+                    <td>@(((long)item.price).ToString("#,###,###"))</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<script>
+    $('#product-datatable').DataTable({
+        dom: 'Bfrtip',
+         buttons: [
+           'pageLength'
+        ],
+        scrollX: true,
+        responsive: true,
+        lengthMenu: [[10, 15, 30, -1], [10, 25, 20, "All"]],
+        columnDefs: [
+            { targets: 0, className: "text-left"},
+            { width: 120, targets: 1, className: "text-right"},
+            { width: 100, targets: 2, className: "text-right"},
+        ],
+    });
+</script>

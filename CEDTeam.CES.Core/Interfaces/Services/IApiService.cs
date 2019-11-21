@@ -8,10 +8,16 @@ namespace CEDTeam.CES.Core.Interfaces
 {
     public interface IApiService
     {
+        //Shopee
         ShopeeHotSearchDto GetShopeeHotSearch();
-        TikiHotSearchDto GetTikiHotSearch();
-        SendoHotSearchDto GetSendoHotSearch();
         ShopeeTopProductDto GetShopeeTopProduct();
+        //Tiki
+        TikiHotSearchDto GetTikiHotSearch();    
+        TikiCategoryDto GetTikiCategory();
+        TikiTopProductDto GetTikiTopProductByCategory(int id, int limit, int page);
+        //Sendo
+        SendoHotSearchDto GetSendoHotSearch();
         ShopeeTopProductItem GetShopeeTopProductDetail(ShopeeProductItemCollectionDto listProducts);
+
     }
 }
