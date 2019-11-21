@@ -26,7 +26,7 @@
                 <tr>
                     <td><a href="https://shopee.vn/product-i.@(item.shopid).@item.itemid" target="_blank">@item.name</a></td>
                     <td>@item.cmt_count</td>
-                    <td>@((((long)item.price_max) / 10000).ToString("#,###,###"))</td>
+                    <td>@((((long)item.price_max) / 100000).ToString("#,###,###"))</td>
                 </tr>
             }
         </tbody>
