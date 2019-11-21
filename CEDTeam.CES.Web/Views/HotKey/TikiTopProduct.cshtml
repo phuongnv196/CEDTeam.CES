@@ -1,0 +1,18 @@
+﻿@model TikiTopProductModel;
+@{
+    ViewData["Title"] = "Sản phẩm hàng đầu - Tiki";
+}
+<style>
+    .hot-product {
+        margin-top: 1px;
+    }
+</style>
+<div class="container-fluid">
+    @{
+        var category = Model?.data;
+    }
+    @foreach (var item in category)
+    {
+        <button type="button" class="btn btn-outline-primary hot-product">@(item.name) <small>(0)</small></button>
+    }
+</div>

@@ -35,9 +35,14 @@ namespace CEDTeam.CES.Web.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public IActionResult ShopeeHotProduct()
+        public IActionResult ShopeeTopProduct()
         {
             return View(_apiService.GetShopeeTopProduct().Adapt<ShopeeTopProductModel>());
+        }
+
+        public IActionResult TikiTopProduct()
+        {
+            return View(_apiService.GetTikiTopProduct().Adapt<TikiCategoryModel>());
         }
     }
 }
