@@ -8,6 +8,8 @@ using CEDTeam.CES.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Mapster;
 using CEDTeam.CES.Web.Models;
+using Newtonsoft.Json;
+using CEDTeam.CES.Core.Dtos;
 
 namespace CEDTeam.CES.Web.Controllers
 {
@@ -37,7 +39,16 @@ namespace CEDTeam.CES.Web.Controllers
 
         public IActionResult ShopeeHotProduct()
         {
-            return View(_apiService.GetShopeeTopProduct().Adapt<ShopeeTopProductModel>());
+            var model = _apiService.GetShopeeTopProduct().Adapt<ShopeeTopProductModel>();
+            ViewBag.Json = JsonConvert.SerializeObject(model.data.categories);
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult ShopeeHotProductDetail([FromBody]ShopeeProductItemCollectionModel productItems)
+        {
+            var model = _apiService.GetShopeeTopProductDetail(productItems.Adapt<ShopeeProductItemCollectionDto>()).Adapt<ShopeeTopProductItemModel>();
+            return PartialView(model);
         }
     }
 }

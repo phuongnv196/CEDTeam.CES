@@ -2,6 +2,7 @@
 using CEDTeam.CES.Core.Interfaces;
 using CEDTeam.CES.Infrastructure.Constants;
 using CEDTeam.CES.Infrastructure.Helpers;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -29,6 +30,11 @@ namespace CEDTeam.CES.Infrastructure.Implements
         public ShopeeTopProductDto GetShopeeTopProduct()
         {
             return APIHelper.GetAsync<ShopeeTopProductDto>(ApiConstant.SHOPEE_TOP_PRODUCTS_URL);
+        }
+
+        public ShopeeTopProductItem GetShopeeTopProductDetail(ShopeeProductItemCollectionDto listProducts)
+        {
+            return APIHelper.PostAsync<ShopeeTopProductItem>(ApiConstant.SHOPEE_GET_LIST_URL, JsonConvert.SerializeObject(listProducts), "application/json");
         }
     }
 }
