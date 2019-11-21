@@ -1,4 +1,4 @@
-﻿@model ShopeeTopProductItemModel
+﻿@model TikiTopProductModel
 <style>
     table {
         clear: both;
@@ -7,9 +7,9 @@
         word-wrap: break-word;
     }
 
-        table.dataTable tbody th, table.dataTable tbody td {
-            padding: 2px 2px;
-        }
+    table.dataTable tbody th, table.dataTable tbody td {
+        padding: 2px 2px;
+    }
 </style>
 <div class="" style="padding-left: 10px; padding-right: 10px; padding-top: 20px">
     <table id="product-datatable" class="display" style="width:100%">
@@ -21,12 +21,12 @@
             </tr>
         </thead>
         <tbody>
-            @foreach(var item in Model.items)
+            @foreach (var item in Model.data)
             {
                 <tr>
-                    <td><a href="https://shopee.vn/product-i.@(item.shopid).@item.itemid" target="_blank">@item.name</a></td>
-                    <td>@item.cmt_count</td>
-                    <td>@((((long)item.price_max) / 100000).ToString("#,###,###"))</td>
+                    <td><a href="https://tiki.vn/@item.url_path" target="_blank">@item.name</a></td>
+                    <td>@item.review_count</td>
+                    <td>@(((long)item.price).ToString("#,###,###"))</td>
                 </tr>
             }
         </tbody>

@@ -53,14 +53,14 @@ namespace CEDTeam.CES.Web.Controllers
 
         public IActionResult TikiTopProduct()
         {
-            var aa = _apiService.GetTikiCategory().Adapt<TikiCategoryModel>();
-            return View(aa);
+            var model = _apiService.GetTikiCategory().Adapt<TikiCategoryModel>();
+            return View(model);
         }
 
-        public IActionResult GetTikiTopProductByCategory(int id, int limit = 10, int page = 1)
+        public IActionResult TikiTopProductByCategory(int id, int limit = 100, int page = 1)
         {
-            var aa = _apiService.GetTikiTopProductByCategory(id, limit, page).Adapt<TikiTopProductModel>();
-            return new ObjectResult(aa);
+            var model = _apiService.GetTikiTopProductByCategory(id, limit, page).Adapt<TikiTopProductModel>();
+            return PartialView(model);
         }
     }
 }
