@@ -3,39 +3,52 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Product Manager</h1>
-<table id="product-datatable" class="display nowrap" style="width:100%">
-    <thead>
-        <tr>
-            <th>Id</th>
-            <th>ProductId</th>
-            <th>Name</th>
-            <th>Price</th>
-            <th>CreatedDate</th>
-            <th>Quantity</th>
-            <th>CategoryId</th>
-            <th>QuantitySold</th>
-            <th>CommentCount</th>
-            <th>Discount</th>
-            <th>Url</th>
-        </tr>
-    </thead>
-    <tfoot>
-        <tr>
-            <th>Id</th>
-            <th>ProductId</th>
-            <th>Name</th>
-            <th>Price</th>
-            <th>CreatedDate</th>
-            <th>Quantity</th>
-            <th>CategoryId</th>
-            <th>QuantitySold</th>
-            <th>CommentCount</th>
-            <th>Discount</th>
-            <th>Url</th>
-        </tr>
-    </tfoot>
-</table>
+<h1>Quản lý sản phẩm</h1>
+<style>
+    table{
+        clear: both;
+        border-collapse: collapse;
+        table-layout: fixed; 
+        word-wrap:break-word; 
+    }
+    table.dataTable tbody th, table.dataTable tbody td{
+        padding: 2px 2px;
+    }
+</style>
+<div class="text-center">
+    <table id="product-datatable" style="width:100%">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Mã sản phẩm</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá <small>(VND)</small></th>
+                <th>Ngày tạo</th>
+                <th>Số lượng</th>
+                <th>Danh mục</th>
+                <th>Trang bán</th>
+                <th>Đã bán</th>
+                <th>Số bình luận</th>
+                <th>Giảm giá</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Id</th>
+                <th>Mã sản phẩm</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá <small>(VND)</small></th>
+                <th>Ngày tạo</th>
+                <th>Số lượng</th>
+                <th>Danh mục</th>
+                <th>Trang bán</th>
+                <th>Đã bán</th>
+                <th>Số bình luận</th>
+                <th>Giảm giá</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
 <script>
     $(function () {
         var table = $('#product-datatable').DataTable({
@@ -44,6 +57,7 @@
             "buttons": [
                'pageLength', 'copy', 'csv', 'excel', 'pdf', 'print'
             ],
+            "scrollX": true,
             "processing": true,
             "serverSide": true,
             "ajax": {
@@ -61,18 +75,44 @@
                     return JSON.stringify(json);
                 }
             },
+            "columnDefs": [
+                { targets: 0, className: "text-center" },
+                { width: 100, targets: 1, className: "text-center" },
+                { width: 300, targets: 2, className: "text-left"},
+                { width: 80, targets: 3, className: "text-right" },
+                { width: 200, targets: 4, className: "text-center" },
+                { width: 80, targets: 5, className: "text-right" },
+                { width: 120, targets: 6, className: "text-center" },
+                { width: 60, targets: 7, className: "text-center" },
+                { width: 80, targets: 8, className: "text-right" },
+                { width: 50, targets: 9, className: "text-center" },
+            ],
+            fixedColumns: true,
             "columns": [
                 { "data": "id" },
                 { "data": "productId" },
-                { "data": "name" },
-                { "data": "price" },
+                { "data": null, render: function ( data, type, row ) {
+               
+                        return '<a href="' + data.url + '" target="_blank">' + data.name + '</a>';
+                    }
+                },
+                { "data": null, render: function ( data, type, row ) {
+                        var price = numeral(data.price).format('0,0');
+                        return price;
+                    }
+                },
                 { "data": "createdDate" },
                 { "data": "quantity" },
-                { "data": "categoryId" },
+                { "data": "categoryName" },
+                { "data": "siteName" },
                 { "data": "quantitySold" },
                 { "data": "commentCount" },
-                { "data": "discount" },
-                { "data": "url" }
+                {
+                    "data": null, render: function (data, type, row) {
+                        var discount = (data.discount).replace('-', '');
+                        return discount;
+                    }
+                },
             ]
             });
     });

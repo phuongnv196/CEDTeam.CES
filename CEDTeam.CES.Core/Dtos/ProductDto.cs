@@ -19,5 +19,7 @@ namespace CEDTeam.CES.Core.Dtos
         public string VariableJson { get; set; }
         public string Url { get; set; }
         public string CategoryUrl { get; set; }
+        public string CategoryName { get; set; }
+        public string SiteName { get; set; }
     }
 }
