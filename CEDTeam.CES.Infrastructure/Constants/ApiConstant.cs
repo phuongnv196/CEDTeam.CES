@@ -27,7 +27,7 @@ namespace CEDTeam.CES.Infrastructure.Constants
 
         public const string SENDO_GET_CATEGORY_URL = "https://www.sendo.vn/m/wap_v2/home/recommend-category";
         //
-        public const string SENDO_GET_CATEGORY_ID_URL = "https://www.sendo.vn/m/wap_v2/cate-info/{0}";
+        public const string SENDO_GET_CATEGORY_ID_URL = "https://www.sendo.vn/m/wap_v2/cate-info/";
         //
         public const string SENDO_GET_TOP_PRODUCTS = "https://www.sendo.vn/m/wap_v2/category/product?category_id={0}&p={1}&sortType=norder_30_desc";
 

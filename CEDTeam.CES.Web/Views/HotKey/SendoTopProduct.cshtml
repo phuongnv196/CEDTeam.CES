@@ -1,0 +1,27 @@
+﻿@model SendoCategoryModel;
+@{
+    ViewData["Title"] = "Top sản phẩm Sendo";
+}
+<style>
+    .hot-product {
+        margin-top: 1px;
+    }
+</style>
+<div class="container-fluid">
+    @foreach (var item in Model.result.data.data.list.firstSection)
+    {
+        <button onclick="getProductByCategory('@item.url_path')" type="button" class="btn btn-outline-danger hot-product">@item.name</button>
+    }
+    @foreach (var item in Model.result.data.data.list.otherSection)
+    {
+        <button onclick="getProductByCategory('@item.url_path')" type="button" class="btn btn-outline-danger hot-product">@item.name</button>
+    }
+</div>
+<div id="product-datatable-content"></div>
+<script>
+    function getProductByCategory(path) {
+        console.log(path);
+        LoadPartialViewWithAjax("#product-datatable-content", "/HotKey/SendoTopProductByCategory?path=" + path, "GET");
+    };
+</script>
+
