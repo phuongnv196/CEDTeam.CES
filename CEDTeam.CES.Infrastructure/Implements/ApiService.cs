@@ -2,6 +2,7 @@
 using CEDTeam.CES.Core.Interfaces;
 using CEDTeam.CES.Infrastructure.Constants;
 using CEDTeam.CES.Infrastructure.Helpers;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -39,6 +40,12 @@ namespace CEDTeam.CES.Infrastructure.Implements
         public TikiTopProductDto GetTikiTopProductByCategory(int id, int limit, int page)
         {
             return APIHelper.GetAsync<TikiTopProductDto>(String.Format(ApiConstant.TIKI_TOP_PRODUCTS_BY_CATEGORY, id, limit, page));
+        
+        }
+
+        public ShopeeTopProductItem GetShopeeTopProductDetail(ShopeeProductItemCollectionDto listProducts)
+        {
+            return APIHelper.PostAsync<ShopeeTopProductItem>(ApiConstant.SHOPEE_GET_LIST_URL, JsonConvert.SerializeObject(listProducts), "application/json");
         }
     }
 }

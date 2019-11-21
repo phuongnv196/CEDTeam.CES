@@ -7,13 +7,34 @@
         margin-top: 1px;
     }
 </style>
+<script>
+    var categoryData = @Html.Raw(ViewBag.Json);
+    function getProduct(id) {
+            // var id = parseInt($(e.target).attr("data-item"));
+            console.log(id);
+            var items = [];
+            $(categoryData[id].data).each(function (id, el) {
+                items.push({ itemid: el.itemid, shopid: el.shopid });
+            });
+            console.log(items);
+            LoadPartialViewWithAjax("#product-datatable-content", "/HotKey/ShopeeHotProductDetail", "POST", { item_shop_ids: items });
+        };
+</script>
 <div class="container-fluid">
     @{ 
-        var category = Model?.data?.categories.OrderByDescending(item => item.sold);
+        var category = Model?.data?.categories;
     }
-    @foreach(var item in category)
+    @for(int i = 0; i < category?.Count(); i++)
     {
-        <button type="button" class="btn btn-outline-warning hot-product">@(item.name) <small>(@item.sold)</small></button>
+        var item = category[i];
+        <button type="button" class="btn btn-outline-warning hot-product" onclick="getProduct(@i)">@(item.name) <small>(@item.sold)</small></button>
     }
-</div>
+</div> 
+<div id="product-datatable-content" style="">
 
+</div>
+<script>
+    
+    //var paramesFilter = {};
+    //LoadPartialViewWithAjax("#user-request-list", "/user-request-management/get-list-user-request", "POST", paramesFilter);
+</script>

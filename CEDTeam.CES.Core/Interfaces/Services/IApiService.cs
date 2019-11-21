@@ -17,5 +17,7 @@ namespace CEDTeam.CES.Core.Interfaces
         TikiTopProductDto GetTikiTopProductByCategory(int id, int limit, int page);
         //Sendo
         SendoHotSearchDto GetSendoHotSearch();
+        ShopeeTopProductItem GetShopeeTopProductDetail(ShopeeProductItemCollectionDto listProducts);
+
     }
 }
