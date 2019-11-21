@@ -18,6 +18,8 @@ namespace CEDTeam.CES.Core.Interfaces
         //Sendo
         SendoHotSearchDto GetSendoHotSearch();
         ShopeeTopProductItem GetShopeeTopProductDetail(ShopeeProductItemCollectionDto listProducts);
-
+        SendoCategoryDto GetSendoCategory();
+        SendoCategoryInfoDto SendoCategoryInfo(string path);
+        SendoTopProductDto GetSendoTopProductByCategory(int id, int page);
     }
 }

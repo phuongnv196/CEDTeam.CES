@@ -47,5 +47,19 @@ namespace CEDTeam.CES.Infrastructure.Implements
             return APIHelper.GetAsync<TikiTopProductDto>(String.Format(ApiConstant.TIKI_TOP_PRODUCTS_BY_CATEGORY, id, limit, page));  
         }
 
+        public SendoCategoryDto GetSendoCategory()
+        {
+            return APIHelper.GetAsync<SendoCategoryDto>(ApiConstant.SENDO_GET_CATEGORY_URL);
+        }
+
+        public SendoCategoryInfoDto SendoCategoryInfo(string path)
+        {
+            return APIHelper.GetAsync<SendoCategoryInfoDto>(ApiConstant.SENDO_GET_CATEGORY_ID_URL + path);
+        }
+
+        public SendoTopProductDto GetSendoTopProductByCategory(int id, int page)
+        {
+            return APIHelper.GetAsync<SendoTopProductDto>(String.Format(ApiConstant.SENDO_GET_TOP_PRODUCTS, id, page));  
+        }
     }
 }
