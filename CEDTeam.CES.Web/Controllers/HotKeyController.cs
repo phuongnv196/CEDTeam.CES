@@ -7,7 +7,6 @@ using CEDTeam.CES.Core.Interfaces;
 using CEDTeam.CES.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Mapster;
-using CEDTeam.CES.Web.Models;
 using Newtonsoft.Json;
 using CEDTeam.CES.Core.Dtos;
 
@@ -61,6 +60,20 @@ namespace CEDTeam.CES.Web.Controllers
         {
             var model = _apiService.GetTikiTopProductByCategory(id, limit, page).Adapt<TikiTopProductModel>();
             return PartialView(model);
+        }
+
+        public IActionResult SendoTopProduct()
+        {
+            var model = _apiService.GetSendoCategory().Adapt<SendoCategoryModel>();
+            return View(model);
+        }
+
+        public IActionResult SendoTopProductByCategory(string path)
+        {
+            var model = _apiService.SendoCategoryInfo(path).Adapt<SendoCategoryInfoDto>();
+            int id = model.result.meta_data.category_id;
+            var model1 = _apiService.GetSendoTopProductByCategory(id, 1).Adapt<SendoTopProductModel>();
+            return PartialView(model1);
         }
     }
 }
