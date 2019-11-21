@@ -1,6 +1,6 @@
-﻿@model TikiTopProductModel;
+﻿@model TikiCategoryModel;
 @{
-    ViewData["Title"] = "Sản phẩm hàng đầu - Tiki";
+    ViewData["Title"] = "Top sản phẩm Tiki";
 }
 <style>
     .hot-product {
@@ -13,6 +13,47 @@
     }
     @foreach (var item in category)
     {
-        <button type="button" class="btn btn-outline-primary hot-product">@(item.name) <small>(0)</small></button>
+        <button onclick="getProductByCategory(@(item.id))" type="button" class="btn btn-outline-primary hot-product">@(item.name)</button>
     }
 </div>
+<div class="text-center">
+    <table id="product-datatable" style="width:100%">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Mã sản phẩm</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá <small>(VND)</small></th>
+                <th>Ngày tạo</th>
+                <th>Số lượng</th>
+                <th>Danh mục</th>
+                <th>Trang bán</th>
+                <th>Đã bán</th>
+                <th>Số bình luận</th>
+                <th>Giảm giá</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Id</th>
+                <th>Mã sản phẩm</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá <small>(VND)</small></th>
+                <th>Ngày tạo</th>
+                <th>Số lượng</th>
+                <th>Danh mục</th>
+                <th>Trang bán</th>
+                <th>Đã bán</th>
+                <th>Số bình luận</th>
+                <th>Giảm giá</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+<script>
+    //var categoryData = @Html.Raw(ViewBag.Json);
+    function getProductByCategory(id) {
+        console.log(id);
+        //LoadPartialViewWithAjax("#product-datatable-content", "/HotKey/GetTikiTopProductByCategory?id=" + id, "GET");
+    }
+</script>

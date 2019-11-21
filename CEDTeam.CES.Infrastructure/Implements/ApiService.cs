@@ -31,15 +31,14 @@ namespace CEDTeam.CES.Infrastructure.Implements
             return APIHelper.GetAsync<ShopeeTopProductDto>(ApiConstant.SHOPEE_TOP_PRODUCTS_URL);
         }
 
-        public TikiCategoryDto GetTikiTopProduct()
+        public TikiCategoryDto GetTikiCategory()
         {
-            TikiCategoryDto tikiCategory = APIHelper.GetAsync<TikiCategoryDto>(ApiConstant.TIKI_GET_CATEGORY_URL);
-            //List<DataCategoryTiki> categories = tikiCategory?.data;
-            //foreach (DataCategoryTiki category in categories)
-            //{
-            //    category.tikiTopProduct = APIHelper.GetAsync<TikiTopProductDto>(String.Format(ApiConstant.TIKI_TOP_PRODUCTS_BY_CATEGORY, category.id, 100, 1));
-            //}
-            return tikiCategory;
+            return APIHelper.GetAsync<TikiCategoryDto>(ApiConstant.TIKI_GET_CATEGORY_URL);
+        }
+
+        public TikiTopProductDto GetTikiTopProductByCategory(int id, int limit, int page)
+        {
+            return APIHelper.GetAsync<TikiTopProductDto>(String.Format(ApiConstant.TIKI_TOP_PRODUCTS_BY_CATEGORY, id, limit, page));
         }
     }
 }

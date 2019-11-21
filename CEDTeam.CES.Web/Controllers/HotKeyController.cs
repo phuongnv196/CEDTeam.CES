@@ -7,7 +7,6 @@ using CEDTeam.CES.Core.Interfaces;
 using CEDTeam.CES.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Mapster;
-using CEDTeam.CES.Web.Models;
 
 namespace CEDTeam.CES.Web.Controllers
 {
@@ -42,7 +41,14 @@ namespace CEDTeam.CES.Web.Controllers
 
         public IActionResult TikiTopProduct()
         {
-            return View(_apiService.GetTikiTopProduct().Adapt<TikiCategoryModel>());
+            var aa = _apiService.GetTikiCategory().Adapt<TikiCategoryModel>();
+            return View(aa);
+        }
+
+        public IActionResult GetTikiTopProductByCategory(int id, int limit = 10, int page = 1)
+        {
+            var aa = _apiService.GetTikiTopProductByCategory(id, limit, page).Adapt<TikiTopProductModel>();
+            return new ObjectResult(aa);
         }
     }
 }
