@@ -50,7 +50,7 @@ namespace CEDTeam.CES.Tool.Repositories
                             stringBuilder.AppendLine($"('{item.ProductId ?? ""}'," +
                                 $"'{MySqlHelper.EscapeString(item.Name ?? "")}'," +
                                 $"{item.Price}," +
-                                $"'{MySqlHelper.EscapeString(item.CreatedDate.HasValue? item.CreatedDate.Value.ToString("dd/mm/yyyy hh:MM:ss tt") : "")}'," +
+                                $"'{MySqlHelper.EscapeString(item.CreatedDate.HasValue? item.CreatedDate.Value.ToString("dd/MM/yyyy hh:mm:ss tt") : (DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss tt")))}'," +
                                 $"{item.Quantity}," +
                                 $"{cateId}," +
                                 $"{item.QuantitySold}," +
