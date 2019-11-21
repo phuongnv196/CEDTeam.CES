@@ -226,3 +226,7 @@ a.article, a.article:hover {
 #product-datatable_wrapper.sidebar-actived {
     width: calc(100vw - 340px);
 }
+
+#product-datatable > a{
+    color: darkblue;
+}
