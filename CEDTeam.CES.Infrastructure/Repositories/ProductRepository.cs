@@ -18,7 +18,7 @@ namespace CEDTeam.CES.Infrastructure.Repositories
         }
         List<string> listColumn = new List<string>
         {
-            "Id", "ProductId", "Name", "Price", "CreatedDate", "Quantity", "CategoryId", "QuantitySold", "CommentCount", "Discount", "Url"
+            "Id", "ProductId", "Name", "Price", "CreatedDate", "Quantity", "CategoryName", "SiteName", "QuantitySold", "CommentCount", "Discount", "Url"
         };
 
         public async Task<FilterProductDto> GetProductAsync(int start, int length, string search, int columnSort, bool isAsc = true)
@@ -27,11 +27,14 @@ namespace CEDTeam.CES.Infrastructure.Repositories
             {
                 string query = $"select count(1) from Product ;"+
                     $" select count(1) FROM Product WHERE Name LIKE N'%{search}%';  " +
-                    "SELECT Id, ProductId, Name, Price, CreatedDate, Quantity, CategoryId, QuantitySold, CommentCount, Discount, Url " +
-                    "FROM Product WHERE Name LIKE N'%" + search + "%' ";
+                    "SELECT Id, ProductId, Name, Price, CreatedDate, Quantity, CategoryName, SiteName, QuantitySold, CommentCount, Discount, Url " +
+                    "FROM Product AS P JOIN Category AS C ON P.CategoryId = C.CategoryId " +
+                    "JOIN Site AS S ON C.SiteId = S.SiteId "+
+                    "WHERE Name LIKE N'%" + search + "%' ";
                 string orderBy = $" ORDER BY {listColumn[columnSort]} {(!isAsc ? "DESC" : "")}";
                 string limit = $" LIMIT {start}, {length}";
                 string command = $"{query} {orderBy} {limit}";
+
                 var result = await db.QueryMultipleAsync(command);
                 var filterProductDto = new FilterProductDto();
                 filterProductDto.RecordsTotal = await result.ReadFirstAsync<long>();
