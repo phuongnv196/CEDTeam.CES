@@ -18,5 +18,10 @@ namespace CEDTeam.CES.Infrastructure.Implements
         {
             return await _productRepository.GetProductAsync(start, length, search, columnSort, isAsc);
         }
+
+        public async Task<FilterProductDto> GetProductWithSiteIdAsync(int start, int length, string search, int columnSort, int siteId, bool isAsc = true)
+        {
+            return await _productRepository.GetProductSiteIdAsync(start, length, search, columnSort, siteId, isAsc);
+        }
     }
 }

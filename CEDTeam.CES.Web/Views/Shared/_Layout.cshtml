@@ -40,10 +40,14 @@
                     <a href="/">Trang chủ</a>
                 </li>
                 <li class="active">
-                    <a href="#productSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Sản phẩm</a>
+                    <a href="#productSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Quản lý sản phẩm</a>
                     <ul class="collapse list-unstyled" id="productSubmenu">
                         <li>
-                            <a asp-area="" asp-controller="ProductManager" asp-action="Index">Quản lý sản phẩm</a>
+                            <a href="/product-manager">Tất cả</a>
+                            <a href="/product-manager?siteId=1">Shopee</a>
+                            <a href="/product-manager?siteId=2">Lazada</a>
+                            <a href="/product-manager?siteId=3">Tiki</a>
+                            <a href="/product-manager?siteId=4">Sendo</a>
                         </li>
                     </ul>
                 </li>
