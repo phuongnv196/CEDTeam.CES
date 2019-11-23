@@ -15,9 +15,11 @@ namespace CEDTeam.CES.Web.Controllers
     public class HotKeyController : Controller
     {
         private readonly IApiService _apiService;
-        public HotKeyController(IApiService apiService)
+        private readonly IProductService _productService;
+        public HotKeyController(IApiService apiService, IProductService productService)
         {
             _apiService = apiService;
+            _productService = productService;
         }
         public IActionResult Index()
         {
@@ -74,6 +76,18 @@ namespace CEDTeam.CES.Web.Controllers
             int id = model.result.meta_data.category_id;
             var model1 = _apiService.GetSendoTopProductByCategory(id, 1).Adapt<SendoTopProductModel>();
             return PartialView(model1);
+        }
+
+        public IActionResult LazadaTopProduct()
+        {
+            var model = _productService.GetLazadaCategoryAsync();
+            return View(model.Result);
+        }
+
+        public IActionResult LazadaTopProductByCategory(string name)
+        {
+            var model = _apiService.GetLazadaTopProductByCategory(name).Adapt<LazadaTopProductModel>();
+            return PartialView(model);
         }
     }
 }

@@ -20,7 +20,7 @@ namespace CEDTeam.CES.Infrastructure.Constants
 
         public const string TIKI_GET_CATEGORY_URL = "https://tiki.vn/api/v2/personalization/v2/personalized_categories";
         //
-        public const string TIKI_TOP_PRODUCTS_BY_CATEGORY = "https://tiki.vn/api/v2/products?category_id={0}&limit={1}&page={2}&sort=top_seller";
+        public const string TIKI_TOP_PRODUCTS_URL = "https://tiki.vn/api/v2/products?category_id={0}&limit={1}&page={2}&sort=top_seller";
 
         //SENDO
         public const string SENDO_HOT_SEARCH_URL = "https://www.sendo.vn/m/wap_v2/home/top-keyword";
@@ -29,9 +29,10 @@ namespace CEDTeam.CES.Infrastructure.Constants
         //
         public const string SENDO_GET_CATEGORY_ID_URL = "https://www.sendo.vn/m/wap_v2/cate-info/";
         //
-        public const string SENDO_GET_TOP_PRODUCTS = "https://www.sendo.vn/m/wap_v2/category/product?category_id={0}&p={1}&sortType=norder_30_desc";
+        public const string SENDO_TOP_PRODUCTS_URL = "https://www.sendo.vn/m/wap_v2/category/product?category_id={0}&p={1}&sortType=norder_30_desc";
 
         //LAZADA
-        public const string LAZADA_HOT_SEARCH_URL = "";
+        public const string LAZADA_TOP_PRODUCTS_URL = "https://www.lazada.vn/catalog/?ajax=true&from=input&q={0}&sort=popularity";
+
     }
 }

@@ -18,5 +18,10 @@ namespace CEDTeam.CES.Infrastructure.Implements
         {
             return await _productRepository.GetProductAsync(start, length, search, columnSort, isAsc);
         }
+
+        public async Task<List<String>> GetLazadaCategoryAsync()
+        {
+            return await _productRepository.GetLazadaCategoryAsync();
+        }
     }
 }

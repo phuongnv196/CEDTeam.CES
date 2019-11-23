@@ -43,5 +43,14 @@ namespace CEDTeam.CES.Infrastructure.Repositories
                 return filterProductDto;
             }
         }
+
+        public async Task<List<String>> GetLazadaCategoryAsync()
+        {
+            using (var db = _baseRepository.GetConnection())
+            {
+                string query = "SELECT CategoryName FROM Category WHERE SiteId = 2 AND (Parent IS NULL OR Parent = '')";
+                return (await db.QueryAsync<String>(query)).AsList();
+            }
+        }
     }
 }

@@ -44,7 +44,7 @@ namespace CEDTeam.CES.Infrastructure.Implements
 
         public TikiTopProductDto GetTikiTopProductByCategory(int id, int limit, int page)
         {
-            return APIHelper.GetAsync<TikiTopProductDto>(String.Format(ApiConstant.TIKI_TOP_PRODUCTS_BY_CATEGORY, id, limit, page));  
+            return APIHelper.GetAsync<TikiTopProductDto>(String.Format(ApiConstant.TIKI_TOP_PRODUCTS_URL, id, limit, page));
         }
 
         public SendoCategoryDto GetSendoCategory()
@@ -59,7 +59,12 @@ namespace CEDTeam.CES.Infrastructure.Implements
 
         public SendoTopProductDto GetSendoTopProductByCategory(int id, int page)
         {
-            return APIHelper.GetAsync<SendoTopProductDto>(String.Format(ApiConstant.SENDO_GET_TOP_PRODUCTS, id, page));  
+            return APIHelper.GetAsync<SendoTopProductDto>(String.Format(ApiConstant.SENDO_TOP_PRODUCTS_URL, id, page));
+        }
+
+        public LazadaTopProductDto GetLazadaTopProductByCategory(string name)
+        {
+            return APIHelper.GetAsync<LazadaTopProductDto>(String.Format(ApiConstant.LAZADA_TOP_PRODUCTS_URL, name));
         }
     }
 }

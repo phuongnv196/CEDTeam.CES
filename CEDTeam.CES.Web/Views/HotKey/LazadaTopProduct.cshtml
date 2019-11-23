@@ -1,0 +1,22 @@
+﻿@model List<String>;
+@{
+    ViewData["Title"] = "Các sản phẩm hàng đầu trên Lazada";
+}
+<style>
+    .hot-product {
+        margin-top: 1px;
+    }
+</style>
+<div class="container-fluid">
+    @foreach (var item in Model)
+    {
+        <button onclick="getProductByCategory('@item')" type="button" class="btn btn-outline-primary hot-product">@item</button>
+    }
+</div>
+<div id="product-datatable-content"></div>
+<script>
+    function getProductByCategory(name) {
+        console.log(name);
+        LoadPartialViewWithAjax("#product-datatable-content", "/HotKey/LazadaTopProductByCategory?name=" + name, "GET");
+    };
+</script>
