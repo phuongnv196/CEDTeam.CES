@@ -52,5 +52,28 @@ namespace CEDTeam.CES.Infrastructure.Repositories
                 return (await db.QueryAsync<String>(query)).AsList();
             }
         }
+
+        public async Task<FilterProductDto> GetProductSiteIdAsync(int start, int length, string search, int columnSort, int siteId, bool isAsc = true)
+        {
+            string query = $"select count(1) from Product AS P JOIN Category AS C ON P.CategoryId = C.CategoryId JOIN Site AS S ON C.SiteId = S.SiteId WHERE C.SiteId="+siteId+";" +
+                    $" select count(1) from Product AS P JOIN Category AS C ON P.CategoryId = C.CategoryId JOIN Site AS S ON C.SiteId = S.SiteId WHERE C.SiteId=" + siteId+$" AND Name LIKE N'%{search}%';  " +
+                    "SELECT Id, ProductId, Name, Price, CreatedDate, Quantity, CategoryName, SiteName, QuantitySold, CommentCount, Discount, Url " +
+                    "FROM Product AS P JOIN Category AS C ON P.CategoryId = C.CategoryId " +
+                    "JOIN Site AS S ON C.SiteId = S.SiteId " +
+                    "WHERE Name LIKE N'%" + search + "%' " +
+                    "AND C.SiteId=" +siteId;
+            string orderBy = $" ORDER BY {listColumn[columnSort]} {(!isAsc ? "DESC" : "")}";
+            string limit = $" LIMIT {start}, {length}";
+            string command = $"{query} {orderBy} {limit}";
+            using (var db = _baseRepository.GetConnection())
+            {
+                var result = await db.QueryMultipleAsync(command);
+                var filterProductDto = new FilterProductDto();
+                filterProductDto.RecordsTotal = await result.ReadFirstAsync<long>();
+                filterProductDto.RecordsFiltered = await result.ReadFirstAsync<long>();
+                filterProductDto.Data = (await result.ReadAsync<ProductDto>()).AsList();
+                return filterProductDto;
+            }
+        }
     }
 }

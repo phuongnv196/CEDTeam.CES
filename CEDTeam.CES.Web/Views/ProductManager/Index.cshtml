@@ -1,7 +1,4 @@
-﻿
-@{
-    ViewData["Title"] = "Quản lý sản phẩm";
-}
+﻿@model int
 
 <style>
     table{
@@ -42,9 +39,20 @@
     </table>
 </div>
 <script>
+    @{ 
+        var url = "../product-manager/get-product";
+        switch(Model)
+        {
+            case 1: url = "../product-manager/get-shopee-product"; break;
+            case 2: url = "../product-manager/get-lazada-product"; break;
+            case 3: url = "../product-manager/get-tiki-product"; break;
+            case 4: url = "../product-manager/get-sendo-product"; break;
+        }
+    }
+    var getProductUrl = '@url';
     $(function () {
         var table = $('#product-datatable').DataTable({
-            "responsive": true,
+                    "responsive": true,
             "dom": 'Bfrtip',
             "buttons": [
                'pageLength', 'copy', 'csv', 'excel', 'pdf', 'print'
@@ -53,7 +61,7 @@
             "processing": true,
             "serverSide": true,
             "ajax": {
-                url: "../product-manager/get-product",
+                url: getProductUrl,
                 type: "POST",
                 data: function (d) {
                     d._csrf = "<?= Yii::$app->request->getCsrfToken(); ?>";
@@ -84,14 +92,14 @@
                 { "data": "id" },
                 { "data": "productId" },
                 { "data": null, render: function ( data, type, row ) {
-               
-                        return '<a href="' + data.url + '" target="_blank">' + data.name + '</a>';
-                    }
+
+            return '<a href="' + data.url + '" target="_blank">' + data.name + '</a>';
+        }
                 },
                 { "data": null, render: function ( data, type, row ) {
-                        var price = numeral(data.price).format('0,0');
-                        return price;
-                    }
+            var price = numeral(data.price).format('0,0');
+            return price;
+        }
                 },
                 { "data": "createdDate" },
                 { "data": "quantity" },
@@ -101,9 +109,9 @@
                 { "data": "commentCount" },
                 {
                     "data": null, render: function (data, type, row) {
-                        var discount = (data.discount).replace('-', '');
-                        return discount;
-                    }
+            var discount = (data.discount).replace('-', '');
+            return discount;
+        }
                 },
             ]
             });
