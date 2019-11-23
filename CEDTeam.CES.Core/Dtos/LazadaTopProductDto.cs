@@ -8,7 +8,7 @@ namespace CEDTeam.CES.Core.Dtos
     {
         public string value { get; set; }
         public string title { get; set; }
-        public int order { get; set; }
+        public int? order { get; set; }
     }
 
     public class Option
@@ -16,7 +16,7 @@ namespace CEDTeam.CES.Core.Dtos
         public string value { get; set; }
         public string title { get; set; }
         public string url { get; set; }
-        public int order { get; set; }
+        public int? order { get; set; }
         public string id { get; set; }
         public List<Option2> options { get; set; }
     }
@@ -42,7 +42,7 @@ namespace CEDTeam.CES.Core.Dtos
         public string tItemType { get; set; }
         public List<FilterItem> filterItems { get; set; }
         public string bizData { get; set; }
-        public int pos { get; set; }
+        public int? pos { get; set; }
     }
 
     public class ItemLP
@@ -56,7 +56,7 @@ namespace CEDTeam.CES.Core.Dtos
         public string tItemType { get; set; }
         public List<ItemLP> items { get; set; }
         public string bizData { get; set; }
-        public int pos { get; set; }
+        public int? pos { get; set; }
     }
 
     public class Sku
@@ -76,7 +76,7 @@ namespace CEDTeam.CES.Core.Dtos
     {
         public string sku { get; set; }
         public string skuId { get; set; }
-        public int count { get; set; }
+        public int? count { get; set; }
     }
 
     public class ListItem
@@ -107,7 +107,7 @@ namespace CEDTeam.CES.Core.Dtos
         public string mainSellerId { get; set; }
         public string sellerName { get; set; }
         public List<Thumb> thumbs { get; set; }
-        public int restrictedAge { get; set; }
+        public int? restrictedAge { get; set; }
         public List<int> categories { get; set; }
         public string clickTrace { get; set; }
         public List<AddToCartSku> addToCartSkus { get; set; }
@@ -184,8 +184,8 @@ namespace CEDTeam.CES.Core.Dtos
 
     public class Style
     {
-        public double width { get; set; }
-        public double height { get; set; }
+        public double? width { get; set; }
+        public double? height { get; set; }
     }
 
     public class Theme
@@ -216,7 +216,7 @@ namespace CEDTeam.CES.Core.Dtos
         public string SortingPattern { get; set; }
         public List<object> filters { get; set; }
         public string rn { get; set; }
-        public int resultNr { get; set; }
+        public int? resultNr { get; set; }
         public string internalSearchResultType { get; set; }
     }
 
@@ -226,7 +226,7 @@ namespace CEDTeam.CES.Core.Dtos
         public string pdt_category { get; set; }
         public Core core { get; set; }
         public string seller_name { get; set; }
-        public int v_voya { get; set; }
+        public int? v_voya { get; set; }
         public string search_engine_used { get; set; }
         public string brand_name { get; set; }
         public Page page { get; set; }
@@ -242,7 +242,7 @@ namespace CEDTeam.CES.Core.Dtos
     public class MainInfo
     {
         public string errorMsg { get; set; }
-        public int bizCode { get; set; }
+        public int? bizCode { get; set; }
         public bool isShowFloatCart { get; set; }
         public bool isHideAddToCart { get; set; }
         public string totalResults { get; set; }
@@ -266,9 +266,9 @@ namespace CEDTeam.CES.Core.Dtos
         public List<Theme> themes { get; set; }
         public string q { get; set; }
         public DataLayer dataLayer { get; set; }
-        public int column { get; set; }
+        public int? column { get; set; }
         public string bucketId { get; set; }
-        public int auctionType { get; set; }
+        public int? auctionType { get; set; }
         public SelectedFilters selectedFilters { get; set; }
     }
 

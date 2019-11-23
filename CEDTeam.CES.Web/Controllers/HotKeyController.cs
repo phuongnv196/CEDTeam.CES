@@ -86,7 +86,8 @@ namespace CEDTeam.CES.Web.Controllers
 
         public IActionResult LazadaTopProductByCategory(string name)
         {
-            var model = _apiService.GetLazadaTopProductByCategory(name).Adapt<LazadaTopProductModel>();
+            var result = _apiService.GetLazadaTopProductByCategory(name);
+            var model = result.Adapt<LazadaTopProductModel>();
             return PartialView(model);
         }
     }
