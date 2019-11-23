@@ -24,7 +24,7 @@
             @foreach (var item in Model?.mods?.listItems)
             {
                 <tr>
-                    <td><a href="https://www/@item.productUrl.Replace("//www.lazada.vn/","");" target="_blank">@item.name</a></td>
+                    <td><a href="https://www.lazada.vn/@item.productUrl.Replace("//www.lazada.vn/","");" target="_blank">@item.name</a></td>
                     <td>@item.review</td>
                     <td>@(double.Parse(item.price).ToString("#,###,###"))</td>
                 </tr>
