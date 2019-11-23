@@ -75,5 +75,22 @@ namespace CEDTeam.CES.Web.Controllers
             var model1 = _apiService.GetSendoTopProductByCategory(id, 1).Adapt<SendoTopProductModel>();
             return PartialView(model1);
         }
+
+        public IActionResult Shopee()
+        {
+            return View();
+        }
+        public IActionResult Lazada()
+        {
+            return View();
+        }
+        public IActionResult Tiki()
+        {
+            return View();
+        }
+        public IActionResult Sendo()
+        {
+            return View();
+        }
     }
 }
