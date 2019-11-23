@@ -21,5 +21,6 @@ namespace CEDTeam.CES.Core.Interfaces
         SendoCategoryDto GetSendoCategory();
         SendoCategoryInfoDto SendoCategoryInfo(string path);
         SendoTopProductDto GetSendoTopProductByCategory(int id, int page);
+        LazadaTopProductDto GetLazadaTopProductByCategory(string name);
     }
 }

@@ -9,6 +9,8 @@ namespace CEDTeam.CES.Core.Interfaces
     public interface IProductRepository
     {
         Task<FilterProductDto> GetProductAsync(int start, int length, string search, int columnSort, bool isAsc = true);
+
+        Task<List<String>> GetLazadaCategoryAsync();
         Task<FilterProductDto> GetProductSiteIdAsync(int start, int length, string search, int columnSort, int siteId,bool isAsc = true);
     }
 }
