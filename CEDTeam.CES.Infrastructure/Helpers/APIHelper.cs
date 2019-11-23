@@ -22,10 +22,10 @@ namespace CEDTeam.CES.Infrastructure.Helpers
                 request.Accept = "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8";
                 request.UserAgent = "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/66.4.120 Chrome/60.4.3112.120 Safari/537.36";
                 request.Headers.Add("Accept-Language:vi-VN,vi;q=0.8,fr-FR;q=0.6,fr;q=0.4,en-US;q=0.2,en;q=0.2");
-                if(url.ToLower().Contains("lazada"))
-                {
-                    request.Headers.Add("Cookie", lzdCookie);
-                }
+                //if(url.ToLower().Contains("lazada"))
+                //{
+                //    request.Headers.Add("Cookie", lzdCookie);
+                //}
                 var response = (HttpWebResponse)request.GetResponse();
                 if (!HttpStatusCode.OK.Equals(response.StatusCode)) return default(T);
                 var dataStream = response.GetResponseStream();
