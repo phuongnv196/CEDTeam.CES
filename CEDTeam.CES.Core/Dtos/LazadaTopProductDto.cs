@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CEDTeam.CES.Web.Models
+namespace CEDTeam.CES.Core.Dtos
 {
-
-       public class Option2
+   public class Option2
     {
         public string value { get; set; }
         public string title { get; set; }
@@ -273,7 +272,7 @@ namespace CEDTeam.CES.Web.Models
         public SelectedFilters selectedFilters { get; set; }
     }
 
-    public class LazadaTopProductModel
+    public class LazadaTopProductDto
     {
         public Mods mods { get; set; }
         public MainInfo mainInfo { get; set; }
