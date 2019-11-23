@@ -15,9 +15,11 @@ namespace CEDTeam.CES.Web.Controllers
     public class HotKeyController : Controller
     {
         private readonly IApiService _apiService;
-        public HotKeyController(IApiService apiService)
+        private readonly ICategoryService _categoryService;
+        public HotKeyController(IApiService apiService, ICategoryService categoryService)
         {
             _apiService = apiService;
+            _categoryService = categoryService;
         }
         public IActionResult Index()
         {
@@ -78,7 +80,25 @@ namespace CEDTeam.CES.Web.Controllers
 
         public IActionResult Shopee()
         {
-            return View();
+            var categorys = _categoryService.GetCategorysBySiteId(1);
+            var listKeyWord = new List<HotKeyByCategoryModel>();
+            categorys.ForEach(item => {
+                var id = item.Url.Split('.').ToList().LastOrDefault();
+                var result = _apiService.ShopeeGetHotKeyByCategory(id);
+                if(result.items?.Count > 0)
+                {
+                    var it = new HotKeyByCategoryModel();
+                    it.Name = item.Name;
+                    it.Url = item.Url;
+                    it.Keywords = new List<string>();
+                    result?.items?.ForEach(key =>
+                    {
+                        it.Keywords.Add(key.display_name);
+                    });
+                    listKeyWord.Add(it);
+                }
+            });
+            return new ObjectResult(listKeyWord);
         }
         public IActionResult Lazada()
         {

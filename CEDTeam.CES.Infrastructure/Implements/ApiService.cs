@@ -61,5 +61,10 @@ namespace CEDTeam.CES.Infrastructure.Implements
         {
             return APIHelper.GetAsync<SendoTopProductDto>(String.Format(ApiConstant.SENDO_GET_TOP_PRODUCTS, id, page));  
         }
+
+        public ShopeeHotKeyByCategoryDto ShopeeGetHotKeyByCategory(string cateId)
+        {
+            return APIHelper.GetAsync<ShopeeHotKeyByCategoryDto>(string.Format(ApiConstant.SHOPEE_GET_KEY_WORD_BY_CATEGORY_URL, cateId));
+        }
     }
 }

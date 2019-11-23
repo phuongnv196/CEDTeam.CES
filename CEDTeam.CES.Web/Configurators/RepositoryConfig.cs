@@ -11,6 +11,7 @@ namespace CEDTeam.CES.Web.Configurators
             services.AddTransient<IBaseRepository, BaseRepository>();
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<ICategoryRepository, CategoryRepository>();
         }
     }
 }

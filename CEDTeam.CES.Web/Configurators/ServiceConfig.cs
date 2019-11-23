@@ -15,6 +15,7 @@ namespace CEDTeam.CES.Web.Configurators
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IApiService, ApiService>();
             services.AddTransient<IProductService, ProductService>();
+            services.AddTransient<ICategoryService, CategoryService>();
         }
     }
 }

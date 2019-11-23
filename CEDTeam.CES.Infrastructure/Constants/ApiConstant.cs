@@ -12,6 +12,9 @@ namespace CEDTeam.CES.Infrastructure.Constants
         public const string SHOPEE_HOT_SEARCH_URL = "https://shopee.vn/api/v2/recommendation/hot_search_words?limit=8&offset=0";
 
         public const string SHOPEE_TOP_PRODUCTS_URL = "https://shopee.vn/api/v2/recommendation/top_products/meta_lite?item_limit=40&sorttype=0";
+        
+        public const string SHOPEE_GET_KEY_WORD_BY_CATEGORY_URL = "https://shopee.vn/api/v0/search/api/categorytags/?page_type=search&search_keyword=&sub_catid={0}";
+       
         //
         public const string SHOPEE_GET_LIST_URL = "https://shopee.vn/api/v2/item/get_list"; //POST
 

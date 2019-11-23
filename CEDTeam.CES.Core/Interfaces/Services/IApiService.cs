@@ -11,6 +11,8 @@ namespace CEDTeam.CES.Core.Interfaces
         //Shopee
         ShopeeHotSearchDto GetShopeeHotSearch();
         ShopeeTopProductDto GetShopeeTopProduct();
+
+        ShopeeHotKeyByCategoryDto ShopeeGetHotKeyByCategory(string cateId);
         //Tiki
         TikiHotSearchDto GetTikiHotSearch();    
         TikiCategoryDto GetTikiCategory();
