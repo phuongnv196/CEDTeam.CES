@@ -12,7 +12,7 @@ namespace CEDTeam.CES.Web.Controllers
     [Route("product-manager")]
     public class ProductManagerController : Controller
     {
-        private IProductService _productService;
+        private readonly IProductService _productService;
         public ProductManagerController(IProductService productService)
         {
             _productService = productService;

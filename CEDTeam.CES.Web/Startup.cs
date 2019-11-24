@@ -4,7 +4,6 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using CEDTeam.CES.Web.Configurators;
-using CEDTeam.CES.Web.Extensions;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Builder;
@@ -38,6 +37,7 @@ namespace CEDTeam.CES.Web
             {
                 options.LoginPath = new PathString("/User/Login");
                 options.AccessDeniedPath = new PathString("/Home");
+                options.LogoutPath = new PathString("/User/Logout");
             });
             services.ConfigService();
             services.ConfigRepository();

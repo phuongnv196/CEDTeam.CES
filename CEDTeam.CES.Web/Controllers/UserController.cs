@@ -47,6 +47,12 @@ namespace CEDTeam.CES.Web.Controllers
             }
             return View("Index");
         }
+
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return Redirect("../");
+        }
         public async Task<IActionResult> Insert()
         {
             var user = new UserModel();
