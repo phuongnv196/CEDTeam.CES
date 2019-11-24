@@ -5,13 +5,12 @@
 <style>
     .hot-product{
         margin-top: 1px;
+        text-transform: capitalize;
     }
 </style>
 <script>
     var categoryData = @Html.Raw(ViewBag.Json);
     function getProduct(id) {
-            // var id = parseInt($(e.target).attr("data-item"));
-            console.log(id);
             var items = [];
             $(categoryData[id].data).each(function (id, el) {
                 items.push({ itemid: el.itemid, shopid: el.shopid });

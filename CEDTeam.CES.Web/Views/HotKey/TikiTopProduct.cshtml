@@ -3,8 +3,9 @@
     ViewData["Title"] = "Các sản phẩm hàng đầu Tiki";
 }
 <style>
-    .hot-product {
+    .hot-product{
         margin-top: 1px;
+        text-transform: capitalize;
     }
 </style>
 <div class="container-fluid">
@@ -16,7 +17,6 @@
 <div id="product-datatable-content"></div>
 <script>
     function getProductByCategory(id) {
-        console.log(id);
         LoadPartialViewWithAjax("#product-datatable-content", "/HotKey/TikiTopProductByCategory?id=" + id, "GET");
     };
 </script>
