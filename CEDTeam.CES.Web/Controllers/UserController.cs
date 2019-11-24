@@ -40,9 +40,8 @@ namespace CEDTeam.CES.Web.Controllers
                 new ClaimsPrincipal(identity), new AuthenticationProperties { });
                 return Redirect("../product-manager");
             }
-            if(model != null || model.Username == null)
+            if(model != null && model.Username == null)
             {
-
                 ViewBag.Error = "Tài khoản hoặc mật khẩu không đúng!";
             }
             return View("Index");
