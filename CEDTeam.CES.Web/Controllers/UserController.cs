@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using CEDTeam.CES.Core.Dtos;
 using CEDTeam.CES.Core.Interfaces;
 using CEDTeam.CES.Web.Models.User;
 using Mapster;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CEDTeam.CES.Web.Controllers
@@ -19,7 +22,30 @@ namespace CEDTeam.CES.Web.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            return new ObjectResult(await _userService.Get());
+            return View();
+        }
+
+        public async Task<IActionResult> Login(UserModel model)
+        {
+            if(model != null && model.Username != null && model.Username.ToLower().Equals("admin") && model.Password.Equals("admin123"))
+            {
+                var claims = new List<Claim>
+                {
+                    new Claim("User", "admin")
+                };
+                var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                User.AddIdentity(identity);
+                await HttpContext.SignInAsync(
+                CookieAuthenticationDefaults.AuthenticationScheme,
+                new ClaimsPrincipal(identity), new AuthenticationProperties { });
+                return Redirect("../product-manager");
+            }
+            if(model != null)
+            {
+
+                ViewBag.Error = "Tài khoản hoặc mật khẩu không đúng!";
+            }
+            return View("Index");
         }
         public async Task<IActionResult> Insert()
         {
