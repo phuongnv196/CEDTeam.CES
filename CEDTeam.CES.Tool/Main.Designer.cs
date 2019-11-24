@@ -129,9 +129,11 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(16)))), ((int)(((byte)(29)))));
             this.groupBox5.Controls.Add(this.cateSendo);
             this.groupBox5.Controls.Add(this.label4);
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox5.ForeColor = System.Drawing.Color.White;
             this.groupBox5.Location = new System.Drawing.Point(342, 149);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(327, 134);
@@ -144,6 +146,7 @@
             this.cateSendo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.cateSendo.BackColor = System.Drawing.Color.FromArgb(255, 241, 241, 241);
             this.cateSendo.CheckBoxes = true;
             this.cateSendo.Location = new System.Drawing.Point(133, 23);
             this.cateSendo.Name = "cateSendo";
@@ -153,6 +156,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(6, 19);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(119, 15);
@@ -161,9 +165,11 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.groupBox4.Controls.Add(this.cateTiki);
             this.groupBox4.Controls.Add(this.label3);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox4.ForeColor = System.Drawing.Color.White;
             this.groupBox4.Location = new System.Drawing.Point(6, 149);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(327, 134);
@@ -176,6 +182,7 @@
             this.cateTiki.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.cateTiki.BackColor = System.Drawing.Color.FromArgb(255, 241, 241, 241);
             this.cateTiki.CheckBoxes = true;
             this.cateTiki.Location = new System.Drawing.Point(133, 23);
             this.cateTiki.Name = "cateTiki";
@@ -185,6 +192,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(6, 19);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(119, 15);
@@ -193,9 +201,11 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.White;
             this.groupBox3.Controls.Add(this.cateLazada);
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(19)))), ((int)(((byte)(109)))));
             this.groupBox3.Location = new System.Drawing.Point(342, 6);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(327, 134);
@@ -208,6 +218,7 @@
             this.cateLazada.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.cateLazada.BackColor = System.Drawing.Color.FromArgb(255, 241, 241, 241);
             this.cateLazada.CheckBoxes = true;
             this.cateLazada.Location = new System.Drawing.Point(133, 23);
             this.cateLazada.Name = "cateLazada";
@@ -217,6 +228,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(19)))), ((int)(((byte)(109)))));
             this.label2.Location = new System.Drawing.Point(6, 23);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 15);
@@ -234,9 +246,11 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(85)))), ((int)(((byte)(51)))));
             this.groupBox2.Controls.Add(this.cateShopee);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox2.ForeColor = System.Drawing.Color.White;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(327, 134);
@@ -249,6 +263,7 @@
             this.cateShopee.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.cateShopee.BackColor = System.Drawing.Color.FromArgb(255, 241, 241, 241);
             this.cateShopee.CheckBoxes = true;
             this.cateShopee.Location = new System.Drawing.Point(133, 23);
             this.cateShopee.Name = "cateShopee";
@@ -258,6 +273,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(7, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 15);
