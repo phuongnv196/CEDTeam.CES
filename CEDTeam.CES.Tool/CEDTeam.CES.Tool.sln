@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CEDTeam.CES.Tool", "CEDTeam.CES.Tool.csproj", "{550B6295-A0A8-40F3-9E5B-BACBAB11BEBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{550B6295-A0A8-40F3-9E5B-BACBAB11BEBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{550B6295-A0A8-40F3-9E5B-BACBAB11BEBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{550B6295-A0A8-40F3-9E5B-BACBAB11BEBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{550B6295-A0A8-40F3-9E5B-BACBAB11BEBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C105E6F-2CF9-499E-8FEA-684FA23DC19B}
+	EndGlobalSection
+EndGlobal

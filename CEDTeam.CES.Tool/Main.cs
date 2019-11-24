@@ -305,7 +305,7 @@ namespace CEDTeam.CES.Tool
                     });
                         productRepository.InsertProduct(listProduct);
                         Count += listProduct.Count;
-                        Thread.Sleep(5 * 1000);
+                        Thread.Sleep(60 * 1000);
                     } while (result != null || result.mods?.listItems != null);
                     txtLog.AppendText("---Done get Lazada Category" + item.Url);
                     //Thread.Sleep((int)sleepTime.Value * 1000);

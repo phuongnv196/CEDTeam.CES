@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -266,20 +267,20 @@
             // btnStartDailySync
             // 
             this.btnStartDailySync.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnStartDailySync.Location = new System.Drawing.Point(333, 40);
+            this.btnStartDailySync.Location = new System.Drawing.Point(342, 38);
             this.btnStartDailySync.Name = "btnStartDailySync";
-            this.btnStartDailySync.Size = new System.Drawing.Size(97, 27);
+            this.btnStartDailySync.Size = new System.Drawing.Size(139, 27);
             this.btnStartDailySync.TabIndex = 16;
-            this.btnStartDailySync.Text = "Start Sync";
+            this.btnStartDailySync.Text = "Start Daily Sync";
             this.btnStartDailySync.UseVisualStyleBackColor = true;
             this.btnStartDailySync.Click += new System.EventHandler(this.btnStartDailySync_Click);
             // 
             // btnStart
             // 
             this.btnStart.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnStart.Location = new System.Drawing.Point(230, 40);
+            this.btnStart.Location = new System.Drawing.Point(196, 38);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(97, 27);
+            this.btnStart.Size = new System.Drawing.Size(137, 27);
             this.btnStart.TabIndex = 15;
             this.btnStart.Text = "Start Sync";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -291,8 +292,10 @@
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dateTimePicker1.Location = new System.Drawing.Point(451, 9);
             this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.ShowUpDown = true;
             this.dateTimePicker1.Size = new System.Drawing.Size(140, 23);
             this.dateTimePicker1.TabIndex = 14;
+            this.dateTimePicker1.Value = new System.DateTime(2019, 11, 24, 1, 0, 0, 0);
             // 
             // label7
             // 
@@ -380,7 +383,7 @@
             this.Controls.Add(this.groupBox1);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(700, 600);
             this.Name = "Form1";
             this.Text = "Crawl Data";
