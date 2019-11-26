@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CEDTeam.CES.Core.Interfaces;
+using CEDTeam.CES.Web.Helpers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CEDTeam.CES.Web.Controllers
 {
+    [CustomAuthorize]
     [Route("product-manager")]
     public class ProductManagerController : Controller
     {
-        private IProductService _productService;
+        private readonly IProductService _productService;
         public ProductManagerController(IProductService productService)
         {
             _productService = productService;

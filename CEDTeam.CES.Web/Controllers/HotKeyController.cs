@@ -9,9 +9,11 @@ using Microsoft.AspNetCore.Mvc;
 using Mapster;
 using Newtonsoft.Json;
 using CEDTeam.CES.Core.Dtos;
+using CEDTeam.CES.Web.Helpers;
 
 namespace CEDTeam.CES.Web.Controllers
 {
+    [CustomAuthorize]
     public class HotKeyController : Controller
     {
         private readonly IApiService _apiService;
