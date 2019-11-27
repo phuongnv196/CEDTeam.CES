@@ -86,15 +86,18 @@
     </Compile>
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Common\DropdownItem.cs" />
+    <Compile Include="Models\Common\KeywordByCategory.cs" />
     <Compile Include="Models\Lazada\LazadaSearchItem.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Sendo\SendoProductItem.cs" />
     <Compile Include="Models\Shopee\ShopeeDetailItem.cs" />
+    <Compile Include="Models\Shopee\ShopeeKeywordByCategory.cs" />
     <Compile Include="Models\Shopee\ShopeeSearchItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BaseRepository.cs" />
     <Compile Include="Repositories\CategoryRepository.cs" />
+    <Compile Include="Repositories\KeywordRepository.cs" />
     <Compile Include="Repositories\ProductRepository.cs" />
     <Compile Include="Test.cs">
       <SubType>Form</SubType>

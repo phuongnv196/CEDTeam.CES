@@ -20,6 +20,8 @@ using CEDTeam.CES.Tool.Extensions;
 using System.Text.RegularExpressions;
 using HtmlAgilityPack;
 using CEDTeam.CES.Tool.Models.Sendo;
+using static System.Windows.Forms.ListViewItem;
+using CEDTeam.CES.Tool.Models.Common;
 
 namespace CEDTeam.CES.Tool
 {
@@ -37,11 +39,11 @@ namespace CEDTeam.CES.Tool
         private readonly ProductRepository productRepository = new ProductRepository();
         private long Count = 0;
         List<Task> listTask = new List<Task>();
+        private Dictionary<string, List<Models.Category>> listSubcategory = new Dictionary<string, List<Models.Category>>();
         public Form1()
         {
             InitializeComponent();
             CheckForIllegalCrossThreadCalls = false;
-            
             foreach (var item in GetAllControl(this, typeof(TreeView)))
             {
                 var treeView = (TreeView)item;
@@ -65,6 +67,14 @@ namespace CEDTeam.CES.Tool
         {
             var readCategory = new ReadCategory();
             var category = readCategory.GetAllCategory(type);
+            string key = "shopee";
+            switch (type)
+            {
+                case Enums.SiteType.Lazada: key = "lazada"; break;
+                case Enums.SiteType.Tiki: key = "tiki"; break;
+                case Enums.SiteType.Sendo: key = "sendo"; break;
+            }
+            listSubcategory.Add(key, category["subcategory"]);
             treeView.Nodes.Clear();
             category["category"].ForEach(item =>
             {
@@ -526,6 +536,45 @@ namespace CEDTeam.CES.Tool
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Dispose();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listView1.Items.Clear();
+            var apiHelper = new ApiHelper(ApiConstant.Shopee.SHOPEE_BASE);
+            var keywordRepository = new KeywordRepository();
+            var task = new Task(() =>
+            {
+                List<KeywordByCategory> keywordByCategories = new List<KeywordByCategory>();
+                listSubcategory["shopee"].ForEach(item =>
+                {
+                    ListViewItem listViewItem = new ListViewItem("Shopee");
+                    var strArr = item.Url?.Split('.');
+                    string id = strArr[strArr.Length - 1];
+                    var result = apiHelper.Get<ShopeeKeywordByCategory>(string.Format(ApiConstant.Shopee.KEYWORD_BY_CATEGORY, id));
+                    var keywords = result?.items?.Select(keywordItem => keywordItem.display_name).ToArray();
+                    listViewItem.SubItems.Add(item.Name);
+                    listViewItem.SubItems.Add(string.Join(",", keywords));
+                    listView1.Items.Add(listViewItem);
+                    if(keywords.Count() > 0)
+                    {
+                        keywordByCategories.Add(new KeywordByCategory
+                        {
+                            CategoryUrl = item.Url,
+                            Keywords = keywords.ToList()
+                        });
+                    }
+                });
+                try
+                {
+                    txtSyncKeywordLog.AppendText("Inserted " + keywordRepository.InsertKeywords(keywordByCategories) + " shopee keyword into database.");
+                } 
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            });
+            task.Start();
         }
     }
 }

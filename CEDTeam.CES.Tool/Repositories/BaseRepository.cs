@@ -8,9 +8,12 @@ namespace CEDTeam.CES.Tool.Repositories
     public class BaseRepository
     {
         private readonly string _connectString = ConfigurationManager.AppSettings["connectString"];
+        private IDbConnection connection;
         public IDbConnection GetConnection()
         {
-            return new MySqlConnection(_connectString);
+            if (connection == null)
+                connection = new MySqlConnection(_connectString);
+            return connection;
         }
     }
 }
