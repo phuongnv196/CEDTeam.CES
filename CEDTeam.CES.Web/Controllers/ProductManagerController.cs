@@ -22,6 +22,7 @@ namespace CEDTeam.CES.Web.Controllers
             ViewBag.Title = "Quản lý sản phẩm";
             switch (siteId)
             {
+                case 0: ViewBag.Title = "Quản lý sản phẩm - Tất cả"; break;
                 case 1: ViewBag.Title = "Quản lý sản phẩm - Shopee"; break;
                 case 2: ViewBag.Title = "Quản lý sản phẩm - Lazada"; break;
                 case 3: ViewBag.Title = "Quản lý sản phẩm - Tiki"; break;

@@ -41,13 +41,13 @@
                 </li>
                 <li class="active">
                     <a href="#productSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Quản lý sản phẩm</a>
-                    <ul class="collapse list-unstyled" id="productSubmenu">
+                    <ul class="collapse list-unstyled @(ViewBag.Title.IndexOf("-") > -1 ? "show": "")" id="productSubmenu" data-animation="@(ViewBag.Title)">
                         <li>
-                            <a href="/product-manager">Tất cả</a>
-                            <a href="/product-manager?siteId=1">Shopee</a>
-                            <a href="/product-manager?siteId=2">Lazada</a>
-                            <a href="/product-manager?siteId=3">Tiki</a>
-                            <a href="/product-manager?siteId=4">Sendo</a>
+                            <a class="@(ViewBag.Title.IndexOf("- Tất cả") > -1 ? "active": "")" href="/product-manager?siteId=0">Tất cả</a>
+                            <a class="@(ViewBag.Title.IndexOf("- Shopee") > -1 ? "active": "")" href="/product-manager?siteId=1">Shopee</a>
+                            <a class="@(ViewBag.Title.IndexOf("- Lazada") > -1 ? "active": "")" href="/product-manager?siteId=2">Lazada</a>
+                            <a class="@(ViewBag.Title.IndexOf("- Tiki") > -1 ? "active": "")" href="/product-manager?siteId=3">Tiki</a>
+                            <a class="@(ViewBag.Title.IndexOf("- Sendo") > -1 ? "active": "")" href="/product-manager?siteId=4">Sendo</a>
                         </li>
                     </ul>
                 </li>
@@ -56,18 +56,18 @@
                 </li>
                 <li>
                     <a href="#hotkeySubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Sản phẩm HOT</a>
-                    <ul class="collapse list-unstyled" id="hotkeySubmenu">
+                    <ul class="collapse list-unstyled @(ViewBag.Title.IndexOf("Các sản phẩm hàng đầu") > -1 ? "show": "")" id="hotkeySubmenu">
                         <li>
-                            <a asp-area="" asp-controller="HotKey" asp-action="ShopeeTopProduct">Shopee</a>
+                            <a class="@(ViewBag.Title.IndexOf("trên Shopee") > -1 ? "active": "")" asp-area="" asp-controller="HotKey" asp-action="ShopeeTopProduct">Shopee</a>
                         </li>
                         <li>
-                            <a asp-area="" asp-controller="HotKey" asp-action="LazadaTopProduct">Lazada</a>
+                            <a class="@(ViewBag.Title.IndexOf("trên Lazada") > -1 ? "active": "")" asp-area="" asp-controller="HotKey" asp-action="LazadaTopProduct">Lazada</a>
                         </li>
                         <li>
-                            <a asp-area="" asp-controller="HotKey" asp-action="TikiTopProduct">Tiki</a>
+                            <a class="@(ViewBag.Title.IndexOf("trên Tiki") > -1 ? "active": "")" asp-area="" asp-controller="HotKey" asp-action="TikiTopProduct">Tiki</a>
                         </li>
                         <li>
-                            <a asp-area="" asp-controller="HotKey" asp-action="SendoTopProduct">Sendo</a>
+                            <a class="@(ViewBag.Title.IndexOf("trên Sendo") > -1 ? "active": "")" asp-area="" asp-controller="HotKey" asp-action="SendoTopProduct">Sendo</a>
                         </li>
                     </ul>
                 </li>
