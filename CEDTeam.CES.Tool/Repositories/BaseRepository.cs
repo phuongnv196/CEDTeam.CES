@@ -11,9 +11,7 @@ namespace CEDTeam.CES.Tool.Repositories
         private IDbConnection connection;
         public IDbConnection GetConnection()
         {
-            if (connection == null)
-                connection = new MySqlConnection(_connectString);
-            return connection;
+            return new MySqlConnection(_connectString);
         }
     }
 }

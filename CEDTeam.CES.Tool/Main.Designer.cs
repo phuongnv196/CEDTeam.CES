@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -55,7 +56,6 @@
             this.sleepTime = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.txtLog = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -65,6 +65,14 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.txtSyncKeywordLog = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deselectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label8 = new System.Windows.Forms.Label();
+            this.recordPerInsertTime = new System.Windows.Forms.NumericUpDown();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtLog = new System.Windows.Forms.TextBox();
+            this.txtlogInsert = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -83,6 +91,9 @@
             this.tabPage2.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox12.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.recordPerInsertTime)).BeginInit();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -137,6 +148,8 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.recordPerInsertTime);
+            this.splitContainer1.Panel2.Controls.Add(this.label8);
             this.splitContainer1.Panel2.Controls.Add(this.btnStartDailySync);
             this.splitContainer1.Panel2.Controls.Add(this.btnStart);
             this.splitContainer1.Panel2.Controls.Add(this.dateTimePicker1);
@@ -145,7 +158,7 @@
             this.splitContainer1.Panel2.Controls.Add(this.sleepTime);
             this.splitContainer1.Panel2.Controls.Add(this.label5);
             this.splitContainer1.Size = new System.Drawing.Size(709, 378);
-            this.splitContainer1.SplitterDistance = 291;
+            this.splitContainer1.SplitterDistance = 282;
             this.splitContainer1.SplitterIncrement = 2;
             this.splitContainer1.TabIndex = 10;
             // 
@@ -165,7 +178,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(707, 289);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(707, 280);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // groupBox5
@@ -175,9 +188,9 @@
             this.groupBox5.Controls.Add(this.label4);
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox5.ForeColor = System.Drawing.Color.White;
-            this.groupBox5.Location = new System.Drawing.Point(358, 149);
+            this.groupBox5.Location = new System.Drawing.Point(358, 144);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(343, 134);
+            this.groupBox5.Size = new System.Drawing.Size(343, 130);
             this.groupBox5.TabIndex = 3;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Sendo";
@@ -189,10 +202,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cateSendo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.cateSendo.CheckBoxes = true;
+            this.cateSendo.ContextMenuStrip = this.contextMenuStrip1;
             this.cateSendo.Location = new System.Drawing.Point(133, 23);
             this.cateSendo.Name = "cateSendo";
             this.cateSendo.Size = new System.Drawing.Size(204, 105);
-            this.cateSendo.TabIndex = 2;
+            this.cateSendo.TabIndex = 4;
             // 
             // label4
             // 
@@ -211,9 +225,9 @@
             this.groupBox4.Controls.Add(this.label3);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(6, 149);
+            this.groupBox4.Location = new System.Drawing.Point(6, 144);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(343, 134);
+            this.groupBox4.Size = new System.Drawing.Size(343, 130);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Tiki";
@@ -225,10 +239,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cateTiki.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.cateTiki.CheckBoxes = true;
+            this.cateTiki.ContextMenuStrip = this.contextMenuStrip1;
             this.cateTiki.Location = new System.Drawing.Point(133, 23);
             this.cateTiki.Name = "cateTiki";
             this.cateTiki.Size = new System.Drawing.Size(204, 105);
-            this.cateTiki.TabIndex = 2;
+            this.cateTiki.TabIndex = 3;
             // 
             // label3
             // 
@@ -249,7 +264,7 @@
             this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(19)))), ((int)(((byte)(109)))));
             this.groupBox3.Location = new System.Drawing.Point(358, 6);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(343, 134);
+            this.groupBox3.Size = new System.Drawing.Size(343, 129);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Lazada";
@@ -261,6 +276,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cateLazada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.cateLazada.CheckBoxes = true;
+            this.cateLazada.ContextMenuStrip = this.contextMenuStrip1;
             this.cateLazada.Location = new System.Drawing.Point(133, 23);
             this.cateLazada.Name = "cateLazada";
             this.cateLazada.Size = new System.Drawing.Size(204, 105);
@@ -282,7 +298,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(6, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(343, 134);
+            this.panel1.Size = new System.Drawing.Size(343, 129);
             this.panel1.TabIndex = 0;
             // 
             // groupBox2
@@ -294,7 +310,7 @@
             this.groupBox2.ForeColor = System.Drawing.Color.White;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(343, 134);
+            this.groupBox2.Size = new System.Drawing.Size(343, 129);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Shopee";
@@ -306,6 +322,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cateShopee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.cateShopee.CheckBoxes = true;
+            this.cateShopee.ContextMenuStrip = this.contextMenuStrip1;
             this.cateShopee.Location = new System.Drawing.Point(133, 23);
             this.cateShopee.Name = "cateShopee";
             this.cateShopee.Size = new System.Drawing.Size(204, 105);
@@ -324,39 +341,41 @@
             // btnStartDailySync
             // 
             this.btnStartDailySync.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnStartDailySync.Location = new System.Drawing.Point(358, 38);
+            this.btnStartDailySync.Location = new System.Drawing.Point(564, 48);
             this.btnStartDailySync.Name = "btnStartDailySync";
             this.btnStartDailySync.Size = new System.Drawing.Size(137, 27);
-            this.btnStartDailySync.TabIndex = 16;
+            this.btnStartDailySync.TabIndex = 9;
             this.btnStartDailySync.Text = "Start Daily Sync";
             this.btnStartDailySync.UseVisualStyleBackColor = true;
+            this.btnStartDailySync.Click += new System.EventHandler(this.btnStartDailySync_Click);
             // 
             // btnStart
             // 
             this.btnStart.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnStart.Location = new System.Drawing.Point(212, 38);
+            this.btnStart.Location = new System.Drawing.Point(564, 7);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(137, 27);
-            this.btnStart.TabIndex = 15;
+            this.btnStart.TabIndex = 8;
             this.btnStart.Text = "Start Sync";
             this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click_1);
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker1.Location = new System.Drawing.Point(467, 7);
+            this.dateTimePicker1.Location = new System.Drawing.Point(126, 50);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.ShowUpDown = true;
             this.dateTimePicker1.Size = new System.Drawing.Size(111, 23);
-            this.dateTimePicker1.TabIndex = 14;
+            this.dateTimePicker1.TabIndex = 6;
             this.dateTimePicker1.Value = new System.DateTime(2019, 11, 24, 1, 0, 0, 0);
             // 
             // label7
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(349, 11);
+            this.label7.Location = new System.Drawing.Point(8, 54);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(112, 15);
             this.label7.TabIndex = 13;
@@ -366,16 +385,16 @@
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(273, 11);
+            this.label6.Location = new System.Drawing.Point(241, 13);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 15);
+            this.label6.Size = new System.Drawing.Size(28, 15);
             this.label6.TabIndex = 12;
-            this.label6.Text = "Second(s)";
+            this.label6.Text = "(s)";
             // 
             // sleepTime
             // 
             this.sleepTime.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.sleepTime.Location = new System.Drawing.Point(177, 7);
+            this.sleepTime.Location = new System.Drawing.Point(125, 9);
             this.sleepTime.Maximum = new decimal(new int[] {
             60,
             0,
@@ -387,10 +406,10 @@
             0,
             0});
             this.sleepTime.Name = "sleepTime";
-            this.sleepTime.Size = new System.Drawing.Size(90, 23);
-            this.sleepTime.TabIndex = 11;
+            this.sleepTime.Size = new System.Drawing.Size(112, 23);
+            this.sleepTime.TabIndex = 5;
             this.sleepTime.Value = new decimal(new int[] {
-            1,
+            5,
             0,
             0,
             0});
@@ -399,7 +418,7 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(87, 9);
+            this.label5.Location = new System.Drawing.Point(6, 13);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 15);
             this.label5.TabIndex = 10;
@@ -409,24 +428,13 @@
             // 
             this.groupBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox6.Controls.Add(this.txtLog);
+            this.groupBox6.Controls.Add(this.tableLayoutPanel2);
             this.groupBox6.Location = new System.Drawing.Point(6, 415);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(715, 138);
             this.groupBox6.TabIndex = 3;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Log";
-            // 
-            // txtLog
-            // 
-            this.txtLog.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtLog.Enabled = false;
-            this.txtLog.Location = new System.Drawing.Point(3, 19);
-            this.txtLog.Multiline = true;
-            this.txtLog.Name = "txtLog";
-            this.txtLog.ReadOnly = true;
-            this.txtLog.Size = new System.Drawing.Size(709, 116);
-            this.txtLog.TabIndex = 0;
             // 
             // tabPage2
             // 
@@ -522,6 +530,104 @@
             this.txtSyncKeywordLog.Size = new System.Drawing.Size(709, 116);
             this.txtSyncKeywordLog.TabIndex = 0;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.selectAllToolStripMenuItem,
+            this.deselectAllToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(136, 48);
+            // 
+            // selectAllToolStripMenuItem
+            // 
+            this.selectAllToolStripMenuItem.Image = global::CEDTeam.CES.Tool.Properties.Resources.CheckAll;
+            this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.selectAllToolStripMenuItem.Text = "Select All";
+            this.selectAllToolStripMenuItem.Click += new System.EventHandler(this.selectAllToolStripMenuItem_Click);
+            // 
+            // deselectAllToolStripMenuItem
+            // 
+            this.deselectAllToolStripMenuItem.Image = global::CEDTeam.CES.Tool.Properties.Resources.ReplyAll;
+            this.deselectAllToolStripMenuItem.Name = "deselectAllToolStripMenuItem";
+            this.deselectAllToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.deselectAllToolStripMenuItem.Text = "Deselect All";
+            this.deselectAllToolStripMenuItem.Click += new System.EventHandler(this.deselectAllToolStripMenuItem_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(278, 13);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(140, 15);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Record/Insert Time:";
+            // 
+            // recordPerInsertTime
+            // 
+            this.recordPerInsertTime.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.recordPerInsertTime.Increment = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.recordPerInsertTime.Location = new System.Drawing.Point(424, 9);
+            this.recordPerInsertTime.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.recordPerInsertTime.Minimum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.recordPerInsertTime.Name = "recordPerInsertTime";
+            this.recordPerInsertTime.Size = new System.Drawing.Size(112, 23);
+            this.recordPerInsertTime.TabIndex = 7;
+            this.recordPerInsertTime.Value = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Controls.Add(this.txtlogInsert, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.txtLog, 0, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 19);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(709, 116);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // txtLog
+            // 
+            this.txtLog.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtLog.Enabled = false;
+            this.txtLog.Location = new System.Drawing.Point(3, 3);
+            this.txtLog.Multiline = true;
+            this.txtLog.Name = "txtLog";
+            this.txtLog.ReadOnly = true;
+            this.txtLog.Size = new System.Drawing.Size(348, 110);
+            this.txtLog.TabIndex = 1;
+            // 
+            // txtlogInsert
+            // 
+            this.txtlogInsert.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtlogInsert.Enabled = false;
+            this.txtlogInsert.Location = new System.Drawing.Point(357, 3);
+            this.txtlogInsert.Multiline = true;
+            this.txtlogInsert.Name = "txtlogInsert";
+            this.txtlogInsert.ReadOnly = true;
+            this.txtlogInsert.Size = new System.Drawing.Size(349, 110);
+            this.txtlogInsert.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -556,11 +662,14 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sleepTime)).EndInit();
             this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.recordPerInsertTime)).EndInit();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -593,7 +702,6 @@
         private System.Windows.Forms.NumericUpDown sleepTime;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.TextBox txtLog;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Button button1;
@@ -603,6 +711,14 @@
         private System.Windows.Forms.GroupBox groupBox12;
         private System.Windows.Forms.TextBox txtSyncKeywordLog;
         private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deselectAllToolStripMenuItem;
+        private System.Windows.Forms.NumericUpDown recordPerInsertTime;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TextBox txtlogInsert;
+        private System.Windows.Forms.TextBox txtLog;
     }
 }
 

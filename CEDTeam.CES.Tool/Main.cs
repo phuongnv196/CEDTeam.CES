@@ -40,10 +40,21 @@ namespace CEDTeam.CES.Tool
         private long Count = 0;
         List<Task> listTask = new List<Task>();
         private Dictionary<string, List<Models.Category>> listSubcategory = new Dictionary<string, List<Models.Category>>();
+        private SynchronizedCollection<Product> Products = new SynchronizedCollection<Product>();
+
         public Form1()
         {
             InitializeComponent();
             CheckForIllegalCrossThreadCalls = false;
+            try
+            {
+                new BaseRepository().GetConnection().Open();
+            } 
+            catch(Exception e)
+            {
+                MessageBox.Show(e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
+            }
             foreach (var item in GetAllControl(this, typeof(TreeView)))
             {
                 var treeView = (TreeView)item;
@@ -120,8 +131,49 @@ namespace CEDTeam.CES.Tool
                     groupBox6.Text = "Log";
                     while (true)
                     {
+                        if (Products.Count > recordPerInsertTime.Value)
+                        {
+                            var t1 = new Task(() =>
+                            {
+                                try
+                                {
+                                    var result = new ProductRepository().InsertProduct(Products.Take(1000).ToList());
+                                    txtlogInsert.AppendText("Inserted " + result + " product(s) into Database!\r\n");
+                                    txtlogInsert.AppendText("---" + (Products.Count - 1000) + " in queue!\r\n");
+                                    for (int i = 0; i < 1000; i++)
+                                    {
+                                        Products.RemoveAt(i);
+                                    }
+                                }
+                                catch (Exception e)
+                                {
+                                    txtlogInsert.AppendText(e.Message + "\r\n");
+                                }
+                            });
+                            t1.Start();
+                        }
                         if (listTask.All(i => i.IsCompleted))
+                        {
+                            if(Products.Count > 0)
+                            {
+                                var t1 = new Task(() =>
+                                {
+                                    try
+                                    {
+                                        var result = new ProductRepository().InsertProduct(Products.Take(1000).ToList());
+                                        txtlogInsert.AppendText("Inserted " + result + " product(s) into Database!\r\n");
+                                        txtlogInsert.AppendText("---" + Products.Count + " in queue!\r\n");
+                                        Products.Clear();
+                                    }
+                                    catch (Exception e)
+                                    {
+                                        txtlogInsert.AppendText(e.Message + "\r\n");
+                                    }
+                                });
+                                t1.Start();
+                            }
                             break;
+                        }
                         groupBox6.Text = "Log -- Synced: " + Count + " product/"+ time + " seconds";
                         time++;
                         Thread.Sleep(1000);
@@ -187,18 +239,16 @@ namespace CEDTeam.CES.Tool
                     {
                         var result = new ShopeeSearchItem();
                         var newest = 0;
-                        var listProduct = new List<Product>();
                         do
                         {
                             string uri = string.Format(ApiConstant.Shopee.SEARCH_ITEMS, item.ProductId, newest);
                             result = apiHelper.Get<ShopeeSearchItem>(uri);
                             newest += 50;
-                            listProduct.Clear();
                             result?.items?.ForEach(prod =>
                             {
                                 var prodDetail = apiHelper.Get<ShopeeDetailItem>(string.Format(ApiConstant.Shopee.PROD_DETAIL, prod.itemid, prod.shopid));
                                 txtLog.AppendText(prodDetail.item.name + "\r\n");
-                                listProduct.Add(new Product
+                                Products.Add(new Product
                                 {
                                     Name = prodDetail.item.name,
                                     CommentCount = prodDetail.item.cmt_count,
@@ -213,9 +263,9 @@ namespace CEDTeam.CES.Tool
                                     ProductId = prodDetail.item.itemid.ToString(),
                                     CategoryUrl = item.CategoryUrl
                                 });
+                                Count++;
                             });
-                            productRepository.InsertProduct(listProduct);
-                            Count += listProduct.Count;
+                            //productRepository.InsertProduct(listProduct);
                             Thread.Sleep((int)sleepTime.Value * 1000);
                         } while (result != null || result.items != null);
                         txtLog.AppendText("---Done get Shopee Category" + item.Url);
@@ -273,7 +323,6 @@ namespace CEDTeam.CES.Tool
                 {
                     var result = new LazadaSearchItem();
                     var page = 1;
-                    var listProduct = new List<Product>();
                     try
                     {
 
@@ -286,7 +335,6 @@ namespace CEDTeam.CES.Tool
                         string uri = string.Format(item.Url + ApiConstant.Lazada.GET_PROD_AJAX, page);
                         result = apiHelper.Get<LazadaSearchItem>(uri);
                         page++;
-                        listProduct.Clear();
                         result?.mods?.listItems?.ForEach(prod =>
                         {
                             //var prodDetail = apiHelper.Get<ShopeeDetailItem>(string.Format(ApiConstant.Shopee.PROD_DETAIL, prod.itemid, prod.shopid));
@@ -306,15 +354,15 @@ namespace CEDTeam.CES.Tool
                                 product.QuantitySold = 0;
                                 product.VariableJson = null;
                                 product.CategoryUrl = item.CategoryUrl;
-                                listProduct.Add(product);
+                                Products.Add(product);
+                                Count++;
                             }
                             catch (Exception e)
                             {
 
                             }
                     });
-                        productRepository.InsertProduct(listProduct);
-                        Count += listProduct.Count;
+                        // productRepository.InsertProduct(listProduct);
                         Thread.Sleep(60 * 1000);
                     } while (result != null || result.mods?.listItems != null);
                     txtLog.AppendText("---Done get Lazada Category" + item.Url);
@@ -370,7 +418,6 @@ namespace CEDTeam.CES.Tool
                     {
                         var els = new HtmlNodeCollection(null);
                         var page = 1;
-                        var listProduct = new List<Product>();
                         do
                         {
                             string uri = string.Format(item.Url + "&page={0}", page);
@@ -384,7 +431,7 @@ namespace CEDTeam.CES.Tool
                                 var sUrl = Regex.Match(element.InnerHtml, "href=\"(.+?)\"").Groups[1].Value;
                                 var sDiscount = Regex.Match(element.InnerHtml, "sale-tag-square\">(.+?)<").Groups[1].Value;
                                 txtLog.AppendText(element.GetAttributeValue("data-title", "") + "\r\n");
-                                listProduct.Add(new Product
+                                Products.Add(new Product
                                 {
                                     ProductId = element.GetAttributeValue("data-id", ""),
                                     Name = element.GetAttributeValue("data-title", ""),
@@ -397,9 +444,8 @@ namespace CEDTeam.CES.Tool
                                     Price = long.Parse(element.GetAttributeValue("data-price","")),
                                     CategoryUrl = item.Url
                                 });
+                                Count++;
                             });
-                            productRepository.InsertProduct(listProduct);
-                            Count += listProduct.Count;
                             Thread.Sleep((int)sleepTime.Value * 1000);
                         } while (els?.Count > 0);
                         txtLog.AppendText("---Done get Tiki Category" + item.Url);
@@ -469,17 +515,15 @@ namespace CEDTeam.CES.Tool
                     {
                         var result = new SendoProductItem();
                         var page = 1;
-                        var listProduct = new List<Product>();
                         do
                         {
                             string uri = string.Format(ApiConstant.Sendo.GET_PROD_AJAX, item.ProductId, page);
                             result = apiHelper.Get<SendoProductItem>(uri);
                             page++;
-                            listProduct.Clear();
                             result?.Result?.Data?.ForEach(prod =>
                             {
                                 txtLog.AppendText(prod.Name + "\r\n");
-                                listProduct.Add(new Product
+                                Products.Add(new Product
                                 {
                                     Name = prod.Name,
                                     CommentCount = prod.TotalRated,
@@ -494,9 +538,8 @@ namespace CEDTeam.CES.Tool
                                     ProductId = prod.ProductId.Value.ToString(),
                                     CategoryUrl = item.CategoryUrl
                                 });
+                                Count++;
                             });
-                            productRepository.InsertProduct(listProduct);
-                            Count += listProduct.Count;
                             Thread.Sleep((int)sleepTime.Value * 1000);
                         } while (result?.Result.Data?.Count > 0);
                         txtLog.AppendText("---Done get Sendo Category" + item.Url);
@@ -575,6 +618,26 @@ namespace CEDTeam.CES.Tool
                 }
             });
             task.Start();
+        }
+
+        private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var toolStripMenuItem = (ToolStripMenuItem)sender;
+            TreeView treeView = (TreeView)((ContextMenuStrip)toolStripMenuItem.Owner).SourceControl;
+            foreach(TreeNode treeNode in treeView.Nodes)
+            {
+                treeNode.Checked = true;
+            }
+        }
+
+        private void deselectAllToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var toolStripMenuItem = (ToolStripMenuItem)sender;
+            TreeView treeView = (TreeView)((ContextMenuStrip)toolStripMenuItem.Owner).SourceControl;
+            foreach (TreeNode treeNode in treeView.Nodes)
+            {
+                treeNode.Checked = false;
+            }
         }
     }
 }
