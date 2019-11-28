@@ -89,7 +89,8 @@
                 { width: 80, targets: 8, className: "text-right" },
                 { width: 50, targets: 9, className: "text-center" },
                 { width: 50, targets: 10, className: "text-center" },
-                { width: 50, targets: 11, className: "text-right" },
+                { width: 200, targets: 11, className: "text-right" },
+                { width: 50, targets: 12, className: "text-right" },
             ],
             fixedColumns: true,
             "columns": [
@@ -117,7 +118,7 @@
                     return discount;
                 }
                 },
-                { "data": "updatedDate" },
+                { "data": "updatedDateString" },
                 {
                     "data": null, render: function (data, type, row) {
                         var price = numeral(data.average).format('0,0');
