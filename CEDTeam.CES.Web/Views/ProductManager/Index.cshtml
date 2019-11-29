@@ -34,6 +34,8 @@
                 <th>Đã bán</th>
                 <th>Lượt đánh giá</th>
                 <th>Giảm giá</th>
+                <th>Ngày cập nhật</th>
+                <th>Bình quân thu nhập ngày<small>(VND)</small></th>
             </tr>
         </thead>
     </table>
@@ -86,6 +88,9 @@
                 { width: 60, targets: 7, className: "text-center" },
                 { width: 80, targets: 8, className: "text-right" },
                 { width: 50, targets: 9, className: "text-center" },
+                { width: 50, targets: 10, className: "text-center" },
+                { width: 200, targets: 11, className: "text-right" },
+                { width: 50, targets: 12, className: "text-right" },
             ],
             fixedColumns: true,
             "columns": [
@@ -93,13 +98,13 @@
                 { "data": "productId" },
                 { "data": null, render: function ( data, type, row ) {
 
-            return '<a href="' + data.url + '" target="_blank">' + data.name + '</a>';
-        }
+                    return '<a href="' + data.url + '" target="_blank">' + data.name + '</a>';
+                }
                 },
                 { "data": null, render: function ( data, type, row ) {
-            var price = numeral(data.price).format('0,0');
-            return price;
-        }
+                    var price = numeral(data.price).format('0,0');
+                    return price;
+                }
                 },
                 { "data": "createdDate" },
                 { "data": "quantity" },
@@ -109,10 +114,17 @@
                 { "data": "commentCount" },
                 {
                     "data": null, render: function (data, type, row) {
-            var discount = (data.discount).replace('-', '');
-            return discount;
-        }
+                    var discount = (data.discount).replace('-', '');
+                    return discount;
+                }
                 },
+                { "data": "updatedDateString" },
+                {
+                    "data": null, render: function (data, type, row) {
+                        var price = numeral(data.average).format('0,0');
+                        return price;
+                    }
+                }
             ]
             });
     });

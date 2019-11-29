@@ -19,5 +19,7 @@ namespace CEDTeam.CES.Web.Models.Product
         public string VariableJson { get; set; }
         public string Url { get; set; }
         public string CategoryUrl { get; set; }
+        public DateTime? UpdatedDate { get; set; }
+        public long? Average { get; set; }
     }
 }

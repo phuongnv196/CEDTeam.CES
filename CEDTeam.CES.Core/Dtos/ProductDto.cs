@@ -21,5 +21,8 @@ namespace CEDTeam.CES.Core.Dtos
         public string CategoryUrl { get; set; }
         public string CategoryName { get; set; }
         public string SiteName { get; set; }
+        public DateTime? UpdatedDate { get; set; }
+        public string UpdatedDateString => UpdatedDate?.ToString("dd/MM/yyyy hh:mm:ss tt");
+        public long? Average { get; set; }
     }
 }
