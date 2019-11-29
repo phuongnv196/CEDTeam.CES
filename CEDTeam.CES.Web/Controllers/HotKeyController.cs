@@ -54,6 +54,12 @@ namespace CEDTeam.CES.Web.Controllers
             return PartialView(model);
         }
 
+        public IActionResult ShopeeKeywordByCategory()
+        {
+            var model = _productService.GetShopeeKeywordAsync().Result.Adapt<List<ShopeeKeywordModel>>();
+            return PartialView(model.GroupBy(item => item.CategoryName).ToList());
+        }
+
         public IActionResult TikiTopProduct()
         {
             var model = _apiService.GetTikiCategory().Adapt<TikiCategoryModel>();

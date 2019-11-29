@@ -28,5 +28,11 @@ namespace CEDTeam.CES.Infrastructure.Implements
         {
             return await _productRepository.GetProductSiteIdAsync(start, length, search, columnSort, siteId, isAsc);
         }
+
+        public async Task<List<ShopeeKeywordDto>> GetShopeeKeywordAsync()
+        {
+            List<ShopeeKeywordDto> keywordDtos = await _productRepository.GetShopeeKeywordAsync();
+            return keywordDtos;
+        }
     }
 }
