@@ -53,6 +53,15 @@ namespace CEDTeam.CES.Infrastructure.Repositories
             }
         }
 
+        public async Task<List<ShopeeKeywordDto>> GetShopeeKeywordAsync()
+        {
+            using (var db = _baseRepository.GetConnection())
+            {
+                string query = "SELECT c.CategoryName, ck.Keyword, c.CategoryUrl FROM category_keyword ck INNER JOIN category c ON c.CategoryId = ck.CategoryId ";
+                return (await db.QueryAsync<ShopeeKeywordDto>(query)).AsList();
+            }
+        }
+
         public async Task<FilterProductDto> GetProductSiteIdAsync(int start, int length, string search, int columnSort, int siteId, bool isAsc = true)
         {
             string query = $"select count(1) from Product AS P JOIN Category AS C ON P.CategoryId = C.CategoryId JOIN Site AS S ON C.SiteId = S.SiteId WHERE C.SiteId="+siteId+";" +
