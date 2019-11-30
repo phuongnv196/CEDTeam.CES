@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using System.Data.SqlClient;
 using System;
 using System.Configuration;
 using System.Data;
@@ -11,7 +12,7 @@ namespace CEDTeam.CES.Tool.Repositories
         private IDbConnection connection;
         public IDbConnection GetConnection()
         {
-            return new MySqlConnection(_connectString);
+            return new SqlConnection(_connectString);
         }
     }
 }

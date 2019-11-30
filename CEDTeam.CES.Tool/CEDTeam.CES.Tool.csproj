@@ -78,6 +78,7 @@
     <Compile Include="Enums\SiteType.cs" />
     <Compile Include="Extensions\HtmlDocExtension.cs" />
     <Compile Include="Helpers\ApiHelper.cs" />
+    <Compile Include="Helpers\DataTableHelper.cs" />
     <Compile Include="Helpers\Html.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>

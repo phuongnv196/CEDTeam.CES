@@ -10,7 +10,7 @@ namespace CEDTeam.CES.Tool.Models
     {
         public string ProductId { get; set; }
         public string Name { get; set; }
-        public DateTime? CreatedDate { get; set; }
+        public DateTime? CreatedProductDate { get; set; }
         public long? Price { get; set; }
         public long? Quantity { get; set; }
         public string CategoryId { get; set; }

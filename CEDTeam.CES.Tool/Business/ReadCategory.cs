@@ -36,12 +36,12 @@ namespace CEDTeam.CES.Tool.Business
             categorys["subcategory"].ForEach(item => {
                 item.SiteId = siteId;
             });
-            
-            //if(!categoryRepository.CheckCategory(siteId.ToString()))
-            //{
-            //    categoryRepository.AddCategory(categorys["category"]);
-            //    categoryRepository.AddCategory(categorys["subcategory"]);
-            //}
+
+            if (!categoryRepository.CheckCategory(siteId.ToString()))
+            {
+                categoryRepository.AddCategory(categorys["category"]);
+                categoryRepository.AddCategory(categorys["subcategory"]);
+            }
             return categorys;
         }
     }

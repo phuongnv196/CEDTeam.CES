@@ -37,6 +37,9 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.cateSendo = new System.Windows.Forms.TreeView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deselectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.cateTiki = new System.Windows.Forms.TreeView();
@@ -48,6 +51,8 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cateShopee = new System.Windows.Forms.TreeView();
             this.label1 = new System.Windows.Forms.Label();
+            this.recordPerInsertTime = new System.Windows.Forms.NumericUpDown();
+            this.label8 = new System.Windows.Forms.Label();
             this.btnStartDailySync = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -56,6 +61,9 @@
             this.sleepTime = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtlogInsert = new System.Windows.Forms.TextBox();
+            this.txtLog = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -65,14 +73,6 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.txtSyncKeywordLog = new System.Windows.Forms.TextBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deselectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label8 = new System.Windows.Forms.Label();
-            this.recordPerInsertTime = new System.Windows.Forms.NumericUpDown();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.txtLog = new System.Windows.Forms.TextBox();
-            this.txtlogInsert = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -82,18 +82,18 @@
             this.splitContainer1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.recordPerInsertTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sleepTime)).BeginInit();
             this.groupBox6.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox12.SuspendLayout();
-            this.contextMenuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.recordPerInsertTime)).BeginInit();
-            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -207,6 +207,30 @@
             this.cateSendo.Name = "cateSendo";
             this.cateSendo.Size = new System.Drawing.Size(204, 105);
             this.cateSendo.TabIndex = 4;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.selectAllToolStripMenuItem,
+            this.deselectAllToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(136, 48);
+            // 
+            // selectAllToolStripMenuItem
+            // 
+            this.selectAllToolStripMenuItem.Image = global::CEDTeam.CES.Tool.Properties.Resources.CheckAll;
+            this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.selectAllToolStripMenuItem.Text = "Select All";
+            this.selectAllToolStripMenuItem.Click += new System.EventHandler(this.selectAllToolStripMenuItem_Click);
+            // 
+            // deselectAllToolStripMenuItem
+            // 
+            this.deselectAllToolStripMenuItem.Image = global::CEDTeam.CES.Tool.Properties.Resources.ReplyAll;
+            this.deselectAllToolStripMenuItem.Name = "deselectAllToolStripMenuItem";
+            this.deselectAllToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.deselectAllToolStripMenuItem.Text = "Deselect All";
+            this.deselectAllToolStripMenuItem.Click += new System.EventHandler(this.deselectAllToolStripMenuItem_Click);
             // 
             // label4
             // 
@@ -338,6 +362,44 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Select category:";
             // 
+            // recordPerInsertTime
+            // 
+            this.recordPerInsertTime.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.recordPerInsertTime.Increment = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.recordPerInsertTime.Location = new System.Drawing.Point(424, 9);
+            this.recordPerInsertTime.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.recordPerInsertTime.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.recordPerInsertTime.Name = "recordPerInsertTime";
+            this.recordPerInsertTime.Size = new System.Drawing.Size(112, 23);
+            this.recordPerInsertTime.TabIndex = 7;
+            this.recordPerInsertTime.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(278, 13);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(140, 15);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Record/Insert Time:";
+            // 
             // btnStartDailySync
             // 
             this.btnStartDailySync.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -436,6 +498,43 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Log";
             // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Controls.Add(this.txtlogInsert, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.txtLog, 0, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 19);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(709, 116);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // txtlogInsert
+            // 
+            this.txtlogInsert.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtlogInsert.Enabled = false;
+            this.txtlogInsert.Location = new System.Drawing.Point(357, 3);
+            this.txtlogInsert.Multiline = true;
+            this.txtlogInsert.Name = "txtlogInsert";
+            this.txtlogInsert.ReadOnly = true;
+            this.txtlogInsert.Size = new System.Drawing.Size(349, 110);
+            this.txtlogInsert.TabIndex = 2;
+            // 
+            // txtLog
+            // 
+            this.txtLog.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtLog.Enabled = false;
+            this.txtLog.Location = new System.Drawing.Point(3, 3);
+            this.txtLog.Multiline = true;
+            this.txtLog.Name = "txtLog";
+            this.txtLog.ReadOnly = true;
+            this.txtLog.Size = new System.Drawing.Size(348, 110);
+            this.txtLog.TabIndex = 1;
+            // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
@@ -530,105 +629,6 @@
             this.txtSyncKeywordLog.Size = new System.Drawing.Size(709, 116);
             this.txtSyncKeywordLog.TabIndex = 0;
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.selectAllToolStripMenuItem,
-            this.deselectAllToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(136, 48);
-            // 
-            // selectAllToolStripMenuItem
-            // 
-            this.selectAllToolStripMenuItem.Image = global::CEDTeam.CES.Tool.Properties.Resources.CheckAll;
-            this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
-            this.selectAllToolStripMenuItem.Text = "Select All";
-            this.selectAllToolStripMenuItem.Click += new System.EventHandler(this.selectAllToolStripMenuItem_Click);
-            // 
-            // deselectAllToolStripMenuItem
-            // 
-            this.deselectAllToolStripMenuItem.Image = global::CEDTeam.CES.Tool.Properties.Resources.ReplyAll;
-            this.deselectAllToolStripMenuItem.Name = "deselectAllToolStripMenuItem";
-            this.deselectAllToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
-            this.deselectAllToolStripMenuItem.Text = "Deselect All";
-            this.deselectAllToolStripMenuItem.Click += new System.EventHandler(this.deselectAllToolStripMenuItem_Click);
-            // 
-            // label8
-            // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(278, 13);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(140, 15);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "Record/Insert Time:";
-            // 
-            // recordPerInsertTime
-            // 
-            this.recordPerInsertTime.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.recordPerInsertTime.Increment = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.recordPerInsertTime.Location = new System.Drawing.Point(424, 9);
-            this.recordPerInsertTime.Maximum = new decimal(new int[] {
-            5000,
-            0,
-            0,
-            0});
-            this.recordPerInsertTime.Minimum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.recordPerInsertTime.Name = "recordPerInsertTime";
-            this.recordPerInsertTime.Size = new System.Drawing.Size(112, 23);
-            this.recordPerInsertTime.TabIndex = 7;
-            this.recordPerInsertTime.Value = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.txtlogInsert, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.txtLog, 0, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 19);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(709, 116);
-            this.tableLayoutPanel2.TabIndex = 0;
-            // 
-            // txtLog
-            // 
-            this.txtLog.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtLog.Enabled = false;
-            this.txtLog.Location = new System.Drawing.Point(3, 3);
-            this.txtLog.Multiline = true;
-            this.txtLog.Name = "txtLog";
-            this.txtLog.ReadOnly = true;
-            this.txtLog.Size = new System.Drawing.Size(348, 110);
-            this.txtLog.TabIndex = 1;
-            // 
-            // txtlogInsert
-            // 
-            this.txtlogInsert.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtlogInsert.Enabled = false;
-            this.txtlogInsert.Location = new System.Drawing.Point(357, 3);
-            this.txtlogInsert.Multiline = true;
-            this.txtlogInsert.Name = "txtlogInsert";
-            this.txtlogInsert.ReadOnly = true;
-            this.txtlogInsert.Size = new System.Drawing.Size(349, 110);
-            this.txtlogInsert.TabIndex = 2;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -654,6 +654,7 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -661,16 +662,15 @@
             this.panel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.recordPerInsertTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sleepTime)).EndInit();
             this.groupBox6.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
-            this.contextMenuStrip1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.recordPerInsertTime)).EndInit();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
 
         }

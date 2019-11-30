@@ -38,10 +38,10 @@ namespace CEDTeam.CES.Tool
 
         private readonly ProductRepository productRepository = new ProductRepository();
         private long Count = 0;
-        List<Task> listTask = new List<Task>();
+        private SynchronizedCollection<Task> listTask = new SynchronizedCollection<Task>();
         private Dictionary<string, List<Models.Category>> listSubcategory = new Dictionary<string, List<Models.Category>>();
         private SynchronizedCollection<Product> Products = new SynchronizedCollection<Product>();
-
+        string productIds = "";
         public Form1()
         {
             InitializeComponent();
@@ -89,13 +89,13 @@ namespace CEDTeam.CES.Tool
             treeView.Nodes.Clear();
             category["category"].ForEach(item =>
             {
-                if (!(Enums.SiteType.Sendo.Equals(type) && item.Url.Contains("tien-ich")) && !string.IsNullOrWhiteSpace(item.Name))
+                if (!(Enums.SiteType.Sendo.Equals(type) && item.CategoryUrl.Contains("tien-ich")) && !string.IsNullOrWhiteSpace(item.CategoryName))
                 {
-                    var treenode = treeView.Nodes.Add(item.Url, item.Name);
-                    treenode.Tag = item.Id;
-                    category["subcategory"].Where(it => it.Parent.Equals(item.Id)).ToList().ForEach(i => {
-                        if (!(Enums.SiteType.Sendo.Equals(type) && i.Url.Contains("tien-ich")) && !string.IsNullOrWhiteSpace(i.Name))
-                            treenode.Nodes.Add(i.Url, i.Name).Tag = i.Parent;
+                    var treenode = treeView.Nodes.Add(item.CategoryUrl, item.CategoryName);
+                    treenode.Tag = item.CategorySiteId;
+                    category["subcategory"].Where(it => it.Parent.Equals(item.CategorySiteId)).ToList().ForEach(i => {
+                        if (!(Enums.SiteType.Sendo.Equals(type) && i.CategoryUrl.Contains("tien-ich")) && !string.IsNullOrWhiteSpace(i.CategoryName))
+                            treenode.Nodes.Add(i.CategoryUrl, i.CategoryName).Tag = i.Parent??i.CategorySiteId;
                     });
                 }
             });
@@ -131,51 +131,12 @@ namespace CEDTeam.CES.Tool
                     groupBox6.Text = "Log";
                     while (true)
                     {
-                        if (Products.Count > recordPerInsertTime.Value)
-                        {
-                            var t1 = new Task(() =>
-                            {
-                                try
-                                {
-                                    var result = new ProductRepository().InsertProduct(Products.Take(1000).ToList());
-                                    txtlogInsert.AppendText("Inserted " + result + " product(s) into Database!\r\n");
-                                    txtlogInsert.AppendText("---" + (Products.Count - 1000) + " in queue!\r\n");
-                                    for (int i = 0; i < 1000; i++)
-                                    {
-                                        Products.RemoveAt(i);
-                                    }
-                                }
-                                catch (Exception e)
-                                {
-                                    txtlogInsert.AppendText(e.Message + "\r\n");
-                                }
-                            });
-                            t1.Start();
-                        }
-                        if (listTask.All(i => i.IsCompleted))
-                        {
-                            if(Products.Count > 0)
-                            {
-                                var t1 = new Task(() =>
-                                {
-                                    try
-                                    {
-                                        var result = new ProductRepository().InsertProduct(Products.Take(1000).ToList());
-                                        txtlogInsert.AppendText("Inserted " + result + " product(s) into Database!\r\n");
-                                        txtlogInsert.AppendText("---" + Products.Count + " in queue!\r\n");
-                                        Products.Clear();
-                                    }
-                                    catch (Exception e)
-                                    {
-                                        txtlogInsert.AppendText(e.Message + "\r\n");
-                                    }
-                                });
-                                t1.Start();
-                            }
-                            break;
-                        }
                         groupBox6.Text = "Log -- Synced: " + Count + " product/"+ time + " seconds";
                         time++;
+                        if (listTask.All(i => i.IsCompleted))
+                        {
+                            break;
+                        }
                         Thread.Sleep(1000);
                     }
                     groupBox1.Enabled = true;
@@ -183,6 +144,71 @@ namespace CEDTeam.CES.Tool
                     kt = false;
                 });
                 t.Start();
+
+                Task taskInsert = new Task(() =>
+                {
+                    while(true)
+                    
+                    {
+                        try
+                        {
+                            if (Products.Count > recordPerInsertTime.Value)
+                            {
+                                var t1 = new Task(() =>
+                                {
+                                    try
+                                    {
+                                        txtlogInsert.AppendText("--Inserting or updating " + recordPerInsertTime.Value + " product(s)!\r\n");
+                                        var result = new ProductRepository().InsertProducts(Products.Take((int)recordPerInsertTime.Value).ToList());
+                                        txtlogInsert.AppendText("Inserted or Updated success!\r\n");
+                                        txtlogInsert.AppendText("---" + (Products.Count - (int)recordPerInsertTime.Value) + " in queue!\r\n");
+                                        for (int i = 0; i < (int)recordPerInsertTime.Value; i++)
+                                        {
+                                            Products.RemoveAt(0);
+                                        }
+                                    }
+                                    catch (Exception e)
+                                    {
+                                        txtlogInsert.AppendText(e.Message + "\r\n");
+                                    }
+                                });
+                                t1.Start();
+                                Task.WaitAll(t1);
+                            }
+                            if (listTask.All(i => i.IsCompleted))
+                            {
+                                if (Products.Count > 0)
+                                {
+                                    var t1 = new Task(() =>
+                                    {
+                                        try
+                                        {
+                                            txtlogInsert.AppendText("--Inserting or updating" + Products.Count + " product(s)!\r\n");
+                                            var result = new ProductRepository().InsertProducts(Products.Take((int)recordPerInsertTime.Value).ToList());
+                                            txtlogInsert.AppendText("Inserted or Updated success!\r\n");
+                                            txtlogInsert.AppendText("---" + Products.Count + " in queue!\r\n");
+                                            Products.Clear();
+                                        }
+                                        catch (Exception e)
+                                        {
+                                            txtlogInsert.AppendText(e.Message + "\r\n");
+                                        }
+                                    });
+                                    t1.Start();
+                                    Task.WaitAll(t1);
+                                }
+                                break;
+                            }
+                        }
+                        catch
+                        {
+
+                        }
+                        Thread.Sleep(5000);
+                    }
+                    
+                });
+                taskInsert.Start();
             }
             else
             {
@@ -231,7 +257,6 @@ namespace CEDTeam.CES.Tool
                             }
                         }
                     }
-
                 }
                 listKey.ForEach(item =>
                 {
@@ -247,27 +272,34 @@ namespace CEDTeam.CES.Tool
                             result?.items?.ForEach(prod =>
                             {
                                 var prodDetail = apiHelper.Get<ShopeeDetailItem>(string.Format(ApiConstant.Shopee.PROD_DETAIL, prod.itemid, prod.shopid));
-                                txtLog.AppendText(prodDetail.item.name + "\r\n");
-                                Products.Add(new Product
+                                if(prodDetail != null)
                                 {
-                                    Name = prodDetail.item.name,
-                                    CommentCount = prodDetail.item.cmt_count,
-                                    Url = string.Format("https://shopee.vn/product-i.{0}.{1}", prodDetail.item.shopid, prodDetail.item.itemid),
-                                    CategoryId = item.CategoryId,
-                                    CreatedDate = new DateTime(1970, 1, 1, 0, 0, 0, 0).AddSeconds(Math.Round(prodDetail.item.ctime.Value)).ToLocalTime(),
-                                    Discount = prodDetail.item.discount,
-                                    Quantity = prodDetail.item.stock,
-                                    QuantitySold = prodDetail.item.historical_sold,
-                                    VariableJson = JsonConvert.SerializeObject(prodDetail.item.models),
-                                    Price = ((long)prodDetail.item.price_max) / 100000, 
-                                    ProductId = prodDetail.item.itemid.ToString(),
-                                    CategoryUrl = item.CategoryUrl
-                                });
-                                Count++;
+                                    txtLog.AppendText(prodDetail.item?.name + "\r\n");
+                                    if (!productIds.Contains(prodDetail.item?.itemid.ToString()))
+                                    {
+                                        Products.Add(new Product
+                                        {
+                                            Name = prodDetail.item.name,
+                                            CommentCount = prodDetail.item.cmt_count,
+                                            Url = string.Format("https://shopee.vn/product-i.{0}.{1}", prodDetail.item.shopid, prodDetail.item.itemid),
+                                            CategoryId = item.CategoryId,
+                                            CreatedProductDate = new DateTime(1970, 1, 1, 0, 0, 0, 0).AddSeconds(Math.Round(prodDetail.item.ctime.Value)).ToLocalTime(),
+                                            Discount = prodDetail.item.discount,
+                                            Quantity = prodDetail.item.stock,
+                                            QuantitySold = prodDetail.item.historical_sold,
+                                            VariableJson = JsonConvert.SerializeObject(prodDetail.item.models),
+                                            Price = ((long)prodDetail.item.price_max) / 100000,
+                                            ProductId = prodDetail.item.itemid.ToString(),
+                                            CategoryUrl = item.CategoryUrl
+                                        });
+                                        productIds += prodDetail.item.itemid.ToString() + ",";
+                                        Count++;
+                                    }
+                                }
                             });
                             //productRepository.InsertProduct(listProduct);
                             Thread.Sleep((int)sleepTime.Value * 1000);
-                        } while (result != null || result.items != null);
+                        } while (result != null || result?.items != null);
                         txtLog.AppendText("---Done get Shopee Category" + item.Url);
                     });
                     Thread.Sleep((int)sleepTime.Value * 1000);
@@ -341,20 +373,24 @@ namespace CEDTeam.CES.Tool
                             txtLog.AppendText("--LAZADA: " + prod.name + "\r\n");
                             try
                             {
-                                var product = new Product();
-                                product.Price = (long)prod.price;
-                                product.Name = prod.name;
-                                product.ProductId = prod.itemId;
-                                product.CommentCount = prod.review;
-                                product.Url = prod.productUrl;
-                                product.CategoryId = item.CategoryId;
-                                product.CreatedDate = null;
-                                product.Discount = prod.discount;
-                                product.Quantity = 0;
-                                product.QuantitySold = 0;
-                                product.VariableJson = null;
-                                product.CategoryUrl = item.CategoryUrl;
-                                Products.Add(product);
+                                if (!productIds.Contains(prod.itemId))
+                                {
+                                    var product = new Product();
+                                    product.Price = (long)prod.price;
+                                    product.Name = prod.name;
+                                    product.ProductId = prod.itemId;
+                                    product.CommentCount = prod.review;
+                                    product.Url = prod.productUrl;
+                                    product.CategoryId = item.CategoryId;
+                                    product.CreatedProductDate = DateTime.UtcNow;
+                                    product.Discount = prod.discount;
+                                    product.Quantity = 0;
+                                    product.QuantitySold = 0;
+                                    product.VariableJson = null;
+                                    product.CategoryUrl = item.CategoryUrl;
+                                    Products.Add(product);
+                                }
+                                productIds += prod.itemId + ",";
                                 Count++;
                             }
                             catch (Exception e)
@@ -431,20 +467,26 @@ namespace CEDTeam.CES.Tool
                                 var sUrl = Regex.Match(element.InnerHtml, "href=\"(.+?)\"").Groups[1].Value;
                                 var sDiscount = Regex.Match(element.InnerHtml, "sale-tag-square\">(.+?)<").Groups[1].Value;
                                 txtLog.AppendText(element.GetAttributeValue("data-title", "") + "\r\n");
-                                Products.Add(new Product
+                                var productId = element.GetAttributeValue("data-id", "");
+                                if (!productIds.Contains(productId))
                                 {
-                                    ProductId = element.GetAttributeValue("data-id", ""),
-                                    Name = element.GetAttributeValue("data-title", ""),
-                                    CategoryId = item.CategoryId,
-                                    Quantity = 0,
-                                    QuantitySold = 0,
-                                    CommentCount = sCommentCount,
-                                    Url = sUrl,
-                                    Discount = sDiscount,
-                                    Price = long.Parse(element.GetAttributeValue("data-price","")),
-                                    CategoryUrl = item.Url
-                                });
-                                Count++;
+                                    Products.Add(new Product
+                                    {
+                                        ProductId = productId,
+                                        Name = element.GetAttributeValue("data-title", ""),
+                                        CategoryId = item.CategoryId,
+                                        Quantity = 0,
+                                        QuantitySold = 0,
+                                        CreatedProductDate = DateTime.UtcNow,
+                                        CommentCount = sCommentCount,
+                                        Url = sUrl,
+                                        Discount = sDiscount,
+                                        Price = long.Parse(element.GetAttributeValue("data-price", "")),
+                                        CategoryUrl = item.Url
+                                    });
+                                    productIds += productId +",";
+                                    Count++;
+                                }
                             });
                             Thread.Sleep((int)sleepTime.Value * 1000);
                         } while (els?.Count > 0);
@@ -523,22 +565,26 @@ namespace CEDTeam.CES.Tool
                             result?.Result?.Data?.ForEach(prod =>
                             {
                                 txtLog.AppendText(prod.Name + "\r\n");
-                                Products.Add(new Product
+                                if (!productIds.Contains(prod.ProductId.Value.ToString()))
                                 {
-                                    Name = prod.Name,
-                                    CommentCount = prod.TotalRated,
-                                    Url = string.Format("https://www.sendo.vn/product-n-{0}.html", prod.ProductId.Value),
-                                    CategoryId = item.CategoryId,
-                                    CreatedDate = null,
-                                    Discount = prod.FinalPromotionPercent.Value.ToString() + "%",
-                                    Quantity = null,
-                                    QuantitySold = prod.OrderCount,
-                                    VariableJson = null,
-                                    Price = prod.FinalPriceMax,
-                                    ProductId = prod.ProductId.Value.ToString(),
-                                    CategoryUrl = item.CategoryUrl
-                                });
-                                Count++;
+                                    Products.Add(new Product
+                                    {
+                                        Name = prod.Name,
+                                        CommentCount = prod.TotalRated,
+                                        Url = string.Format("https://www.sendo.vn/product-n-{0}.html", prod.ProductId.Value),
+                                        CategoryId = item.CategoryId,
+                                        CreatedProductDate = null,
+                                        Discount = prod.FinalPromotionPercent.Value.ToString() + "%",
+                                        Quantity = null,
+                                        QuantitySold = prod.OrderCount,
+                                        VariableJson = null,
+                                        Price = prod.FinalPriceMax,
+                                        ProductId = prod.ProductId.Value.ToString(),
+                                        CategoryUrl = item.CategoryUrl
+                                    });
+                                    productIds += prod.ProductId.Value.ToString() + ",";
+                                    Count++;
+                                }
                             });
                             Thread.Sleep((int)sleepTime.Value * 1000);
                         } while (result?.Result.Data?.Count > 0);
@@ -592,18 +638,18 @@ namespace CEDTeam.CES.Tool
                 listSubcategory["shopee"].ForEach(item =>
                 {
                     ListViewItem listViewItem = new ListViewItem("Shopee");
-                    var strArr = item.Url?.Split('.');
+                    var strArr = item.CategoryUrl?.Split('.');
                     string id = strArr[strArr.Length - 1];
                     var result = apiHelper.Get<ShopeeKeywordByCategory>(string.Format(ApiConstant.Shopee.KEYWORD_BY_CATEGORY, id));
                     var keywords = result?.items?.Select(keywordItem => keywordItem.display_name).ToArray();
-                    listViewItem.SubItems.Add(item.Name);
+                    listViewItem.SubItems.Add(item.CategoryName);
                     listViewItem.SubItems.Add(string.Join(",", keywords));
                     listView1.Items.Add(listViewItem);
                     if(keywords.Count() > 0)
                     {
                         keywordByCategories.Add(new KeywordByCategory
                         {
-                            CategoryUrl = item.Url,
+                            CategoryUrl = item.CategoryUrl,
                             Keywords = keywords.ToList()
                         });
                     }

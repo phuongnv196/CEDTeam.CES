@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,10 +9,16 @@ namespace CEDTeam.CES.Tool.Models
 {
     public class Category
     {
-        public string Name { get; set; }
-        public string Url { get; set; }
-        public string Id { get; set; }
+        public int? CategoryId { get; set; }
+        [JsonProperty("Id")]
+        public string CategorySiteId { get; set; }
+        [JsonProperty("Name")]
+        public string CategoryName { get; set; }
+        [JsonProperty("SiteId")]
+        public int? SiteId { get; set; }
+        [JsonProperty("Url")]
+        public string CategoryUrl { get; set; }
+        [JsonProperty("Parent")]
         public string Parent { get; set; }
-        public int SiteId { get; set; }
     }
 }
