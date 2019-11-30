@@ -23,19 +23,19 @@
     <table id="product-datatable" style="width:100%">
         <thead>
             <tr>
-                <th>Id</th>
                 <th>Mã sản phẩm</th>
                 <th>Tên sản phẩm</th>
                 <th>Giá <small>(VND)</small></th>
-                <th>Ngày tạo</th>
                 <th>Số lượng</th>
-                <th>Danh mục</th>
-                <th>Trang bán</th>
                 <th>Đã bán</th>
                 <th>Lượt đánh giá</th>
                 <th>Giảm giá</th>
-                <th>Ngày cập nhật</th>
-                <th>Bình quân thu nhập ngày<small>(VND)</small></th>
+                <th>Ngày đăng bán</th>
+                <th>Ngày kéo dữ liệu</th>
+                <th>Ngày cập nhật dữ liệu</th>
+                <th>Bán bình quân/ngày</th>
+                <th>Trang bán</th>
+                <th>Danh mục</th>
             </tr>
         </thead>
     </table>
@@ -54,7 +54,7 @@
     var getProductUrl = '@url';
     $(function () {
         var table = $('#product-datatable').DataTable({
-                    "responsive": true,
+            "responsive": true,
             "dom": 'Bfrtip',
             "buttons": [
                'pageLength', 'copy', 'csv', 'excel', 'pdf', 'print'
@@ -70,7 +70,7 @@
                 },
                 dataFilter: function (data) {
                     var json = jQuery.parseJSON(data);
-                    console.log(json);
+                    //console.log(json);
                     json.recordsTotal = json.recordsTotal;
                     json.recordsFiltered = json.recordsFiltered;
                     json.data = json.data;
@@ -78,23 +78,22 @@
                 }
             },
             "columnDefs": [
-                { targets: 0, className: "text-center" },
-                { width: 100, targets: 1, className: "text-center" },
-                { width: 300, targets: 2, className: "text-left"},
+                { width: 120, targets: 0, className: "text-center" },
+                { width: 300, targets: 1, className: "text-left"},
+                { width: 80, targets: 2, className: "text-right" },
                 { width: 80, targets: 3, className: "text-right" },
-                { width: 200, targets: 4, className: "text-center" },
-                { width: 80, targets: 5, className: "text-right" },
-                { width: 120, targets: 6, className: "text-center" },
-                { width: 60, targets: 7, className: "text-center" },
-                { width: 80, targets: 8, className: "text-right" },
-                { width: 50, targets: 9, className: "text-center" },
-                { width: 50, targets: 10, className: "text-center" },
-                { width: 200, targets: 11, className: "text-right" },
-                { width: 50, targets: 12, className: "text-right" },
+                { width: 80, targets: 4, className: "text-right" },
+                { width: 120, targets: 5, className: "text-right" },
+                { width: 80, targets: 6, className: "text-right" },
+                { width: 200, targets: 7, className: "text-center" },
+                { width: 200, targets: 8, className: "text-center" },
+                { width: 200, targets: 9, className: "text-center" },
+                { width: 200, targets: 10, className: "text-right" },
+                { width: 100, targets: 11, className: "text-center" },
+                { width: 200, targets: 12, className: "text-left" },
             ],
             fixedColumns: true,
             "columns": [
-                { "data": "id" },
                 { "data": "productId" },
                 { "data": null, render: function ( data, type, row ) {
 
@@ -106,10 +105,7 @@
                     return price;
                 }
                 },
-                { "data": "createdDate" },
                 { "data": "quantity" },
-                { "data": "categoryName" },
-                { "data": "siteName" },
                 { "data": "quantitySold" },
                 { "data": "commentCount" },
                 {
@@ -118,13 +114,12 @@
                     return discount;
                 }
                 },
+                { "data": "createdDate" },
+                { "data": "created_DateString" },
                 { "data": "updatedDateString" },
-                {
-                    "data": null, render: function (data, type, row) {
-                        var price = numeral(data.average).format('0,0');
-                        return price;
-                    }
-                }
+                { "data": "average" },
+                { "data": "siteName" },
+                { "data": "categoryName" }
             ]
             });
     });

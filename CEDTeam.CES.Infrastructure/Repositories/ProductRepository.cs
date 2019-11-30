@@ -25,9 +25,9 @@ namespace CEDTeam.CES.Infrastructure.Repositories
         {
             using(var db = _baseRepository.GetConnection())
             {
-                string query = $"select count(1) from Product ;"+
-                    $" select count(1) FROM Product WHERE Name LIKE N'%{search}%';  " +
-                    "SELECT Id, ProductId, Name, Price, CreatedDate, Quantity, CategoryName, SiteName, QuantitySold, CommentCount, Discount, Url, UpdatedDate, ((QuantitySold * Price)/DATEDIFF(NOW(), STR_TO_DATE(CreatedDate, '%d/%m/%Y %H:%i:%s'))) AS Average " +
+                string query = $"SELECT count(1) FROM Product ;"+
+                    $" SELECT count(1) FROM Product WHERE Name LIKE N'%{search}%';  " +
+                    "SELECT Id, ProductId, Name, Price, Quantity, CategoryName, SiteName, QuantitySold, CommentCount, Discount, Url, CreatedDate, Created_Date, UpdatedDate, ((QuantitySold)/DATEDIFF(NOW(), STR_TO_DATE(CreatedDate, '%d/%m/%Y %H:%i:%s'))) AS Average " +
                     "FROM Product AS P JOIN Category AS C ON P.CategoryId = C.CategoryId " +
                     "JOIN Site AS S ON C.SiteId = S.SiteId "+
                     "WHERE Name LIKE N'%" + search + "%' ";
@@ -64,9 +64,9 @@ namespace CEDTeam.CES.Infrastructure.Repositories
 
         public async Task<FilterProductDto> GetProductSiteIdAsync(int start, int length, string search, int columnSort, int siteId, bool isAsc = true)
         {
-            string query = $"select count(1) from Product AS P JOIN Category AS C ON P.CategoryId = C.CategoryId JOIN Site AS S ON C.SiteId = S.SiteId WHERE C.SiteId="+siteId+";" +
-                    $" select count(1) from Product AS P JOIN Category AS C ON P.CategoryId = C.CategoryId JOIN Site AS S ON C.SiteId = S.SiteId WHERE C.SiteId=" + siteId+$" AND Name LIKE N'%{search}%';  " +
-                    "SELECT Id, ProductId, Name, Price, CreatedDate, Quantity, CategoryName, SiteName, QuantitySold, CommentCount, Discount, Url, UpdatedDate, ((QuantitySold * Price)/DATEDIFF(NOW(), STR_TO_DATE(CreatedDate, '%d/%m/%Y %H:%i:%s'))) AS Average " +
+            string query = $"SELECT count(1) FROM Product AS P JOIN Category AS C ON P.CategoryId = C.CategoryId JOIN Site AS S ON C.SiteId = S.SiteId WHERE C.SiteId="+siteId+";" +
+                    $" SELECT count(1) FROM Product AS P JOIN Category AS C ON P.CategoryId = C.CategoryId JOIN Site AS S ON C.SiteId = S.SiteId WHERE C.SiteId=" + siteId+$" AND Name LIKE N'%{search}%';  " +
+                    "SELECT Id, ProductId, Name, Price, Quantity, CategoryName, SiteName, QuantitySold, CommentCount, Discount, Url, CreatedDate, Created_Date, UpdatedDate, ((QuantitySold)/DATEDIFF(NOW(), STR_TO_DATE(CreatedDate, '%d/%m/%Y %H:%i:%s'))) AS Average " +
                     "FROM Product AS P JOIN Category AS C ON P.CategoryId = C.CategoryId " +
                     "JOIN Site AS S ON C.SiteId = S.SiteId " +
                     "WHERE Name LIKE N'%" + search + "%' " +
