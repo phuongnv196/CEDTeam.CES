@@ -3,7 +3,7 @@ using CEDTeam.CES.Core.Configs;
 using CEDTeam.CES.Core.Interfaces;
 using System;
 using System.Data;
-using MySql.Data.MySqlClient;
+using System.Data.SqlClient;
 
 namespace CEDTeam.CES.Infrastructure.Repositories
 {
@@ -19,7 +19,7 @@ namespace CEDTeam.CES.Infrastructure.Repositories
         }
         public IDbConnection GetConnection()
         {
-            return new MySqlConnection(_config.Value.ConnectString);
+            return new SqlConnection(_config.Value.ConnectString);
         }
     }
 }

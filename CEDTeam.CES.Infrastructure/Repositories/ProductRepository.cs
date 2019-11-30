@@ -18,7 +18,7 @@ namespace CEDTeam.CES.Infrastructure.Repositories
         }
         List<string> listColumn = new List<string>
         {
-            "Id", "ProductId", "Name", "Price", "CreatedDate", "Quantity", "CategoryName", "SiteName", "QuantitySold", "CommentCount", "Discount", "UpdatedDate", "Average"
+            "ProductId", "Name", "Price", "Quantity", "QuantitySold", "CommentCount", "Discount", "CreatedProductDate", "CreatedDate", "UpdatedDate", "Average", "SiteName", "CategoryName"
         };
 
         public async Task<FilterProductDto> GetProductAsync(int start, int length, string search, int columnSort, bool isAsc = true)
@@ -26,19 +26,22 @@ namespace CEDTeam.CES.Infrastructure.Repositories
             using(var db = _baseRepository.GetConnection())
             {
                 string query = $"SELECT count(1) FROM Product ;"+
-                    $" SELECT count(1) FROM Product WHERE Name LIKE N'%{search}%';  " +
-                    "SELECT Id, ProductId, Name, Price, Quantity, CategoryName, SiteName, QuantitySold, CommentCount, Discount, Url, CreatedDate, Created_Date, UpdatedDate, ((QuantitySold)/DATEDIFF(NOW(), STR_TO_DATE(CreatedDate, '%d/%m/%Y %H:%i:%s'))) AS Average " +
+                    $" SELECT count(1) FROM Product WHERE Name LIKE CONCAT('%',@search,'%');  " +
+                    "SELECT Id, ProductId, Name, Price, Quantity, CategoryName, SiteName, QuantitySold, CommentCount, Discount, Url, CreatedProductDate, CreatedDate, UpdatedDate, CASE DATEDIFF(DAY, P.CreatedProductDate, GETUTCDATE()) WHEN 0 THEN 0 ELSE (QuantitySold/ DATEDIFF(DAY, P.CreatedProductDate, GETUTCDATE())) END AS Average " +
                     "FROM Product AS P JOIN Category AS C ON P.CategoryId = C.CategoryId " +
                     "JOIN Site AS S ON C.SiteId = S.SiteId "+
-                    "WHERE Name LIKE N'%" + search + "%' ";
+                    "WHERE Name LIKE CONCAT('%',@search,'%')";
                 string orderBy = $" ORDER BY {listColumn[columnSort]} {(!isAsc ? "DESC" : "")}";
-                string limit = $" LIMIT {start}, {length}";
+                string limit = $" OFFSET {start} ROWS FETCH NEXT  {length} ROWS ONLY";
                 string command = $"{query} {orderBy} {limit}";
 
-                var result = await db.QueryMultipleAsync(command);
+                DynamicParameters dynamicParameters = new DynamicParameters();
+                dynamicParameters.Add("@search", search.Replace("'", "''").Replace("%", "[%]"));
+
+                var result = await db.QueryMultipleAsync(command, dynamicParameters);
                 var filterProductDto = new FilterProductDto();
-                filterProductDto.RecordsTotal = await result.ReadFirstAsync<long>();
-                filterProductDto.RecordsFiltered = await result.ReadFirstAsync<long>();
+                filterProductDto.RecordsTotal = await result.ReadFirstAsync<int>();
+                filterProductDto.RecordsFiltered = await result.ReadFirstAsync<int>();
                 filterProductDto.Data = (await result.ReadAsync<ProductDto>()).AsList();
                 return filterProductDto;
             }
@@ -57,7 +60,7 @@ namespace CEDTeam.CES.Infrastructure.Repositories
         {
             using (var db = _baseRepository.GetConnection())
             {
-                string query = "SELECT c.CategoryName, ck.Keyword, c.CategoryUrl FROM category_keyword ck INNER JOIN category c ON c.CategoryId = ck.CategoryId ";
+                string query = "SELECT c.CategoryName, ck.Keyword, c.CategoryUrl FROM CategoryKeyword ck INNER JOIN Category c ON c.CategoryId = ck.CategoryId ";
                 return (await db.QueryAsync<ShopeeKeywordDto>(query)).AsList();
             }
         }
@@ -65,21 +68,23 @@ namespace CEDTeam.CES.Infrastructure.Repositories
         public async Task<FilterProductDto> GetProductSiteIdAsync(int start, int length, string search, int columnSort, int siteId, bool isAsc = true)
         {
             string query = $"SELECT count(1) FROM Product AS P JOIN Category AS C ON P.CategoryId = C.CategoryId JOIN Site AS S ON C.SiteId = S.SiteId WHERE C.SiteId="+siteId+";" +
-                    $" SELECT count(1) FROM Product AS P JOIN Category AS C ON P.CategoryId = C.CategoryId JOIN Site AS S ON C.SiteId = S.SiteId WHERE C.SiteId=" + siteId+$" AND Name LIKE N'%{search}%';  " +
-                    "SELECT Id, ProductId, Name, Price, Quantity, CategoryName, SiteName, QuantitySold, CommentCount, Discount, Url, CreatedDate, Created_Date, UpdatedDate, ((QuantitySold)/DATEDIFF(NOW(), STR_TO_DATE(CreatedDate, '%d/%m/%Y %H:%i:%s'))) AS Average " +
+                    $" SELECT count(1) FROM Product AS P JOIN Category AS C ON P.CategoryId = C.CategoryId JOIN Site AS S ON C.SiteId = S.SiteId WHERE C.SiteId=" + siteId+$" AND Name LIKE CONCAT('%',@search,'%');  " +
+                    "SELECT Id, ProductId, Name, Price, Quantity, CategoryName, SiteName, QuantitySold, CommentCount, Discount, Url, CreatedProductDate, CreatedDate, UpdatedDate, CASE DATEDIFF(DAY, P.CreatedProductDate, GETUTCDATE()) WHEN 0 THEN 0 ELSE (QuantitySold/ DATEDIFF(DAY, P.CreatedProductDate, GETUTCDATE())) END AS Average " +
                     "FROM Product AS P JOIN Category AS C ON P.CategoryId = C.CategoryId " +
                     "JOIN Site AS S ON C.SiteId = S.SiteId " +
-                    "WHERE Name LIKE N'%" + search + "%' " +
+                    "WHERE Name LIKE CONCAT('%',@search,'%')" +
                     "AND C.SiteId=" +siteId;
             string orderBy = $" ORDER BY {listColumn[columnSort]} {(!isAsc ? "DESC" : "")}";
-            string limit = $" LIMIT {start}, {length}";
+            string limit = $" OFFSET {start} ROWS FETCH NEXT  {length} ROWS ONLY";
             string command = $"{query} {orderBy} {limit}";
             using (var db = _baseRepository.GetConnection())
             {
-                var result = await db.QueryMultipleAsync(command);
+                DynamicParameters dynamicParameters = new DynamicParameters();
+                dynamicParameters.Add("@search", search.Replace("'", "''").Replace("%", "[%]"));
+                var result = await db.QueryMultipleAsync(command, dynamicParameters);
                 var filterProductDto = new FilterProductDto();
-                filterProductDto.RecordsTotal = await result.ReadFirstAsync<long>();
-                filterProductDto.RecordsFiltered = await result.ReadFirstAsync<long>();
+                filterProductDto.RecordsTotal = await result.ReadFirstAsync<int>();
+                filterProductDto.RecordsFiltered = await result.ReadFirstAsync<int>();
                 filterProductDto.Data = (await result.ReadAsync<ProductDto>()).AsList();
                 return filterProductDto;
             }
