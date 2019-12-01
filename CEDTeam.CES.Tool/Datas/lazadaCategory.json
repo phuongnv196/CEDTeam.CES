@@ -531,11 +531,6 @@
       "id": "cate_11_4"
     },
     {
-      "name": "Vali & Túi Du Lịch",
-      "url": "https://www.lazada.vn/vali-ba-lo-tui-du-lich-2/",
-      "id": "cate_11_5"
-    },
-    {
       "name": "Hoạt Động Dã Ngoại",
       "url": "https://www.lazada.vn/hoat-dong-da-ngoai/",
       "id": "cate_11_6"
@@ -1838,11 +1833,6 @@
       "parent": "cate_4_9"
     },
     {
-      "name": "Dinh Dưỡng Thể Thao",
-      "url": "https://www.lazada.vn/thuc-pham-cho-sac-dep/",
-      "parent": "cate_4_9"
-    },
-    {
       "name": "Kiểm Soát Cân Nặng",
       "url": "https://www.lazada.vn/kiem-soat-can-nang/",
       "parent": "cate_4_9"
@@ -1905,16 +1895,6 @@
     {
       "name": "Dưỡng Da",
       "url": "https://www.lazada.vn/d-ng-da/",
-      "parent": "cate_4_10"
-    },
-    {
-      "name": "Trắng da",
-      "url": "https://www.lazada.vn/trang-da/",
-      "parent": "cate_4_10"
-    },
-    {
-      "name": "Chăm sóc da mụn",
-      "url": "https://www.lazada.vn/ch-m-soc-da-m-n/",
       "parent": "cate_4_10"
     },
     {
@@ -2913,11 +2893,6 @@
       "parent": "cate_6_6"
     },
     {
-      "name": "Thực Phẩm Đóng Hộp",
-      "url": "https://www.lazada.vn/shop-do-hop/",
-      "parent": "cate_6_6"
-    },
-    {
       "name": "Ngũ cốc ăn sáng & Bánh mì phết",
       "url": "https://www.lazada.vn/do-an-sang/",
       "parent": "cate_6_6"
@@ -2940,16 +2915,6 @@
     {
       "name": "Mì và bún",
       "url": "https://www.lazada.vn/shop-Mi-Bun/",
-      "parent": "cate_6_6"
-    },
-    {
-      "name": "Muối và gia vị",
-      "url": "https://www.lazada.vn/shop-Muoi-Gia-vi/",
-      "parent": "cate_6_6"
-    },
-    {
-      "name": "Gia vị và sốt ăn liền",
-      "url": "https://www.lazada.vn/shop-do-gia-vi-Sot/",
       "parent": "cate_6_6"
     },
     {
@@ -3943,11 +3908,6 @@
       "parent": "cate_8_3"
     },
     {
-      "name": "Áo sơ mi kiểu",
-      "url": "https://www.lazada.vn/ao-so-mi-ao-blouse-nu/",
-      "parent": "cate_8_3"
-    },
-    {
       "name": "Áo thun",
       "url": "https://www.lazada.vn/ao-thun-cho-nu/",
       "parent": "cate_8_3"
@@ -4628,11 +4588,6 @@
       "parent": "cate_10_7"
     },
     {
-      "name": "Trang Sức Đính Hôn",
-      "url": "https://www.lazada.vn/trang-suc-ket-hon-dinh-hon-cho-nu/",
-      "parent": "cate_10_8"
-    },
-    {
       "name": "Trang Sức Thời Trang",
       "url": "https://www.lazada.vn/trang-suc-thoi-trang-nam/",
       "parent": "cate_10_8"
@@ -4931,21 +4886,6 @@
       "name": "Phụ kiện thể thao",
       "url": "https://www.lazada.vn/phu-kien-the-thao-nu/",
       "parent": "cate_11_4"
-    },
-    {
-      "name": "Ba Lô & Túi Laptop",
-      "url": "https://www.lazada.vn/ba-lo-tui-laptop/",
-      "parent": "cate_11_5"
-    },
-    {
-      "name": "Vali Du Lịch",
-      "url": "https://www.lazada.vn/vali-du-lich/",
-      "parent": "cate_11_5"
-    },
-    {
-      "name": "Phụ Kiện Du Lịch",
-      "url": "https://www.lazada.vn/phu-kien-du-lich/",
-      "parent": "cate_11_5"
     },
     {
       "name": "Đạp Xe",
@@ -5630,11 +5570,6 @@
     {
       "name": "Pô xe",
       "url": "https://www.lazada.vn/moto-po-va-giam-thanh/",
-      "parent": "cate_12_8"
-    },
-    {
-      "name": "Lọc gió xe máy",
-      "url": "https://www.lazada.vn/thiet-bi-loc-nhot-cho-xe/",
       "parent": "cate_12_8"
     },
     {

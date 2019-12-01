@@ -20,5 +20,11 @@ namespace CEDTeam.CES.Tool.Models
         public string VariableJson { get; set; }
         public string Url { get; set; }
         public string CategoryUrl { get; set; }
+
+        public override bool Equals(object obj)
+        {
+            Product product = (Product)obj;
+            return ProductId.Equals(product.ProductId);
+        }
     }
 }

@@ -3,11 +3,8 @@ using CEDTeam.CES.Tool.Helpers;
 using CEDTeam.CES.Tool.Models.Shopee;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CEDTeam.CES.Tool.Business;
@@ -16,11 +13,9 @@ using CEDTeam.CES.Tool.Models;
 using CEDTeam.CES.Tool.Models.Lazada;
 using System.Threading;
 using Newtonsoft.Json;
-using CEDTeam.CES.Tool.Extensions;
 using System.Text.RegularExpressions;
 using HtmlAgilityPack;
 using CEDTeam.CES.Tool.Models.Sendo;
-using static System.Windows.Forms.ListViewItem;
 using CEDTeam.CES.Tool.Models.Common;
 
 namespace CEDTeam.CES.Tool
@@ -41,7 +36,6 @@ namespace CEDTeam.CES.Tool
         private SynchronizedCollection<Task> listTask = new SynchronizedCollection<Task>();
         private Dictionary<string, List<Models.Category>> listSubcategory = new Dictionary<string, List<Models.Category>>();
         private SynchronizedCollection<Product> Products = new SynchronizedCollection<Product>();
-        string productIds = "";
         public Form1()
         {
             InitializeComponent();
@@ -204,7 +198,6 @@ namespace CEDTeam.CES.Tool
                         {
 
                         }
-                        Thread.Sleep(5000);
                     }
                     
                 });
@@ -258,6 +251,8 @@ namespace CEDTeam.CES.Tool
                         }
                     }
                 }
+                var listTaskShopee = new SynchronizedCollection<Task>();
+
                 listKey.ForEach(item =>
                 {
                     var apiTask = new Task(() =>
@@ -274,27 +269,23 @@ namespace CEDTeam.CES.Tool
                                 var prodDetail = apiHelper.Get<ShopeeDetailItem>(string.Format(ApiConstant.Shopee.PROD_DETAIL, prod.itemid, prod.shopid));
                                 if(prodDetail != null)
                                 {
-                                    txtLog.AppendText(prodDetail.item?.name + "\r\n");
-                                    if (!productIds.Contains(prodDetail.item?.itemid.ToString()))
+                                    txtLog.AppendText("--SHOPEE: "+prodDetail.item?.name + "\r\n");
+                                    Products.Add(new Product
                                     {
-                                        Products.Add(new Product
-                                        {
-                                            Name = prodDetail.item.name,
-                                            CommentCount = prodDetail.item.cmt_count,
-                                            Url = string.Format("https://shopee.vn/product-i.{0}.{1}", prodDetail.item.shopid, prodDetail.item.itemid),
-                                            CategoryId = item.CategoryId,
-                                            CreatedProductDate = new DateTime(1970, 1, 1, 0, 0, 0, 0).AddSeconds(Math.Round(prodDetail.item.ctime.Value)).ToLocalTime(),
-                                            Discount = prodDetail.item.discount,
-                                            Quantity = prodDetail.item.stock,
-                                            QuantitySold = prodDetail.item.historical_sold,
-                                            VariableJson = JsonConvert.SerializeObject(prodDetail.item.models),
-                                            Price = ((long)prodDetail.item.price_max) / 100000,
-                                            ProductId = prodDetail.item.itemid.ToString(),
-                                            CategoryUrl = item.CategoryUrl
-                                        });
-                                        productIds += prodDetail.item.itemid.ToString() + ",";
-                                        Count++;
-                                    }
+                                        Name = prodDetail.item.name,
+                                        CommentCount = prodDetail.item.cmt_count,
+                                        Url = string.Format("https://shopee.vn/product-i.{0}.{1}", prodDetail.item.shopid, prodDetail.item.itemid),
+                                        CategoryId = item.CategoryId,
+                                        CreatedProductDate = new DateTime(1970, 1, 1, 0, 0, 0, 0).AddSeconds(Math.Round(prodDetail.item.ctime.Value)).ToLocalTime(),
+                                        Discount = prodDetail.item.discount,
+                                        Quantity = prodDetail.item.stock,
+                                        QuantitySold = prodDetail.item.historical_sold,
+                                        VariableJson = JsonConvert.SerializeObject(prodDetail.item.models),
+                                        Price = ((long)prodDetail.item.price_max) / 100000,
+                                        ProductId = "shp"+prodDetail.item.itemid.ToString(),
+                                        CategoryUrl = item.CategoryUrl
+                                    });
+                                    Count++;
                                 }
                             });
                             //productRepository.InsertProduct(listProduct);
@@ -305,6 +296,12 @@ namespace CEDTeam.CES.Tool
                     Thread.Sleep((int)sleepTime.Value * 1000);
                     apiTask.Start();
                     listTask.Add(apiTask);
+                    listTaskShopee.Add(apiTask);
+                    if (listTaskShopee.Count > 10)
+                    {
+                        Task.WaitAll(listTaskShopee.ToArray());
+                        listTaskShopee.Clear();
+                    }
                 });
             });
             shopeeTask.Start();
@@ -369,28 +366,23 @@ namespace CEDTeam.CES.Tool
                         page++;
                         result?.mods?.listItems?.ForEach(prod =>
                         {
-                            //var prodDetail = apiHelper.Get<ShopeeDetailItem>(string.Format(ApiConstant.Shopee.PROD_DETAIL, prod.itemid, prod.shopid));
                             txtLog.AppendText("--LAZADA: " + prod.name + "\r\n");
                             try
                             {
-                                if (!productIds.Contains(prod.itemId))
-                                {
-                                    var product = new Product();
-                                    product.Price = (long)prod.price;
-                                    product.Name = prod.name;
-                                    product.ProductId = prod.itemId;
-                                    product.CommentCount = prod.review;
-                                    product.Url = prod.productUrl;
-                                    product.CategoryId = item.CategoryId;
-                                    product.CreatedProductDate = DateTime.UtcNow;
-                                    product.Discount = prod.discount;
-                                    product.Quantity = 0;
-                                    product.QuantitySold = 0;
-                                    product.VariableJson = null;
-                                    product.CategoryUrl = item.CategoryUrl;
-                                    Products.Add(product);
-                                }
-                                productIds += prod.itemId + ",";
+                                var product = new Product();
+                                product.Price = (long)prod.price;
+                                product.Name = prod.name;
+                                product.ProductId = "lzd"+prod.itemId;
+                                product.CommentCount = prod.review;
+                                product.Url = prod.productUrl;
+                                product.CategoryId = item.CategoryId;
+                                product.CreatedProductDate = DateTime.UtcNow;
+                                product.Discount = prod.discount;
+                                product.Quantity = 0;
+                                product.QuantitySold = 0;
+                                product.VariableJson = null;
+                                product.CategoryUrl = item.CategoryUrl;
+                                Products.Add(product);
                                 Count++;
                             }
                             catch (Exception e)
@@ -448,6 +440,8 @@ namespace CEDTeam.CES.Tool
                     }
 
                 }
+                var listTaskTiki = new SynchronizedCollection<Task>();
+
                 listKey.ForEach(item =>
                 {
                     var apiTask = new Task(() =>
@@ -466,27 +460,23 @@ namespace CEDTeam.CES.Tool
                                 var sCommentCount = long.Parse(!mCommentCount.Success ? "0" : mCommentCount.Groups[1].Value);
                                 var sUrl = Regex.Match(element.InnerHtml, "href=\"(.+?)\"").Groups[1].Value;
                                 var sDiscount = Regex.Match(element.InnerHtml, "sale-tag-square\">(.+?)<").Groups[1].Value;
-                                txtLog.AppendText(element.GetAttributeValue("data-title", "") + "\r\n");
+                                txtLog.AppendText("--TIKI: " + element.GetAttributeValue("data-title", "") + "\r\n");
                                 var productId = element.GetAttributeValue("data-id", "");
-                                if (!productIds.Contains(productId))
+                                Products.Add(new Product
                                 {
-                                    Products.Add(new Product
-                                    {
-                                        ProductId = productId,
-                                        Name = element.GetAttributeValue("data-title", ""),
-                                        CategoryId = item.CategoryId,
-                                        Quantity = 0,
-                                        QuantitySold = 0,
-                                        CreatedProductDate = DateTime.UtcNow,
-                                        CommentCount = sCommentCount,
-                                        Url = sUrl,
-                                        Discount = sDiscount,
-                                        Price = long.Parse(element.GetAttributeValue("data-price", "")),
-                                        CategoryUrl = item.Url
-                                    });
-                                    productIds += productId +",";
-                                    Count++;
-                                }
+                                    ProductId = "tiki"+productId,
+                                    Name = element.GetAttributeValue("data-title", ""),
+                                    CategoryId = item.CategoryId,
+                                    Quantity = 0,
+                                    QuantitySold = 0,
+                                    CreatedProductDate = DateTime.UtcNow,
+                                    CommentCount = sCommentCount,
+                                    Url = sUrl,
+                                    Discount = sDiscount,
+                                    Price = long.Parse(element.GetAttributeValue("data-price", "")),
+                                    CategoryUrl = item.Url
+                                });
+                                Count++;
                             });
                             Thread.Sleep((int)sleepTime.Value * 1000);
                         } while (els?.Count > 0);
@@ -494,6 +484,12 @@ namespace CEDTeam.CES.Tool
                     });
                     apiTask.Start();
                     listTask.Add(apiTask);
+                    listTaskTiki.Add(apiTask);
+                    if(listTaskTiki.Count > 10)
+                    {
+                        Task.WaitAll(listTaskTiki.ToArray());
+                        listTaskTiki.Clear();
+                    }
                     Thread.Sleep((int)sleepTime.Value * 1000);
                 });
             });
@@ -551,6 +547,8 @@ namespace CEDTeam.CES.Tool
                     }
 
                 }
+                var listTaskSendo = new SynchronizedCollection<Task>();
+
                 listKey.ForEach(item =>
                 {
                     var apiTask = new Task(() =>
@@ -564,35 +562,38 @@ namespace CEDTeam.CES.Tool
                             page++;
                             result?.Result?.Data?.ForEach(prod =>
                             {
-                                txtLog.AppendText(prod.Name + "\r\n");
-                                if (!productIds.Contains(prod.ProductId.Value.ToString()))
+                                txtLog.AppendText("--SENDO: "+prod.Name + "\r\n");
+                                Products.Add(new Product
                                 {
-                                    Products.Add(new Product
-                                    {
-                                        Name = prod.Name,
-                                        CommentCount = prod.TotalRated,
-                                        Url = string.Format("https://www.sendo.vn/product-n-{0}.html", prod.ProductId.Value),
-                                        CategoryId = item.CategoryId,
-                                        CreatedProductDate = null,
-                                        Discount = prod.FinalPromotionPercent.Value.ToString() + "%",
-                                        Quantity = null,
-                                        QuantitySold = prod.OrderCount,
-                                        VariableJson = null,
-                                        Price = prod.FinalPriceMax,
-                                        ProductId = prod.ProductId.Value.ToString(),
-                                        CategoryUrl = item.CategoryUrl
-                                    });
-                                    productIds += prod.ProductId.Value.ToString() + ",";
-                                    Count++;
-                                }
+                                    Name = prod.Name,
+                                    CommentCount = prod.TotalRated,
+                                    Url = string.Format("https://www.sendo.vn/product-n-{0}.html", prod.ProductId.Value),
+                                    CategoryId = item.CategoryId,
+                                    CreatedProductDate = null,
+                                    Discount = prod.FinalPromotionPercent.Value.ToString() + "%",
+                                    Quantity = null,
+                                    QuantitySold = prod.OrderCount,
+                                    VariableJson = null,
+                                    Price = prod.FinalPriceMax,
+                                    ProductId = "sendo"+prod.ProductId.Value.ToString(),
+                                    CategoryUrl = item.CategoryUrl
+                                });
+                                Count++;
                             });
                             Thread.Sleep((int)sleepTime.Value * 1000);
                         } while (result?.Result.Data?.Count > 0);
                         txtLog.AppendText("---Done get Sendo Category" + item.Url);
                     });
                     Thread.Sleep((int)sleepTime.Value * 1000);
+                  
                     apiTask.Start();
                     listTask.Add(apiTask);
+                    listTaskSendo.Add(apiTask);
+                    if (listTaskSendo.Count > 5)
+                    {
+                        Task.WaitAll(listTaskSendo.ToArray());
+                        listTaskSendo.Clear();
+                    }
                 });
             });
             sendoTask.Start();
@@ -624,6 +625,15 @@ namespace CEDTeam.CES.Tool
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
+            try
+            {
+                foreach (var item in listTask)
+                    item.Dispose();
+            } 
+            catch(Exception ex)
+            {
+
+            }
             this.Dispose();
         }
 

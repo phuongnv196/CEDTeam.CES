@@ -385,7 +385,7 @@
             this.recordPerInsertTime.Size = new System.Drawing.Size(112, 23);
             this.recordPerInsertTime.TabIndex = 7;
             this.recordPerInsertTime.Value = new decimal(new int[] {
-            100,
+            1000,
             0,
             0,
             0});

@@ -18,16 +18,17 @@ namespace CEDTeam.CES.Tool.Repositories
         {
             try
             {
+                products = products.Distinct().ToList();
                 DynamicParameters dynamicParameters = new DynamicParameters();
                 DataTable dataTable = new DataTable();
                 dataTable.Columns.Add("ProductId", typeof(string));
                 dataTable.Columns.Add("Name", typeof(string));
-                dataTable.Columns.Add("Price", typeof(float));
+                dataTable.Columns.Add("Price", Nullable.GetUnderlyingType(typeof(float?)));
                 dataTable.Columns.Add("CreatedProductDate", typeof(DateTime));
-                dataTable.Columns.Add("Quantity", typeof(int));
+                dataTable.Columns.Add("Quantity", Nullable.GetUnderlyingType(typeof(int?)));
                 dataTable.Columns.Add("CategoryUrl", typeof(string));
-                dataTable.Columns.Add("QuantitySold", typeof(int));
-                dataTable.Columns.Add("CommentCount", typeof(int));
+                dataTable.Columns.Add("QuantitySold", Nullable.GetUnderlyingType(typeof(int?)));
+                dataTable.Columns.Add("CommentCount", Nullable.GetUnderlyingType(typeof(int?)));
                 dataTable.Columns.Add("Discount", typeof(string));
                 dataTable.Columns.Add("VariableJson", typeof(string));
                 dataTable.Columns.Add("Url", typeof(string));
@@ -38,12 +39,12 @@ namespace CEDTeam.CES.Tool.Repositories
                     row["ProductId"] = item.ProductId;
                     row["Name"] = item.Name;
                     row["Price"] = item.Price;
-                    row["CreatedProductDate"] = item.CreatedProductDate;
-                    row["Quantity"] = item.Quantity;
+                    row["CreatedProductDate"] = item.CreatedProductDate??DateTime.UtcNow;
+                    row["Quantity"] = (object)item.Quantity ?? DBNull.Value;
                     row["CategoryUrl"] = item.CategoryUrl;
-                    row["QuantitySold"] = item.QuantitySold;
-                    row["CommentCount"] = item.CommentCount;
-                    row["Discount"] = item.Discount.Replace("%", "").Replace("-", "");
+                    row["QuantitySold"] = (object)item.QuantitySold ?? DBNull.Value;
+                    row["CommentCount"] = (object)item.CommentCount ?? DBNull.Value;
+                    row["Discount"] = item.Discount?.Replace("%", "").Replace("-", "");
                     row["VariableJson"] = item.VariableJson;
                     row["Url"] = item.Url;
                     dataTable.Rows.Add(row);
