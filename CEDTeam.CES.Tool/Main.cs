@@ -293,7 +293,7 @@ namespace CEDTeam.CES.Tool
                         } while (result != null || result?.items != null);
                         txtLog.AppendText("---Done get Shopee Category" + item.Url);
                     });
-                    Thread.Sleep((int)sleepTime.Value * 1000);
+                   
                     apiTask.Start();
                     listTask.Add(apiTask);
                     listTaskShopee.Add(apiTask);
@@ -302,6 +302,7 @@ namespace CEDTeam.CES.Tool
                         Task.WaitAll(listTaskShopee.ToArray());
                         listTaskShopee.Clear();
                     }
+                    Thread.Sleep((int)sleepTime.Value * 1000);
                 });
             });
             shopeeTask.Start();
@@ -441,6 +442,7 @@ namespace CEDTeam.CES.Tool
 
                 }
                 var listTaskTiki = new SynchronizedCollection<Task>();
+                string listProductIds = "";
 
                 listKey.ForEach(item =>
                 {
@@ -462,21 +464,26 @@ namespace CEDTeam.CES.Tool
                                 var sDiscount = Regex.Match(element.InnerHtml, "sale-tag-square\">(.+?)<").Groups[1].Value;
                                 txtLog.AppendText("--TIKI: " + element.GetAttributeValue("data-title", "") + "\r\n");
                                 var productId = element.GetAttributeValue("data-id", "");
-                                Products.Add(new Product
+
+                                if(!listProductIds.Contains("tiki" + productId))
                                 {
-                                    ProductId = "tiki"+productId,
-                                    Name = element.GetAttributeValue("data-title", ""),
-                                    CategoryId = item.CategoryId,
-                                    Quantity = 0,
-                                    QuantitySold = 0,
-                                    CreatedProductDate = DateTime.UtcNow,
-                                    CommentCount = sCommentCount,
-                                    Url = sUrl,
-                                    Discount = sDiscount,
-                                    Price = long.Parse(element.GetAttributeValue("data-price", "")),
-                                    CategoryUrl = item.Url
-                                });
-                                Count++;
+                                    Products.Add(new Product
+                                    {
+                                        ProductId = "tiki" + productId,
+                                        Name = element.GetAttributeValue("data-title", ""),
+                                        CategoryId = item.CategoryId,
+                                        Quantity = 0,
+                                        QuantitySold = 0,
+                                        CreatedProductDate = DateTime.UtcNow,
+                                        CommentCount = sCommentCount,
+                                        Url = sUrl,
+                                        Discount = sDiscount,
+                                        Price = long.Parse(element.GetAttributeValue("data-price", "")),
+                                        CategoryUrl = item.Url
+                                    });
+                                    listProductIds += "tiki" + productId + ", ";
+                                    Count++;
+                                }
                             });
                             Thread.Sleep((int)sleepTime.Value * 1000);
                         } while (els?.Count > 0);
@@ -548,6 +555,7 @@ namespace CEDTeam.CES.Tool
 
                 }
                 var listTaskSendo = new SynchronizedCollection<Task>();
+                string listProductIds = "";
 
                 listKey.ForEach(item =>
                 {
@@ -555,31 +563,39 @@ namespace CEDTeam.CES.Tool
                     {
                         var result = new SendoProductItem();
                         var page = 1;
+                        long? totalPage = 0;
                         do
                         {
                             string uri = string.Format(ApiConstant.Sendo.GET_PROD_AJAX, item.ProductId, page);
                             result = apiHelper.Get<SendoProductItem>(uri);
                             page++;
+                            totalPage = result?.Result?.MetaData?.TotalPage.Value;
                             result?.Result?.Data?.ForEach(prod =>
                             {
                                 txtLog.AppendText("--SENDO: "+prod.Name + "\r\n");
-                                Products.Add(new Product
+                                if(!listProductIds.Contains("sendo" + prod.ProductId.Value.ToString()))
                                 {
-                                    Name = prod.Name,
-                                    CommentCount = prod.TotalRated,
-                                    Url = string.Format("https://www.sendo.vn/product-n-{0}.html", prod.ProductId.Value),
-                                    CategoryId = item.CategoryId,
-                                    CreatedProductDate = null,
-                                    Discount = prod.FinalPromotionPercent.Value.ToString() + "%",
-                                    Quantity = null,
-                                    QuantitySold = prod.OrderCount,
-                                    VariableJson = null,
-                                    Price = prod.FinalPriceMax,
-                                    ProductId = "sendo"+prod.ProductId.Value.ToString(),
-                                    CategoryUrl = item.CategoryUrl
-                                });
-                                Count++;
+                                    Products.Add(new Product
+                                    {
+                                        Name = prod.Name,
+                                        CommentCount = prod.TotalRated,
+                                        Url = string.Format("https://www.sendo.vn/product-n-{0}.html", prod.ProductId.Value),
+                                        CategoryId = item.CategoryId,
+                                        CreatedProductDate = null,
+                                        Discount = prod.FinalPromotionPercent.Value.ToString() + "%",
+                                        Quantity = null,
+                                        QuantitySold = prod.OrderCount,
+                                        VariableJson = null,
+                                        Price = prod.FinalPriceMax,
+                                        ProductId = "sendo" + prod.ProductId.Value.ToString(),
+                                        CategoryUrl = item.CategoryUrl
+                                    });
+                                    listProductIds += "sendo" + prod.ProductId.Value.ToString() + ", ";
+                                    Count++;
+                                }
                             });
+                            if (page > totalPage.Value)
+                                break;
                             Thread.Sleep((int)sleepTime.Value * 1000);
                         } while (result?.Result.Data?.Count > 0);
                         txtLog.AppendText("---Done get Sendo Category" + item.Url);

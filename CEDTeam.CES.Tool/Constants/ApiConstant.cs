@@ -28,7 +28,7 @@ namespace CEDTeam.CES.Tool.Constants
         public static class Sendo
         {
             public const string SENDO_BASE = "https://www.sendo.vn/";
-            public const string GET_PROD_AJAX = "m/wap_v2/category/product?category_id={0}&listing_algo=algo5&p={1}&platform=web&s=60&sortType=vasup_desc";
+            public const string GET_PROD_AJAX = "m/wap_v2/category/product?category_id={0}&listing_algo=algo5&p={1}&platform=web";
         }
     }
 }
