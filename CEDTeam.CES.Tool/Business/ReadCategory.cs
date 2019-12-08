@@ -37,11 +37,11 @@ namespace CEDTeam.CES.Tool.Business
                 item.SiteId = siteId;
             });
 
-            if (!categoryRepository.CheckCategory(siteId.ToString()))
-            {
-                categoryRepository.AddCategory(categorys["category"]);
-                categoryRepository.AddCategory(categorys["subcategory"]);
-            }
+            //if (!categoryRepository.CheckCategory(siteId.ToString()))
+            //{
+            //    categoryRepository.AddCategorySub(categorys["category"]);
+            //    categoryRepository.AddCategorySub(categorys["subcategory"]);
+            //}
             return categorys;
         }
     }

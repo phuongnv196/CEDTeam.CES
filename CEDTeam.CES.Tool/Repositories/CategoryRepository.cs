@@ -33,5 +33,25 @@ namespace CEDTeam.CES.Tool.Repositories
                 return result > 0;
             }
         }
+        
+        public bool CheckCategorySub(string id)
+        {
+            using(var db = GetConnection())
+            {
+                DynamicParameters dynamicParameters = new DynamicParameters();
+                dynamicParameters.Add("siteId", id, System.Data.DbType.Int32);
+                var result = db.ExecuteScalar<int>("spCheckCategorySub", dynamicParameters, commandType: System.Data.CommandType.StoredProcedure);
+                return result > 0;
+            }
+        }
+        public void AddCategorySub(List<Category> categories)
+        {
+            using (var db = GetConnection())
+            {
+                DynamicParameters dynamicParameters = new DynamicParameters();
+                dynamicParameters.Add("@category", categories.ToDataTable<Category>(new string[] { "CategorySiteId", "CategoryName", "SiteId", "CategoryUrl", "Parent", "ParentId", "Level" }).AsTableValuedParameter("CategorySubType"));
+                db.Execute("spInsertCategorieSub", dynamicParameters, commandType: System.Data.CommandType.StoredProcedure);
+            }
+        }
     }
 }

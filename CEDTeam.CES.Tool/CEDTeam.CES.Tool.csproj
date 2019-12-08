@@ -150,6 +150,7 @@
     <None Include="Datas\lazadaCategory.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Datas\Sendo.json" />
     <None Include="Datas\sendoCategory.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

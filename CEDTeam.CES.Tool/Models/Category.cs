@@ -20,5 +20,9 @@ namespace CEDTeam.CES.Tool.Models
         public string CategoryUrl { get; set; }
         [JsonProperty("Parent")]
         public string Parent { get; set; }
+        [JsonProperty("ParentId")]
+        public string ParentId { get; set; }
+        [JsonProperty("Level")]
+        public string Level { get; set; }
     }
 }

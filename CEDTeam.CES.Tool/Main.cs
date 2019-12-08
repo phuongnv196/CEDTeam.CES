@@ -42,12 +42,12 @@ namespace CEDTeam.CES.Tool
             CheckForIllegalCrossThreadCalls = false;
             try
             {
-                new BaseRepository().GetConnection().Open();
+               // new BaseRepository().GetConnection().Open();
             } 
             catch(Exception e)
             {
                 MessageBox.Show(e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.Close();
+                //this.Close();
             }
             foreach (var item in GetAllControl(this, typeof(TreeView)))
             {
@@ -392,7 +392,7 @@ namespace CEDTeam.CES.Tool
                             }
                     });
                         // productRepository.InsertProduct(listProduct);
-                        Thread.Sleep(60 * 1000);
+                        Thread.Sleep(1 * 1000);
                     } while (result != null || result.mods?.listItems != null);
                     txtLog.AppendText("---Done get Lazada Category" + item.Url);
                     //Thread.Sleep((int)sleepTime.Value * 1000);
