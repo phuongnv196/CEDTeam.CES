@@ -25,23 +25,33 @@ namespace CEDTeam.CES.Infrastructure.Repositories
         {
             using(var db = _baseRepository.GetConnection())
             {
-                string query = $"SELECT count(1) FROM Product ;"+
-                    $" SELECT count(1) FROM Product WHERE Name LIKE CONCAT('%',@search,'%');  " +
+                //EXEC spGetProducts_Test @offset = 10,  @pageSize = 10, @searchString = N'', @orderBy = 'ProductId'
+                var param = new DynamicParameters();
+                param.Add("@offset", start);
+                param.Add("@pageSize", length);
+                param.Add("@searchString", search);
+                param.Add("@orderBy", listColumn[columnSort]);
+                param.Add("@isAsc", isAsc);
+
+
+                /*string query = $"SELECT COUNT_BIG(1) FROM Product ;" +
+                    $" SELECT COUNT_BIG(1) FROM Product {(string.IsNullOrWhiteSpace(search) ? "":$"WHERE CONTAINS(Name, {search})")};  " +
                     "SELECT Id, ProductId, Name, Price, Quantity, CategoryName, SiteName, QuantitySold, CommentCount, Discount, Url, CreatedProductDate, CreatedDate, UpdatedDate, CASE DATEDIFF(DAY, P.CreatedProductDate, GETUTCDATE()) WHEN 0 THEN 0 ELSE (QuantitySold/ DATEDIFF(DAY, P.CreatedProductDate, GETUTCDATE())) END AS Average " +
                     "FROM Product AS P JOIN Category AS C ON P.CategoryId = C.CategoryId " +
                     "JOIN Site AS S ON C.SiteId = S.SiteId "+
-                    "WHERE Name LIKE CONCAT('%',@search,'%')";
+                    $"{(string.IsNullOrWhiteSpace(search) ? "":$"WHERE CONTAINS(Name, {search})")}";
                 string orderBy = $" ORDER BY {listColumn[columnSort]} {(!isAsc ? "DESC" : "")}";
                 string limit = $" OFFSET {start} ROWS FETCH NEXT  {length} ROWS ONLY";
                 string command = $"{query} {orderBy} {limit}";
 
                 DynamicParameters dynamicParameters = new DynamicParameters();
                 dynamicParameters.Add("@search", search.Replace("'", "''").Replace("%", "[%]"));
-
-                var result = await db.QueryMultipleAsync(command, dynamicParameters);
+                */
+                //var result = await db.QueryMultipleAsync(command, dynamicParameters);
+                var result = await db.QueryMultipleAsync("spGetProducts", param, commandType: System.Data.CommandType.StoredProcedure);
                 var filterProductDto = new FilterProductDto();
-                filterProductDto.RecordsTotal = await result.ReadFirstAsync<int>();
-                filterProductDto.RecordsFiltered = await result.ReadFirstAsync<int>();
+                filterProductDto.RecordsTotal = await result.ReadSingleAsync<long>();
+                filterProductDto.RecordsFiltered = await result.ReadFirstAsync<long>();
                 filterProductDto.Data = (await result.ReadAsync<ProductDto>()).AsList();
                 return filterProductDto;
             }
@@ -67,24 +77,34 @@ namespace CEDTeam.CES.Infrastructure.Repositories
 
         public async Task<FilterProductDto> GetProductSiteIdAsync(int start, int length, string search, int columnSort, int siteId, bool isAsc = true)
         {
-            string query = $"SELECT count(1) FROM Product AS P JOIN Category AS C ON P.CategoryId = C.CategoryId JOIN Site AS S ON C.SiteId = S.SiteId WHERE C.SiteId="+siteId+";" +
-                    $" SELECT count(1) FROM Product AS P JOIN Category AS C ON P.CategoryId = C.CategoryId JOIN Site AS S ON C.SiteId = S.SiteId WHERE C.SiteId=" + siteId+$" AND Name LIKE CONCAT('%',@search,'%');  " +
-                    "SELECT Id, ProductId, Name, Price, Quantity, CategoryName, SiteName, QuantitySold, CommentCount, Discount, Url, CreatedProductDate, CreatedDate, UpdatedDate, CASE DATEDIFF(DAY, P.CreatedProductDate, GETUTCDATE()) WHEN 0 THEN 0 ELSE (QuantitySold/ DATEDIFF(DAY, P.CreatedProductDate, GETUTCDATE())) END AS Average " +
-                    "FROM Product AS P JOIN Category AS C ON P.CategoryId = C.CategoryId " +
-                    "JOIN Site AS S ON C.SiteId = S.SiteId " +
-                    "WHERE Name LIKE CONCAT('%',@search,'%')" +
-                    "AND C.SiteId=" +siteId;
-            string orderBy = $" ORDER BY {listColumn[columnSort]} {(!isAsc ? "DESC" : "")}";
-            string limit = $" OFFSET {start} ROWS FETCH NEXT  {length} ROWS ONLY";
-            string command = $"{query} {orderBy} {limit}";
+
+            //
+            //EXEC spGetProducts_Test @offset = 10,  @pageSize = 10, @searchString = N'', @orderBy = 'ProductId'
+            var param = new DynamicParameters();
+            param.Add("@offset", start);
+            param.Add("@pageSize", length);
+            param.Add("@searchString", search);
+            param.Add("@siteId", siteId);
+            param.Add("@orderBy", listColumn[columnSort]);
+            param.Add("@isAsc", isAsc);
+            //string query = $"SELECT COUNT_BIG(1) FROM Product AS P JOIN Category AS C ON P.CategoryId = C.CategoryId JOIN Site AS S ON C.SiteId = S.SiteId WHERE C.SiteId=" +siteId+";" +
+            //        $" SELECT COUNT_BIG(1) FROM Product AS P JOIN Category AS C ON P.CategoryId = C.CategoryId JOIN Site AS S ON C.SiteId = S.SiteId WHERE C.SiteId=" + siteId+$" {(string.IsNullOrWhiteSpace(search) ? "" : $"WHERE CONTAINS(Name, {search})")};  " +
+            //        "SELECT Id, ProductId, Name, Price, Quantity, CategoryName, SiteName, QuantitySold, CommentCount, Discount, Url, CreatedProductDate, CreatedDate, UpdatedDate, CASE DATEDIFF(DAY, P.CreatedProductDate, GETUTCDATE()) WHEN 0 THEN 0 ELSE (QuantitySold/ DATEDIFF(DAY, P.CreatedProductDate, GETUTCDATE())) END AS Average " +
+            //        "FROM Product AS P JOIN Category AS C ON P.CategoryId = C.CategoryId " +
+            //        "JOIN Site AS S ON C.SiteId = S.SiteId " +
+            //        $"{(string.IsNullOrWhiteSpace(search) ? "":$"WHERE CONTAINS(Name, {search})")}" +
+            //        "AND C.SiteId=" +siteId;
+            //string orderBy = $" ORDER BY {listColumn[columnSort]} {(!isAsc ? "DESC" : "")}";
+            //string limit = $" OFFSET {start} ROWS FETCH NEXT  {length} ROWS ONLY";
+            //string command = $"{query} {orderBy} {limit}";
             using (var db = _baseRepository.GetConnection())
             {
-                DynamicParameters dynamicParameters = new DynamicParameters();
-                dynamicParameters.Add("@search", search.Replace("'", "''").Replace("%", "[%]"));
-                var result = await db.QueryMultipleAsync(command, dynamicParameters);
+                //DynamicParameters dynamicParameters = new DynamicParameters();
+                //dynamicParameters.Add("@search", search.Replace("'", "''").Replace("%", "[%]"));
+                var result = await db.QueryMultipleAsync("spGetProductsBySite", param, commandType: System.Data.CommandType.StoredProcedure);
                 var filterProductDto = new FilterProductDto();
-                filterProductDto.RecordsTotal = await result.ReadFirstAsync<int>();
-                filterProductDto.RecordsFiltered = await result.ReadFirstAsync<int>();
+                filterProductDto.RecordsTotal = await result.ReadFirstAsync<long>();
+                filterProductDto.RecordsFiltered = await result.ReadFirstAsync<long>();
                 filterProductDto.Data = (await result.ReadAsync<ProductDto>()).AsList();
                 return filterProductDto;
             }
