@@ -18,7 +18,7 @@ namespace CEDTeam.CES.Infrastructure.Repositories
         }
         public async Task<List<CategoryDto>> GetCategoryById(string cateId)
         {
-            using (var connection = new SqlConnection("Data Source=vinet.ddns.net,2021;Initial Catalog=CES_Crawl_Dev;Persist Security Info=True;User ID=sa;Password=ces@2019"))
+            using (var connection = _baseRepository.GetConnectionDev())
             {
                 var param = new DynamicParameters();
                 param.Add("@CategoriID", cateId);
@@ -30,7 +30,7 @@ namespace CEDTeam.CES.Infrastructure.Repositories
         
         public async Task<List<CategoryDto>> GetSubCategoryById(string cateId)
         {
-            using (var connection = new SqlConnection("Data Source=vinet.ddns.net,2021;Initial Catalog=CES_Crawl_Dev;Persist Security Info=True;User ID=sa;Password=ces@2019"))
+            using (var connection = _baseRepository.GetConnectionDev())
             {
                 var param = new DynamicParameters();
                 param.Add("@CategoriID", cateId);

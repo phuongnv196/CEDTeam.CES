@@ -21,5 +21,10 @@ namespace CEDTeam.CES.Infrastructure.Repositories
         {
             return new SqlConnection(_config.Value.ConnectString);
         }
+
+        public IDbConnection GetConnectionDev()
+        {
+            return new SqlConnection(_config.Value.ConnectStringDev);
+        }
     }
 }
