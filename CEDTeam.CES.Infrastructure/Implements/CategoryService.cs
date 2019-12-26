@@ -18,5 +18,10 @@ namespace CEDTeam.CES.Infrastructure.Implements
         {
             return await _categoryRepository.GetCategoryById(cateId);
         }
+        
+        public async Task<List<CategoryDto>> GetSubCategoryById(string cateId)
+        {
+            return await _categoryRepository.GetSubCategoryById(cateId);
+        }
     }
 }

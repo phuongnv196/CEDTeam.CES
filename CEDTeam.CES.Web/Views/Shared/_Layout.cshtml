@@ -72,6 +72,9 @@
                     </ul>
                 </li>
                 <li>
+                    <a class="@(ViewBag.Title.IndexOf("Danh mục sản phẩm")> -1 ? "active": "")" asp-controller="Category" asp-action="Index">Danh mục sản phẩm</a>
+                </li>
+                <li>
                     <a asp-area="" asp-controller="User" asp-action="Logout">Đăng xuất</a>
                 </li>
                 @*<li>

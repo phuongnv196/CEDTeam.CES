@@ -1,0 +1,35 @@
+﻿@model List<CategoryViewModel>
+@{
+    ViewData["Title"] = "Danh mục sản phẩm";
+}
+    <style>
+        li{
+            cursor: pointer;
+        }
+        .tiki {
+            color: #007bff;
+        }
+        .sendo {
+            color: #dc3545;
+        }
+    </style>
+<h1>Tiki</h1>
+<ol class="tiki">
+    @foreach (var item in Model?.Where(item => item.SiteId == "3").ToList())
+    {
+        <li class="cate-item" cate-id="@item.CategoryId" parent-id="@item.Parent" site-id="@item.SiteId" cate-site-id="@item.CategorySiteId" cate-name="@item.CategoryName">
+            @item.CategoryName
+        </li>
+    }
+</ol>
+
+<h1>Sendo</h1>
+<ol class="sendo">
+    @foreach (var item in Model?.Where(item => item.SiteId == "4").ToList())
+    {
+        <li class="cate-item" cate-id="@item.CategoryId" parent-id="@item.Parent" site-id="@item.SiteId" cate-site-id="@item.CategorySiteId" cate-name="@item.CategoryName">
+            @item.CategoryName
+        </li>
+    }
+</ol>
+<script src="~/js/application/category.js"></script>

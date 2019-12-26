@@ -3,26 +3,36 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CEDTeam.CES.Core.Interfaces;
-using Microsoft.AspNetCore.Http;
+using CEDTeam.CES.Web.Models;
+using Mapster;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CEDTeam.CES.Web.Controllers.api
+namespace CEDTeam.CES.Web.Controllers
 {
-    public class CategoryController : BaseAPIController
+    [Route("category")]
+    public class CategoryController : Controller
     {
         private readonly ICategoryService _categoryService;
+
         public CategoryController(ICategoryService categoryService)
         {
             _categoryService = categoryService;
         }
 
-        [HttpGet]
+        [Route("")]
+        public async Task<IActionResult> Index()
+        {
+            var model = (await _categoryService.GetSubCategoryById("")).Adapt<List<CategoryViewModel>>();
+            return View(model);
+        }
+
+        [Route("get-category-by-id")]
         public async Task<IActionResult> GetCategoryById(string categoryId)
         {
             return new ObjectResult(await _categoryService.GetCategoryById(categoryId));
         }
 
-        [HttpGet]
+        [Route("get-sub-category-by-id")]
         public async Task<IActionResult> GetSubCategoryById(string categoryId)
         {
             return new ObjectResult(await _categoryService.GetSubCategoryById(categoryId));

@@ -9,5 +9,6 @@ namespace CEDTeam.CES.Core.Interfaces
     public interface ICategoryRepository
     {
         Task<List<CategoryDto>> GetCategoryById(string cateId);
+        Task<List<CategoryDto>> GetSubCategoryById(string cateId);
     }
 }

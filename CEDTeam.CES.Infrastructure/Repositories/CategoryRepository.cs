@@ -27,5 +27,16 @@ namespace CEDTeam.CES.Infrastructure.Repositories
                 return 1.Equals(param.Get<int>("@ReturnValue")) ? result.AsList() : new List<CategoryDto>();
             }
         }
+        
+        public async Task<List<CategoryDto>> GetSubCategoryById(string cateId)
+        {
+            using (var connection = new SqlConnection("Data Source=vinet.ddns.net,2021;Initial Catalog=CES_Crawl_Dev;Persist Security Info=True;User ID=sa;Password=ces@2019"))
+            {
+                var param = new DynamicParameters();
+                param.Add("@CategoriID", cateId);
+                var result = await connection.QueryAsync<CategoryDto>("spGetSubCategoryById", param, commandType: System.Data.CommandType.StoredProcedure);
+                return result == null ? new List<CategoryDto>() : result.AsList();
+            }
+        }
     }
 }
