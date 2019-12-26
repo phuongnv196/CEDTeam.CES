@@ -1,10 +1,6 @@
 ﻿using CEDTeam.CES.Core.Interfaces;
 using CEDTeam.CES.Infrastructure.Implements;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace CEDTeam.CES.Web.Configurators
 {
@@ -15,6 +11,7 @@ namespace CEDTeam.CES.Web.Configurators
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IApiService, ApiService>();
             services.AddTransient<IProductService, ProductService>();
+            services.AddTransient<ICategoryService, CategoryService>();
         }
     }
 }
