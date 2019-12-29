@@ -19,7 +19,9 @@ var categoryFunction = function () {
 
     var initEvent = function () {
         initDOM._domClass.categoryItemAction.on('click', function (e) {
+            console.log('dddddd');
             var categoryStileID = $(this).attr(initDOM._domAttr.cateStileId)
+            console.log(categoryStileID);
             $.get(
                 initDOM._domURL.getCategoryURL,
                 {
@@ -33,13 +35,14 @@ var categoryFunction = function () {
                         stringAppend += '<div class="col-3">';
                         stringAppend += '<a href="' + value.categoryUrl + '" target="_blank">' + value.categoryName + '</a>'
                         stringAppend += '</div>';
+                        stringAppend += '<div class="col-1">';
+                        stringAppend += '<a class="cate-item" cate-id="' + value.categoryId + '" parent-id="' + value.parent + '" site-id="' + value.siteId + '" cate-site-id="' + value.categorySiteId + '" cate-name="' + value.categoryName + '"><i class="fa fa-angle-down" aria-hidden="true"></i></a>';
+                        stringAppend += '</div>';
                         stringAppend += '</div>';
                         stringAppend += '<div style="margin-left: 30px" div-cate-site-id="'+ value.categoryStileID +'">';
                         stringAppend += '</div>';
-                        console.log(value);
                     });
-                    console.log(result);
-                    $('[' + initDOM._domAttr.divCategoryItemClass + '=' + categoryStileID + ']').append(stringAppend);              
+                    $('[' + initDOM._domAttr.divCategoryItemClass + '=' + categoryStileID + ']').html(stringAppend);              
                 }
                 else {
 
