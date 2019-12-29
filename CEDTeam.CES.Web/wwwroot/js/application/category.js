@@ -1,27 +1,57 @@
-﻿var category = function () {
+﻿$(document).ready(function () {
+    categoryFunction.init();
+});
+
+var categoryFunction = function () {
+    var initDOM = {
+        _domURL: {
+            getCategoryURL: '/category/get-sub-category-by-id'
+        },
+        _domClass: {
+            categoryItemClass: 'cate-item',
+            categoryItemAction: $(".cate-item"),
+        },
+        _domAttr: {
+            cateStileId: 'cate-site-id',
+            divCategoryItemClass: 'div-cate-site-id',
+        }
+    };
+
     var initEvent = function () {
-        $(".cate-item").on("click", function (e) {
-            $.get("/category/get-sub-category-by-id", { categoryId: $(e.target).attr("cate-site-id") })
-                .done(function (data) {
-                    if (data) {
-                        $(e.target).html($(e.target).attr("cate-name"));
-                        $(e.target).append("<ol><ol>");
-                        var element = $(e.target).find("ol")[1];
-                        $(data).each(function (i, e) {
-                            $(element).append('<li class="cate-item" cate-id="' + e.categoryId + '" parent-id="' + e.parent + '" site-id="' + e.siteId + '" cate-site-id="' + e.categorySiteId + '" cate-name="' + e.categoryName + '">' + e.categoryName+'</li>')
-                        });
-                    }
-                });
+        initDOM._domClass.categoryItemAction.on('click', function (e) {
+            var categoryStileID = $(this).attr(initDOM._domAttr.cateStileId)
+            $.get(
+                initDOM._domURL.getCategoryURL,
+                {
+                    categoryId: $(this).attr(initDOM._domAttr.cateStileId)
+                }
+            ).done(function (result) {
+                if (result) {
+                    var stringAppend = '';
+                    $.each(result, function (index, value) {
+                        stringAppend += '<div class="row">';
+                        stringAppend += '<div class="col-3">';
+                        stringAppend += '<a href="' + value.categoryUrl + '" target="_blank">' + value.categoryName + '</a>'
+                        stringAppend += '</div>';
+                        stringAppend += '</div>';
+                        stringAppend += '<div style="margin-left: 30px" div-cate-site-id="'+ value.categoryStileID +'">';
+                        stringAppend += '</div>';
+                        console.log(value);
+                    });
+                    console.log(result);
+                    $('[' + initDOM._domAttr.divCategoryItemClass + '=' + categoryStileID + ']').append(stringAppend);              
+                }
+                else {
+
+                }
+            });
         });
-    }
+    };
 
     return {
         init: function () {
             initEvent();
         }
-    }
+    };
 }();
-$(function () {
-    category.init();
-});
 

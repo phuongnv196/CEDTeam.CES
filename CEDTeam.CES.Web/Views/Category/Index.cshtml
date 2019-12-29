@@ -14,14 +14,25 @@
         }
     </style>
 <h1>Tiki</h1>
-<ol class="tiki">
+<div class="tiki">
     @foreach (var item in Model?.Where(item => item.SiteId == "3").ToList())
     {
-        <li class="cate-item" cate-id="@item.CategoryId" parent-id="@item.Parent" site-id="@item.SiteId" cate-site-id="@item.CategorySiteId" cate-name="@item.CategoryName">
-            @item.CategoryName
-        </li>
+        <div style="margin-left: 30px">
+            <div class="row">
+                <div class="col-3">
+                    <a href="@item.CategoryUrl" target="_blank">@item.CategoryName</a>
+                </div>
+                <div class="col-1">
+                    <a class="cate-item" cate-id="@item.CategoryId" parent-id="@item.Parent" site-id="@item.SiteId" cate-site-id="@item.CategorySiteId" cate-name="@item.CategoryName"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div style="margin-left: 30px" div-cate-site-id="@item.CategorySiteId">
+
+            </div>
+        </div>    
     }
-</ol>
+</div>
+    
 
 <h1>Sendo</h1>
 <ol class="sendo">
