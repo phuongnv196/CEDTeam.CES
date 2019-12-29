@@ -3,44 +3,38 @@
     ViewData["Title"] = "Danh mục sản phẩm";
 }
     <style>
-        li{
-            cursor: pointer;
-        }
         .tiki {
             color: #007bff;
         }
-        .sendo {
+        /*.sendo {
             color: #dc3545;
+        }*/
+        .sendo a:link {
+          color: red;
         }
     </style>
 <h1>Tiki</h1>
 <div class="tiki">
     @foreach (var item in Model?.Where(item => item.SiteId == "3").ToList())
     {
-        <div style="margin-left: 30px">
-            <div class="row">
-                <div class="col-3">
-                    <a href="@item.CategoryUrl" target="_blank">@item.CategoryName</a>
-                </div>
-                <div class="col-1">
-                    <a class="cate-item" cate-id="@item.CategoryId" parent-id="@item.Parent" site-id="@item.SiteId" cate-site-id="@item.CategorySiteId" cate-name="@item.CategoryName"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div style="margin-left: 30px" div-cate-site-id="@item.CategorySiteId">
+        <a href="@item.CategoryUrl" target="_blank">@item.Level _ @item.CategoryName</a>
+        <a class="cate-item" cate-id="@item.CategoryId" parent-id="@item.Parent" site-id="@item.SiteId" cate-site-id="@item.CategorySiteId" cate-name="@item.CategoryName" cate-level="@item.Level"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+        <div style="margin-left: 30px" div-cate-site-id="@item.CategorySiteId">
 
-            </div>
-        </div>    
+        </div>
     }
 </div>
     
 
 <h1>Sendo</h1>
-<ol class="sendo">
+<div class="sendo">
     @foreach (var item in Model?.Where(item => item.SiteId == "4").ToList())
     {
-        <li class="cate-item" cate-id="@item.CategoryId" parent-id="@item.Parent" site-id="@item.SiteId" cate-site-id="@item.CategorySiteId" cate-name="@item.CategoryName">
-            @item.CategoryName
-        </li>
+        <a href="@item.CategoryUrl" target="_blank">@item.Level _ @item.CategoryName</a>
+        <a class="cate-item" cate-id="@item.CategoryId" parent-id="@item.Parent" site-id="@item.SiteId" cate-site-id="@item.CategorySiteId" cate-name="@item.CategoryName" cate-level="@item.Level"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+        <div style="margin-left: 30px" div-cate-site-id="@item.CategorySiteId">
+
+        </div>
     }
-</ol>
+</div>
 <script src="~/js/application/category.js"></script>
