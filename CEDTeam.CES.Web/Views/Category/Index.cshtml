@@ -1,36 +1,167 @@
 ﻿@model List<CategoryViewModel>
 @{
     ViewData["Title"] = "Danh mục sản phẩm";
+
+    var demshope = 0;
+    var demlazada = 0;
+    var demtiki = 0;
+    var demsendo = 0;
+
 }
-    <style>
-        .tiki {
-            color: #007bff;
-        }
-        /*.sendo {
-            color: #dc3545;
-        }*/
-        .sendo a:link {
-          color: red;
-        }
-    </style>
-<h1>Tiki</h1>
-<div class="tiki">
+<style>
+/*Shoppe style*/
+    .shoppe {
+        color: #ffc107;
+    }
+
+    /* unvisited link */
+    .shoppe a:link {
+      color: #ffc107;
+    }
+
+    /* visited link */
+    .shoppe a:visited {
+      color: #ffc107;
+    }
+
+    /* mouse over link */
+    .shoppe a:hover {
+      color: #ffc107;
+    }
+
+    /* selected link */
+    .shoppe a:active {
+      color: #ffc107;
+    }
+/*-------------------------------------------------------------------------------------------------*/
+
+/*Lazada style*/
+    .lazada {
+        color: #6c757d;
+    }
+
+    /* unvisited link */
+    .lazada a:link {
+      color: #6c757d;
+    }
+
+    /* visited link */
+    .lazada a:visited {
+      color: #6c757d;
+    }
+
+    /* mouse over link */
+    .lazada a:hover {
+      color: #6c757d;
+    }
+
+    /* selected link */
+    .lazada a:active {
+      color: #6c757d;
+    }
+/*-------------------------------------------------------------------------------------------------*/
+
+/*Tiki style*/
+    .tiki {
+        color: #007bff;
+    }
+
+    /* unvisited link */
+    .tiki a:link {
+      color: #007bff;
+    }
+
+    /* visited link */
+    .tiki a:visited {
+      color: #007bff;
+    }
+
+    /* mouse over link */
+    .tiki a:hover {
+      color: #007bff;
+    }
+
+    /* selected link */
+    .tiki a:active {
+      color: #007bff;
+    }
+/*-------------------------------------------------------------------------------------------------*/
+
+/*Sendo style*/
+    .sendo {
+        color: #dc3545;
+    }
+
+    /* unvisited link */
+    .sendo a:link {
+      color: #dc3545;
+    }
+
+    /* visited link */
+    .sendo a:visited {
+      color: #dc3545;
+    }
+
+    /* mouse over link */
+    .sendo a:hover {
+      color: #dc3545;
+    }
+
+    /* selected link */
+    .sendo a:active {
+      color: #dc3545;
+    }
+/*-------------------------------------------------------------------------------------------------*/
+
+</style>
+
+<h1 class="title-header-site">Shopee</h1>
+<div class="shoppe">
+    @foreach (var item in Model?.Where(item => item.SiteId == "1").ToList())
+    {
+        demshope++;
+        <a href="@item.CategoryUrl" target="_blank">@item.Level.@demshope - @item.CategoryName</a>
+        <a class="cate-item" cate-id="@item.CategoryId" parent-id="@item.Parent" site-id="@item.SiteId" cate-site-id="@item.CategorySiteId" cate-name="@item.CategoryName" cate-level="@item.Level"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+        <div style="margin-left: 30px" div-cate-site-id="@item.CategorySiteId">
+        
+        </div>
+    }
+</div>
+
+
+<h1 class="title-header-site">Lazada</h1>
+<div class="lazada">
+    @foreach (var item in Model?.Where(item => item.SiteId == "2").ToList())
+    {
+        demlazada++;
+        <a href="@item.CategoryUrl" target="_blank">@item.Level.@demsendo - @item.CategoryName</a>
+        <a class="cate-item" cate-id="@item.CategoryId" parent-id="@item.Parent" site-id="@item.SiteId" cate-site-id="@item.CategorySiteId" cate-name="@item.CategoryName" cate-level="@item.Level"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+        <div style="margin-left: 30px" div-cate-site-id="@item.CategorySiteId">
+        
+        </div>
+    }
+</div>
+
+<h1 class="title-header-site">Tiki</h1>
+<div class="shoppe">
     @foreach (var item in Model?.Where(item => item.SiteId == "3").ToList())
     {
-        <a href="@item.CategoryUrl" target="_blank">@item.Level _ @item.CategoryName</a>
+        demtiki++;
+        <a href="@item.CategoryUrl" target="_blank">@item.Level.@demtiki - @item.CategoryName</a>
         <a class="cate-item" cate-id="@item.CategoryId" parent-id="@item.Parent" site-id="@item.SiteId" cate-site-id="@item.CategorySiteId" cate-name="@item.CategoryName" cate-level="@item.Level"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
         <div style="margin-left: 30px" div-cate-site-id="@item.CategorySiteId">
 
         </div>
     }
 </div>
-    
 
-<h1>Sendo</h1>
-<div class="sendo">
+
+<h1 class="title-header-site">Sendo</h1>
+<div class="lazada">
     @foreach (var item in Model?.Where(item => item.SiteId == "4").ToList())
     {
-        <a href="@item.CategoryUrl" target="_blank">@item.Level _ @item.CategoryName</a>
+        demsendo++;
+        <a href="@item.CategoryUrl" target="_blank">@item.Level.@demsendo - @item.CategoryName</a>
         <a class="cate-item" cate-id="@item.CategoryId" parent-id="@item.Parent" site-id="@item.SiteId" cate-site-id="@item.CategorySiteId" cate-name="@item.CategoryName" cate-level="@item.Level"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
         <div style="margin-left: 30px" div-cate-site-id="@item.CategorySiteId">
 
