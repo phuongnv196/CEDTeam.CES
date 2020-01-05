@@ -22,6 +22,9 @@ var categoryFunction = function () {
         $(document).on('click', initDOM._domClass.categoryItemAction, function () {
             var categoryStileID = $(this).attr(initDOM._domAttr.cateStileId);
             var levelCategory = $(this).attr(initDOM._domAttr.levelCate);
+            if ($(this).parent('.cate-parent-level-0').length > 0) {
+                $('.hidden-category-parent-1').html('');
+            }
             if ($(this).parent('.cate-level-2').length > 0) {
                 $('.cate-level-2').css({ 'background': '' });
                 $(this).parent('.cate-level-2').css({ 'background': '#212529' });

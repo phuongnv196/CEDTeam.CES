@@ -124,13 +124,13 @@
 </style>
 
 <h1 class="title-header-site">Shopee</h1>
-<div class="shoppe">
+<div class="shoppe cate-parent-level-0">
     @foreach (var item in Model?.Where(item => item.SiteId == "1").ToList())
     {
         demshope++;
         <a href="@item.CategoryUrl" target="_blank">@item.Level.@demshope - @item.CategoryName</a>
         <a class="cate-item" cate-id="@item.CategoryId" parent-id="@item.Parent" site-id="@item.SiteId" cate-site-id="@item.CategorySiteId" cate-name="@item.CategoryName" cate-level="@item.Level"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
-        <div style="margin-left: 30px" div-cate-site-id="@item.CategorySiteId">
+        <div class="hidden-category-parent-@item.Level" style="margin-left: 30px" div-cate-site-id="@item.CategorySiteId">
         
         </div>
     }
@@ -138,26 +138,26 @@
 
 
 <h1 class="title-header-site">Lazada</h1>
-<div class="lazada">
+<div class="lazada cate-parent-level-0">
     @foreach (var item in Model?.Where(item => item.SiteId == "2").ToList())
     {
         demlazada++;
         <a href="@item.CategoryUrl" target="_blank">@item.Level.@demsendo - @item.CategoryName</a>
         <a class="cate-item" cate-id="@item.CategoryId" parent-id="@item.Parent" site-id="@item.SiteId" cate-site-id="@item.CategorySiteId" cate-name="@item.CategoryName" cate-level="@item.Level"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
-        <div style="margin-left: 30px" div-cate-site-id="@item.CategorySiteId">
+        <div class="hidden-category-parent-@item.Level" style="margin-left: 30px" div-cate-site-id="@item.CategorySiteId">
         
         </div>
     }
 </div>
 
 <h1 class="title-header-site">Tiki</h1>
-<div class="tiki">
+<div class="tiki cate-parent-level-0">
     @foreach (var item in Model?.Where(item => item.SiteId == "3").ToList())
     {
         demtiki++;
         <a href="@item.CategoryUrl" target="_blank">@item.Level.@demtiki - @item.CategoryName</a>
         <a class="cate-item" cate-id="@item.CategoryId" parent-id="@item.Parent" site-id="@item.SiteId" cate-site-id="@item.CategorySiteId" cate-name="@item.CategoryName" cate-level="@item.Level"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
-        <div style="margin-left: 30px" div-cate-site-id="@item.CategorySiteId">
+        <div class="hidden-category-parent-@item.Level" style="margin-left: 30px" div-cate-site-id="@item.CategorySiteId">
 
         </div>
     }
@@ -165,13 +165,13 @@
 
 
 <h1 class="title-header-site">Sendo</h1>
-<div class="sendo">
+<div class="sendo cate-parent-level-0">
     @foreach (var item in Model?.Where(item => item.SiteId == "4").ToList())
     {
         demsendo++;
         <a href="@item.CategoryUrl" target="_blank">@item.Level.@demsendo - @item.CategoryName</a>
         <a class="cate-item" cate-id="@item.CategoryId" parent-id="@item.Parent" site-id="@item.SiteId" cate-site-id="@item.CategorySiteId" cate-name="@item.CategoryName" cate-level="@item.Level"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
-        <div style="margin-left: 30px" div-cate-site-id="@item.CategorySiteId">
+        <div class="hidden-category-parent-@item.Level" style="margin-left: 30px" div-cate-site-id="@item.CategorySiteId">
 
         </div>
     }
