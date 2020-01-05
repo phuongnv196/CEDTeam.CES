@@ -15,5 +15,6 @@ namespace CEDTeam.CES.Core.Dtos
         public string ParentId { set; get; }
         public string Level { set; get; }
         public string IdWeb { set; get; }
+        public int IsParent { get; set; }
     }
 }

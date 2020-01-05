@@ -22,6 +22,14 @@ var categoryFunction = function () {
         $(document).on('click', initDOM._domClass.categoryItemAction, function () {
             var categoryStileID = $(this).attr(initDOM._domAttr.cateStileId);
             var levelCategory = $(this).attr(initDOM._domAttr.levelCate);
+            if ($(this).parent('.cate-level-2').length > 0) {
+                $('.cate-level-2').css({ 'background': '' });
+                $(this).parent('.cate-level-2').css({ 'background': '#212529' });
+            }
+            if ($(this).parent('.cate-level-3').length > 0) {
+                $('.cate-level-3').css({ 'background': '' });
+                $(this).parent('.cate-level-3').css({ 'background': '#212529' });
+            }
             $.get(
                 initDOM._domURL.getCategoryURL,
                 {
@@ -34,46 +42,117 @@ var categoryFunction = function () {
                     var initTmp = 0;
                     var totalResult = result.length;
                     $.each(result, function (index, value) {
-                        demTmp = index + 1;
-                        initTmp++;
-                        if (initTmp == 1) {
-                            stringParent += '<div class="row">';
-                            stringParent += '<div class="col-4">';
-                            stringParent += '<a href="' + value.categoryUrl + '" target="_blank">' + value.level + '.' + demTmp + ' - ' + value.categoryName + '&nbsp</a>'
-                            stringParent += '<a class="cate-item" cate-id="' + value.categoryId + '" parent-id="' + value.parent + '" site-id="' + value.siteId + '" cate-site-id="' + value.categorySiteId + '" cate-name="' + value.categoryName + '" cate-level="' + value.level + '"><i class="fa fa-angle-down" aria-hidden="true"></i></a>';
-                            stringParent += '</div>';
+                        if (value.level < 3) {
+                            demTmp = index + 1;
+                            initTmp++;
+                            if (initTmp == 1) {
+                                stringParent += '<div class="row">';
+                                stringParent += '<div class="col-4 cate-level-2">';
+                                if (value.isParent == 1) {
+                                    stringParent += '<a href="' + value.categoryUrl + '" target="_blank">' + value.level + '.' + demTmp + ' - ' + value.categoryName + '&nbsp</a>'
+                                    stringParent += '<a class="cate-item" cate-id="' + value.categoryId + '" parent-id="' + value.parent + '" site-id="' + value.siteId + '" cate-site-id="' + value.categorySiteId + '" cate-name="' + value.categoryName + '" cate-level="' + value.level + '"><i class="fa fa-angle-down" aria-hidden="true"></i></a>';
+                                } else {
+                                    stringParent += '<a href="' + value.categoryUrl + '" target="_blank" cate-id="' + value.categoryId + '" parent-id="' + value.parent + '" site-id="' + value.siteId + '" cate-site-id="' + value.categorySiteId + '" cate-name="' + value.categoryName + '" cate-level="' + value.level + '">' + value.level + '.' + demTmp + ' - ' + value.categoryName + '</a>'
+                                }
+                                stringParent += '</div>';
 
-                            stringChild += '<div class="hidden-category-' + value.level + '" style="display:none; margin-left: 30px" div-cate-site-id="' + value.categorySiteId + '">';
-                            stringChild += '</div>';
-                        }
-                        if (initTmp > 1 && initTmp < 3) {
-                            stringParent += '<div class="col-4">';
-                            stringParent += '<a href="' + value.categoryUrl + '" target="_blank">' + value.level + '.' + demTmp + ' - ' + value.categoryName + '&nbsp</a>'
-                            stringParent += '<a class="cate-item" cate-id="' + value.categoryId + '" parent-id="' + value.parent + '" site-id="' + value.siteId + '" cate-site-id="' + value.categorySiteId + '" cate-name="' + value.categoryName + '" cate-level="' + value.level + '"><i class="fa fa-angle-down" aria-hidden="true"></i></a>';
-                            stringParent += '</div>';
+                                stringChild += '<div class="hidden-category-' + value.level + '" style="display:none; margin-left: 30px" div-cate-site-id="' + value.categorySiteId + '">';
+                                stringChild += '</div>';
+                            }
+                            if (initTmp > 1 && initTmp < 3) {
+                                stringParent += '<div class="col-4 cate-level-2">';
+                                if (value.isParent == 1) {
+                                    stringParent += '<a href="' + value.categoryUrl + '" target="_blank">' + value.level + '.' + demTmp + ' - ' + value.categoryName + '&nbsp</a>'
+                                    stringParent += '<a class="cate-item" cate-id="' + value.categoryId + '" parent-id="' + value.parent + '" site-id="' + value.siteId + '" cate-site-id="' + value.categorySiteId + '" cate-name="' + value.categoryName + '" cate-level="' + value.level + '"><i class="fa fa-angle-down" aria-hidden="true"></i></a>';
+                                } else {
+                                    stringParent += '<a href="' + value.categoryUrl + '" target="_blank" cate-id="' + value.categoryId + '" parent-id="' + value.parent + '" site-id="' + value.siteId + '" cate-site-id="' + value.categorySiteId + '" cate-name="' + value.categoryName + '" cate-level="' + value.level + '">' + value.level + '.' + demTmp + ' - ' + value.categoryName + '</a>'
+                                }
+                                stringParent += '</div>';
 
-                            stringChild += '<div class="hidden-category-' + value.level + '" style="display:none; margin-left: 30px" div-cate-site-id="' + value.categorySiteId + '">';
-                            stringChild += '</div>';
-                        }
-                        if (initTmp == 3) {
-                            initTmp = 0;
-                            stringParent += '<div class="col-4">';
-                            stringParent += '<a href="' + value.categoryUrl + '" target="_blank">' + value.level + '.' + demTmp + ' - ' + value.categoryName + '&nbsp</a>'
-                            stringParent += '<a class="cate-item" cate-id="' + value.categoryId + '" parent-id="' + value.parent + '" site-id="' + value.siteId + '" cate-site-id="' + value.categorySiteId + '" cate-name="' + value.categoryName + '" cate-level="' + value.level + '"><i class="fa fa-angle-down" aria-hidden="true"></i></a>';
-                            stringParent += '</div>';
-                            stringParent += '</div>';
+                                stringChild += '<div class="hidden-category-' + value.level + '" style="display:none; margin-left: 30px" div-cate-site-id="' + value.categorySiteId + '">';
+                                stringChild += '</div>';
+                            }
+                            if (initTmp == 3) {
+                                initTmp = 0;
+                                stringParent += '<div class="col-4 cate-level-2">';
+                                if (value.isParent == 1) {
+                                    stringParent += '<a href="' + value.categoryUrl + '" target="_blank">' + value.level + '.' + demTmp + ' - ' + value.categoryName + '&nbsp</a>'
+                                    stringParent += '<a class="cate-item" cate-id="' + value.categoryId + '" parent-id="' + value.parent + '" site-id="' + value.siteId + '" cate-site-id="' + value.categorySiteId + '" cate-name="' + value.categoryName + '" cate-level="' + value.level + '"><i class="fa fa-angle-down" aria-hidden="true"></i></a>';
+                                } else {
+                                    stringParent += '<a href="' + value.categoryUrl + '" target="_blank" cate-id="' + value.categoryId + '" parent-id="' + value.parent + '" site-id="' + value.siteId + '" cate-site-id="' + value.categorySiteId + '" cate-name="' + value.categoryName + '" cate-level="' + value.level + '">' + value.level + '.' + demTmp + ' - ' + value.categoryName + '</a>'
+                                }
+                                stringParent += '</div>';
+                                stringParent += '</div>';
 
-                            stringChild += '<div class="hidden-category-' + value.level + '" style="display:none; margin-left: 30px" div-cate-site-id="' + value.categorySiteId + '">';
-                            stringChild += '</div>';
+                                stringChild += '<div class="hidden-category-' + value.level + '" style="display:none; margin-left: 30px" div-cate-site-id="' + value.categorySiteId + '">';
+                                stringChild += '</div>';
 
-                            stringParent += stringChild;
-                            stringChild = '';
+                                stringParent += stringChild;
+                                stringChild = '';
+                            }
+                            if (index == totalResult - 1 && initTmp != 3) {
+                                stringParent += '</div>';
+                                stringParent += stringChild;
+                                stringChild = '';
+                            }
+                        } else if (value.level == 3) {
+                            demTmp = index + 1;
+                            initTmp++;
+                            if (initTmp == 1) {
+                                stringParent += '<div class="row">';
+                                stringParent += '<div class="cate-level-3">';
+                                if (value.isParent == 1) {
+                                    stringParent += '<a class="cate-name-show" href="' + value.categoryUrl + '" target="_blank">' + value.level + '.' + demTmp + ' - ' + value.categoryName + '&nbsp</a>'
+                                    stringParent += '<a class="cate-item" cate-id="' + value.categoryId + '" parent-id="' + value.parent + '" site-id="' + value.siteId + '" cate-site-id="' + value.categorySiteId + '" cate-name="' + value.categoryName + '" cate-level="' + value.level + '"><i class="fa fa-angle-down" aria-hidden="true"></i></a>';
+                                } else {
+                                    stringParent += '<a class="cate-name-show" href="' + value.categoryUrl + '" target="_blank" cate-id="' + value.categoryId + '" parent-id="' + value.parent + '" site-id="' + value.siteId + '" cate-site-id="' + value.categorySiteId + '" cate-name="' + value.categoryName + '" cate-level="' + value.level + '">' + value.level + '.' + demTmp + ' - ' + value.categoryName + '</a>'
+                                }
+                                stringParent += '</div>';
+
+                                stringChild += '<div class="hidden-category-' + value.level + '" style="display:none; margin-left: 30px" div-cate-site-id="' + value.categorySiteId + '">';
+                                stringChild += '</div>';
+                            }
+                            if (initTmp > 1 && initTmp < 4) {
+                                stringParent += '<div class="cate-level-3">';
+                                if (value.isParent == 1) {
+                                    stringParent += '<a class="cate-name-show" href="' + value.categoryUrl + '" target="_blank">' + value.level + '.' + demTmp + ' - ' + value.categoryName + '&nbsp</a>'
+                                    stringParent += '<a class="cate-item" cate-id="' + value.categoryId + '" parent-id="' + value.parent + '" site-id="' + value.siteId + '" cate-site-id="' + value.categorySiteId + '" cate-name="' + value.categoryName + '" cate-level="' + value.level + '"><i class="fa fa-angle-down" aria-hidden="true"></i></a>';
+                                } else {
+                                    stringParent += '<a class="cate-name-show" href="' + value.categoryUrl + '" target="_blank" cate-id="' + value.categoryId + '" parent-id="' + value.parent + '" site-id="' + value.siteId + '" cate-site-id="' + value.categorySiteId + '" cate-name="' + value.categoryName + '" cate-level="' + value.level + '">' + value.level + '.' + demTmp + ' - ' + value.categoryName + '</a>'
+                                }
+                                stringParent += '</div>';
+
+                                stringChild += '<div class="hidden-category-' + value.level + '" style="display:none; margin-left: 30px" div-cate-site-id="' + value.categorySiteId + '">';
+                                stringChild += '</div>';
+                            }
+                            if (initTmp == 4) {
+                                initTmp = 0;
+                                stringParent += '<div class="cate-level-3">';
+                                if (value.isParent == 1) {
+                                    stringParent += '<a class="cate-name-show" href="' + value.categoryUrl + '" target="_blank">' + value.level + '.' + demTmp + ' - ' + value.categoryName + '&nbsp</a>'
+                                    stringParent += '<a class="cate-item" cate-id="' + value.categoryId + '" parent-id="' + value.parent + '" site-id="' + value.siteId + '" cate-site-id="' + value.categorySiteId + '" cate-name="' + value.categoryName + '" cate-level="' + value.level + '"><i class="fa fa-angle-down" aria-hidden="true"></i></a>';
+                                } else {
+                                    stringParent += '<a class="cate-name-show" href="' + value.categoryUrl + '" target="_blank" cate-id="' + value.categoryId + '" parent-id="' + value.parent + '" site-id="' + value.siteId + '" cate-site-id="' + value.categorySiteId + '" cate-name="' + value.categoryName + '" cate-level="' + value.level + '">' + value.level + '.' + demTmp + ' - ' + value.categoryName + '</a>'
+                                }
+                                stringParent += '</div>';
+                                stringParent += '</div>';
+
+                                stringChild += '<div class="hidden-category-' + value.level + '" style="display:none; margin-left: 30px" div-cate-site-id="' + value.categorySiteId + '">';
+                                stringChild += '</div>';
+
+                                stringParent += stringChild;
+                                stringChild = '';
+                            }
+                            if (index == totalResult - 1 && initTmp != 4) {
+                                stringParent += '</div>';
+                                stringParent += stringChild;
+                                stringChild = '';
+                            }
                         }
-                        if (index == totalResult - 1 && initTmp != 3) {
-                            stringParent += '</div>';
-                            stringParent += stringChild;
-                            stringChild = '';
-                        }
+                        else {
+                            demTmp = index + 1;
+                            stringParent += '<a href="' + value.categoryUrl + '" target="_blank" cate-id="' + value.categoryId + '" parent-id="' + value.parent + '" site-id="' + value.siteId + '" cate-site-id="' + value.categorySiteId + '" cate-name="' + value.categoryName + '" cate-level="' + value.level + '">' + value.level + '.' + demTmp + ' - ' + value.categoryName + '</a> &nbsp&nbsp&nbsp';
+                        }                     
                     });
                     $('[' + initDOM._domAttr.divCategoryItemClass + '=' + categoryStileID + ']').html(stringParent);
                     $('.hidden-category-' + levelCategory).hide();
