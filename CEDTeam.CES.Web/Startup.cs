@@ -15,6 +15,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using Microsoft.AspNetCore.Mvc.Cors.Internal;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -67,7 +68,7 @@ namespace CEDTeam.CES.Web
                     options.OperationFilter<SwaggerDefaultValues>();
                     options.OperationFilter<AuthenticationAPI>();
                 });
-
+            services.AddCors();
             services.ConfigOptions(_config);
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
@@ -99,7 +100,12 @@ namespace CEDTeam.CES.Web
 
             app.UseWhen(x => x.Request.Path.StartsWithSegments("/api", StringComparison.OrdinalIgnoreCase),
                 builder => { builder.UseMiddleware<ApiAuthenticationMiddleware>(); });
-
+            app.UseCors(builder => builder
+               .AllowAnyHeader()
+               .AllowAnyMethod()
+               .SetIsOriginAllowed((host) => true)
+               .AllowCredentials()
+           );
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
