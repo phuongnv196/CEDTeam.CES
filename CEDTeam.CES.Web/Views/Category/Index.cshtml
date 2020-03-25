@@ -142,7 +142,7 @@
     @foreach (var item in Model?.Where(item => item.SiteId == "2").ToList())
     {
         demlazada++;
-        <a href="@item.CategoryUrl" target="_blank">@item.Level.@demsendo - @item.CategoryName</a>
+        <a href="@item.CategoryUrl" target="_blank">@item.Level.@demlazada - @item.CategoryName</a>
         <a class="cate-item" cate-id="@item.CategoryId" parent-id="@item.Parent" site-id="@item.SiteId" cate-site-id="@item.CategorySiteId" cate-name="@item.CategoryName" cate-level="@item.Level"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
         <div class="hidden-category-parent-@item.Level" style="margin-left: 30px" div-cate-site-id="@item.CategorySiteId">
         
