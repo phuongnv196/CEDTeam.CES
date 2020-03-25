@@ -19,6 +19,7 @@ namespace CEDTeam.CES.Web.Controllers
             _categoryService = categoryService;
         }
 
+        // Get All Cagegory Level 1
         [Route("")]
         public async Task<IActionResult> Index()
         {
@@ -26,12 +27,14 @@ namespace CEDTeam.CES.Web.Controllers
             return View(model);
         }
 
+        // Get All Cagegory by id return Level 2 & 3
         [Route("get-category-by-id")]
         public async Task<IActionResult> GetCategoryById(string categoryId)
         {
             return new ObjectResult(await _categoryService.GetCategoryById(categoryId));
         }
 
+        // Get Cagegory by id return Level 1 Or 2 Or 3
         [Route("get-sub-category-by-id")]
         public async Task<IActionResult> GetSubCategoryById(string categoryId)
         {
