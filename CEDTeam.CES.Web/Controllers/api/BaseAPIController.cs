@@ -9,5 +9,6 @@ namespace CEDTeam.CES.Web.Controllers.api
     [ApiController]
     public class BaseAPIController : ControllerBase
     {
+
     }
 }
