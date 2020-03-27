@@ -15,6 +15,8 @@ namespace CEDTeam.CES.Infrastructure.Constants
         //
         public const string SHOPEE_GET_LIST_URL = "https://shopee.vn/api/v2/item/get_list"; //POST
 
+        public const string SHOPEE_GET_SHOP_URL = "https://shopee.vn/api/v2/content/official_shop?catid={0}";
+
         //TIKI
         public const string TIKI_HOT_SEARCH_URL = "https://tiki.vn/api/v2/personalization/v2/keywords";
 
