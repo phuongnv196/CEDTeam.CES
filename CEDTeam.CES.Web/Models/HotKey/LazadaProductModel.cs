@@ -44,7 +44,7 @@ namespace CEDTeam.CES.Web.Models
         public List<ListItem> listItems { get; set; }
     }
 
-    public class LazadaTopProductModel
+    public class LazadaProductModel
     {
         public Mods mods { get; set; }
     }

@@ -9,18 +9,26 @@ namespace CEDTeam.CES.Core.Interfaces
     public interface IApiService
     {
         //Shopee
-        ShopeeHotSearchDto GetShopeeHotSearch();
-        ShopeeTopProductDto GetShopeeTopProduct();
+        ShopeeHotSearchDto Shopee_GetHotSearch();
+        ShopeeTopProductDto Shopee_GetTopProduct();
+        ShopeeShopDto Shopee_GetShopByCategory(string categoryId);
+
         //Tiki
-        TikiHotSearchDto GetTikiHotSearch();    
-        TikiCategoryDto GetTikiCategory();
-        TikiTopProductDto GetTikiTopProductByCategory(int id, int limit, int page);
+        TikiHotSearchDto Tiki_GetHotSearch();    
+        TikiCategoryDto Tiki_GetCategory();
+        TikiTopProductDto Tiki_GetTopProductByCategory(int id, int limit, int page);
+        TikiShopDto Tiki_GetShopByCategory(string categoryId);
+
         //Sendo
-        SendoHotSearchDto GetSendoHotSearch();
-        ShopeeTopProductItem GetShopeeTopProductDetail(ShopeeProductItemCollectionDto listProducts);
-        SendoCategoryDto GetSendoCategory();
-        SendoCategoryInfoDto SendoCategoryInfo(string path);
-        SendoTopProductDto GetSendoTopProductByCategory(int id, int page);
-        LazadaTopProductDto GetLazadaTopProductByCategory(string name);
+        SendoHotSearchDto Sendo_GetHotSearch();
+        ShopeeTopProductItem Shopee_GetTopProductDetail(ShopeeProductItemCollectionDto listProducts);
+        SendoCategoryDto Sendo_GetCategory();
+        SendoCategoryInfoDto Sendo_GetCategoryInfo(string path);
+        SendoTopProductDto Sendo_GetTopProductByCategory(int id, int page);
+        SendoShopDto Sendo_GetShopByCategory(string categoryId);
+
+        //Lazada
+        LazadaProductDto Lazada_GetTopProductByCategory(string name);
+        LazadaProductDto Lazada_GetMoreLzdByCategory(string categoryPath);
     }
 }

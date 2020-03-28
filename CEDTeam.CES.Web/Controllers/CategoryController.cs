@@ -13,12 +13,12 @@ namespace CEDTeam.CES.Web.Controllers
     public class CategoryController : Controller
     {
         private readonly ICategoryService _categoryService;
-        private readonly IShopeeService _shopeeService;
+        private readonly IApiService _apiService;
 
-        public CategoryController(ICategoryService categoryService, IShopeeService shopeeService)
+        public CategoryController(ICategoryService categoryService, IApiService apiService)
         {
             _categoryService = categoryService;
-            _shopeeService = shopeeService;
+            _apiService = apiService;
         }
 
         // Get All Cagegory Level 1
@@ -50,9 +50,24 @@ namespace CEDTeam.CES.Web.Controllers
             string id = categoryId.Split("_")[1];
             if (categoryId.IndexOf("shopee") > -1)
             {
-                return new ObjectResult(_shopeeService.GetShopByCategoryId(id).Adapt<ShopeeShopModel>());
+                return new ObjectResult(_apiService.Shopee_GetShopByCategory(id).Adapt<ShopeeShopModel>());
+            }
+            else if (categoryId.IndexOf("tiki") > -1)
+            {
+                return new ObjectResult(_apiService.Tiki_GetShopByCategory(id).Adapt<TikiShopModel>());
+            }
+            else if (categoryId.IndexOf("sendo") > -1)
+            {
+                return new ObjectResult(_apiService.Sendo_GetShopByCategory(id).Adapt<SendoShopModel>());
             }
             return new ObjectResult(null);
         }
+
+        //[HttpGet]
+        //[Route("GetMoreLzdByUrl")]
+        //public IActionResult GetMoreLzdByUrl(string categoryPath)
+        //{
+        //    return new ObjectResult(_apiService.Lazada_GetMoreLzdByCategory(categoryPath).Adapt<LazadaProductModel>());
+        //}
     }
 }
