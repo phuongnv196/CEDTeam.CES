@@ -32,7 +32,7 @@ namespace CEDTeam.CES.Web.Helpers
             //    c.SwaggerDoc("v1", new Info { Title = "VAST Core Service API", Version = "v1" });
             var info = new Info()
             {
-                Title = "VAST Core Service API " + description.ApiVersion.ToString(),
+                Title = "CESCore Service API " + description.ApiVersion.ToString(),
                 Version = description.ApiVersion.ToString()
             };
 

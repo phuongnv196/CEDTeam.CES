@@ -13,7 +13,7 @@ namespace CPG.Portal.App.Helper
 
             operation.Parameters.Add(new HeaderParameter
             {
-                Name = "ApplicationId",
+                Name = "Authorization",
                 In = "header",
                 Type = "string",
                 Required = false

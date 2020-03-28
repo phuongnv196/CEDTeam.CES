@@ -9,6 +9,7 @@ using CEDTeam.CES.Web.Models.User;
 using Mapster;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CEDTeam.CES.Web.Controllers
@@ -20,14 +21,18 @@ namespace CEDTeam.CES.Web.Controllers
         {
             _userService = userService;
         }
+
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             return View();
         }
 
-        public async Task<IActionResult> Login(UserModel model)
+        [AllowAnonymous]
+        public async Task<IActionResult> Login(string userName, string password)
         {
-            if(model != null && model.Username != null && model.Username.ToLower().Equals("admin") && model.Password.Equals("admin123"))
+            
+            if (!string.IsNullOrWhiteSpace(userName) && !string.IsNullOrWhiteSpace(password) && userName.ToLower().Equals("admin") && password.Equals("admin123"))
             {
                 var claims = new List<Claim>
                 {
@@ -40,23 +45,24 @@ namespace CEDTeam.CES.Web.Controllers
                 new ClaimsPrincipal(identity), new AuthenticationProperties { });
                 return Redirect("../product-manager");
             }
-            if(model != null && model.Username != null)
+            if (!string.IsNullOrWhiteSpace(userName))
             {
                 ViewBag.Error = "Tài khoản hoặc mật khẩu không đúng!";
             }
             return View("Index");
         }
 
+        [AllowAnonymous]
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             return Redirect("../");
         }
-        public async Task<IActionResult> Insert()
-        {
-            var user = new UserModel();
-            await _userService.Insert(user.Adapt<UserDto>());
-            return new ObjectResult("");
-        }
+        //public async Task<IActionResult> Insert()
+        //{
+        //    var user = new UserModel();
+        //    await _userService.Insert(user.Adapt<UserDto>());
+        //    return new ObjectResult("");
+        //}
     }
 }

@@ -1,15 +1,13 @@
-﻿using CEDTeam.CES.Core.Dtos.User;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace CEDTeam.CES.Web.Models.User
+namespace CEDTeam.CES.Core.Dtos.User
 {
-    public class UserModel
+    public class UserDto
     {
         public string UserID { get; set; }
         public string Username { get; set; }
+        public string Password { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
@@ -18,8 +16,13 @@ namespace CEDTeam.CES.Web.Models.User
         public bool? IsDeleted { get; set; }
         public bool? IsLocked { get; set; }
         public DateTime? LastLoginDate { get; set; }
+        public string ModifiedBy { get; set; }
+        public DateTime? ModifiedDate { get; set; }
+        public DateTime? CreatedDate { get; set; }
         public string CreatedBy { get; set; }
-        public List<long> Roles { get; set; } = new List<long>();
-        public List<long> Rights { get; set; } = new List<long>();
+        public string RoleJson { get; set; }
+        public string RightJson { get; set; }
+        public List<RoleDto> RoleList { get; set; } = new List<RoleDto>();
+        public List<RightDto> RightList { get; set; } = new List<RightDto>();
     }
 }

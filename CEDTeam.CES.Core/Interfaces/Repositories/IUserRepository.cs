@@ -1,4 +1,5 @@
 ﻿using CEDTeam.CES.Core.Dtos;
+using CEDTeam.CES.Core.Dtos.User;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -6,7 +7,7 @@ namespace CEDTeam.CES.Core.Interfaces
 {
     public interface IUserRepository
     {
-        Task<bool> InsertFirstLogin(UserDto userDto);
-        Task<List<UserDto>> GetAll();
+        Task<UserDto> GetUserLogin(UserDto user, string userId);
+        Task<List<UserDto>> GetListUser(string searchString, string userId);
     }
 }

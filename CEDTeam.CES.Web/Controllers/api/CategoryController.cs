@@ -4,11 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using CEDTeam.CES.Core.Interfaces;
 using Mapster;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using CEDTeam.CES.Web.Models;
+using CEDTeam.CES.Web.Controllers.Api;
 
-namespace CEDTeam.CES.Web.Controllers.api
+namespace CEDTeam.CES.Web.Controllers.Api
 {
     public class CategoryController : BaseAPIController
     {

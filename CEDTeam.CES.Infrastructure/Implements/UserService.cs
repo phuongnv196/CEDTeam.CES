@@ -1,4 +1,5 @@
 ﻿using CEDTeam.CES.Core.Dtos;
+using CEDTeam.CES.Core.Dtos.User;
 using CEDTeam.CES.Core.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -14,20 +15,13 @@ namespace CEDTeam.CES.Infrastructure.Implements
         {
             _userRepository = userRepository;
         }
-
-        public async Task<List<UserDto>> Get()
+        public async Task<UserDto> GetUserLogin(UserDto user, string userId)
         {
-            return await _userRepository.GetAll();
+            return await _userRepository.GetUserLogin(user, userId);
         }
-
-        public async Task<bool> Insert(UserDto userDto)
+        public async Task<List<UserDto>> GetListUser(string searchString, string userId)
         {
-            return true;
-        }
-
-        public async Task<bool> InsertFirstLogin(UserDto userDto)
-        {
-            return await _userRepository.InsertFirstLogin(userDto);
+            return await _userRepository.GetListUser(searchString, userId);
         }
     }
 }

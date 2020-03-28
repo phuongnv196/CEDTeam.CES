@@ -18,17 +18,9 @@ namespace CEDTeam.CES.Web.Middlewares
 
         public async Task Invoke(HttpContext context)
         {
-            string authHeader = context.Request.Headers["ApplicationId"];
-            if (authHeader != null)
+            if (context.User.Identity.IsAuthenticated)
             {
-                if (authHeader.Equals(_config.Value.ApiAuthorizationKey))
-                {
-                    await _next.Invoke(context);
-                }
-                else
-                {
-                    context.Response.StatusCode = 401;
-                }
+                await _next.Invoke(context);
             }
             else
             {

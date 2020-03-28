@@ -1,10 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
 
 namespace CEDTeam.CES.Web.Helpers
 {
@@ -18,9 +15,14 @@ namespace CEDTeam.CES.Web.Helpers
 
         public void OnAuthorization(AuthorizationFilterContext context)
         {
-            var user = context.HttpContext.User.Claims.FirstOrDefault(x => x.Type.Equals("User"))?.Value;
-            if (user != "admin")
-                context.HttpContext.Response.Redirect("../User");
+            if(context.HttpContext.User.Identity.IsAuthenticated)
+            {
+                var user = context.HttpContext.User.Claims.FirstOrDefault(x => x.Type.Equals("User"))?.Value;
+                if (user != "admin")
+                {
+                    context.HttpContext.Response.Redirect("../Home/Error");
+                }
+            }
         }
     }
 }
