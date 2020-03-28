@@ -23,13 +23,12 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
   </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\CEDTeam.CES.Core\CEDTeam.CES.Core.csproj" />
-    <ProjectReference Include="..\CEDTeam.CES.Infrastructure\CEDTeam.CES.Infrastructure.csproj" />
-  </ItemGroup>
   <ItemGroup>
     <Compile Remove="Models\HotKey\TikiTopProductModel %28copy%29.cs" />
     <Compile Remove="Models\HotKey\TikiHotSearchModel %28copy%29.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CEDTeam.CES.Core\CEDTeam.CES.Core.csproj" />
+    <ProjectReference Include="..\CEDTeam.CES.Infrastructure\CEDTeam.CES.Infrastructure.csproj" />
   </ItemGroup>
 </Project>
