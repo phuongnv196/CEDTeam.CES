@@ -5,10 +5,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\" />
-    <Folder Include="Exceptions\" />
+    <Compile Remove="Entities\**" />
+    <Compile Remove="Exceptions\**" />
+    <Compile Remove="Specifications\**" />
+    <EmbeddedResource Remove="Entities\**" />
+    <EmbeddedResource Remove="Exceptions\**" />
+    <EmbeddedResource Remove="Specifications\**" />
+    <None Remove="Entities\**" />
+    <None Remove="Exceptions\**" />
+    <None Remove="Specifications\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Services\" />
-    <Folder Include="Specifications\" />
   </ItemGroup>
 
 </Project>
