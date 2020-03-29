@@ -1,5 +1,7 @@
 ﻿using CEDTeam.CES.Core.Interfaces;
+using CEDTeam.CES.Core.Interfaces.Services;
 using CEDTeam.CES.Infrastructure.Implements;
+using CEDTeam.CES.Infrastructure.Implements.Services;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CEDTeam.CES.Web.Configurators
@@ -12,6 +14,7 @@ namespace CEDTeam.CES.Web.Configurators
             services.AddTransient<IApiService, ApiService>();
             services.AddTransient<IProductService, ProductService>();
             services.AddTransient<ICategoryService, CategoryService>();
+            services.AddTransient<IEmailService, EmailService>();
         }
     }
 }
