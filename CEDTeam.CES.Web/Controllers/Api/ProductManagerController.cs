@@ -36,16 +36,16 @@ namespace CEDTeam.CES.Web.Controllers.Api
         //}
 
         [HttpPost]
-        public IActionResult GetShopeeProduct(string categoryId, int page = 1)
+        public IActionResult GetShopeeProduct(string categoryId, int loadMore = 1)
         {
-            var result = _apiService.Shopee_GetTopProductByCategoryId(categoryId.Split("_")[1], page);
+            var result = _apiService.Shopee_GetTopProductByCategoryId(categoryId.Split("_")[1], loadMore);
             return new ObjectResult(result);
         }
 
         [HttpPost]
-        public IActionResult GetTikiProduct(string categoryId, int page = 1)
+        public IActionResult GetTikiProduct(string categoryId, int loadMore = 1)
         {
-            var result = _apiService.Tiki_GetTopProductByCategoryId(categoryId.Split("_")[1], page);
+            var result = _apiService.Tiki_GetTopProductByCategoryId(categoryId.Split("_")[1], loadMore);
             return new ObjectResult(result);
         }
 

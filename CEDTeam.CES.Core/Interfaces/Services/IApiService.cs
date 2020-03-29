@@ -13,7 +13,7 @@ namespace CEDTeam.CES.Core.Interfaces
         ShopeeHotSearchDto Shopee_GetHotSearch();
         ShopeeTopProductDto Shopee_GetTopProduct();
         ShopeeShopDto Shopee_GetShopByCategory(string categoryId);
-        IEnumerable<ShopeeProduct> Shopee_GetTopProductByCategoryId(string categoryId, int page = 1);
+        IEnumerable<ShopeeProduct> Shopee_GetTopProductByCategoryId(string categoryId, int loadMore);
         //Tiki
         TikiHotSearchDto Tiki_GetHotSearch();    
         TikiCategoryDto Tiki_GetCategory();
