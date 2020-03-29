@@ -31,13 +31,14 @@ namespace CEDTeam.CES.Web.Controllers.Api
             var result = _apiService.Tiki_GetTopProductByCategoryId(categoryId.Split("_")[1], loadMore);
             return new ObjectResult(result);
         }
-        
-        //[HttpGet]
-        //public IActionResult GetSendoProduct(string categoryId, int loadMore = 1)
-        //{
-        //    var result = _apiService.Tiki_GetTopProductByCategoryId(categoryId.Split("_")[1], loadMore);
-        //    return new ObjectResult(result);
-        //}
+
+        [HttpGet]
+        public IActionResult GetSendoProduct(string categoryId, int loadMore = 1)
+        {
+            var result = _apiService.Sendo_GetTopProductByCategoryId(categoryId.Split("_")[1], loadMore);
+            return new ObjectResult(result);
+        }
+
         [HttpGet]
         public IActionResult GetShopeeProductDetail(string itemId, string shopId)
         {

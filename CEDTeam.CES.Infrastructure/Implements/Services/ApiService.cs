@@ -151,7 +151,7 @@ namespace CEDTeam.CES.Infrastructure.Implements
             page = (page < 1 ? 1 : page);
             for (int p = 10 * page - 9; p <= 10 * page; p++)
             {
-                string uri = string.Format(ApiConstant.Sendo.GET_PROD_AJAX, categoryId, page);
+                string uri = string.Format(ApiConstant.Sendo.GET_PRODUCTS, categoryId, page);
                 var task = new Task(() =>
                 {
                     var result = APIHelper.GetAsync<SendoSearchItem>(uri);
