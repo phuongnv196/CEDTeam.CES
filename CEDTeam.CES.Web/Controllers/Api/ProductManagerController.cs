@@ -30,8 +30,8 @@ namespace CEDTeam.CES.Web.Controllers.Api
         [HttpGet]
         public IActionResult GetTikiProduct(string categoryId, int loadMore = 1)
         {
-            var result = _apiService.Shopee_GetTopProductByCategoryId(categoryId.Split("_")[1], loadMore);
-            return new ObjectResult(result);
+            //var result = _apiService.Shopee_GetTopProductByCategoryId(categoryId.Split("_")[1], loadMore);
+            return new ObjectResult(null);
         }
 
         //[Route("get-product")]
