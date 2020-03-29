@@ -1,4 +1,5 @@
 ﻿using CEDTeam.CES.Core.Dtos;
+using CEDTeam.CES.Core.Dtos.Api;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -30,5 +31,6 @@ namespace CEDTeam.CES.Core.Interfaces
         //Lazada
         LazadaProductDto Lazada_GetTopProductByCategory(string name);
         LazadaProductDto Lazada_GetMoreLzdByCategory(string categoryPath);
+        IEnumerable<ShopeeProduct> Shopee_GetTopProductByCategoryId(string categoryId);
     }
 }

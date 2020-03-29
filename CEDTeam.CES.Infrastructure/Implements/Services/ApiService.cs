@@ -1,4 +1,5 @@
 ﻿using CEDTeam.CES.Core.Dtos;
+using CEDTeam.CES.Core.Dtos.Api;
 using CEDTeam.CES.Core.Interfaces;
 using CEDTeam.CES.Infrastructure.Constants;
 using CEDTeam.CES.Infrastructure.Helpers;
@@ -85,6 +86,34 @@ namespace CEDTeam.CES.Infrastructure.Implements
         public LazadaProductDto Lazada_GetMoreLzdByCategory(string categoryPath)
         {
             return APIHelper.GetAsync<LazadaProductDto>(String.Format(ApiConstant.LAZADA_GET_MORE_URL, categoryPath));
+        }
+
+        public IEnumerable<ShopeeProduct> Shopee_GetTopProductByCategoryId(string categoryId)
+        {
+            var listShpeeProduct = new List<ShopeeProduct>();
+            var taskList = new List<Task>();
+
+            var newest = 50;
+            do
+            {
+                string uri = $"{ApiConstant.Shopee.SHOPEE_BASE}{string.Format(ApiConstant.Shopee.SEARCH_ITEMS, categoryId, newest)}";
+                var task = new Task(() =>
+                {
+                    var result = APIHelper.GetAsync<ShopeeSearchItem>(uri);
+                    if(result != null)
+                    {
+                        lock (listShpeeProduct)
+                        {
+                            listShpeeProduct.AddRange(result.items);
+                        }
+                    }
+                });
+                task.Start();
+                taskList.Add(task);
+                newest += 50;
+            } while (newest <= 1000);
+            Task.WaitAll(taskList.ToArray());
+            return listShpeeProduct;
         }
     }
 }
