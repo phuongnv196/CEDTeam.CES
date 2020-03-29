@@ -143,5 +143,31 @@ namespace CEDTeam.CES.Infrastructure.Implements
             Task.WaitAll(taskList.ToArray());
             return listTikiProduct;
         }
+
+        public IEnumerable<SendoProduct> Sendo_GetTopProductByCategoryId(string categoryId, int page = 1)
+        {
+            var listSendoProduct = new List<SendoProduct>();
+            var taskList = new List<Task>();
+            page = (page < 1 ? 1 : page);
+            for (int p = 10 * page - 9; p <= 10 * page; p++)
+            {
+                string uri = string.Format(ApiConstant.Sendo.GET_PRODUCTS, categoryId, page);
+                var task = new Task(() =>
+                {
+                    var result = APIHelper.GetAsync<SendoSearchItem>(uri);
+                    if (result != null)
+                    {
+                        lock (listSendoProduct)
+                        {
+                            listSendoProduct.AddRange(result.result.data);
+                        }
+                    }
+                });
+                task.Start();
+                taskList.Add(task);
+            }
+            Task.WaitAll(taskList.ToArray());
+            return listSendoProduct;
+        }
     }
 }

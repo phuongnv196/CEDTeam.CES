@@ -61,7 +61,7 @@ namespace CEDTeam.CES.Infrastructure.Constants
         public static class Sendo
         {
             public const string SENDO_BASE = "https://www.sendo.vn/";
-            public const string GET_PRODUCTS = "m/wap_v2/category/product?category_id={0}&listing_algo=algo5&p={1}&platform=web";
+            public const string GET_PRODUCTS = SENDO_BASE + "m/wap_v2/category/product?category_id={0}&listing_algo=algo14&p={1}&platform=web&s=100&sortType=vasup_desc";
             public const string GET_SHOPS = "/m/wap_v2/category/product?category_id={0}&listing_algo=algo14&p=1&platform=web&s=100&shop_warehouse_city_id=1,2,15,17,20&sortType=vasup_desc";
 
         }
