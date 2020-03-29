@@ -27,9 +27,9 @@ namespace CEDTeam.CES.Web.Controllers
         {
             var model = new HotKeyModel()
             {
-                Shopee = _apiService.GetShopeeHotSearch().Adapt<ShopeeHotSearchModel>(),
-                Tiki = _apiService.GetTikiHotSearch().Adapt<TikiHotSearchModel>(),
-                Sendo = _apiService.GetSendoHotSearch().Adapt<SendoHotSearchModel>()
+                Shopee = _apiService.Shopee_GetHotSearch().Adapt<ShopeeHotSearchModel>(),
+                Tiki = _apiService.Tiki_GetHotSearch().Adapt<TikiHotSearchModel>(),
+                Sendo = _apiService.Sendo_GetHotSearch().Adapt<SendoHotSearchModel>()
             };
             return View(model);
         }
@@ -42,7 +42,7 @@ namespace CEDTeam.CES.Web.Controllers
 
         public IActionResult ShopeeTopProduct()
         {
-            var model = _apiService.GetShopeeTopProduct().Adapt<ShopeeTopProductModel>();
+            var model = _apiService.Shopee_GetTopProduct().Adapt<ShopeeTopProductModel>();
             ViewBag.Json = JsonConvert.SerializeObject(model.data.categories);
             return View(model);
         }
@@ -50,7 +50,7 @@ namespace CEDTeam.CES.Web.Controllers
         [HttpPost]
         public IActionResult ShopeeHotProductDetail([FromBody]ShopeeProductItemCollectionModel productItems)
         {
-            var model = _apiService.GetShopeeTopProductDetail(productItems.Adapt<ShopeeProductItemCollectionDto>()).Adapt<ShopeeTopProductItemModel>();
+            var model = _apiService.Shopee_GetTopProductDetail(productItems.Adapt<ShopeeProductItemCollectionDto>()).Adapt<ShopeeTopProductItemModel>();
             return PartialView(model);
         }
 
@@ -62,27 +62,27 @@ namespace CEDTeam.CES.Web.Controllers
 
         public IActionResult TikiTopProduct()
         {
-            var model = _apiService.GetTikiCategory().Adapt<TikiCategoryModel>();
+            var model = _apiService.Tiki_GetCategory().Adapt<TikiCategoryModel>();
             return View(model);
         }
 
         public IActionResult TikiTopProductByCategory(int id, int limit = 100, int page = 1)
         {
-            var model = _apiService.GetTikiTopProductByCategory(id, limit, page).Adapt<TikiTopProductModel>();
+            var model = _apiService.Tiki_GetTopProductByCategory(id, limit, page).Adapt<TikiTopProductModel>();
             return PartialView(model);
         }
 
         public IActionResult SendoTopProduct()
         {
-            var model = _apiService.GetSendoCategory().Adapt<SendoCategoryModel>();
+            var model = _apiService.Sendo_GetCategory().Adapt<SendoCategoryModel>();
             return View(model);
         }
 
         public IActionResult SendoTopProductByCategory(string path)
         {
-            var model = _apiService.SendoCategoryInfo(path).Adapt<SendoCategoryInfoDto>();
+            var model = _apiService.Sendo_GetCategoryInfo(path).Adapt<SendoCategoryInfoDto>();
             int id = model.result.meta_data.category_id;
-            var model1 = _apiService.GetSendoTopProductByCategory(id, 1).Adapt<SendoTopProductModel>();
+            var model1 = _apiService.Sendo_GetTopProductByCategory(id, 1).Adapt<SendoTopProductModel>();
             return PartialView(model1);
         }
 
@@ -94,8 +94,8 @@ namespace CEDTeam.CES.Web.Controllers
 
         public IActionResult LazadaTopProductByCategory(string name)
         {
-            var result = _apiService.GetLazadaTopProductByCategory(name);
-            var model = result.Adapt<LazadaTopProductModel>();
+            var result = _apiService.Lazada_GetTopProductByCategory(name);
+            var model = result.Adapt<LazadaProductModel>();
             return PartialView(model);
         }
     }

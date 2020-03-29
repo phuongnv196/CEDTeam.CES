@@ -272,7 +272,7 @@ namespace CEDTeam.CES.Core.Dtos
         public SelectedFilters selectedFilters { get; set; }
     }
 
-    public class LazadaTopProductDto
+    public class LazadaProductDto
     {
         public Mods mods { get; set; }
         public MainInfo mainInfo { get; set; }
