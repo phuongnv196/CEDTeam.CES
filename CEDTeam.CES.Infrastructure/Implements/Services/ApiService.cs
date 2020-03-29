@@ -159,7 +159,7 @@ namespace CEDTeam.CES.Infrastructure.Implements
                     {
                         lock (listSendoProduct)
                         {
-                            listSendoProduct.AddRange(result.data);
+                            listSendoProduct.AddRange(result.result.data);
                         }
                     }
                 });

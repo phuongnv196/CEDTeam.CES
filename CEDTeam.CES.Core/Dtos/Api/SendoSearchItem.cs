@@ -23,11 +23,8 @@ namespace CEDTeam.CES.Core.Dtos.Api
         public double? special_price { get; set; }
         public double? final_price { get; set; }
         public double? final_price_max { get; set; }
-        public bool is_promotion { get; set; }
+        public bool? is_promotion { get; set; }
         public double? promotion_percent { get; set; }
-        public ShopInfo shop_info { get; set; }
-        public Options options { get; set; }
-        public RatingInfo rating_info { get; set; }
         public double? is_keyword_ads { get; set; }
         public string sku_user { get; set; }
         public string sku { get; set; }
@@ -37,21 +34,19 @@ namespace CEDTeam.CES.Core.Dtos.Api
         public string stock_percent { get; set; }
         public string stock_title { get; set; }
         public string source_block_id { get; set; }
-        public bool is_event { get; set; }
+        public bool? is_event { get; set; }
         public double? status_new { get; set; }
         public double? final_promotion_percent { get; set; }
         public double? total_rated { get; set; }
         public string url_icon_event { get; set; }
-        public bool is_express { get; set; }
+        public bool? is_express { get; set; }
         public string original_price { get; set; }
         public string min_price { get; set; }
         public string min_max_price { get; set; }
         public string promotion_percent_upto { get; set; }
-        public bool is_config_variant { get; set; }
+        public bool? is_config_variant { get; set; }
         public double? final_price_app { get; set; }
         public double? final_price_max_app { get; set; }
-        public DefaultListingScore default_listing_score { get; set; }
-        public ListingScoreV2 listing_score_v2 { get; set; }
         public double? score_cate3_norm { get; set; }
         public double? score_v2_norm_cate2 { get; set; }
         public double? score_v2_norm_cate3 { get; set; }
@@ -60,8 +55,7 @@ namespace CEDTeam.CES.Core.Dtos.Api
         public double? ctr_norm_cate3 { get; set; }
         public string session_key_server { get; set; }
         public double? result_type { get; set; }
-        public Voucher voucher { get; set; }
-        public bool is_event_frame { get; set; }
+        public bool? is_event_frame { get; set; }
         public double? shop_brand_type { get; set; }
         public double? counter_like { get; set; }
         public string img_url { get; set; }
@@ -69,16 +63,22 @@ namespace CEDTeam.CES.Core.Dtos.Api
         public double percent_star { get; set; }
         public double? order_count_dd_1000_cod { get; set; }
         public double? is_certified { get; set; }
-        public bool free_shipping { get; set; }
-        public bool is_product_installment { get; set; }
+        public bool? free_shipping { get; set; }
+        public bool? is_product_installment { get; set; }
         public double? is_senmall { get; set; }
         public string algo { get; set; }
         public double? square_type { get; set; }
         public string category_id { get; set; }
         public string promotion_note { get; set; }
     }
-    public class SendoSearchItem
+
+    public class Result
     {
         public List<SendoProduct> data { get; set; }
+    }
+
+    public class SendoSearchItem
+    {
+        public Result result { get; set; }
     }
 }
