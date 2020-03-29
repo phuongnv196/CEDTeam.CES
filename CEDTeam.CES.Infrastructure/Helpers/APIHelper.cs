@@ -26,6 +26,10 @@ namespace CEDTeam.CES.Infrastructure.Helpers
                 //{
                 //    request.Headers.Add("Cookie", lzdCookie);
                 //}
+                if (url.ToLower().Contains("shopee"))
+                {
+                    request.Headers.Add("if-none-match-", "55b03-6ebbd9dac9bda7d43f175f06ae72b999");
+                }
                 var response = (HttpWebResponse)request.GetResponse();
                 if (!HttpStatusCode.OK.Equals(response.StatusCode)) return default(T);
                 var dataStream = response.GetResponseStream();
