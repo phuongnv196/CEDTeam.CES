@@ -13,7 +13,7 @@ namespace CEDTeam.CES.Core.Interfaces
         ShopeeHotSearchDto Shopee_GetHotSearch();
         ShopeeTopProductDto Shopee_GetTopProduct();
         ShopeeShopDto Shopee_GetShopByCategory(string categoryId);
-
+        IEnumerable<ShopeeProduct> Shopee_GetTopProductByCategoryId(string categoryId);
         //Tiki
         TikiHotSearchDto Tiki_GetHotSearch();    
         TikiCategoryDto Tiki_GetCategory();
@@ -31,6 +31,5 @@ namespace CEDTeam.CES.Core.Interfaces
         //Lazada
         LazadaProductDto Lazada_GetTopProductByCategory(string name);
         LazadaProductDto Lazada_GetMoreLzdByCategory(string categoryPath);
-        IEnumerable<ShopeeProduct> Shopee_GetTopProductByCategoryId(string categoryId);
     }
 }

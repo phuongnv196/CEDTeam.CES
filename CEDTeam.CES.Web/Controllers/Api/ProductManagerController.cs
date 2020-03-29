@@ -8,7 +8,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CEDTeam.CES.Web.Controllers.Api
 {
-    [Route("/api/v{version:apiVersion}/product-manager")]
+    [Produces("application/json")]
+    [Route("/api/v{version:apiVersion}/[controller]/[action]")]
     public class ProductManagerController : BaseAPIController
     {
         private readonly IProductService _productService;
@@ -34,7 +35,6 @@ namespace CEDTeam.CES.Web.Controllers.Api
         //    return new ObjectResult(result);
         //}
 
-        [Route("get-shopee-product")]
         [HttpPost]
         public IActionResult GetShopeeProduct(string categoryId)
         {

@@ -92,8 +92,7 @@ namespace CEDTeam.CES.Infrastructure.Implements
         {
             var listShpeeProduct = new List<ShopeeProduct>();
             var taskList = new List<Task>();
-
-            var newest = 50;
+            var newest = 100;
             do
             {
                 string uri = $"{ApiConstant.Shopee.SHOPEE_BASE}{string.Format(ApiConstant.Shopee.SEARCH_ITEMS, categoryId, newest)}";
@@ -110,7 +109,7 @@ namespace CEDTeam.CES.Infrastructure.Implements
                 });
                 task.Start();
                 taskList.Add(task);
-                newest += 50;
+                newest += 100;
             } while (newest <= 1000);
             Task.WaitAll(taskList.ToArray());
             return listShpeeProduct;

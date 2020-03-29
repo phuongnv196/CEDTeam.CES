@@ -21,12 +21,6 @@ namespace CEDTeam.CES.Web.Controllers.Api
             _apiService = apiService;
         }
 
-        //[HttpGet]
-        //public async Task<IActionResult> GetCategoryById(string categoryId)
-        //{
-        //    return new ObjectResult(await _categoryService.GetCategoryById(categoryId));
-        //}
-
         [HttpGet]
         public async Task<IActionResult> GetCategoryById(string categoryId)
         {
@@ -52,10 +46,10 @@ namespace CEDTeam.CES.Web.Controllers.Api
             return new ObjectResult(null);
         }
 
-        [HttpGet]
-        public IActionResult GetMoreLzdByUrl(string categoryPath)
-        {
-            return new ObjectResult(_apiService.Lazada_GetMoreLzdByCategory(categoryPath).Adapt<LazadaProductModel>());
-        }
+        //[HttpGet]
+        //public IActionResult GetMoreLzdByUrl(string categoryPath)
+        //{
+        //    return new ObjectResult(_apiService.Lazada_GetMoreLzdByCategory(categoryPath).Adapt<LazadaProductModel>());
+        //}
     }
 }
