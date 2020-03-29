@@ -36,41 +36,18 @@ namespace CEDTeam.CES.Web.Controllers.Api
         //}
 
         [HttpPost]
-        public IActionResult GetShopeeProduct(string categoryId)
+        public IActionResult GetShopeeProduct(string categoryId, int page = 1)
         {
-            var result = _apiService.Shopee_GetTopProductByCategoryId(categoryId.Split("_")[1]);
+            var result = _apiService.Shopee_GetTopProductByCategoryId(categoryId.Split("_")[1], page);
             return new ObjectResult(result);
         }
 
-        //[Route("get-lazada-product")]
-        //[HttpPost]
-        //public async Task<IActionResult> GetLazadaProduct()
-        //{
-        //    int draw = int.Parse(Request.Form["draw"]);
-        //    int start = int.Parse(Request.Form["start"]);
-        //    int length = int.Parse(Request.Form["length"]);
-        //    string search = Request.Form["search[value]"];
-        //    int columnOrder = int.Parse(Request.Form["order[0][column]"]);
-        //    bool isAsc = "asc".Equals(Request.Form["order[0][dir]"]);
-        //    var result = await _productService.GetProductWithSiteIdAsync(start, length, search, columnOrder, 2, isAsc);
-        //    result.Draw = draw;
-        //    return new ObjectResult(result);
-        //}
-
-        //[Route("get-tiki-product")]
-        //[HttpPost]
-        //public async Task<IActionResult> GetTikiProduct()
-        //{
-        //    int draw = int.Parse(Request.Form["draw"]);
-        //    int start = int.Parse(Request.Form["start"]);
-        //    int length = int.Parse(Request.Form["length"]);
-        //    string search = Request.Form["search[value]"];
-        //    int columnOrder = int.Parse(Request.Form["order[0][column]"]);
-        //    bool isAsc = "asc".Equals(Request.Form["order[0][dir]"]);
-        //    var result = await _productService.GetProductWithSiteIdAsync(start, length, search, columnOrder, 3, isAsc);
-        //    result.Draw = draw;
-        //    return new ObjectResult(result);
-        //}
+        [HttpPost]
+        public IActionResult GetTikiProduct(string categoryId, int page = 1)
+        {
+            var result = _apiService.Tiki_GetTopProductByCategoryId(categoryId.Split("_")[1], page);
+            return new ObjectResult(result);
+        }
 
         //[Route("get-sendo-product")]
         //[HttpPost]

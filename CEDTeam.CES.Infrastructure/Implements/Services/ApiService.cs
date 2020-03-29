@@ -88,7 +88,7 @@ namespace CEDTeam.CES.Infrastructure.Implements
             return APIHelper.GetAsync<LazadaProductDto>(String.Format(ApiConstant.LAZADA_GET_MORE_URL, categoryPath));
         }
 
-        public IEnumerable<ShopeeProduct> Shopee_GetTopProductByCategoryId(string categoryId)
+        public IEnumerable<ShopeeProduct> Shopee_GetTopProductByCategoryId(string categoryId, int page = 1)
         {
             var listShpeeProduct = new List<ShopeeProduct>();
             var taskList = new List<Task>();
@@ -113,6 +113,31 @@ namespace CEDTeam.CES.Infrastructure.Implements
             } while (newest <= 1000);
             Task.WaitAll(taskList.ToArray());
             return listShpeeProduct;
+        }
+        public IEnumerable<TikiProduct> Tiki_GetTopProductByCategoryId(string categoryId, int page = 1)
+        {
+            var listTikiProduct = new List<TikiProduct>();
+            var taskList = new List<Task>();
+            page = (page < 1 ? 1 : page);
+            for (int p = 4 * page - 3; p <= page * 4; p++)
+            {
+                string uri = string.Format(ApiConstant.Tiki.GET_PROD_AJAX, categoryId, page);
+                var task = new Task(() =>
+                {
+                    var result = APIHelper.GetAsync<TitiSearchItem>(uri);
+                    if (result != null)
+                    {
+                        lock (listTikiProduct)
+                        {
+                            listTikiProduct.AddRange(result.data);
+                        }
+                    }
+                });
+                task.Start();
+                taskList.Add(task);
+            }
+            Task.WaitAll(taskList.ToArray());
+            return listTikiProduct;
         }
     }
 }

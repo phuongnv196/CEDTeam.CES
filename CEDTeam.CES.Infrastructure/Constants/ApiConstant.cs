@@ -60,6 +60,7 @@ namespace CEDTeam.CES.Infrastructure.Constants
         public static class Tiki
         {
             public const string TIKI_BASE = "https://tiki.vn/";
+            public const string GET_PROD_AJAX= "https://tiki.vn/api/v2/products?category_id={0}&limit=250&page={1}&sort=newest";
         }
         public static class Sendo
         {
