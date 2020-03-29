@@ -35,4 +35,7 @@
     <ProjectReference Include="..\CEDTeam.CES.Core\CEDTeam.CES.Core.csproj" />
     <ProjectReference Include="..\CEDTeam.CES.Infrastructure\CEDTeam.CES.Infrastructure.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
 </Project>
