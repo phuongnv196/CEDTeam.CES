@@ -49,7 +49,7 @@ namespace CEDTeam.CES.Web.Controllers.Api
         //[HttpGet]
         //public IActionResult GetMoreLzdByUrl(string categoryPath)
         //{
-        //    return new ObjectResult(_apiService.Lazada_GetMoreLzdByCategory(categoryPath).Adapt<LazadaProductModel>());
+        //    return new ObjectResult(_apiService.Lazada_GetProductByCategory(categoryPath).Adapt<LazadaProductModel>());
         //}
     }
 }

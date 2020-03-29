@@ -70,22 +70,25 @@ namespace CEDTeam.CES.Infrastructure.Implements
 
         public ShopeeShopDto Shopee_GetShopByCategory(string categoryId)
         {
-            return APIHelper.GetAsync<ShopeeShopDto>(String.Format(ApiConstant.SHOPEE_GET_SHOPS_URL, categoryId));
+            return APIHelper.GetAsync<ShopeeShopDto>(String.Format(ApiConstant.Shopee.GET_SHOPS, categoryId));
         }
 
         public TikiShopDto Tiki_GetShopByCategory(string categoryId)
         {
-            return APIHelper.GetAsync<TikiShopDto>(String.Format(ApiConstant.TIKI_GET_SHOPS_URL, categoryId));
+            return APIHelper.GetAsync<TikiShopDto>(String.Format(ApiConstant.Tiki.GET_SHOPS, categoryId));
         }
 
         public SendoShopDto Sendo_GetShopByCategory(string categoryId)
         {
-            return APIHelper.GetAsync<SendoShopDto>(String.Format(ApiConstant.SENDO_GET_SHOPS_URL, categoryId));
+            return APIHelper.GetAsync<SendoShopDto>(String.Format(ApiConstant.Sendo.GET_SHOPS, categoryId));
         }
-
-        public LazadaProductDto Lazada_GetMoreLzdByCategory(string categoryPath)
+        public ShopeeProductDetailDto Shopee_GetProductDetail(string itemid, string shopid)
         {
-            return APIHelper.GetAsync<LazadaProductDto>(String.Format(ApiConstant.LAZADA_GET_MORE_URL, categoryPath));
+            return APIHelper.GetAsync<ShopeeProductDetailDto>(String.Format(ApiConstant.Shopee.GET_PRODUCT_DETAIL, itemid, shopid));
+        }
+        public LazadaProductDto Lazada_GetProductByCategory(string categoryPath)
+        {
+            return APIHelper.GetAsync<LazadaProductDto>(String.Format(ApiConstant.Lazada.GET_PRODUCTS, categoryPath));
         }
 
         public IEnumerable<ShopeeProduct> Shopee_GetTopProductByCategoryId(string categoryId, int loadMore)
@@ -96,10 +99,10 @@ namespace CEDTeam.CES.Infrastructure.Implements
             var newest = (loadMore - 1) * 1000 + 100;
             do
             {
-                string uri = $"{ApiConstant.Shopee.SHOPEE_BASE}{string.Format(ApiConstant.Shopee.SEARCH_ITEMS, categoryId, newest)}";
+                string Url = String.Format(ApiConstant.Shopee.GET_PRODUCTS, categoryId, newest);
                 var task = new Task(() =>
                 {
-                    var result = APIHelper.GetAsync<ShopeeSearchItem>(uri);
+                    var result = APIHelper.GetAsync<ShopeeSearchItem>(Url);
                     if (result != null)
                     {
                         lock (listShpeeProduct)
@@ -122,10 +125,10 @@ namespace CEDTeam.CES.Infrastructure.Implements
             page = (page < 1 ? 1 : page);
             for (int p = 4 * page - 3; p <= page * 4; p++)
             {
-                string uri = string.Format(ApiConstant.Tiki.GET_PROD_AJAX, categoryId, page);
+                string Url = String.Format(ApiConstant.Tiki.GET_PRODUCTS, categoryId, page);
                 var task = new Task(() =>
                 {
-                    var result = APIHelper.GetAsync<TitiSearchItem>(uri);
+                    var result = APIHelper.GetAsync<TitiSearchItem>(Url);
                     if (result != null)
                     {
                         lock (listTikiProduct)
