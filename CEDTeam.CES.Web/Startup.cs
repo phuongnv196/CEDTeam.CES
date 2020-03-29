@@ -44,14 +44,15 @@ namespace CEDTeam.CES.Web
         public void ConfigureServices(IServiceCollection services)
         {
             var key = Encoding.UTF8.GetBytes(_config["AppConfig:JWTKey"]);
-            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme
-            //    x =>
-            //{
-            //    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-            //    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            //    x.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-            //}
-            ).AddJwtBearer(x => {
+            services.AddAuthentication(
+                x =>
+                {
+                    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                    x.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+                }
+            ).AddJwtBearer(x =>
+            {
                 x.RequireHttpsMetadata = false;
                 x.SaveToken = false;
                 x.TokenValidationParameters = new TokenValidationParameters
@@ -62,14 +63,15 @@ namespace CEDTeam.CES.Web
                     ValidateAudience = false,
                     ClockSkew = TimeSpan.Zero
                 };
-            }).AddCookie(CookieAuthenticationDefaults.AuthenticationScheme,
-            options =>
-            {
-                options.LoginPath = new PathString("/User/Login");
-                options.AccessDeniedPath = new PathString("/Home");
-                options.LogoutPath = new PathString("/User/Logout");
             });
-            services.ConfigureApplicationCookie(options => options.LoginPath = "/User/Login");
+            //.AddCookie(CookieAuthenticationDefaults.AuthenticationScheme,
+            //options =>
+            //{
+            //    options.LoginPath = new PathString("/User/Login");
+            //    options.AccessDeniedPath = new PathString("/Home");
+            //    options.LogoutPath = new PathString("/User/Logout");
+            //});
+            //services.ConfigureApplicationCookie(options => options.LoginPath = "/User/Login");
             services.ConfigService();
             services.ConfigRepository();
             services.AddOptions();
