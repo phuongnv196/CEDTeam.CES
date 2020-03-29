@@ -88,18 +88,19 @@ namespace CEDTeam.CES.Infrastructure.Implements
             return APIHelper.GetAsync<LazadaProductDto>(String.Format(ApiConstant.LAZADA_GET_MORE_URL, categoryPath));
         }
 
-        public IEnumerable<ShopeeProduct> Shopee_GetTopProductByCategoryId(string categoryId)
+        public IEnumerable<ShopeeProduct> Shopee_GetTopProductByCategoryId(string categoryId, int loadMore)
         {
+            loadMore = loadMore > 0 ? loadMore : 1;
             var listShpeeProduct = new List<ShopeeProduct>();
             var taskList = new List<Task>();
-            var newest = 100;
+            var newest = (loadMore - 1) * 1000 + 100;
             do
             {
                 string uri = $"{ApiConstant.Shopee.SHOPEE_BASE}{string.Format(ApiConstant.Shopee.SEARCH_ITEMS, categoryId, newest)}";
                 var task = new Task(() =>
                 {
                     var result = APIHelper.GetAsync<ShopeeSearchItem>(uri);
-                    if(result != null)
+                    if (result != null)
                     {
                         lock (listShpeeProduct)
                         {
@@ -110,7 +111,7 @@ namespace CEDTeam.CES.Infrastructure.Implements
                 task.Start();
                 taskList.Add(task);
                 newest += 100;
-            } while (newest <= 1000);
+            } while (newest <= loadMore * 1000);
             Task.WaitAll(taskList.ToArray());
             return listShpeeProduct;
         }

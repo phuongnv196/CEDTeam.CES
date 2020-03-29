@@ -18,8 +18,22 @@ namespace CEDTeam.CES.Web.Controllers.Api
         {
             _productService = productService;
             _apiService = apiService;
-    }
-        
+        }
+
+        [HttpGet]
+        public IActionResult GetShopeeProduct(string categoryId, int loadMore = 1)
+        {
+            var result = _apiService.Shopee_GetTopProductByCategoryId(categoryId.Split("_")[1], loadMore);
+            return new ObjectResult(result);
+        }
+
+        [HttpGet]
+        public IActionResult GetTikiProduct(string categoryId, int loadMore = 1)
+        {
+            var result = _apiService.Shopee_GetTopProductByCategoryId(categoryId.Split("_")[1], loadMore);
+            return new ObjectResult(result);
+        }
+
         //[Route("get-product")]
         //[HttpPost]
         //public async Task<IActionResult> GetProduct()
@@ -34,13 +48,6 @@ namespace CEDTeam.CES.Web.Controllers.Api
         //    result.Draw = draw;
         //    return new ObjectResult(result);
         //}
-
-        [HttpPost]
-        public IActionResult GetShopeeProduct(string categoryId)
-        {
-            var result = _apiService.Shopee_GetTopProductByCategoryId(categoryId.Split("_")[1]);
-            return new ObjectResult(result);
-        }
 
         //[Route("get-lazada-product")]
         //[HttpPost]
