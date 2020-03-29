@@ -18,25 +18,30 @@ namespace CEDTeam.CES.Web.Controllers.Api
             _productService = productService;
             _apiService = apiService;
         }
-
-        [HttpPost]
+        [HttpGet]
         public IActionResult GetShopeeProduct(string categoryId, int loadMore = 1)
         {
             var result = _apiService.Shopee_GetTopProductByCategoryId(categoryId.Split("_")[1], loadMore);
             return new ObjectResult(result);
         }
 
-        [HttpPost]
+        [HttpGet]
         public IActionResult GetTikiProduct(string categoryId, int loadMore = 1)
         {
             var result = _apiService.Tiki_GetTopProductByCategoryId(categoryId.Split("_")[1], loadMore);
             return new ObjectResult(result);
         }
         
-        [HttpPost]
-        public IActionResult GetSendoProduct(string categoryId, int loadMore = 1)
+        //[HttpGet]
+        //public IActionResult GetSendoProduct(string categoryId, int loadMore = 1)
+        //{
+        //    var result = _apiService.Tiki_GetTopProductByCategoryId(categoryId.Split("_")[1], loadMore);
+        //    return new ObjectResult(result);
+        //}
+        [HttpGet]
+        public IActionResult GetShopeeProductDetail(string itemId, string shopId)
         {
-            var result = _apiService.Tiki_GetTopProductByCategoryId(categoryId.Split("_")[1], loadMore);
+            var result = _apiService.Shopee_GetProductDetail(itemId, shopId);
             return new ObjectResult(result);
         }
     }
