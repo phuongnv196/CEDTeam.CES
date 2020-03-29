@@ -8,6 +8,7 @@ using CEDTeam.CES.Core.Interfaces;
 using CEDTeam.CES.Core.Interfaces.Services;
 using CEDTeam.CES.Web.Helpers;
 using CEDTeam.CES.Web.Models.User;
+using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -47,7 +48,7 @@ namespace CEDTeam.CES.Web.Controllers.Api
         [Route("get-users")]
         public async Task<IActionResult> GetUsers(string searchString)
         {
-            return new ObjectResult(await _userService.GetListUser(searchString, User.GetUserID()));
+            return new ObjectResult((await _userService.GetListUser(searchString, User.GetUserID())).Adapt<List<UserModel>>());
         }
     }
 }

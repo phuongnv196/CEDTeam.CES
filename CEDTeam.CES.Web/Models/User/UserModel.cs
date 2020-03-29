@@ -21,5 +21,7 @@ namespace CEDTeam.CES.Web.Models.User
         public string CreatedBy { get; set; }
         public List<long> Roles { get; set; } = new List<long>();
         public List<long> Rights { get; set; } = new List<long>();
+        public List<RoleDto> RoleList { get; set; } = new List<RoleDto>();
+        public List<RightDto> RightList { get; set; } = new List<RightDto>();
     }
 }
