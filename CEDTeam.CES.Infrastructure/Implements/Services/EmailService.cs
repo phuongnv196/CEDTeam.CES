@@ -46,7 +46,7 @@ namespace CEDTeam.CES.Infrastructure.Implements.Services
             mail.Subject = "[VinetTeam] - Xác minh tài khoản.";
             mail.Html = @"<p><span style=""color: #ff6600;"">Dear " + firstName + ",</span></p>"
                     + @"<p>Ch&agrave;o mừng bạn đ&atilde; đến với VinetTeam, để k&iacute;ch hoạt t&agrave;i khoản xin vui l&ograve;ng bấm v&agrave;o li&ecirc;n kết ph&iacute;a dưới.</p>"
-                    + @"<p><a href=""# " + activateKey + @""">X&aacute;c minh t&agrave;i khoản</a></p>"
+                    + @"<p><a href=""http://ces-testing-api.azurewebsites.net/api/v1/user/active-user?activateKey=" + activateKey + @""">X&aacute;c minh t&agrave;i khoản</a></p>"
                     + @"<p><span style=""color: #00ff00;""><em>Thank &amp; Regard.</em></span></p>";
             mail.EmailAdress = email;
             Send(mail);
