@@ -17,6 +17,9 @@ namespace CEDTeam.CES.Web.Models.User
         public string LastName { get; set; }
         [Required(ErrorMessage = AppConstant.ErrorMessage.REQUIRED_EMAIL)]
         public string Email { get; set; }
+
+        [Required(ErrorMessage = AppConstant.ErrorMessage.REQUIRED_PASSWORD)]
+        public string Password { get; set; }
         public string Addresss { get; set; }
         public string PhoneNumber { get; set; }
     }
