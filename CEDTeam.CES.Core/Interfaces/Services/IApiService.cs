@@ -31,6 +31,7 @@ namespace CEDTeam.CES.Core.Interfaces
         SendoTopProductDto Sendo_GetTopProductByCategory(int id, int page);
         SendoShopDto Sendo_GetShopByCategory(string categoryId);
         IEnumerable<SendoProduct> Sendo_GetTopProductByCategoryId(string categoryId, int page = 1);
+        SendoProductDetailDto Sendo_GetProductDetail(string urlKey);
 
         //Lazada
         LazadaProductDto Lazada_GetTopProductByCategory(string name);

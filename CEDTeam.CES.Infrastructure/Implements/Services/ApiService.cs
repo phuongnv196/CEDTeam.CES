@@ -207,5 +207,10 @@ namespace CEDTeam.CES.Infrastructure.Implements
             Task.WaitAll(taskList.ToArray());
             return listSendoProduct;
         }
+
+        public SendoProductDetailDto Sendo_GetProductDetail(string urlKey)
+        {
+             return APIHelper.GetAsync<SendoProductDetailDto>(String.Format(ApiConstant.Sendo.GET_PRODUCT_DETAIL, urlKey));
+        }
     }
 }

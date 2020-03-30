@@ -45,5 +45,12 @@ namespace CEDTeam.CES.Web.Controllers.Api
             var result = _apiService.Shopee_GetProductDetail(itemId, shopId);
             return new ObjectResult(result);
         }
+
+        [HttpGet]
+        public IActionResult GetSendoProductDetail(string urlKey)
+        {
+            var result = _apiService.Sendo_GetProductDetail(urlKey);
+            return new ObjectResult(result);
+        }
     }
 }
