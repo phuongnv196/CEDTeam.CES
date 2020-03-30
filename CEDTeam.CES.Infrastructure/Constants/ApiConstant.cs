@@ -57,7 +57,6 @@ namespace CEDTeam.CES.Infrastructure.Constants
             public const string TIKI_BASE = "https://tiki.vn/";
             public const string GET_PRODUCTS = TIKI_BASE + "api/v2/products?category_id={0}&limit=250&page={1}&sort=newest";
             public const string GET_SHOPS = TIKI_BASE + "api/v2/products?category_id={0}&limit=1";
-
         }
         public static class Sendo
         {

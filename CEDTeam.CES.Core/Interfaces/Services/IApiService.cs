@@ -22,7 +22,7 @@ namespace CEDTeam.CES.Core.Interfaces
         TikiTopProductDto Tiki_GetTopProductByCategory(int id, int limit, int page);
         TikiShopDto Tiki_GetShopByCategory(string categoryId);
         IEnumerable<TikiProduct> Tiki_GetTopProductByCategoryId(string categoryId, int page = 1);
-        object Tiki_GetProductDetail(string urlPath);
+        TikiProductDetailDto Tiki_GetProductDetail(string urlPath);
 
         //Sendo
         SendoHotSearchDto Sendo_GetHotSearch();

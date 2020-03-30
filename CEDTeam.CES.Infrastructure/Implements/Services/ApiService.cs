@@ -211,14 +211,21 @@ namespace CEDTeam.CES.Infrastructure.Implements
 
         public SendoProductDetailDto Sendo_GetProductDetail(string urlPath)
         {
-             return APIHelper.GetAsync<SendoProductDetailDto>(String.Format(ApiConstant.Sendo.GET_PRODUCT_DETAIL, urlPath));
+            return APIHelper.GetAsync<SendoProductDetailDto>(String.Format(ApiConstant.Sendo.GET_PRODUCT_DETAIL, urlPath));
         }
 
-        public object Tiki_GetProductDetail(string urlPath)
+        public TikiProductDetailDto Tiki_GetProductDetail(string urlPath)
         {
-            var rawHtml = APIHelper.GetAsync(ApiConstant.Tiki.TIKI_BASE + urlPath);
-            Match match = Regex.Match(rawHtml, @"defaultProduct\s=\s({.+?});");
-            return JsonConvert.DeserializeObject(match.Groups[1].Value);
+            var rawHtml = APIHelper.GetAsync($"{ApiConstant.Tiki.TIKI_BASE}{urlPath}");
+            if (rawHtml != null)
+            {
+                var m = Regex.Match(rawHtml, @"defaultProduct\s=\s({.+?});");
+                if (m.Success)
+                {
+                    return JsonConvert.DeserializeObject<TikiProductDetailDto>(m.Groups[1].Value);
+                }
+            }
+            return null;
         }
     }
 }
