@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace CEDTeam.CES.Infrastructure.Implements
@@ -199,6 +200,13 @@ namespace CEDTeam.CES.Infrastructure.Implements
             }
             Task.WaitAll(taskList.ToArray());
             return listSendoProduct;
+        }
+
+        public object Tiki_GetProductDetail(string path)
+        {
+            var rawHtml = APIHelper.GetAsync(ApiConstant.Tiki.TIKI_BASE + path);
+            Match match = Regex.Match(rawHtml, @"defaultProduct\s=\s({.+?});");
+            return JsonConvert.DeserializeObject(match.Groups[1].Value);
         }
     }
 }

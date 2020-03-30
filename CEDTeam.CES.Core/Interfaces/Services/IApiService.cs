@@ -35,5 +35,6 @@ namespace CEDTeam.CES.Core.Interfaces
         //Lazada
         LazadaProductDto Lazada_GetTopProductByCategory(string name);
         LazadaProductDto Lazada_GetProductByCategory(string categoryPath);
+        object Tiki_GetProductDetail(string path);
     }
 }
