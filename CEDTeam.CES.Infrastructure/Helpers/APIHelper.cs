@@ -77,5 +77,28 @@ namespace CEDTeam.CES.Infrastructure.Helpers
                 return default(T);
             }
         }
+
+        public static string GetAsync(string url, bool isAllowRedirect = false)
+        {
+            try
+            {
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+                request.Method = "GET";
+                if (!isAllowRedirect) request.AllowAutoRedirect = false;
+                request.Headers.Add("Upgrade-Insecure-Requests: 1");
+                request.Accept = "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8";
+                request.UserAgent = "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/66.4.120 Chrome/60.4.3112.120 Safari/537.36";
+                request.Headers.Add("Accept-Language:vi-VN,vi;q=0.8,fr-FR;q=0.6,fr;q=0.4,en-US;q=0.2,en;q=0.2");
+                var response = (HttpWebResponse)request.GetResponse();
+                if (!HttpStatusCode.OK.Equals(response.StatusCode)) 
+                    return null;
+                return new StreamReader(response.GetResponseStream()).ReadToEnd(); ;
+            }
+            catch (Exception e)
+            {
+                Console.Write(e);
+                return null;
+            }
+        }
     }
 }
