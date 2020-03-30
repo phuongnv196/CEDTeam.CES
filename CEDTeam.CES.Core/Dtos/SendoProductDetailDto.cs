@@ -111,18 +111,6 @@ namespace CEDTeam.CES.Core.Dtos
         public string link { get; set; }
     }
 
-    public class FlashSale
-    {
-        public double? id { get; set; }
-        public double? start_time { get; set; }
-        public double? end_time { get; set; }
-        public bool? is_active { get; set; }
-        public double? slot_id { get; set; }
-        public bool? is_mega_sale { get; set; }
-        public double? type { get; set; }
-        public string link { get; set; }
-    }
-
     public class InstallmentInfo
     {
         public bool? is_active { get; set; }
@@ -211,7 +199,6 @@ namespace CEDTeam.CES.Core.Dtos
         public double? product_mall { get; set; }
         public double? is_event { get; set; }
         public double? is_event_frame { get; set; }
-        public FlashSale flash_sale { get; set; }
         public string promotion_note { get; set; }
         public bool? is_express { get; set; }
         public bool? is_config_variant { get; set; }
