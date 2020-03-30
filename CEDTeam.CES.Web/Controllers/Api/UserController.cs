@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CEDTeam.CES.Core.Constants;
+using CEDTeam.CES.Core.Dtos.User;
 using CEDTeam.CES.Core.Enums;
 using CEDTeam.CES.Core.Exceptions;
 using CEDTeam.CES.Core.Interfaces;
@@ -18,7 +20,7 @@ namespace CEDTeam.CES.Web.Controllers.Api
     [Produces("application/json")]
     [ApiConventionType(typeof(DefaultApiConventions))]
     [ApiController]
-    public class UserController : BaseAPIController
+    public class UserController : ControllerBase
     {
         private readonly IEmailService _emailService;
         private readonly IUserService _userService;
@@ -30,20 +32,49 @@ namespace CEDTeam.CES.Web.Controllers.Api
 
         [HttpPost]
         [Route("register")]
-        public IActionResult Register(UserRegisterModel user)
-        {
+        public async Task<IActionResult> Register(UserRegisterModel user)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  {
             if(ModelState.IsValid)
             {
-                //_userService.
-                _emailService.SendEmailWellcome(user.Email);
-                return new ObjectResult(new { sucess = true });
+                var userDto = user.Adapt<UserDto>();
+                userDto.SelectedRoles = new List<int> { (int)Role.Member};
+                var result = await _userService.InsertUser(userDto, AppConstant.SYSTEM_ID);
+                if(result.Success)
+                {
+                    _emailService.SendEmailActivateUser(user.FirstName, user.Email, result.Result.ActivateKey);
+                } 
+                else
+                {
+                    switch(result.ReturnValue)
+                    {
+                        case -1:
+                            result.ErrorMessage = AppConstant.ErrorMessage.USERNAME_EXIST;
+                            break;
+                        case -2:
+                            result.ErrorMessage = AppConstant.ErrorMessage.EMAIL_EXIST;
+                            break;
+                    }    
+                }
+                return new ObjectResult(result);
             } 
             else
             {
                 return new ObjectResult(ModelState.ToList());
             }
         }
-        
+
+        [HttpGet]
+        [Route("active-user")]
+        public async Task<IActionResult> ActiveUser(string activateKey)
+        {
+            var result = (await _userService.ActivateUser(activateKey));
+            if (!result.Success)
+            {
+                result.ErrorMessage = AppConstant.ErrorMessage.ERROR_ACTIVATE_USER;
+            }
+            return new ObjectResult(result);
+        }
+
         [HttpPost]
         [Route("get-users")]
         public async Task<IActionResult> GetUsers(string searchString)

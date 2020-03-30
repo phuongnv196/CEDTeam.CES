@@ -8,5 +8,6 @@ namespace CEDTeam.CES.Infrastructure.Constants
     {
         public static readonly string UspGetUserLogin = "uspGetUserLogin";
         public static readonly string UspGetUserList = "uspGetUserList";
+        public static readonly string UspInsUpdUser = "uspInsUpdUser";
     }
 }

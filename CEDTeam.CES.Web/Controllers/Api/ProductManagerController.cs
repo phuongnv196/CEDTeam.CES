@@ -47,6 +47,13 @@ namespace CEDTeam.CES.Web.Controllers.Api
         }
 
         [HttpGet]
+        public IActionResult GetSendoProductDetail(string urlKey)
+        {
+            var result = _apiService.Sendo_GetProductDetail(urlKey);
+            return new ObjectResult(result);
+        }
+
+        [HttpGet]
         public IActionResult GetTikiProductDetail(string urlPath)
         {
             var result = _apiService.Tiki_GetProductDetail(urlPath);

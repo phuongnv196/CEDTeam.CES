@@ -22,6 +22,7 @@ namespace CEDTeam.CES.Core.Dtos.User
         public string CreatedBy { get; set; }
         public string RoleJson { get; set; }
         public string RightJson { get; set; }
+        public List<int> SelectedRoles { get; set; }
         public List<RoleDto> RoleList { get; set; } = new List<RoleDto>();
         public List<RightDto> RightList { get; set; } = new List<RightDto>();
     }
