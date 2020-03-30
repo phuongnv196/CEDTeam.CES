@@ -4,15 +4,10 @@ using System.Text;
 
 namespace CEDTeam.CES.Web.Models.Product
 {
-    public class BundleDealInfo
-    {
-        public int bundle_deal_id { get; set; }
-        public string bundle_deal_label { get; set; }
-    }
 
     public class ItemRating
     {
-        public double rating_star { get; set; }
+        public object rating_star { get; set; }
         public List<int> rating_count { get; set; }
         public int rcount_with_image { get; set; }
         public int rcount_with_context { get; set; }
@@ -42,7 +37,7 @@ namespace CEDTeam.CES.Web.Models.Product
         public bool can_use_wholesale { get; set; }
         public bool show_free_shipping { get; set; }
         public int estimated_days { get; set; }
-        public bool is_hot_sales { get; set; }
+        public object is_hot_sales { get; set; }
         public bool is_slash_price_item { get; set; }
         public object upcoming_flash_sale { get; set; }
         public object slash_lowest_price { get; set; }
@@ -58,8 +53,7 @@ namespace CEDTeam.CES.Web.Models.Product
         public int historical_sold { get; set; }
         public string reference_item_id { get; set; }
         public object recommendation_info { get; set; }
-        public BundleDealInfo bundle_deal_info { get; set; }
-        public int price_max { get; set; }
+        public long price_max { get; set; }
         public bool has_lowest_price_guarantee { get; set; }
         public int shipping_icon_type { get; set; }
         public List<string> images { get; set; }
@@ -73,7 +67,7 @@ namespace CEDTeam.CES.Web.Models.Product
         public object makeup { get; set; }
         public ItemRating item_rating { get; set; }
         public bool show_official_shop_label_in_title { get; set; }
-        public string discount { get; set; }
+        public object discount { get; set; }
         public string reason { get; set; }
         public List<int> label_ids { get; set; }
         public bool has_group_buy_stock { get; set; }
@@ -107,7 +101,7 @@ namespace CEDTeam.CES.Web.Models.Product
         public string currency { get; set; }
         public int raw_discount { get; set; }
         public bool is_category_failed { get; set; }
-        public int price_min { get; set; }
+        public long price_min { get; set; }
         public bool can_use_bundle_deal { get; set; }
         public int cb_option { get; set; }
         public string brand { get; set; }
@@ -118,7 +112,7 @@ namespace CEDTeam.CES.Web.Models.Product
         public string description { get; set; }
         public object flash_sale { get; set; }
         public List<object> models { get; set; }
-        public int price { get; set; }
+        public long price { get; set; }
         public string shop_location { get; set; }
         public List<object> tier_variations { get; set; }
         public object makeups { get; set; }
@@ -135,5 +129,4 @@ namespace CEDTeam.CES.Web.Models.Product
         public object error_msg { get; set; }
         public object error { get; set; }
     }
-
 }

@@ -7,7 +7,7 @@ namespace CEDTeam.CES.Core.Dtos
 
     public class ItemRating
     {
-        public double rating_star { get; set; }
+        public object rating_star { get; set; }
         public List<int> rating_count { get; set; }
         public int rcount_with_image { get; set; }
         public int rcount_with_context { get; set; }
