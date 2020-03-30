@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace CEDTeam.CES.Infrastructure.Implements
@@ -211,6 +212,21 @@ namespace CEDTeam.CES.Infrastructure.Implements
         public SendoProductDetailDto Sendo_GetProductDetail(string urlKey)
         {
              return APIHelper.GetAsync<SendoProductDetailDto>(String.Format(ApiConstant.Sendo.GET_PRODUCT_DETAIL, urlKey));
+        }
+
+        public TikiProductDetailDto Tiki_GetProductDetail(string urlKey)
+        {
+             var result = APIHelper.GetAsync($"{ApiConstant.Tiki.TIKI_BASE}{urlKey}");
+            if(string.IsNullOrWhiteSpace(result))
+            {
+
+                var m = Regex.Match(result, @"defaultProduct\s=\s({.+?});");
+                if(m.Success)
+                {
+                    return JsonConvert.DeserializeObject<TikiProductDetailDto>(m.Groups[1].Value);
+                }
+            }
+            return null;
         }
     }
 }
