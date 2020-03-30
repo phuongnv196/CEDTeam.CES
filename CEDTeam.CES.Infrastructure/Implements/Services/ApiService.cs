@@ -209,14 +209,14 @@ namespace CEDTeam.CES.Infrastructure.Implements
             return listSendoProduct;
         }
 
-        public SendoProductDetailDto Sendo_GetProductDetail(string urlKey)
+        public SendoProductDetailDto Sendo_GetProductDetail(string urlPath)
         {
-             return APIHelper.GetAsync<SendoProductDetailDto>(String.Format(ApiConstant.Sendo.GET_PRODUCT_DETAIL, urlKey));
+             return APIHelper.GetAsync<SendoProductDetailDto>(String.Format(ApiConstant.Sendo.GET_PRODUCT_DETAIL, urlPath));
         }
 
-        public object Tiki_GetProductDetail(string path)
+        public object Tiki_GetProductDetail(string urlPath)
         {
-            var rawHtml = APIHelper.GetAsync(ApiConstant.Tiki.TIKI_BASE + path);
+            var rawHtml = APIHelper.GetAsync(ApiConstant.Tiki.TIKI_BASE + urlPath);
             Match match = Regex.Match(rawHtml, @"defaultProduct\s=\s({.+?});");
             return JsonConvert.DeserializeObject(match.Groups[1].Value);
         }

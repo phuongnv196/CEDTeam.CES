@@ -73,7 +73,7 @@ namespace CEDTeam.CES.Infrastructure.Helpers
                 return default(T);
             }
         }
-        public static String GetAsync(string url, bool isAllowRedirect = false)
+        public static string GetAsync(string url, bool isAllowRedirect = false)
         {
             try
             {

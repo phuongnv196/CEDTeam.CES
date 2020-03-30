@@ -47,9 +47,9 @@ namespace CEDTeam.CES.Web.Controllers.Api
         }
 
         [HttpGet]
-        public IActionResult GetSendoProductDetail(string urlKey)
+        public IActionResult GetSendoProductDetail(string urlPath)
         {
-            var result = _apiService.Sendo_GetProductDetail(urlKey);
+            var result = _apiService.Sendo_GetProductDetail(urlPath);
             return new ObjectResult(result);
         }
 
