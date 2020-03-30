@@ -40,7 +40,8 @@ namespace CEDTeam.CES.Infrastructure.Constants
         {
             public const string SHOPEE_BASE = "https://shopee.vn/";
             public const string GET_CATEGORIES = SHOPEE_BASE + "api/v2/category_list/get";
-            public const string GET_PRODUCTS = SHOPEE_BASE + "api/v2/search_items/?by=pop&limit=100&match_id={0}&newest={1}&order=desc&page_type=search&version=2";
+            public const string GET_PRODUCTS = SHOPEE_BASE + "api/v1/search_items/?by=pop&limit=100&match_id={0}&newest={1}&order=desc&page_type=search&version=2";
+            public const string POST_PRODUCTS = SHOPEE_BASE + "api/v2/item/get_list";
             public const string GET_PRODUCT_DETAIL = SHOPEE_BASE + "api/v2/item/get?itemid={0}&shopid={1}";
             public const string GET_TAGS = SHOPEE_BASE + "api/v0/search/api/categorytags/?page_type=search&sub_catid={0}";
             public const string GET_SHOPS = SHOPEE_BASE + "api/v2/content/official_shop?catid={0}";
@@ -62,7 +63,7 @@ namespace CEDTeam.CES.Infrastructure.Constants
         {
             public const string SENDO_BASE = "https://www.sendo.vn/";
             public const string GET_PRODUCTS = SENDO_BASE + "m/wap_v2/category/product?category_id={0}&listing_algo=algo14&p={1}&platform=web&s=100&sortType=vasup_desc";
-            public const string GET_SHOPS = "/m/wap_v2/category/product?category_id={0}&listing_algo=algo14&p=1&platform=web&s=100&shop_warehouse_city_id=1,2,15,17,20&sortType=vasup_desc";
+            public const string GET_SHOPS = SENDO_BASE + "/m/wap_v2/category/product?category_id={0}&listing_algo=algo14&p=1&platform=web&s=100&shop_warehouse_city_id=1,2,15,17,20&sortType=vasup_desc";
 
         }
 

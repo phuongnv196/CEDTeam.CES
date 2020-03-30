@@ -91,23 +91,24 @@ namespace CEDTeam.CES.Infrastructure.Implements
             return APIHelper.GetAsync<LazadaProductDto>(String.Format(ApiConstant.Lazada.GET_PRODUCTS, categoryPath));
         }
 
-        public IEnumerable<ShopeeProduct> Shopee_GetTopProductByCategoryId(string categoryId, int loadMore)
+        public IEnumerable<ShopeeItemData> Shopee_GetTopProductByCategoryId(string categoryId, int loadMore)
         {
             loadMore = loadMore > 0 ? loadMore : 1;
-            var listShpeeProduct = new List<ShopeeProduct>();
             var taskList = new List<Task>();
             var newest = (loadMore - 1) * 1000 + 100;
+            ShopeePostItemData listProducts = new ShopeePostItemData();
+            listProducts.item_shop_ids = new List<ShopeeItem>();
             do
             {
                 string Url = String.Format(ApiConstant.Shopee.GET_PRODUCTS, categoryId, newest);
                 var task = new Task(() =>
                 {
-                    var result = APIHelper.GetAsync<ShopeeSearchItem>(Url);
+                    var result = APIHelper.GetAsync<ShopeeSearchItemv1>(Url);
                     if (result != null)
                     {
-                        lock (listShpeeProduct)
+                        lock (listProducts.item_shop_ids)
                         {
-                            listShpeeProduct.AddRange(result.items);
+                            listProducts.item_shop_ids.AddRange(result.items);
                         }
                     }
                 });
@@ -116,8 +117,38 @@ namespace CEDTeam.CES.Infrastructure.Implements
                 newest += 100;
             } while (newest <= loadMore * 1000);
             Task.WaitAll(taskList.ToArray());
-            return listShpeeProduct;
+            ShopeeSearchItemData shopeeSearchItemData = APIHelper.PostAsync<ShopeeSearchItemData>(ApiConstant.Shopee.POST_PRODUCTS, JsonConvert.SerializeObject(listProducts), "application/json");
+            return shopeeSearchItemData.items;
         }
+
+        //public IEnumerable<ShopeeProduct> Shopee_GetTopProductByCategoryId(string categoryId, int loadMore)
+        //{
+        //    loadMore = loadMore > 0 ? loadMore : 1;
+        //    var listShpeeProduct = new List<ShopeeProduct>();
+        //    var taskList = new List<Task>();
+        //    var newest = (loadMore - 1) * 1000 + 100;
+        //    do
+        //    {
+        //        string Url = String.Format(ApiConstant.Shopee.GET_PRODUCTS, categoryId, newest);
+        //        var task = new Task(() =>
+        //        {
+        //            var result = APIHelper.GetAsync<ShopeeSearchItem>(Url);
+        //            if (result != null)
+        //            {
+        //                lock (listShpeeProduct)
+        //                {
+        //                    listShpeeProduct.AddRange(result.items);
+        //                }
+        //            }
+        //        });
+        //        task.Start();
+        //        taskList.Add(task);
+        //        newest += 100;
+        //    } while (newest <= loadMore * 1000);
+        //    Task.WaitAll(taskList.ToArray());
+        //    return listShpeeProduct;
+        //}
+
         public IEnumerable<TikiProduct> Tiki_GetTopProductByCategoryId(string categoryId, int page = 1)
         {
             var listTikiProduct = new List<TikiProduct>();
