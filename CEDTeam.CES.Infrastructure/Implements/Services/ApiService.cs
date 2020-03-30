@@ -100,20 +100,27 @@ namespace CEDTeam.CES.Infrastructure.Implements
             listProducts.item_shop_ids = new List<ShopeeItem>();
             do
             {
-                string Url = String.Format(ApiConstant.Shopee.GET_PRODUCTS, categoryId, newest);
-                var task = new Task(() =>
+                try
                 {
-                    var result = APIHelper.GetAsync<ShopeeSearchItemv1>(Url);
-                    if (result != null)
+                    string Url = String.Format(ApiConstant.Shopee.GET_PRODUCTS, categoryId, newest);
+                    var task = new Task(() =>
                     {
-                        lock (listProducts.item_shop_ids)
+                        var result = APIHelper.GetAsync<ShopeeSearchItemv1>(Url);
+                        if (result != null)
                         {
-                            listProducts.item_shop_ids.AddRange(result.items);
+                            lock (listProducts.item_shop_ids)
+                            {
+                                listProducts.item_shop_ids.AddRange(result.items);
+                            }
                         }
-                    }
-                });
-                task.Start();
-                taskList.Add(task);
+                    });
+                    task.Start();
+                    taskList.Add(task);
+                }
+                catch
+                {
+                    break;
+                }
                 newest += 100;
             } while (newest <= loadMore * 1000);
             Task.WaitAll(taskList.ToArray());
