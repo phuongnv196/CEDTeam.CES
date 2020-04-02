@@ -3,7 +3,6 @@ using CEDTeam.CES.Core.Dtos.Api;
 using CEDTeam.CES.Core.Interfaces;
 using CEDTeam.CES.Infrastructure.Constants;
 using CEDTeam.CES.Infrastructure.Helpers;
-using HtmlAgilityPack;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -217,13 +216,15 @@ namespace CEDTeam.CES.Infrastructure.Implements
 
         public TikiProductDetailDto Tiki_GetProductDetail(string urlPath)
         {
-
-            var rawHtml = APIHelper.GetAsync($"{ApiConstant.Tiki.TIKI_BASE}{urlPath}", false);
-            
-            var els = new HtmlNodeCollection(null);
-            string uri = string.Format(ApiConstant.Tiki.TIKI_BASE + urlPath);
-            var doc = APIHelper.GetAsync(uri, false);
-            els = doc.DocumentNode.SelectNodes("//div[@data-seller-product-id]");
+            var rawHtml = APIHelper.GetAsync($"{ApiConstant.Tiki.TIKI_BASE}{urlPath}");
+            if (rawHtml != null)
+            {
+                var m = Regex.Match(rawHtml, @"defaultProduct\s=\s({.+?});");
+                if (m.Success)
+                {
+                    return JsonConvert.DeserializeObject<TikiProductDetailDto>(m.Groups[1].Value);
+                }
+            }
             return null;
         }
     }
