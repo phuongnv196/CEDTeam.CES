@@ -17,6 +17,7 @@ namespace CEDTeam.CES.Web.Models.User
         public string PhoneNumber { get; set; }
         public bool? IsDeleted { get; set; }
         public bool? IsLocked { get; set; }
+        public bool? IsActived { get; set; }
         public DateTime? LastLoginDate { get; set; }
         public string CreatedBy { get; set; }
         public List<long> Roles { get; set; } = new List<long>();

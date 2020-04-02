@@ -65,9 +65,13 @@ namespace CEDTeam.CES.Web.Controllers.Api
                 var userInfor = result.Adapt<UserModel>();
                 userInfor.Roles = result.RoleList.Select(p => p.RoleID).ToList();
                 userInfor.Rights = result.RightList.Select(p => p.RightID).ToList();
-                return Ok(new { access_token = token, User = userInfor });
+                if(userInfor.IsActived??userInfor.IsActived.Value)
+                {
+                    return Ok(new { access_token = token, User = userInfor });
+                }
+                return Ok(new { error = 202, message = "Tài khoản chưa được kích hoạt." });
             }
-            return BadRequest(new { message = "Username or password is incorrect." });
+            return Ok(new { error = 201, message = "Tên tài khoản hoặc mật khẩu không đúng." });
         }
 
         [AllowAnonymous]

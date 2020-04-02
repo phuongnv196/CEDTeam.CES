@@ -15,6 +15,7 @@ namespace CEDTeam.CES.Core.Dtos.User
         public string PhoneNumber { get; set; }
         public bool? IsDeleted { get; set; }
         public bool? IsLocked { get; set; }
+        public bool? IsActived { get; set; }
         public DateTime? LastLoginDate { get; set; }
         public string ModifiedBy { get; set; }
         public DateTime? ModifiedDate { get; set; }
