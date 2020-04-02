@@ -62,6 +62,6 @@ namespace CEDTeam.CES.Core.Dtos
         public List<object> other_sellers { get; set; }
         public string description { get; set; }
         public string review { get; set; }
-        public List<object> chiTiet { get; set; }
+        public List<object> details { get; set; }
     }
 }

@@ -231,16 +231,16 @@ namespace CEDTeam.CES.Infrastructure.Implements
                     var description = els.FirstOrDefault().InnerHtml;
                     var review = doc.DocumentNode.SelectNodes("//a[contains(@class, 'review-url')]/span").FirstOrDefault().InnerText;
                     var chiTiet = doc.DocumentNode.SelectNodes("//table[@id='chi-tiet']/tbody/tr");
-                    var listChiTiet = new List<object>();
+                    var listChiTiet = new List<CustomAttribute>();
                     foreach (var item in chiTiet)
                     {
                         var child = item.ChildNodes;
-                        listChiTiet.Add(new { a = child[1].InnerText?.Trim(), b = child[3].InnerText?.Trim() });
+                        listChiTiet.Add(new CustomAttribute{ display_name = child[1].InnerText?.Trim(), value = child[3].InnerText?.Trim() });
                     };
                     var dataModel = JsonConvert.DeserializeObject<TikiProductDetailDto>(m.Groups[1].Value);
                     dataModel.description = description;
                     dataModel.review = review;
-                    dataModel.chiTiet = listChiTiet;
+                    dataModel.custom_attributes = listChiTiet;
                     return dataModel;
                 }
             }
