@@ -6,10 +6,10 @@ namespace CEDTeam.CES.Core.Dtos
 {
     public class StockItem
     {
-        public int qty { get; set; }
-        public int min_sale_qty { get; set; }
-        public int max_sale_qty { get; set; }
-        public bool preorder_date { get; set; }
+        public double? qty { get; set; }
+        public double? min_sale_qty { get; set; }
+        public double? max_sale_qty { get; set; }
+        public bool? preorder_date { get; set; }
     }
 
     public class CustomAttribute
@@ -21,35 +21,35 @@ namespace CEDTeam.CES.Core.Dtos
 
     public class CurrentSeller
     {
-        public int id { get; set; }
+        public double? id { get; set; }
         public string sku { get; set; }
-        public int store_id { get; set; }
+        public double? store_id { get; set; }
         public string name { get; set; }
         public string slug { get; set; }
         public string link { get; set; }
-        public bool is_best_store { get; set; }
+        public bool? is_best_store { get; set; }
         public string logo { get; set; }
         public string product_id { get; set; }
-        public int price { get; set; }
+        public double? price { get; set; }
         public object is_offline_installment_supported { get; set; }
     }
 
     public class TikiProductDetailDto
     {
-        public int id { get; set; }
-        public int price { get; set; }
-        public int list_price { get; set; }
-        public int discount_percent { get; set; }
-        public bool is_book { get; set; }
+        public double? id { get; set; }
+        public double? price { get; set; }
+        public double? list_price { get; set; }
+        public double? discount_percent { get; set; }
+        public bool? is_book { get; set; }
         public string type { get; set; }
         public string name { get; set; }
         public string sku { get; set; }
         public StockItem stock_item { get; set; }
-        public bool installment { get; set; }
-        public bool is_offline_installment { get; set; }
+        public bool? installment { get; set; }
+        public bool? is_offline_installment { get; set; }
         public List<CustomAttribute> custom_attributes { get; set; }
         public string inventory_status { get; set; }
-        public int seller_rating { get; set; }
+        public double? seller_rating { get; set; }
         public string promotion { get; set; }
         public string installment_message { get; set; }
         public object installment_info { get; set; }
@@ -60,5 +60,8 @@ namespace CEDTeam.CES.Core.Dtos
         public object tag_discount { get; set; }
         public CurrentSeller current_seller { get; set; }
         public List<object> other_sellers { get; set; }
+        public string description { get; set; }
+        public string review { get; set; }
+        public List<object> chiTiet { get; set; }
     }
 }

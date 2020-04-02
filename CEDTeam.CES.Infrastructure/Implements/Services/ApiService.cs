@@ -3,9 +3,11 @@ using CEDTeam.CES.Core.Dtos.Api;
 using CEDTeam.CES.Core.Interfaces;
 using CEDTeam.CES.Infrastructure.Constants;
 using CEDTeam.CES.Infrastructure.Helpers;
+using HtmlAgilityPack;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -217,12 +219,29 @@ namespace CEDTeam.CES.Infrastructure.Implements
         public TikiProductDetailDto Tiki_GetProductDetail(string urlPath)
         {
             var rawHtml = APIHelper.GetAsync($"{ApiConstant.Tiki.TIKI_BASE}{urlPath}");
+            var doc = new HtmlDocument();
+            var els = new HtmlNodeCollection(null);
             if (rawHtml != null)
             {
                 var m = Regex.Match(rawHtml, @"defaultProduct\s=\s({.+?});");
                 if (m.Success)
                 {
-                    return JsonConvert.DeserializeObject<TikiProductDetailDto>(m.Groups[1].Value);
+                    doc.LoadHtml(rawHtml);
+                    els = doc.DocumentNode.SelectNodes("//div[contains(@class, 'top-feature-item')]");
+                    var description = els.FirstOrDefault().InnerHtml;
+                    var review = doc.DocumentNode.SelectNodes("//a[contains(@class, 'review-url')]/span").FirstOrDefault().InnerText;
+                    var chiTiet = doc.DocumentNode.SelectNodes("//table[@id='chi-tiet']/tbody/tr");
+                    var listChiTiet = new List<object>();
+                    foreach (var item in chiTiet)
+                    {
+                        var child = item.ChildNodes;
+                        listChiTiet.Add(new { a = child[1].InnerText?.Trim(), b = child[3].InnerText?.Trim() });
+                    };
+                    var dataModel = JsonConvert.DeserializeObject<TikiProductDetailDto>(m.Groups[1].Value);
+                    dataModel.description = description;
+                    dataModel.review = review;
+                    dataModel.chiTiet = listChiTiet;
+                    return dataModel;
                 }
             }
             return null;
