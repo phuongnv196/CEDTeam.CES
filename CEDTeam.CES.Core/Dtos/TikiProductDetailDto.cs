@@ -60,8 +60,6 @@ namespace CEDTeam.CES.Core.Dtos
         public object tag_discount { get; set; }
         public CurrentSeller current_seller { get; set; }
         public List<object> other_sellers { get; set; }
-        public string description { get; set; }
         public string review { get; set; }
-        public List<object> details { get; set; }
     }
 }

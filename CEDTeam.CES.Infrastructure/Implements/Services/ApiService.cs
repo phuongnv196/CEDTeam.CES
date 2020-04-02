@@ -238,7 +238,7 @@ namespace CEDTeam.CES.Infrastructure.Implements
                         listChiTiet.Add(new CustomAttribute{ display_name = child[1].InnerText?.Trim(), value = child[3].InnerText?.Trim() });
                     };
                     var dataModel = JsonConvert.DeserializeObject<TikiProductDetailDto>(m.Groups[1].Value);
-                    dataModel.description = description;
+                    dataModel.promotion = description;
                     dataModel.review = review;
                     dataModel.custom_attributes = listChiTiet;
                     return dataModel;
