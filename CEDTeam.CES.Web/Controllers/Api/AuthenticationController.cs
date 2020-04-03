@@ -69,9 +69,9 @@ namespace CEDTeam.CES.Web.Controllers.Api
                 {
                     return Ok(new { access_token = token, User = userInfor });
                 }
-                return Ok(new { error = 202, message = "Tài khoản chưa được kích hoạt." });
+                return BadRequest(new { error = 202, message = "Tài khoản chưa được kích hoạt." });
             }
-            return Ok(new { error = 201, message = "Tên tài khoản hoặc mật khẩu không đúng." });
+            return BadRequest(new { error = 201, message = "Tên tài khoản hoặc mật khẩu không đúng." });
         }
 
         [AllowAnonymous]
